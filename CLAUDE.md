@@ -108,6 +108,7 @@ tasks/             Plans and lessons learned (lessons.md)
 ```
 
 * File names: lowercase, hyphen-separated, date-prefixed (`YYYY-MM-DD-...`) where a date is meaningful.
+* **Every PDF has a Markdown version** with the same basename in the same folder (`x.pdf` → `x.md`). Agents always read the `.md` version instead of the PDF, unless the owner asks otherwise. When a new PDF is added, create its `.md` version (complete, not summarized, with a header naming the source PDF) as part of the same task. The PDF remains the authoritative source; consult it only if the `.md` looks wrong or incomplete.
 * Do not keep duplicate copies of the same file.
 
 ## 9. Commit, Branching & Merging (Single Owner, Autonomous)

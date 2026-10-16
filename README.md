@@ -17,4 +17,6 @@ Agent rules: see [CLAUDE.md](CLAUDE.md).
 | `reports/` | Findings and syntheses for CORSA |
 | `tasks/` | Plans and [lessons learned](tasks/lessons.md) |
 
+Every PDF has a Markdown version next to it (`x.pdf` → `x.md`); agents read the `.md` versions.
+
 Note: `meetings/2026-10-05-meeting-4-recap.pdf` and `-v2.pdf` are two different versions of the Meeting 4 recap; both are kept.
