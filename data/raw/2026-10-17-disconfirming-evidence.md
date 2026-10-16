@@ -24,7 +24,7 @@ Worker P1-C6, run 1, access date 2026-10-16. Network: WebFetch to bps.go.id fail
 | 16 | H2,H3 | disconfirms | n/a (qualitative; direction of real wages) | real wages declined since 2018; mid-skilled employment shrinking vs low- and high-wage jobs (national) | World Bank Indonesia Economic Prospects, Dec 2025 | P1-C6-S15 | snippet-only (not opened) | "Real wages have declined since 2018, while mid-skilled employment has shrunk relative to both low- and high-wage positions, dampening household consumption." |
 | 17 | H2 | mixed | 5.29 | % YoY GDP growth, Indonesia | Q2 2026 | P1-C6-S16 | snippet-only (not opened) | Title: "Pertumbuhan Ekonomi RI Kuartal II/2026 Capai 5,29%, Ini Faktor Pendorongnya" |
 
-Direction summary: disconfirms 9 (rows 5-9, 11-13, 16), supports 2 (4, 10), mixed 6 (1-3, 14, 15, 17; row 14 counted mixed). Row 14 above is listed mixed in the table; the tally: disconfirms = 5,6,7,8,9,11,12,13,16 (9); supports = 4,10 (2); mixed = 1,2,3,14,15,17 (6).
+Direction tally (17 rows): disconfirms 9 (rows 5-9, 11-13, 16); supports 2 (rows 4, 10); mixed 6 (rows 1-3, 14, 15, 17).
 
 ## B. Source blocks (one per source; tier 3 = Bisnis.com major news with editorial standards, unless stated)
 
@@ -90,7 +90,7 @@ Direction summary: disconfirms 9 (rows 5-9, 11-13, 16), supports 2 (4, 10), mixe
 | Kemnaker layoffs Jan-Jun 2026: 32,389 national, DKI Jakarta 2,436 (rank 4); Jan-Jul 2026: 43,805, DKI 3,190; Feb 2026 peak 7,692 | as listed | Kontan https://nasional.kontan.co.id/news/kemnaker-catat-32389-buruh-terkena-phk-pada-semester-i-2026 ; Katadata https://katadata.co.id/berita/industri/6a8bb9355eb18/kemnaker-catat-43805-pekerja-terkena-phk-hingga-juli-2026 | no dates shown. DKI figures would be the most relevant layoff datum. Covers JKP-registered workers only. |
 | BPS Q2 2026 household consumption +5.06% YoY (53.32% of GDP; Q1 5.52%); restaurant and hotel +6.47% | 5.06; 6.47 | Bisnis https://ekonomi.bisnis.com/read/20260805/9/1993830/... ; Kontan; Infobanknews | per-figure attribution to URLs not shown. Supports H5/H8 (restaurants fastest-growing household consumption group). |
 | World Bank: share of workers earning middle-class wages 14% (2019) to 8% (2024) (June 2025 launch); other report 14.5% (2018) to about 7% (2025); real wages -1.1% per year 2018-2024 | 14%, 8%, 14.5%, 7%, 1.1% | Investortrust https://investortrust.id/macro/70511/world-bank-flags-shrinking-middle-class-in-indonesia-urges-structural-reforms ; voi.id https://voi.id/en/economy/579749 | no dates; the two series conflict (already flagged in Plan 1); resolve from the report |
-| APPBI DKI: purchasing power in DKI Jakarta down 25 percent during Lebaran 2025 | 25% | Republika https://ekonomi.republika.co.id/ (Apr 2025) | outside freshness window? (Apr 2025 is within window) but date and URL not fully shown; Jakarta-specific, check |
+| APPBI DKI: purchasing power in DKI Jakarta down 25 percent during Lebaran 2025 | 25% | Republika https://ekonomi.republika.co.id/ (Apr 2025) | date and full URL not shown in result; Jakarta-specific, check |
 | PHRI survey: about 70 percent of Jakarta hotel/restaurant businesses considering cutting staff (May 2025) | 70% | Tempo https://en.tempo.co/amp/2012825/understanding-the-downturn-in-the-hospitality-and-restaurant-sectors | hotel occupancy driven; date inferred only |
 | Kemnaker/PHRI: "daya beli masih tertekan" early 2026 (PHRI chair) | qualitative | Kontan https://industri.kontan.co.id/news/daya-beli-masih-tertekan-industri-hotel-restoran-putar-strategi-jaga-kinerja-2026 | no date shown |
 
