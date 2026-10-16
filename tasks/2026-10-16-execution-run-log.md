@@ -42,3 +42,5 @@ Batch (parallel, Phase 1 collection):
 W8 is an addition to Plan 4 (not in the approved breakdown) because the owner explicitly asked for drivers of higher spend; it stays within Plan 4 scope (conversion triggers) and flags any CAC/ticket-economics figure for Team B.
 
 Then: registrar (Sonnet, single writer; BEH- then DEM-), separate verifiers per deliverable (Sonnet, independent second search), performance log update, commit/push.
+
+Re-test 2026-10-16 (owner request): OECD (www.oecd.org, oecd.org, data.oecd.org, stats.oecd.org, oecd-ilibrary) and Indonesian hosts (bps.go.id, jakarta.bps.go.id, peraturan.go.id, peraturan.bpk.go.id, bi.go.id, idx.co.id, oss.go.id, bkpm.go.id, kemendag.go.id, kemenkeu.go.id, bpjph.halal.go.id, pom.go.id, jdih.jakarta.go.id, apjii.or.id, databoks, kompas.com, cnnindonesia.com, thejakartapost.com, jakartaglobe.id) all blocked: curl gets proxy 403 on CONNECT and WebFetch fails DNS (ENOTFOUND).
