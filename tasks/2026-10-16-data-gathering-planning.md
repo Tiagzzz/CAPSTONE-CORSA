@@ -32,3 +32,22 @@ Date: 2026-10-16. Owner request: identify the key information CORSA needs, pick 
 ## Known blocker
 
 - The Google Drive folder (https://drive.google.com/drive/folders/1ZdIT3RJRcRrjaVmce6j72oap86LNyeuV) cannot be reached: the network policy denies drive.google.com and there is no Drive connector. The files there cannot be added to the repo or analysed until the owner allows access or uploads them.
+
+## Update — Drive access granted
+
+The owner granted Drive access, and the folder was imported (`tasks/2026-10-16-drive-import-log.md`). The gap analysis was then extended to cover the imported files.
+
+## Top-4 data needs (main agent decision, based on gap analysis v2 §4)
+
+| # | Data need | Gaps covered (gap analysis §4) | Why it ranks in the top 4 |
+| --- | --- | --- | --- |
+| 1 | **Target-segment demand economics by age/segment**: the real size and income of the target pool, food-away-from-home and café spend, willingness to pay, visit frequency, and wheat/pasta and healthy-food consumption | Gap 1, gap 6, the population gap; middle-class contradiction T-series | The base case assumes 200 guests a day and has no frequency or capture input. The "growing middle class" claim is contradicted by the team's own data. |
+| 2 | **Regulatory, political and entry-route pathway**: PT PMA/foreign ownership and investment thresholds, licences (OSS), halal obligations for a foreign F&B outlet, taxes (PBJT), labelling and sugar rules, franchise rules, political and boycott risk to Western brands | Gaps 2 and 11, T16, T17, T28 | This could block entry or change the entry mode. It can be filled from official, free sources. |
+| 3 | **Competitive landscape and price ladder in the target districts**: competitor map (Italian/pasta, specialty coffee, healthy bowls, lifestyle/community concepts), published price points, formats, listed-company performance, and foreign-entrant successes and failures in Jakarta | Gaps 3 and 4, T18, T21, T23 | Team B is waiting on Pillar 1 for one reconciled price ladder, and the competitor map is a required scope output. |
+| 4 | **Behavioural purchase triggers and acquisition channels by age group**: novelty/innovation sensitivity, health, social proof and influencers, community and sport (running), media and platform use, and the effect of trust in foreign or Italian brands | Gaps 7 and 8; cultural transfer (gap 9) | This is the core of Tiago's experiential-marketing remit. Related or proxy data is explicitly allowed. |
+
+Deferred: micro-location and footfall (gap 5) needs primary counts and overlaps with Team B's economic location choice, so it is only touched as a proxy inside plans 1 and 3. Local expert validation (gap 8) needs primary interviews, so each plan lists the questions it would hand to the team.
+
+## Phase 3 dispatch
+
+Four Sonnet planners run in parallel, one per data need. Each writes `tasks/2026-10-16-plan-<n>-<topic>.md`. They may do a light source-availability check (that a source exists and is free, public and recent) but must not collect data.
