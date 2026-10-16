@@ -51,3 +51,33 @@ Deferred: micro-location and footfall (gap 5) needs primary counts and overlaps 
 ## Phase 3 dispatch
 
 Four Sonnet planners run in parallel, one per data need. Each writes `tasks/2026-10-16-plan-<n>-<topic>.md`. They may do a light source-availability check (that a source exists and is free, public and recent) but must not collect data.
+
+## Phase 4 — Main-agent review of the four plans (2026-10-16)
+
+All four plans contain the required sections from CLAUDE.md §6: research questions, hypotheses with disconfirming criteria, source map, proxies, sub-agent breakdown with models, a separate verifier, acceptance criteria, primary-research handover, and risks/timeline. None of them relies on a paid source or a tier-4-only source for a figure. **Status: drafts, awaiting owner approval. No data has been collected.**
+
+| Plan | File | Sub-agents (models) | Main open point |
+| --- | --- | --- | --- |
+| 1 Demand economics | `tasks/2026-10-16-plan-1-demand-economics.md` | 6 collectors (5 Haiku, 1 Sonnet disconfirmation scout), Haiku registrar, 2 Sonnet analysts, Sonnet writer, 2 verifiers | No public data at district level (SCBD/Senopati), so the catchment share is a flagged assumption. The H3 threshold (4 bowls/month) is the planner's own and needs owner sign-off. |
+| 2 Regulatory/political | `tasks/2026-10-16-plan-2-regulatory-political-entry.md` | Haiku access test, 6 Sonnet readers, Haiku registrar, Sonnet verifier (checks in-force status), Sonnet synthesis | Possible deal-breakers, unverified, from search snippets: an IDR 10bn investment plan per KBLI per location under BKPM Reg 5/2025; halal duty for restaurants needs dedicated facilities (conflicts with the "kitchen corner" idea); a pending Positive List revision. |
+| 3 Competitors/price ladder | `tasks/2026-10-16-plan-3-competitors-price-ladder.md` | Haiku fetch/extract/app sampling/links, Sonnet discovery/filings/entrants/synthesis/verifier | Known foreign exits (2020) are older than 2 years: kept only as "historical, not in base rate". Owner to confirm. |
+| 4 Purchase triggers/channels | `tasks/2026-10-16-plan-4-purchase-triggers-channels.md` | 7 parallel Phase 1 workers (Haiku/Sonnet), Sonnet registrar, 4 verifiers | Most sources are national rather than Jakarta-level. There is no recent public data on the Italian/racing image in Indonesia, so it is expected to be a gap that goes to primary research. |
+
+### Cross-plan harmonisation (applies to all executions, overrides the individual plans where they conflict)
+
+1. **Single source register.** All four plans name a single writer for `sources/sources.md`. Run in parallel, they would conflict. Rule: IDs use a per-plan prefix (`DEM-`, `REG-`, `CMP-`, `BEH-`). Each plan's registrar appends only rows with its own prefix, and registrars run one after another, never at the same time.
+2. **IDX/listed-operator filings are extracted once.** Plan 3 owns the extraction (FAST, MAPB, FORE, PZZA, ENAK) into `data/raw/`. Plan 1 (sales per store) and Plan 2 (boycott impact) reuse those rows and do not re-extract them.
+3. **Age bands.** Plan 1 uses 5-year bands and Plan 4 uses generations. Both must also publish a derived **25–39** row (the target hypothesis) so the two can be compared.
+4. **Timeline.** Each plan assumes it starts on 17 Oct and hands over on 21 Oct (the interim date per Meeting 5). The minimum viable cut defined in each plan applies if execution starts later.
+
+### Blocker for execution — network access
+
+A check on 2026-10-16 found that the environment's network policy blocks almost every key source host: bps.go.id, jakarta.bps.go.id, peraturan.go.id, peraturan.bpk.go.id, bpjph.halal.go.id, idx.co.id, bi.go.id, apjii.or.id, fas.usda.gov and worldbank.org. All return 403 at the proxy, and WebFetch hits DNS failures on the .go.id hosts. Because of this, the planners checked availability from search snippets only. **Before execution, the owner must widen network access** (environment settings → Network access: Full, or add these domains). Otherwise most tier-1 sources cannot be opened or verified, and under §5/§7 those figures would have to be dropped.
+
+### Owner decisions requested
+
+1. Approve, amend or reject each of the 4 plans.
+2. Widen network access (see the blocker above).
+3. Plan 3: accept that exits older than 2 years are used as labelled historical context only, or waive this.
+4. Plan 1: confirm or adjust the H3 disconfirmation threshold.
+5. Interim date: 21 Oct (Meeting 5) vs 22 Oct (scope). The plans assume 21 Oct.
