@@ -1,50 +1,85 @@
-# data/processed: run-1 datasets (Plan 1 surveys and Plan 4 purchase triggers)
+# data/processed: run-1 datasets (Plan 1 surveys and Plan 4 purchase triggers), upgraded in run 1b
 
-**All values in this folder are PROVISIONAL.** Every figure was taken from a WebSearch result (publisher, URL and date shown) because source hosts were blocked. No source page was opened. Every `verification` value below therefore means "snippet-only, provisional" until the sources are opened and the figures are checked against them.
+**Status after run 1b (2026-10-16).** Run 1 took every value from a WebSearch result because source hosts were blocked. In run 1b the owner widened network access, independent upgrade verifiers (`tasks/2026-10-16-run1b-upgrade-{a..e}.md`) opened the sources, and this fix-up applied their verdicts. Values are now classified by the `verification` code below. **Rows marked BLOCKED remain provisional (snippet-only).** Rows marked OPENED-UNVERIFIED were found on an opened page by an upgrade verifier but have not been checked by a second, independent agent; treat them as candidates, not verified figures.
 
 ## Method
 
-1. **Staging.** Workers wrote findings to `data/raw/<theme>/findings.md` (one block per source with a temporary key, e.g. `P4W2-S1`) and one CSV per theme here. Workers never edited `sources/sources.md`. A registrar then assigned register IDs (BEH-, DEM-); the mapping is in `sources/2026-10-16-run1-key-map.csv`. Each CSV row carries its `register_id`.
-2. **Snippet-only deviation from CLAUDE.md §7.** Owner-approved fallback (see `tasks/2026-10-16-execution-run-log.md`): a figure may come from a search result only if it shows publisher, URL and date and the publisher is tier 1-3; the source is marked "snippet-only (not opened)" in the register. Search summaries are tool-written paraphrases, not verbatim page quotes. When hosts become reachable, verifiers open the real sources and upgrade or drop the figures.
-3. **Independent verification.** Five separate verifiers (`tasks/2026-10-16-run1-verification-{a..e}.md`) re-searched every row with different wording. A later spot-audit (`tasks/2026-10-16-run1-verifier-audit.md`) disputed some rows. The fix-up applied their verdicts.
-4. **Columns.** `row_id, question, trigger_or_metric, value, unit, ref_period, base_n, population, age_band_native, canonical_band, age_fit_code, geography, proxy_note, source_key, access_status, snippet, notes, register_id, verification`. `register_id` can hold two IDs separated by `;` (merged rows). `notes` includes the verifier remarks (prefixed V-A to V-E).
+1. **Staging.** Workers wrote findings to `data/raw/<theme>/findings.md` and one CSV per theme here. A registrar assigned register IDs (BEH-, DEM-); the run-1 mapping is in `sources/2026-10-16-run1-key-map.csv`. Each CSV row carries its `register_id` (several IDs separated by `;`: the opened source first, then the originally registered one).
+2. **Run 1: snippet-only fallback** (owner-approved deviation from CLAUDE.md section 7, see `tasks/2026-10-16-execution-run-log.md`). Five verifiers re-searched every row (`tasks/2026-10-16-run1-verification-{a..e}.md`); a spot-audit (`tasks/2026-10-16-run1-verifier-audit.md`) disputed some rows.
+3. **Run 1b: source opening.** Five new upgrade verifiers opened the cited pages with curl (no bot-challenge bypass) and reported per row: URL opened, printed publication date, a quote from the page, corrections. This fix-up (a) set `verification` from the verdict, (b) set `access_status` to "opened" and replaced `snippet` with the quote from the opened page where the page was opened, (c) applied every correction and label fix (kept in `notes`, prefixed "Run 1b (2026-10-16)"), (d) registered all newly opened sources in `sources/sources.md` (BEH-037 to BEH-064, DEM-020 to DEM-027), and (e) appended the candidate rows the verifiers found. Downloaded PDFs (APJII 2025 and 2026, Playtomic) were kept in the scratchpad and are not in the repository.
+4. **Columns.** `row_id, question, trigger_or_metric, value, unit, ref_period, base_n, population, age_band_native, canonical_band, age_fit_code, geography, proxy_note, source_key, access_status, snippet, notes, register_id, verification`. Empty cells were filled with "n/a" (or "not reported" for `base_n`). Row IDs with prefix `UA-`, `UB-`, `UC-`, `UD-`, `UE-` are run-1b candidate rows found by upgrade verifiers U-A to U-E.
 
-## Verification codes
+## Verification codes (run 1b)
 
 | code | meaning |
 | --- | --- |
-| CONFIRMED-PROVISIONAL | a verifier confirmed the row via an independent search |
-| CONFIRMED-WEAK | verifier only re-found the same publisher or the same press text, the report calls the row weak or single-outlet, or the spot-audit flagged single-outlet reliance |
-| CORRECTED-PROVISIONAL | the row was corrected as the verifier stated (value, period, label, age code); corrected rows that are also single-outlet keep this code |
-| QUALITATIVE-OK | qualitative row (no number) judged consistent with independent coverage |
+| VERIFIED-OPENED (original) | the original publisher's page (or file) was opened and the figure matches (value, unit, year) |
+| VERIFIED-OPENED (relay) | only a relay outlet was opened (news site, data portal) and the figure matches; the original was not opened. Source tier 3 |
+| CORRECTED-OPENED | the opened page showed a different value, base or label; the correction is applied and described in `notes` |
+| BLOCKED | the source could not be opened (Cloudflare or Akamai challenge, 403, page gone) and no substitute carried the figure; the run-1 value is kept and the row is **provisional (snippet-only)** |
+| OPENED-UNVERIFIED | new candidate row taken from an opened page by an upgrade verifier; it still needs an independent check |
+
+The run-1 codes (CONFIRMED-PROVISIONAL, CONFIRMED-WEAK, CORRECTED-PROVISIONAL, QUALITATIVE-OK) no longer appear in the CSV files; their remarks are still in `notes` with the prefixes V-A to V-E. Rows with "(relay)" are tier-3 sources even where the underlying data is tier 1 (BPS, BI, OJK, company filings).
 
 ## Drop rules
 
-Rows with verdict UNCONFIRMED (no independent source reproduced the figure), DATE-FAIL (before 2024-10-16, not a labelled trend) or TIER-FAIL (tier-4 only) were removed. DERIVED rows (worker arithmetic, not a sourced figure) go to the notes of a related row, or to the dropped file with verdict DERIVED. Rows the spot-audit disputed are dropped as AUDIT-DISPUTED pending re-verification in run 2. Duplicate rows are merged (Q8-001 and Q8-002) and listed as DUPLICATE-MERGED. All removed rows are in `2026-10-16-run1-dropped-rows.csv` (columns `file, row_id, claim, value, verdict, reason`). No verifier found a DATE-FAIL or TIER-FAIL.
+Rows with verdict NOT-FOUND-OPENED or DATE-FAIL are removed and listed in `2026-10-16-run1-dropped-rows.csv` (columns `file, row_id, claim, value, verdict, reason`) with the run-1b verdict. In run 1b no existing row was dropped. One new candidate row (UE-N02, Jakpat millennials restaurant survey printed 13 June 2016) failed the date test (before 2024-10-16) and is listed there as DATE-FAIL. The run-1 entries SD11 to SD13 (QRIS FY2025, AUDIT-DISPUTED) were reinstated in `plan4-spend-drivers.csv` as VERIFIED-OPENED (relay): Kontan, 2026-03-12, quoting the BI Deputy Governor; their dropped entries were removed. Three other dropped run-1 rows (P4W1-R12, P4W5-03, P4W5-05) were re-found by upgrade verifiers and re-added as new candidate rows UA-N50, UC-N03 and UC-N04; their dropped entries are kept with a run-1b remark.
 
 ## Age-fit and geography codes
 
-Age fit against the canonical bands (Gen Z 18-28, Younger Millennials 29-35, Older Millennials 36-45, Gen X 46-61): A = exact match, B = canonical band fully inside the native band, C = partial or approximate overlap, D = no age split or no usable overlap. Geography: J = Jakarta, U = urban Indonesia (several cities), N = national, P = proxy (other country or region). See Plan 4 section 4 for the full definitions.
+Age fit against the canonical bands (Gen Z 18-28, Younger Millennials 29-35, Older Millennials 36-45, Gen X 46-61): A = exact match, B = canonical band fully inside the native band, C = partial or approximate overlap, D = no age split or no usable overlap. Geography: J = Jakarta, U = urban Indonesia (several cities), N = national, P = proxy (other country or region). See Plan 4 section 4 for the full definitions. Corrections in run 1b: the Sep 2025 eating-out survey (P4W1-R04 to R07, UA-N58 to UA-N67) covers eight Java cities and excludes Jakarta, so geography is U; the Mar 2025 delivery-app survey (P4W1-R08) is national (N). No opened source gives an age split for the 25-39 core in any theme.
 
-## Files and row counts (surviving rows)
+## Files and row counts
 
-| file | rows |
-| --- | --- |
-| plan4-media-by-age.csv | 11 |
-| plan4-social-proof.csv | 4 |
-| plan4-novelty.csv | 9 |
-| plan4-health.csv | 13 |
-| plan4-community-sport.csv | 6 |
-| plan4-origin-boycott.csv | 15 |
-| plan4-venue.csv | 1 |
-| plan4-spend-drivers.csv | 20 |
-| demand/consumer-surveys.csv | 6 |
-| **CSV total** | **85** |
-| `data/raw/2026-10-17-disconfirming-evidence.md` (table A, 17 rows before) | 11 |
-| 2026-10-16-run1-dropped-rows.csv | 18 dropped rows |
+| file | existing rows (run 1b) | new candidate rows | total |
+| --- | --- | --- | --- |
+| plan4-media-by-age.csv | 11 | 61 (UA) | 72 |
+| plan4-social-proof.csv | 4 | 7 (UA) | 11 |
+| plan4-novelty.csv | 9 | 11 (UB) | 20 |
+| plan4-health.csv | 13 | 4 (UB) | 17 |
+| plan4-community-sport.csv | 6 | 7 (UC) | 13 |
+| plan4-origin-boycott.csv | 15 | 4 (UC) | 19 |
+| plan4-venue.csv | 1 | 3 (UC) | 4 |
+| plan4-spend-drivers.csv | 20 + 3 reinstated (SD11-SD13) | 13 (UD) | 36 |
+| demand/consumer-surveys.csv | 6 | 8 (UE) | 14 |
+| **CSV total** | **88** | **118** | **206** |
+| `data/raw/2026-10-17-disconfirming-evidence.md` (table A) | 11 | 0 (see section A2) | 11 |
+| 2026-10-16-run1-dropped-rows.csv | 16 rows (18 - 3 reinstated + 1 new DATE-FAIL) | | |
+
+## Rows per verification code (CSV files)
+
+| code | rows | of which existing rows | of which new rows |
+| --- | --- | --- | --- |
+| VERIFIED-OPENED (original) | 25 | 25 | 0 |
+| VERIFIED-OPENED (relay) | 43 | 43 | 0 |
+| CORRECTED-OPENED | 3 | 3 | 0 |
+| BLOCKED | 17 | 17 | 0 |
+| OPENED-UNVERIFIED | 118 | 0 | 118 |
+| **total** | **206** | **88** | **118** |
+
+Per file:
+
+| file | original | relay | corrected | BLOCKED | OPENED-UNVERIFIED |
+| --- | --- | --- | --- | --- | --- |
+| plan4-media-by-age.csv | 3 | 8 | 0 | 0 | 61 |
+| plan4-social-proof.csv | 0 | 1 | 0 | 3 | 7 |
+| plan4-novelty.csv | 6 | 3 | 0 | 0 | 11 |
+| plan4-health.csv | 8 | 0 | 0 | 5 | 4 |
+| plan4-community-sport.csv | 2 | 4 | 0 | 0 | 7 |
+| plan4-origin-boycott.csv | 3 | 8 | 2 | 2 | 4 |
+| plan4-venue.csv | 1 | 0 | 0 | 0 | 3 |
+| plan4-spend-drivers.csv | 2 | 14 | 0 | 7 | 13 |
+| demand/consumer-surveys.csv | 0 | 5 | 1 | 0 | 8 |
+
+Disconfirming-evidence table A (11 rows): original 3 (rows 1, 2, 3), relay 3 (rows 6, 9, 17), CORRECTED-OPENED 2 (rows 13, 16), BLOCKED 3 (rows 5, 8, 15).
+
+BLOCKED rows (provisional, snippet-only): P4W2-05, P4W2-06, P4W2-07 (Tirto, Cloudflare); P4W4-09 to P4W4-13 (PwC, Akamai); Q6-003, Q6-010 (Bisnis only); SD03, SD04 (Snapcart original gone); SD09, SD10 (Bisnis); SD21, SD22, SD23 (PwC); table A rows 5, 8, 15.
 
 ## Caveats
 
-- Unresolved conflicts are kept in `notes` (for example the Bisnis headline vs body for Millennial delivery-app choice, 64% vs 68% mall dining).
-- Several rows rest on a single outlet; they are marked CONFIRMED-WEAK.
-- Newer figures exist for some rows (APJII 2026, MotoGP Mandalika 2026, MAPB FY2025); they were not added because this fix-up did no new research.
+- Rows marked BLOCKED remain provisional (snippet-only).
+- OPENED-UNVERIFIED rows are single-verifier candidates; some duplicate other rows (UA-N53/N54 vs SD01/SD02; UA-N55/N57 vs UD-N01/UD-N03) and are marked in `notes`.
+- Many opened pages are relays of a tier-1 or tier-2 original (Databoks, GoodStats, CNBC, Kontan, Detik); the original was not opened. Several originals sit behind bot challenges (bps.go.id, Bisnis, pwc.com, tirto.id): not bypassed.
+- Resolved conflicts: Millennial delivery-app choice (GoFood 37%, Bisnis headline wrong), mall dining 68% (the 64% was another article), QRIS FY2025 (Kontan quotes BI; the BI press release carrying the count was not found), padel 173% (per court per month), MAPB 9M sales -2.77% (filing; -2.84% in press text). Open conflict: Fore Coffee price band (Bisnis Rp20,000 to above 30,000 vs Kompas Rp30,000-40,000), recorded in table A row 15.
+- APJII 2026 is newer than APJII 2025 (Gen Z 89.02% vs 87.80%, Millennial 90.34% vs 89.12%); the 2026 YouTube share (1-2%) vs 2025 (17-32%) looks like a questionnaire break and should not be trended.
+- Kantar "Dining in the Digital Age" (ID 2026) was opened but carries no numbers (gated download): no rows.
