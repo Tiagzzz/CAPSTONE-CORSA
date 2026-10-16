@@ -44,3 +44,45 @@ W8 is an addition to Plan 4 (not in the approved breakdown) because the owner ex
 Then: registrar (Sonnet, single writer; BEH- then DEM-), separate verifiers per deliverable (Sonnet, independent second search), performance log update, commit/push.
 
 Re-test 2026-10-16 (owner request): OECD (www.oecd.org, oecd.org, data.oecd.org, stats.oecd.org, oecd-ilibrary) and Indonesian hosts (bps.go.id, jakarta.bps.go.id, peraturan.go.id, peraturan.bpk.go.id, bi.go.id, idx.co.id, oss.go.id, bkpm.go.id, kemendag.go.id, kemenkeu.go.id, bpjph.halal.go.id, pom.go.id, jdih.jakarta.go.id, apjii.or.id, databoks, kompas.com, cnnindonesia.com, thejakartapost.com, jakartaglobe.id) all blocked: curl gets proxy 403 on CONNECT and WebFetch fails DNS (ENOTFOUND).
+
+### Run 1 result (main-agent review, 2026-10-16)
+
+- Collected: 10 workers staged ~114 figures; 55 sources registered (BEH-001–036, DEM-001–019), all snippet-only (not opened).
+- Verified: 5 verifiers (V-A–V-E) did independent second searches, and a spot-auditor re-checked 16 CONFIRMED verdicts. Fix-up applied the verdicts.
+- Surviving: 85 CSV rows (media 11, social proof 4, novelty 9, health 13, community/sport 6, origin/boycott 15, venue 1, spend drivers 20, consumer surveys 6) plus 11 of 17 rows in the Plan 1 disconfirming-evidence table. Dropped: 18 (`data/processed/2026-10-16-run1-dropped-rows.csv`). All surviving figures are **provisional** (snippet-only).
+- Main-agent review: accepted as provisional. Open defects carried to run 2:
+  - BEH-020 has a partial URL;
+  - SD11–SD13 (QRIS FY2025) are disputed;
+  - the venue/halal theme has only 1 row;
+  - social proof has only 4 rows;
+  - no age-split figures exist for the 25–39 core in any theme.
+- Plan acceptance status: no plan's acceptance criteria are met yet. Plan 4 is partially covered (Q1, Q3, Q6 partly; Q2, Q4, Q5 thin; Q7, Q8 mostly gaps). Plan 1 has started (C3, C6 only). Plans 2 and 3 have not started.
+
+### Run 2 backlog (priority order)
+
+1. Network re-test. If hosts open, verifiers open the sources and upgrade the provisional figures first.
+2. Plan 4 gap fill (Sonnet):
+   - Q7 venue/halal, redone with the new query pattern;
+   - Q4 conversion cues: Google Maps ratings/reviews, queues/UGC;
+   - age splits: YouGov by generation, Kantar "Dining in the Digital Age" (dated?), Jakpat millennials eat-out (dated original);
+   - re-verify SD11–SD13;
+   - complete the BEH-020 URL.
+3. Plan 1:
+   - C1 BPS spend/population via relays;
+   - C2 middle class/income;
+   - C3 redo with Sonnet (Haiku underperformed);
+   - C4 wheat/food-service.
+4. Plan 3: B-filings (FAST, MAPB, PZZA, ENAK, FORE via news/filing relays; reconcile with W6 boycott rows), B-entrants, and price-point discovery for the target districts.
+5. Plan 2:
+   - A1 investment/licensing;
+   - A3 halal obligations;
+   - A4 tax (PBJT).
+   Legal texts must be opened to count as in force. Snippet-only items are leads, flagged "in-force not confirmed".
+6. Prompt changes for all workers:
+   - lessons rules (a)–(h);
+   - Bash heredoc fallback for writes;
+   - a figure needs the relay article's own date.
+7. Prompt changes for all verifiers:
+   - CONFIRMED needs a different publisher or the original;
+   - search with the worker's main relay outlet excluded;
+   - a spot-auditor every run.

@@ -4,27 +4,32 @@ Worker P1-C6, run 1, access date 2026-10-16. Network: WebFetch to bps.go.id fail
 
 ## A. Evidence table (dated, tier 1-3, snippet-only)
 
-| # | H | direction | value | unit | ref_period | source_key | access_status | snippet |
-|---|---|---|---|---|---|---|---|---|
-| 1 | H3,H5 | mixed | 116.8 | index (Consumer Confidence Index, >100 = optimistic) | Jul 2026 | P1-C6-S1 | snippet-only (not opened) | "July 2026: The index fell to 116.8, the lowest since September 2025 (115)." |
-| 2 | H3,H5 | mixed | 118.5 | index (CCI) | Aug 2026 | P1-C6-S2 | snippet-only (not opened) | "August 2026: The index rose 1.7 points from 116.8 in July. ... It is still 8.5 points below the January 2026 starting level of 127." |
-| 3 | H3,H5 | mixed | 117.8 | index (CCI) | Jun 2026 | P1-C6-S3 | snippet-only (not opened) | "June 2026: The index fell 3.1 points, from 120.9 in May 2026 to 117.8 in June 2026." |
-| 4 | H5,H8 | supports | 3 | % rise, restaurant spending index (all income groups), level 398.7 | mid-Feb 2026 | P1-C6-S4 | snippet-only (not opened) | "belanja restoran naik 3% ke level 398,7. Angka ini mencakup seluruh kelompok, bukan kelas atas saja" |
-| 5 | H2,H3 | disconfirms | n/a (qualitative) | headline: middle-class savings fall | Feb 2026 (MSI) | P1-C6-S4 | snippet-only (not opened) | Title: "Laporan MSI: Belanja Masyarakat Naik Jelang Ramadan, Tabungan Kelas Menengah Turun" |
-| 6 | H3 | disconfirms | -0.6 | % vs pre-holiday average, upper-income group spending (Mandiri Spending Index) | June 2026 school holiday | P1-C6-S5 | snippet-only (not opened) | "Belanja kelompok atas turun 0,6% dibandingkan rata-rata sebelum libur, seiring penurunan keyakinan konsumen yang lebih moderat" |
-| 7 | H2,H3 | disconfirms | n/a (qualitative) | headline: weak consumption, thin jobs, scarce savings of the middle class | Feb 2026 | P1-C6-S6 | snippet-only (not opened) | Title: "Nestapa Kelas Menengah: Konsumsi Melemah, Lapangan Kerja Sempit, Tabungan Seret" |
-| 8 | H5 | disconfirms | n/a (qualitative) | eating out among most-cut spending items | late Sep-Oct 2026 | P1-C6-S7 | snippet-only (not opened) | "makan di luar termasuk pengeluaran yang paling sering dipangkas, bersama hiburan berbayar dan liburan." Same summary: "pertumbuhan ekonomi yang masih positif belum cukup untuk menyimpulkan bahwa daya beli turun secara menyeluruh." |
-| 9 | H1,H3 | disconfirms | 23,470 | workers laid off (Kemnaker, national) | Jan-May 2026 | P1-C6-S8 | snippet-only (not opened) | Title: "Kemnaker Catat 23.470 Pekerja Kena PHK Januari-Mei 2026" |
-| 10 | H1,H3 | supports | 359 (vs 10,026 a year earlier) | workers laid off, national | Jan 2026 (vs Jan 2025) | P1-C6-S9 | snippet-only (not opened) | Title: "Data Kemnaker: PHK Januari 2026 Turun Jadi 359 Orang, Tahun Lalu 10.026" |
-| 11 | H3 | disconfirms | 5 to 12 | % average hotel restaurant menu price increase after fuel price rise (PHRI chair) | Jun 2026 | P1-C6-S10 | snippet-only (not opened) | "Hotel rata-rata menaikkan harga menu restoran antara 5% sampai 12%. Hotel itu rata-rata menyesuaikan antara 5% sampai 12% untuk menu-menu di restoran, menurut Hariyadi." |
-| 12 | H8 | disconfirms | 0.24 | % growth in annual sales, Starbucks operator MAPB (Rp3.23tn vs Rp3.21tn); net loss Rp150.765bn | FY2025 | P1-C6-S11 | snippet-only (not opened) | "Penjualan setahun tumbuh 0,24% menjadi Rp3,23 triliun dibandingkan dengan periode yang sama tahun sebelumnya senilai Rp3,21 triliun. Kerugian bersih tahun itu sebesar Rp150,765 miliar." |
-| 13 | H8 | disconfirms | -2.84 | % YoY sales, MAPB (Rp2.35tn) | Q3 2025 | P1-C6-S12 | snippet-only (not opened) | "Penjualan turun tipis 2,84% YoY menjadi Rp2,35 triliun." |
-| 14 | H8 | mixed | 9.88 | % YoY revenue growth, MAPB; net loss Rp121.50bn (rupiah depreciation cited) | H1 2026 | P1-C6-S13 | snippet-only (not opened) | "MAPB mencatat rugi Rp121,50 miliar di Semester I/2026 akibat depresiasi rupiah, meski pendapatan tumbuh 9,88% YoY." |
-| 15 | H3,H4 | mixed | 20,000 to above 30,000 | IDR per product, Fore Coffee price band targeting the middle class | Feb 2026 (Q3 2025 beverage revenue rose) | P1-C6-S14 | snippet-only (not opened) | "FORE membidik kelas menengah dengan harga sekitar Rp20.000 hingga lebih dari Rp30.000 per produk, dan pendapatan segmen minumannya naik pada kuartal III/2025." |
-| 16 | H2,H3 | disconfirms | n/a (qualitative; direction of real wages) | real wages declined since 2018; mid-skilled employment shrinking vs low- and high-wage jobs (national) | World Bank Indonesia Economic Prospects, Dec 2025 | P1-C6-S15 | snippet-only (not opened) | "Real wages have declined since 2018, while mid-skilled employment has shrunk relative to both low- and high-wage positions, dampening household consumption." |
-| 17 | H2 | mixed | 5.29 | % YoY GDP growth, Indonesia | Q2 2026 | P1-C6-S16 | snippet-only (not opened) | Title: "Pertumbuhan Ekonomi RI Kuartal II/2026 Capai 5,29%, Ini Faktor Pendorongnya" |
+| # | H | direction | value | unit | ref_period | source_key | access_status | snippet | register_id | verification |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | H3,H5 | mixed | 116.8 | index (Consumer Confidence Index, >100 = optimistic) | Jul 2026 | P1-C6-S1 | snippet-only (not opened) | "July 2026: The index fell to 116.8, the lowest since September 2025 (115)." [CORRECTED per V-E: July 2026 was the lowest since April 2025 (15-month low, third monthly fall); "lowest since September 2025" describes June. BI news release sp_2815426, tier 1] | DEM-005 | CORRECTED-PROVISIONAL |
+| 2 | H3,H5 | mixed | 118.5 | index (CCI) | Aug 2026 | P1-C6-S2 | snippet-only (not opened) | "August 2026: The index rose 1.7 points from 116.8 in July." [clause on January 2026 = 127 and "8.5 points below" removed: not independently seen (V-E)] | DEM-006 | CORRECTED-PROVISIONAL |
+| 3 | H3,H5 | mixed | 117.8 | index (CCI) | Jun 2026 | P1-C6-S3 | snippet-only (not opened) | "June 2026: The index fell 3.1 points, from 120.9 in May 2026 to 117.8 in June 2026." | DEM-007 | CONFIRMED-PROVISIONAL |
+| 5 | H2,H3 | mixed | n/a (qualitative) | headline: middle-class savings fall | Feb 2026 (MSI) | P1-C6-S4 | snippet-only (not opened) | Title: "Laporan MSI: Belanja Masyarakat Naik Jelang Ramadan, Tabungan Kelas Menengah Turun" [direction changed disconfirms to mixed per V-E: same headline reports spending rising (MSI +6.5% YoY) while middle-class saving index 100.4 was lowest since Oct 2023; confirmed via CNBC Indonesia 2026-03-17, Antara] | DEM-008 | QUALITATIVE-OK |
+| 6 | H3 | disconfirms | -0.6 | % vs pre-holiday average, upper-income group spending (Mandiri Spending Index) | June 2026 school holiday | P1-C6-S5 | snippet-only (not opened) | "Belanja kelompok atas turun 0,6% dibandingkan rata-rata sebelum libur, seiring penurunan keyakinan konsumen yang lebih moderat" | DEM-009 | CONFIRMED-WEAK |
+| 8 | H5 | disconfirms | n/a (qualitative) | eating out among most-cut spending items | late Sep-Oct 2026 | P1-C6-S7 | snippet-only (not opened) | "makan di luar termasuk pengeluaran yang paling sering dipangkas, bersama hiburan berbayar dan liburan." Same summary: "pertumbuhan ekonomi yang masih positif belum cukup untuk menyimpulkan bahwa daya beli turun secara menyeluruh." | DEM-011 | QUALITATIVE-OK |
+| 9 | H1,H3 | mixed | 23,470 | workers laid off (Kemnaker, national) | Jan-May 2026 | P1-C6-S8 | snippet-only (not opened) | Title: "Kemnaker Catat 23.470 Pekerja Kena PHK Januari-Mei 2026" | DEM-012 | CONFIRMED-PROVISIONAL |
+| 13 | H8 | disconfirms | -2.84 | % YoY sales, MAPB (Rp2.35tn) | 9M 2025 (Jan-Sep) | P1-C6-S12 | snippet-only (not opened) | "Penjualan turun tipis 2,84% YoY menjadi Rp2,35 triliun." | BEH-022 | CORRECTED-PROVISIONAL |
+| 15 | H3,H4 | mixed | 20,000 to above 30,000 | IDR per product, Fore Coffee price band targeting the middle class | Feb 2026 | P1-C6-S14 | snippet-only (not opened) | "FORE membidik kelas menengah dengan harga sekitar Rp20.000 hingga lebih dari Rp30.000 per produk, dan pendapatan segmen minumannya naik pada kuartal III/2025." | DEM-017 | CORRECTED-PROVISIONAL |
+| 16 | H2,H3 | disconfirms | n/a (qualitative; direction of real wages) | real wages declined since 2018; mid-skilled employment shrinking vs low- and high-wage jobs (national) | World Bank Indonesia Economic Prospects, Dec 2025 | P1-C6-S15 | snippet-only (not opened) | "Real wages have declined since 2018, while mid-skilled employment has shrunk relative to both low- and high-wage positions, dampening household consumption." | DEM-018 | QUALITATIVE-OK |
+| 17 | H2 | mixed | 5.29 | % YoY GDP growth, Indonesia | Q2 2026 | P1-C6-S16 | snippet-only (not opened) | Title: "Pertumbuhan Ekonomi RI Kuartal II/2026 Capai 5,29%, Ini Faktor Pendorongnya" | DEM-019 | CONFIRMED-PROVISIONAL |
 
-Direction tally (17 rows): disconfirms 9 (rows 5-9, 11-13, 16); supports 2 (rows 4, 10); mixed 6 (rows 1-3, 14, 15, 17).
+Verification notes (run 1, applied from tasks/2026-10-16-run1-verification-e.md): every value means snippet-only, provisional until the source is opened. Rows 4, 7, 10, 11, 12 and 14 were removed (UNCONFIRMED) and are listed in data/processed/2026-10-16-run1-dropped-rows.csv. Row numbers are kept from the worker table.
+
+- Row 3: value tied to the June release by V-E (BI sp_2813326); fall of 3.1 points (120.9 to 117.8) confirmed.
+- Row 6: single independent outlet (Harian Jogja) states -0.6%.
+- Row 8: anecdotal: trend and anecdote, no survey; tier 3 at most; Kompas Megapolitan 2026-09-30.
+- Row 9: JKP participants only; Jan-May 2025 was 46,015 so layoffs fell about 49% YoY (direction changed to mixed).
+- Row 13: period corrected from Q3 2025 to nine months to 30 Sep 2025 (9M 2024: Rp2.35tn vs Rp2.42tn); 9M net loss Rp108.69bn vs 79.13bn; company linked the drop to the boycott.
+- Row 15: price band only; clause "Q3 2025 beverage revenue rose" dropped (not confirmed; only FY2025 beverages +42% reported); single outlet close to the Bisnis text, weak independence.
+- Row 16: World Bank IEP Dec 2025 deck confirmed (tier 1); link to household consumption rests on press summaries.
+- Row 17: BPS press release 2026-08-05 (tier 1) confirms 5.29%.
+
+Direction tally (11 surviving rows): disconfirms 4 (rows 6, 8, 13, 16); supports 0; mixed 7 (rows 1, 2, 3, 5, 9, 15, 17).
 
 ## B. Source blocks (one per source; tier 3 = Bisnis.com major news with editorial standards, unless stated)
 
@@ -104,7 +109,7 @@ Direction tally (17 rows): disconfirms 9 (rows 5-9, 11-13, 16); supports 2 (rows
 
 ## E. Hypotheses most affected (summary)
 
-- H2: most threatened (middle-class decline, falling savings, real-wage decline; Section C and rows 5, 7, 16). Mixed: upper tier spending appears to hold (Section C, undated).
-- H3, H5: pressured by weaker confidence (rows 1-3), upper-income spending -0.6% in June 2026 (row 6), eating out named as a most-cut item (row 8). Supported only by restaurant spending +3% (row 4).
-- H8: the largest listed chain operator shows flat to falling sales (rows 12-13), confounded by boycott and FX.
+- H2: most threatened (middle-class decline, falling savings, real-wage decline; Section C and rows 5, 16; row 7 removed after verification). Mixed: upper tier spending appears to hold (Section C, undated).
+- H3, H5: pressured by weaker confidence (rows 1-3), upper-income spending -0.6% in June 2026 (row 6), eating out named as a most-cut item (row 8). The only supporting row (row 4, restaurant spending +3%) was removed after verification.
+- H8: the largest listed chain operator shows flat to falling sales (row 13; row 12 removed after verification), confounded by boycott and FX.
 - H1, H4, H6, H7: no direct evidence found.
