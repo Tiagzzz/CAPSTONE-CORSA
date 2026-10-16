@@ -86,3 +86,9 @@ Re-test 2026-10-16 (owner request): OECD (www.oecd.org, oecd.org, data.oecd.org,
    - CONFIRMED needs a different publisher or the original;
    - search with the worker's main relay outlet excluded;
    - a spot-auditor every run.
+
+## Run 1b — source-opening upgrade (2026-10-16, after owner widened network access)
+
+Network re-test (curl via proxy): reachable (200): oss.go.id, bpjph.halal.go.id, apjii.or.id, databoks.katadata.co.id, kompas.com, thejakartapost.com, data.worldbank.org, adb.org, nielseniq.com, pwc.com, datareportal.com, insight.jakpat.net, goodstats.id, populix.co, bi.go.id (with browser UA), sdmx.oecd.org (OECD data API). **Cloudflare bot challenge (403 "Just a moment...")**, which is site-side, not the network policy: www.bps.go.id, jakarta.bps.go.id, www.oecd.org, www.idx.co.id, bisnis.com; also fas.usda.gov (403), peraturan.bpk.go.id (403), peraturan.go.id (tunnel closed). Agents must not try to bypass bot challenges; for these, use official APIs or mirrors (OECD SDMX API, BPS WebAPI needs a free key, IDX filings via company investor-relations sites), or keep the figure provisional. The WebFetch tool still fails DNS in this session, so agents use curl.
+
+Per run-log deviation step 7, upgrade verifiers now open the registered sources and upgrade (VERIFIED-OPENED) or drop the provisional figures. Groups mirror V-A to V-E; the agents are new, for independence.
