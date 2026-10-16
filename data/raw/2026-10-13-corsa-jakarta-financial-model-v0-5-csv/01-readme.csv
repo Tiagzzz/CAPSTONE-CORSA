@@ -1,0 +1,23 @@
+CORSA Jakarta Flagship – Financial Model v0.2,
+ Preliminary – most inputs are placeholders to be validated.,
+,
+Note from Jonas ,"I created this Financial model to give me a general overview of all the components to take into account. I'm using it to. However, even if most data are sourced, I'm currently working on checking all the numbers and data, and verify the accuracy of the finidngs. Many data need to be discussed with the Pillar 1 team, and I'm waiting for their inputs to adjust the model. "
+,
+Purpose,"Test whether a 120–180 m² CORSA flagship in Jakarta works commercially, what it costs, whether CHF 200k is enough and which assumptions matter most."
+How to use,"1) Pick scenario in Inputs!D4.  2) Edit blue cells only (Inputs, Rent_Data, Menu, Staffing, CAPEX unit costs, Revenue dwell times).  3) Read Dashboard, Scenarios, Sensitivity, MonteCarlo."
+Colour code,Blue text = hard-coded input · Black = formula · Green = link to another sheet · Yellow fill = key assumption · Light-green fill = key output.
+Currency,"Model runs in IDR; CHF shown at the Inputs FX rate. Menu prices are NET of the 10% restaurant tax (PBJT), which is passed through to guests."
+Sheet map,Dashboard → Inputs → Rent_Data → Location → Menu → Revenue → Staffing → OPEX → CAPEX → Funding → Scenarios → PnL_Monthly → Annual → Sensitivity → MonteCarlo → Sources → Research_Tracker → Methods
+Scenario logic,"Conservative = fewer guests, lower spend, higher costs/rent, longer ramp-up. Optimistic = the reverse. Scenarios sheet calculates all three in parallel (steady state); PnL_Monthly runs the active one month by month."
+Biggest early finding,"Foreign-owned PT PMA rules (IDR 2.5bn paid-up ≈ CHF 115k, IDR 10bn investment plan ≈ CHF 460k per KBLI) may matter more for the CHF 200k question than the CAPEX itself – verify with a lawyer."
+Status,"v0.2 – structure complete, numbers indicative, every input traced to a source or marked as an assumption. See Research_Tracker for what to validate before 22 Oct."
+Sources (v0.2),"Added 8 Oct 2026: 32 new sources (S46–S77) and a source trail on every sheet – per-row columns in Inputs (I, K, L), Staffing (K–M), CAPEX (K–M), Menu (O–Q), and a 'Sources & calculation basis' table at the bottom of every other sheet (MonteCarlo: top right)."
+,
+,
+,
+,
+,
+,
+,
+,
+,

@@ -1,0 +1,31 @@
+Staff Structure & Payroll Cost,,,,,,,,,,,,
+"Two shifts covering ~15 opening hours, 7 days. Headcount & base salaries are blue inputs; on-costs from Inputs. Salaries must be ≥ UMP.",,,,,,,,,,,,
+Note from Jonas,"The minimal wage is know for Jakarta (~5'900'000/ month), the other wages will depend on the expertise required (depends on the complexity of the dishes and beverages…)",,,,,,,,,,,
+,"The Headcount will depends on factors such as the level of robotization, the surface of the restaurant",,,,,,,,,,,
+Role,Headcount,Base salary / month (IDR),Salary after level factor,UMP check,Gross salaries,BPJS employer,THR accrual,Meals/uniform/transport,Total monthly cost,Source ID(s) & key facts,How the salary was derived,Evidence status
+Store / general manager,1.0,16000000.0,16000000,OK,16000000,1840000,1332800,1000000,20172800,S75 (store manager 10–20m; F&B manager 12–25m); S73 (restaurant mgmt ads Jaksel avg 6.3m = supervisor level),"16m ≈ mid-point of S75 store-manager range (10–20m), +1m for a flagship.",Derived from sources
+Head chef,1.0,13000000.0,13000000,OK,13000000,1495000,1082900,1000000,16577900,"S09 (exec chef 11–14m); S08 (head chef avg 7.3m, n=11)",13m = upper part of S09 exec-chef band (concept chef for pasta/Italian).,Derived from sources
+Sous chef / chef de partie,1.0,9000000.0,9000000,OK,9000000,1035000,749700,1000000,11784700,S09 (sous chef 5–9m),9m = top of S09 sous-chef range (Jakarta premium).,Derived from sources
+"Line cooks (pasta station, grill)",3.0,6500000.0,6500000,OK,19500000,2242500,1624350,3000000,26366850,S04 (UMP 5.73m); S09 (CDP 3–6m outside Jakarta),UMP 5.73m + ~13% skill premium ≈ 6.5m.,Derived from sources
+Kitchen helper / steward,2.0,5800000.0,5800000,OK,11600000,1334000,966280,2000000,15900280,S04 (UMP 5.73m),≈ UMP rounded up (5.8m).,Derived from sources
+Head barista,1.0,8500000.0,8500000,OK,8500000,977500,708050,1000000,11185550,S06 (head barista 6.5–10m),8.5m ≈ mid-point (8.25m) of S06 range.,Derived from sources
+Baristas,3.0,6000000.0,6000000,OK,18000000,2070000,1499400,3000000,24569400,S06 (barista 3.5–7.5m); S07 (avg 3.21m self-reported); S04 UMP floor,6.0m = UMP 5.73m + small premium; S06/S07 values below UMP are not legal for full-time staff.,Derived from sources
+Floor / service staff,4.0,5900000.0,5900000,OK,23600000,2714000,1965880,4000000,32279880,S04 (UMP 5.73m); S74 (waiter ads avg 2.8m – below UMP),5.9m ≈ UMP. Job-ad wages (S74) are below UMP → not usable for full-time compliant staffing.,Derived from sources
+Cashier / host,1.0,5900000.0,5900000,OK,5900000,678500,491470,1000000,8069970,S04 (UMP 5.73m),5.9m ≈ UMP.,Derived from sources
+TOTAL,17,,,,125100000,14386500,10420830,17000000,166907330,7727.191204,,
+,,,,,,,,,,,,
+Helper: Σ headcount × base salary (before level factor) – used by Scenarios,,,,,,,,,125100000,,,
+Labour hours check: staff × 173 h ÷ (opening hours × 30),,,,,,,,,6.535555556,≈ average staff on duty per opening hour (40 h/week contracts),,
+,,,,,,,,,,,,
+"Notes: Indonesian law (UU 13/2003 as amended) – 40 h/week; overtime premium; THR = 1 month salary before Lebaran; BPJS per S05. Expat GM (KITAS, higher salary) would add ~IDR 40–60m/month – not included.",,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+SOURCES & CALCULATION BASIS – Staffing,,,,,,,,,,,,
+Figure / cells,Value used (live),,Source ID(s) → Sources sheet,,,How the figure was derived from the source,,,,,Evidence status,
+Headcount B5:B13,17,,—,,,Team staffing plan: 2 shifts × ~15 opening hours × 7 days; check J17 (≈ 6.5 staff on duty per opening hour). Validate with 2–3 Jakarta operators.,,,,,Assumption – validate,
+Salary floor (UMP) used in col E,5729876,,S04,,,"Jakarta UMP 2026 IDR 5,729,876 – every full-time salary must be ≥ this.",,,,,Sourced,
+BPJS employer % (col G),0.115,,S05,,,3.7 + 2 + 0.3 + 4 = 10% + JKK 0.24–1.74% → 10.2–11.7%; see Inputs row 61.,,,,,Derived from sources,
+THR accrual (col H),0.0833,,S76,,,1 month wage ÷ 12 months = 8.33%.,,,,,Sourced,
+Meals/uniform/transport (col I),1000000,,—,,,IDR per head per month – assumption (Inputs row 63).,,,,,Assumption – validate,
+Labour-hours check (J17),6.535555556,,UU 13/2003 (40 h/week ≈ 173 h/month),,,Staff × 173 h ÷ (15 opening hours × 30 days) = average staff on duty per hour.,,,,,Model formula,
+Benchmark cross-check: staff % revenue,0.2268903253,,S49 (labour 29.4% FSR); S51 (prime ≤60–65%),,,"Model staff cost ÷ revenue at maturity, to compare with the 26.9–29.4% benchmark range.",,,,,Derived from sources,

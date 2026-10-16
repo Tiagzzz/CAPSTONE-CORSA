@@ -1,0 +1,16 @@
+Methods & Research Techniques Used in This Model,,
+Short reference for the team and for the interim presentation.,,
+,,Source IDs
+Driver-based model,"One Inputs sheet, three scenario columns and a switch. Every output is a formula, so new evidence updates everything.",
+Daypart revenue build,Guests × spend per daypart (morning/lunch/afternoon/dinner) + delivery + events + retail. More defensible than a single 'covers per day' number.,
+"Capacity / RevPASH (Kimes S37, S38)",Demand is tested against seats × hours ÷ dwell time. RevPASH = revenue per available seat-hour; benchmark it against observed venues.,"S37, S38, S77"
+Ramp-up & seasonality,Linear ramp from month-1 % to 100% at maturity; Ramadan/Lebaran & December indices. Parsa (S36): early months are where most restaurants fail – fund them.,"S36, S58, S59, S60"
+"Menu engineering (Kasavana–Smith, S39)",Items classed by contribution margin vs popularity to set prices and the blended food-cost %.,"S39, S49, S50"
+Break-even,Fixed costs ÷ contribution-margin % → revenue/day and guests/day. Margin of safety = how far revenue can fall before losses.,"S49, S51"
+"Payback, NPV, IRR",Unlevered project cash flows incl. rent prepayment timing; payback month from the cumulative line; 5-year IRR with optional terminal value.,"S61, S62, S63"
+Location economics,"District rents from asking-price evidence (P25/median/P75), service charges, weighted scoring, and occupancy-cost % vs revenue. Upgrade: Huff gravity model (S40, S41).","S20–S27, S40, S41, S46"
+Sensitivity / tornado,"Each driver ±flex while others stay at base; sorted by EBITDA swing. Two-way grids show interactions (volume × price, volume × rent).",—
+Monte Carlo (S42),"1,000 triangular draws per driver between conservative and optimistic values → probability of loss and of payback within 3/5 years.",S42
+Evidence triangulation,For each key input: desk source + listing/quote + interview. Disagreement between sources becomes the scenario range.,S46
+Field techniques,"Footfall counts (15-min samples × dayparts), seat-occupancy and dwell timing at comparables, menu-price scraping (dine-in & GoFood), broker & operator interviews (5–8), supplier quotes.","S37, S46"
+Limitations (v0.1),Asking rents ≠ deal rents; menu and food costs are illustrative; tax simplified; no VAT/PBJT cash timing; independent Monte Carlo draws; legal structure unverified.,
