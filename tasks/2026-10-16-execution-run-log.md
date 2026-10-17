@@ -182,3 +182,16 @@ Network re-test, 01:00 UTC:
    - A2 franchise (Permendag);
    - A6 political and boycott sentiment indicators.
 5. Plan 1: C4 wheat/food-service (USDA GAIN is blocked, so use alternatives), plus the A1/A2 analyst tables and synthesis.
+
+## Run 3 — 2026-10-17 (started 10:48 UTC)
+
+The network re-test shows no change from run 2: bps.go.id, oecd.org, idx.co.id and bisnis.com are still behind bot protection, and the other key hosts are open. Results are in the commit log.
+
+Wave 1 (4 parallel Sonnet agents, per the run-2 rate-limit lesson):
+
+| Agent | Task | Owned files |
+| --- | --- | --- |
+| P4-R1 synthesis | Plan 4 trigger-by-age matrix and report, built only from verified rows | `data/processed/plan4-trigger-matrix.csv`, `reports/2026-10-17-purchase-triggers-and-channels.md` |
+| P3-PRICE | Plan 3 price ladder from official menus and price lists (Italian/pasta, specialty coffee, bowls; target districts) | `data/raw/2026-10-17-price-points.md`, `data/processed/price-ladder.csv` |
+| P2-TAX-FR-SENT | Plan 2 A4 tax (PBJT, CIT, treaty), A2 franchise, A6 sentiment indicators | `data/processed/2026-10-p2-tax-franchise.csv`, `data/processed/2026-10-p2-sentiment-indicators.csv`, `data/raw/2026-10-17-p2-tax-franchise-sentiment.md` |
+| P4-W10 remaining Qs | Plan 4 Q5 (community/sport age profiles), Q8 (racing/Italian image: confirm gap or find data), delivery-app AOV/frequency | `data/raw/plan4-misc-run3/findings.md`, `data/processed/plan4-misc-run3.csv` |
