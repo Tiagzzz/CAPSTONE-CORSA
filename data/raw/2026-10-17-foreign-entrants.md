@@ -62,6 +62,21 @@ Negative web searches are not proof of absence; verifiers should re-check.
 - H2 (coffee saturated by low-price chains): ZUS and Flash entering/expanding with value or mid positioning points to more crowding; premium foreign cafés at 60-80k exist, so a premium tier is occupied.
 - H3 (Italian/bowl less saturated): supports weakly; the only foreign Italian-style entrants are Pizza Marzano (existing) and Saizeriya (planned, value-priced); Oakberry is Bali only.
 
+## Historical / pre-window context
+
+Run 2 fix-up (2026-10-17). Six rows failed the date rule (source printed before 2024-10-16) in the run-2 verification (`tasks/2026-10-17-run2-verification-e.md`). They were removed from `data/processed/foreign-entrants.csv` and listed in `data/processed/2026-10-16-run1-dropped-rows.csv` (verdict DATE-FAIL). They are kept here as context only and are not part of the base rate. Content of each was verified against the opened page (relay).
+
+| row | brand | printed date | what the page says | register |
+| --- | --- | --- | --- | --- |
+| P3B-18 | % Arabica (Japan) | 2023-12-08 (World Coffee Portal) | operates seven outlets across Indonesia; fifth in the capital | CMP-041 |
+| P3B-19 | Cotti Coffee (China) | 2023-08-21 (Verdict Foodservice) | opened an outlet in Jakarta, Kuningan City Mall | CMP-042 |
+| P3B-21 | Tim Hortons (Canada) | 2024-07-15 (World Coffee Portal) | "preparing to open stores in Indonesia" (passing remark; no opening found) | CMP-044 |
+| P3B-23 | Oakberry (Brazil) | 2023-10-18 (Inside Retail Australia) | Bali expansion, two stores announced for the next month; no Jakarta | CMP-046 |
+| P3B-24 | Carl's Jr. (US) | 2023-12-22 (Kontan) | closed all outlets 31 Dec 2023, more than 24 outlets; second source with passing date: detikFinance 2025-08-22 (CMP-050) | CMP-047 |
+| P3B-25 | Texas Chicken (US, operator CSMI) | 2023-08-19 (Okezone) | franchise ended 14 Mar 2023, closure from 28 Feb 2023, all restaurants closed | CMP-048 |
+
+Wording corrections from the verification: the "Domino's exit disconfirmed" claim (finding 7) is unsupported, because the opened CNBC article never mentions Indonesia and the 250-store count is blocked; the "Pizza Marzano exit disconfirmed" claim is only partly supported (one opened Sep 2025 article, no later check). Read both as "no exit evidence found". The Result summary counts above predate the removal (PRE-WINDOW-STALE and HISTORICAL rows now remain only as P3B-26 to 29 in the CSV).
+
 ## Sources
 
 Tier key (CLAUDE.md §5): 1 = official company or regulator document, 3 = reputable trade or news outlet with editorial standards. Quotes are short extracts from the opened page.

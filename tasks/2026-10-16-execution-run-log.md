@@ -140,3 +140,45 @@ Network re-test, 01:00 UTC:
 | P3-B-filings | Plan 3 2e: listed operators FAST, MAPB, PZZA, ENAK, FORE (company IR sites, annual reports); outlets, revenue per outlet, closures; reconcile with the origin-boycott rows | `data/processed/listed-operators.csv`, `data/raw/2026-10-17-listed-operators.md` |
 | P3-B-entrants | Plan 3 2f: foreign F&B entrants and exits in Jakarta (exits more than 2 years old = historical only) | `data/processed/foreign-entrants.csv`, `data/raw/2026-10-17-foreign-entrants.md` |
 | P2-A1A3 entry & halal | Plan 2 Q1–Q3 and Q5: PT PMA restaurant rules, investment threshold, OSS risk level, halal duty for restaurants (BPJPH, OSS and JDIH are reachable) | `data/processed/2026-10-p2-entry-requirements.csv` (rows E-*, H-*), `data/raw/2026-10-17-p2-entry-halal.md` |
+
+### Run 2 result (main-agent review, 2026-10-17)
+
+- Collection: 8 Sonnet collectors (Plan 4 ×3, Plan 1 ×2, Plan 3 ×2, Plan 2 ×1). All worked from opened sources.
+- Verification: 6 verifiers (V2-A…F), then a spot-audit (14/14 agreement) and a fix-up. 216 run-2 rows: 79 VERIFIED-OPENED (original), 119 (relay), 16 CORRECTED-OPENED, 2 BLOCKED. Dropped: 7 (6 DATE-FAIL foreign-entrant rows, 1 derived value). Plus 5 tier-4 rows moved to leads.
+- Interrupted once by the account usage limit (all 6 verifiers). Resumed after the reset without losing work.
+- Register: BEH-001–090, DEM-001–048, CMP-001–051, REG-001–018.
+- Running total across runs: about 420 data rows, of which about 400 are verified against opened sources.
+- **Key decision-relevant findings (verified):**
+  - Plan 2: possible deal-breaker. Permen 5/2025 Art. 26 and PP 28/2025 Art. 212 require an investment plan above IDR 10bn (excluding land and buildings) per KBLI per kabupaten/kota for a foreign-owned F&B business, with no SME or franchise relief found. Halal certification has been mandatory for medium and large businesses since 18 Oct 2024, with no postponement (BPJPH, 9 Oct 2026). Non-halal outlets are allowed if they declare it, and halal and non-halal facilities must be separated. The lawyer questions are in `tasks/2026-10-17-run2-verification-f.md`.
+  - Plan 1:
+    - The national middle class is shrinking: 47.85M (2024) to 46.7M.
+    - South Jakarta has the highest per-capita spending in Indonesia: Rp4.08M per month (2025).
+    - Jakarta wages are 1.8x the national level.
+  - Plan 3:
+    - Mass QSR chains are contracting (KFC: going-concern uncertainty, outlets 715 → 682; Burger King 176 → 138; MAPB losses widening).
+    - Fore Coffee is a profitable growth outlier (232 → 377 outlets).
+    - No documented full foreign exits in the window.
+  - Plan 4:
+    - Price (60%) and taste (59%) dominate venue choice.
+    - Aesthetics rank last as a revisit reason.
+    - Friends > reviews > creators for trust.
+    - Millennials save by cooking at home (66%).
+- **Structural gaps** (cannot be filled from free, public, reliable sources):
+  - A 25–39 age cut. Only generation cuts exist; the Jakpat/YouGov generation tables are gated.
+  - DKI-wide 5-year age bands, and spend by expenditure class (BPS sits behind Cloudflare; a free BPS WebAPI key would fix this).
+  - The halal-checking share among young urban consumers.
+  - Racing/Italian brand image in Indonesia.
+
+### Run 3 backlog (priority order; cap of 4 parallel agents per wave)
+
+1. Plan 4 synthesis: the trigger-by-age matrix (`data/processed/plan4-trigger-matrix.csv`) and the report `reports/2026-10-17-purchase-triggers-and-channels.md`. Hypothesis verdicts H1–H8 against their disconfirming criteria; fact vs interpretation; a gap list and a primary-research brief. Separate verifier (V4 bias check).
+2. Plan 4 remaining questions:
+   - Q5 community/sport (Strava, padel and run-club age profiles);
+   - Q8 racing/Italian (an expected gap; confirm and document);
+   - delivery-app AOV and frequency by app.
+3. Plan 3: a price ladder from official menus or price lists for the target categories (Italian/pasta, specialty coffee, bowls) in SCBD/Senopati/Kuningan, using official brand sites and press. Delivery-app sampling only where it is public.
+4. Plan 2:
+   - A4 tax (PBJT under Perda DKI 1/2024; corporate tax, treaty);
+   - A2 franchise (Permendag);
+   - A6 political and boycott sentiment indicators.
+5. Plan 1: C4 wheat/food-service (USDA GAIN is blocked, so use alternatives), plus the A1/A2 analyst tables and synthesis.

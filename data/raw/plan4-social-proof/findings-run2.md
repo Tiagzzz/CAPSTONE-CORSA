@@ -66,7 +66,7 @@ Access date for all sources: 2026-10-17. All pages were opened with curl and a b
 - Publisher: Jakpat (original)
 - URL opened: https://insight.jakpat.net/live-shopping-vs-affiliate-links-which-wins-consumers/
 - Printed publication date: July 13, 2026 (page metadata also 2026-07-13)
-- Proposed tier: 3 (commercial self-selected app panel; sample size stated; base conflict 1,714 vs 2,125)
+- Proposed tier: 3 (commercial self-selected app panel; sample size stated; base 1,714; base conflict claim removed per run-2 verification A)
 - Access: opened
 - Quotes: "Affiliate links are highly effective at driving traffic, evidenced by 83% of consumers who have opened them. However, converting that curiosity into actual sales poses its own challenge, as less than 40% of consumers made a purchase within the last half-year."; "the vast majority of consumers routinely watching these sessions (92%)."; "Millennials (59%) and Gen X (58%) prefer watching these sessions more than Gen Z (51%)."
 

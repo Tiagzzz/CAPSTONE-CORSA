@@ -83,3 +83,27 @@ BLOCKED rows (provisional, snippet-only): P4W2-05, P4W2-06, P4W2-07 (Tirto, Clou
 - Resolved conflicts: Millennial delivery-app choice (GoFood 37%, Bisnis headline wrong), mall dining 68% (the 64% was another article), QRIS FY2025 (Kontan quotes BI; the BI press release carrying the count was not found), padel 173% (per court per month), MAPB 9M sales -2.77% (filing; -2.84% in press text). Open conflict: Fore Coffee price band (Bisnis Rp20,000 to above 30,000 vs Kompas Rp30,000-40,000), recorded in table A row 15.
 - APJII 2026 is newer than APJII 2025 (Gen Z 89.02% vs 87.80%, Millennial 90.34% vs 89.12%); the 2026 YouTube share (1-2%) vs 2025 (17-32%) looks like a questionnaire break and should not be trended.
 - Kantar "Dining in the Digital Age" (ID 2026) was opened but carries no numbers (gated download): no rows.
+
+## Run 2 files (2026-10-17)
+
+Run 2 added eight data files (plan4 venue/social proof, age splits, population and spend, middle-class income, listed operators, foreign entrants, Plan 2 entry requirements). Six independent verifiers (`tasks/2026-10-17-run2-verification-{a..f}.md`) opened the sources; a fix-up set `verification` on every row from the verdict and applied each correction (prefix "Run 2 verification (2026-10-17)" in `notes`). Plan 2 legal rows: regulations are pre-window by nature and are used for in-force status; the cited instrument is the tier-1 source, the Hukumonline and DDTC rows are tier-3 relays.
+
+Questions for an Indonesian lawyer: see tasks/2026-10-17-run2-verification-f.md
+
+Plan 2 schema note: `2026-10-p2-entry-requirements.csv` does not use the survey columns. Columns: `row_id, question, finding, value, unit, rule_date, instrument, article, source_key, access_status, quote, in_force_confirmation, amendment_check, confidence, gaps, applies_to_entry_mode, notes, register_id, verification`. Row IDs `E-` = entry requirements (investment threshold, capital, licensing, KBLI), `H-` = halal. `quote` holds the original Indonesian text; `in_force_confirmation` and `amendment_check` record the status check. Other run-2 schemas: `listed-operators.csv` adds `company, metric` after `question`; `foreign-entrants.csv` adds `brand, origin, entry_year, mode, partner, status, status_date, format_price, reasons_fact, reasons_commentary, window_class` after `verification`.
+
+| file | rows | original | relay | corrected | BLOCKED |
+| --- | --- | --- | --- | --- | --- |
+| plan4-venue-run2.csv | 13 | 9 | 3 | 1 | 0 |
+| plan4-social-proof-run2.csv | 23 | 6 | 12 | 5 | 0 |
+| plan4-age-splits.csv | 36 | 12 | 24 | 0 | 0 |
+| demand/population-spend.csv | 25 | 0 | 25 | 0 | 0 |
+| demand/middle-class-income.csv | 30 | 8 | 21 | 1 | 0 |
+| listed-operators.csv | 41 | 22 | 16 | 2 | 1 |
+| foreign-entrants.csv | 23 | 2 | 15 | 5 | 1 |
+| 2026-10-p2-entry-requirements.csv | 25 | 20 | 3 | 2 | 0 |
+| **total** | **216** | **79** | **119** | **16** | **2** |
+
+Rows moved to `2026-10-16-run1-dropped-rows.csv` (now 28 rows): DATE-FAIL P3B-18, 19, 21, 23, 24, 25 (foreign-entrants.csv; context kept in `data/raw/2026-10-17-foreign-entrants.md` under "Historical / pre-window context") and DERIVED-MOVE P1C1-P07 (population-spend.csv; value in the notes of P1C1-P01 to P06). foreign-entrants.csv therefore has 23 rows (29 - 6) and population-spend.csv 25 (26 - 1). BLOCKED rows: P3BF-030 (IDX 403, gap row) and P3B-17 (Domino's 250 outlets, RRI blocked; window_class IN-WINDOW-PROVISIONAL).
+
+Geography code note (run 2): J means Jakarta (DKI) only. Greater Jakarta (Jabodetabek) cuts are coded U, for example P3BF-033 (Fore outlets, metric `outlets_jabodetabek`).
