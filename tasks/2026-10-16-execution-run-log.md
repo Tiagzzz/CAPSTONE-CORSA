@@ -92,3 +92,10 @@ Re-test 2026-10-16 (owner request): OECD (www.oecd.org, oecd.org, data.oecd.org,
 Network re-test (curl via proxy): reachable (200): oss.go.id, bpjph.halal.go.id, apjii.or.id, databoks.katadata.co.id, kompas.com, thejakartapost.com, data.worldbank.org, adb.org, nielseniq.com, pwc.com, datareportal.com, insight.jakpat.net, goodstats.id, populix.co, bi.go.id (with browser UA), sdmx.oecd.org (OECD data API). **Cloudflare bot challenge (403 "Just a moment...")**, which is site-side, not the network policy: www.bps.go.id, jakarta.bps.go.id, www.oecd.org, www.idx.co.id, bisnis.com; also fas.usda.gov (403), peraturan.bpk.go.id (403), peraturan.go.id (tunnel closed). Agents must not try to bypass bot challenges; for these, use official APIs or mirrors (OECD SDMX API, BPS WebAPI needs a free key, IDX filings via company investor-relations sites), or keep the figure provisional. The WebFetch tool still fails DNS in this session, so agents use curl.
 
 Per run-log deviation step 7, upgrade verifiers now open the registered sources and upgrade (VERIFIED-OPENED) or drop the provisional figures. Groups mirror V-A to V-E; the agents are new, for independence.
+
+### Run 1b result (main-agent review, 2026-10-17 00:35 UTC)
+
+- 206 rows in the 9 datasets: 96 VERIFIED-OPENED (original), 77 VERIFIED-OPENED (relay), 16 CORRECTED-OPENED, 17 BLOCKED (still provisional, snippet-only). 0 rows left unverified. 16 rows dropped in total, listed in `data/processed/2026-10-16-run1-dropped-rows.csv`.
+- Register: BEH-001–064 and DEM-001–027. Opened sources are marked "opened"; sources on Cloudflare- or Akamai-protected hosts (bisnis.com, bps.go.id, oecd.org, idx.co.id, pwc.com, tirto.id) remain snippet-only.
+- Accepted. The fix-up assigned original vs relay status itself where the verifiers used a bare VERIFIED-OPENED, and repaired the misaligned row UE-N08 (its register_id is valid). Run 2 should spot-check both.
+- Still open: no figure has a 25–39 cut (APJII generation tables are the closest); venue/halal has only 4 rows; Plans 2 and 3 have not started.

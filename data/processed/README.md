@@ -1,6 +1,6 @@
 # data/processed: run-1 datasets (Plan 1 surveys and Plan 4 purchase triggers), upgraded in run 1b
 
-**Status after run 1b (2026-10-16).** Run 1 took every value from a WebSearch result because source hosts were blocked. In run 1b the owner widened network access, independent upgrade verifiers (`tasks/2026-10-16-run1b-upgrade-{a..e}.md`) opened the sources, and this fix-up applied their verdicts. Values are now classified by the `verification` code below. **Rows marked BLOCKED remain provisional (snippet-only).** Rows marked OPENED-UNVERIFIED were found on an opened page by an upgrade verifier but have not been checked by a second, independent agent; treat them as candidates, not verified figures.
+**Status after run 1b (2026-10-16).** Run 1 took every value from a WebSearch result because source hosts were blocked. In run 1b the owner widened network access, independent upgrade verifiers (`tasks/2026-10-16-run1b-upgrade-{a..e}.md`) opened the sources, and this fix-up applied their verdicts. Values are now classified by the `verification` code below. **Rows marked BLOCKED remain provisional (snippet-only).** The 118 new candidate rows were checked by second independent verifiers (`tasks/2026-10-16-run1b-verification-new-{1,2}.md`) and carry their verdicts; no row remains OPENED-UNVERIFIED.
 
 ## Method
 
@@ -50,26 +50,26 @@ Age fit against the canonical bands (Gen Z 18-28, Younger Millennials 29-35, Old
 
 | code | rows | of which existing rows | of which new rows |
 | --- | --- | --- | --- |
-| VERIFIED-OPENED (original) | 25 | 25 | 0 |
-| VERIFIED-OPENED (relay) | 43 | 43 | 0 |
-| CORRECTED-OPENED | 3 | 3 | 0 |
+| VERIFIED-OPENED (original) | 96 | 25 | 71 |
+| VERIFIED-OPENED (relay) | 77 | 43 | 34 |
+| CORRECTED-OPENED | 16 | 3 | 13 |
 | BLOCKED | 17 | 17 | 0 |
-| OPENED-UNVERIFIED | 118 | 0 | 118 |
+| OPENED-UNVERIFIED | 0 | 0 | 0 |
 | **total** | **206** | **88** | **118** |
 
 Per file:
 
 | file | original | relay | corrected | BLOCKED | OPENED-UNVERIFIED |
 | --- | --- | --- | --- | --- | --- |
-| plan4-media-by-age.csv | 3 | 8 | 0 | 0 | 61 |
-| plan4-social-proof.csv | 0 | 1 | 0 | 3 | 7 |
-| plan4-novelty.csv | 6 | 3 | 0 | 0 | 11 |
-| plan4-health.csv | 8 | 0 | 0 | 5 | 4 |
-| plan4-community-sport.csv | 2 | 4 | 0 | 0 | 7 |
-| plan4-origin-boycott.csv | 3 | 8 | 2 | 2 | 4 |
-| plan4-venue.csv | 1 | 0 | 0 | 0 | 3 |
-| plan4-spend-drivers.csv | 2 | 14 | 0 | 7 | 13 |
-| demand/consumer-surveys.csv | 0 | 5 | 1 | 0 | 8 |
+| plan4-media-by-age.csv | 46 | 15 | 11 | 0 | 0 |
+| plan4-social-proof.csv | 6 | 2 | 0 | 3 | 0 |
+| plan4-novelty.csv | 11 | 9 | 0 | 0 | 0 |
+| plan4-health.csv | 12 | 0 | 0 | 5 | 0 |
+| plan4-community-sport.csv | 4 | 9 | 0 | 0 | 0 |
+| plan4-origin-boycott.csv | 3 | 11 | 3 | 2 | 0 |
+| plan4-venue.csv | 4 | 0 | 0 | 0 | 0 |
+| plan4-spend-drivers.csv | 8 | 21 | 0 | 7 | 0 |
+| demand/consumer-surveys.csv | 2 | 10 | 2 | 0 | 0 |
 
 Disconfirming-evidence table A (11 rows): original 3 (rows 1, 2, 3), relay 3 (rows 6, 9, 17), CORRECTED-OPENED 2 (rows 13, 16), BLOCKED 3 (rows 5, 8, 15).
 
@@ -78,7 +78,7 @@ BLOCKED rows (provisional, snippet-only): P4W2-05, P4W2-06, P4W2-07 (Tirto, Clou
 ## Caveats
 
 - Rows marked BLOCKED remain provisional (snippet-only).
-- OPENED-UNVERIFIED rows are single-verifier candidates; some duplicate other rows (UA-N53/N54 vs SD01/SD02; UA-N55/N57 vs UD-N01/UD-N03) and are marked in `notes`.
+- The new UA-/UB-/UC-/UD-/UE- rows now carry second-verifier verdicts; some duplicate other rows (UA-N53/N54 vs SD01/SD02; UA-N55/N57 vs UD-N01/UD-N03) and are marked in `notes`.
 - Many opened pages are relays of a tier-1 or tier-2 original (Databoks, GoodStats, CNBC, Kontan, Detik); the original was not opened. Several originals sit behind bot challenges (bps.go.id, Bisnis, pwc.com, tirto.id): not bypassed.
 - Resolved conflicts: Millennial delivery-app choice (GoFood 37%, Bisnis headline wrong), mall dining 68% (the 64% was another article), QRIS FY2025 (Kontan quotes BI; the BI press release carrying the count was not found), padel 173% (per court per month), MAPB 9M sales -2.77% (filing; -2.84% in press text). Open conflict: Fore Coffee price band (Bisnis Rp20,000 to above 30,000 vs Kompas Rp30,000-40,000), recorded in table A row 15.
 - APJII 2026 is newer than APJII 2025 (Gen Z 89.02% vs 87.80%, Millennial 90.34% vs 89.12%); the 2026 YouTube share (1-2%) vs 2025 (17-32%) looks like a questionnaire break and should not be trended.
