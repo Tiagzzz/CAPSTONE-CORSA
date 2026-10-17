@@ -1,6 +1,6 @@
 # Price points, Jakarta (P3-PRICE, run 2, 2026-10-17)
 
-Collector: P3-PRICE. Plan: `tasks/2026-10-16-plan-3-competitors-price-ladder.md` (Q2, Q3, Q4, H1, H2, H8-style questions on the price ladder). Rows: `data/processed/price-ladder.csv` (30 rows). Access date for all sources: 2026-10-17.
+Collector: P3-PRICE. Plan: `tasks/2026-10-16-plan-3-competitors-price-ladder.md` (Q2, Q3, Q4, H1, H2, H8-style questions on the price ladder). Rows: `data/processed/price-ladder.csv` (30 rows in the first pass; 59 rows added in Run 3b, see the "Run 3b" section at the end). Access date for all sources: 2026-10-17.
 
 **Headline result: target not met.** 30 price points (target 40-80) and only 2 brands with usable published prices (Burgreens, Fore Coffee) instead of at least 4 per category. Almost every official brand site in scope shows menus without prices (prices sit only in the apps), the Grab and GoFood listings were not reachable without login or a bot challenge, and most media price lists found are pre-window. Nothing was estimated or filled in. Gaps are listed in section 5.
 
@@ -78,14 +78,33 @@ Not opened (blocked): Tempo "Daftar Menu Fore Coffee dan Harganya" and Tempo Sta
 
 Method: computed with python3 from `data/processed/price-ladder.csv` (column `price_idr`). Median is the standard median (mean of the two middle values when n is even). One row per distinct menu item; no deduplication across channels needed (all rows in-store or media reports of in-store menus, no app rows). IDR, as listed, tax and service basis differs by source (see below). Flag: n<4 = insufficient, do not use as a distribution; "brand cap" = share of rows from one brand above the plan's 15% cap (the cap cannot be met with these data).
 
-| Category | n items | n brands | Min | Median | Max | Flags |
-| --- | --- | --- | --- | --- | --- | --- |
-| pasta | 1 | 1 (Burgreens) | 60,000 | 60,000 | 60,000 | n<4; one plant-based pasta, not Italian; single brand |
-| coffee (espresso and signature drinks) | 8 | 2 (Fore 6, Burgreens 2) | 22,000 | 29,000 | 32,000 | brand count below 4; Fore rows are media-reported "about" prices, tax basis not stated; Burgreens rows exclude tax and service |
-| bowl (bowls and salads) | 12 | 1 (Burgreens) | 50,000 | 59,500 | 68,000 | single brand = 100%; excludes tax and service |
-| functional_drink | 9 | 1 (Burgreens) | 27,000 | 45,000 | 52,000 | single brand = 100%; excludes tax and service |
+Recomputed after Run 3b (P3-PRICE-b), 89 rows in the CSV (30 first pass + 59 Run 3b), of which 68 carry a numeric `price_idr`. Rows with a blank `price_idr` (ranges, per-person spend, promo redemption prices) are excluded from every cell below.
 
-Sub-class cells (all from the same rows): espresso n=3 (22,000 / 22,000 / 25,000); signature_coffee n=5 (29,000 / 29,000 / 32,000); rice_bowl n=5 (50,000 / 55,000 / 59,000); salad and salad_bowl together n=4 (50,000 / 62,500 / 65,000); smoothie_bowl n=3 (68,000 / 68,000 / 68,000, n<4); protein_shake n=3 (all 52,000, n<4); smoothie n=3 (45,000 / 45,000 / 47,000, n<4); herbal_elixir n=3 (27,000 / 27,000 / 35,000, n<4).
+| Category / subset | n items | n brands | Min | Median | Max | Flags |
+| --- | --- | --- | --- | --- | --- | --- |
+| pasta (all numeric item prices, all types mixed) | 20 | 8 (Burgreens, Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Pepper Lunch, Pizza Marzano, Sky Pasta) | 20,000 | 86,500 | 109,000 | ok |
+| coffee (all numeric item prices) | 24 | 7 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Pizza Marzano, Point Coffee, Tomoro Coffee) | 10,000 | 29,000 | 38,000 | ok |
+| bowl (bowls and salads) | 15 | 2 (Burgreens, Pizza Marzano) | 50,000 | 60,000 | 105,000 | brands<4 |
+| functional_drink | 9 | 1 (Burgreens) | 27,000 | 45,000 | 52,000 | brands<4 |
+
+**Sub-class cells** (same numeric rows; n<4 and brand count <4 flagged; a median over fewer than 4 brands is not a market median):
+
+| Category / subset | n items | n brands | Min | Median | Max | Flags |
+| --- | --- | --- | --- | --- | --- | --- |
+| pasta, Italian-restaurant list price (Pizza Marzano only) | 11 | 1 (Pizza Marzano) | 69,000 | 95,000 | 109,000 | brands<4 |
+| pasta, Japanese-style teppan (Pepper Lunch) | 3 | 1 (Pepper Lunch) | 74,000 | 79,000 | 81,000 | n<4; brands<4 |
+| pasta, plant-based (Burgreens) | 1 | 1 (Burgreens) | 60,000 | 60,000 | 60,000 | n<4; brands<4 |
+| pasta, low-end street/kiosk (Detik 22 Jan 2025, approximate) | 5 | 5 (Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Sky Pasta) | 20,000 | 25,000 | 29,000 | ok |
+| coffee, espresso + americano + long black | 5 | 3 (Burgreens, Fore Coffee, Pizza Marzano) | 22,000 | 25,000 | 35,000 | brands<4 |
+| coffee, latte (cafe latte and signature lattes) | 8 | 3 (Fore Coffee, Pizza Marzano, Point Coffee) | 25,000 | 29,000 | 38,000 | brands<4 |
+| coffee, signature milk-coffee (aren etc.) | 10 | 5 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Tomoro Coffee) | 10,000 | 28,000 | 32,000 | ok |
+| coffee, cappuccino (Pizza Marzano) | 1 | 1 (Pizza Marzano) | 38,000 | 38,000 | 38,000 | n<4; brands<4 |
+| bowl, salads (Burgreens salads + Marzano salads) | 7 | 2 (Burgreens, Pizza Marzano) | 50,000 | 65,000 | 105,000 | brands<4 |
+| bowl, rice bowls (Burgreens) | 5 | 1 (Burgreens) | 50,000 | 55,000 | 59,000 | brands<4 |
+| bowl, smoothie bowls (Burgreens) | 3 | 1 (Burgreens) | 68,000 | 68,000 | 68,000 | n<4; brands<4 |
+| functional_drink, protein shake (Burgreens) | 3 | 1 (Burgreens) | 52,000 | 52,000 | 52,000 | n<4; brands<4 |
+| functional_drink, smoothie (Burgreens) | 3 | 1 (Burgreens) | 45,000 | 45,000 | 47,000 | n<4; brands<4 |
+| functional_drink, herbal elixir (Burgreens) | 3 | 1 (Burgreens) | 27,000 | 27,000 | 35,000 | n<4; brands<4 |
 
 Not comparable without adjustment: Burgreens prices exclude 10% tax and service charge ("++"), Fore media prices do not state a basis. Do not mix them in a district median.
 
@@ -94,3 +113,155 @@ Not comparable without adjustment: Burgreens prices exclude 10% tax and service 
 - H1 (CORSA placeholder at or above the median, premium): not testable; only one brand's bowl prices (IDR 50,000 to 68,000 before tax and service) and no Italian benchmark. Team B's bowl placeholder (85 to 110k) sits above every bowl price in this sample, but n=12 is from one plant-based brand: mixed or no evidence, not a percentile.
 - H2 (coffee saturated by low-price chains): weak support. Fore Americano about 22,000 and signature Americano drinks 29,000 to 31,000 (Nov 2025 media); a Kontan promo (Jun 2026) states a normal price of Rp 38,000 for two Kopi Kenangan Mantan. Starbucks, Tomoro prices not obtained, so no latte median.
 - H3, H4: not touched.
+
+## Run 3b (P3-PRICE-b, 2026-10-17): new strategy, brand pages then dated media price articles
+
+Collector: P3-PRICE-b. Rows `P3PB-01` to `P3PB-59` in `data/processed/price-ladder.csv` (59 rows). Temp source keys `P3PB-S1` to `P3PB-S12`. Access date for all sources: 2026-10-17. All pages were opened with curl and a browser user agent; dates below are the dates printed in each article's own byline block (sidebar and "related article" dates, many of them 2026, were ignored). Quotes are copied from the opened page text (Indonesian, verbatim, including the article's own spelling).
+
+**Result against target.** 59 rows (target 40 or more), but only 40 are numeric item prices; the other 19 are ranges, per-person spend or promo redemption prices with `price_idr` left blank. Brands per category (new rows only, year = article date): see section R3b-5. The target of at least 4 brands per category with item-level list prices is met for coffee only; Italian/pasta has one Italian restaurant brand with item prices (Pizza Marzano 2025), and healthy bowls and salads has none new at item level (only Pizza Marzano restaurant salads); the healthy-bowl brand coverage is per-person ranges.
+
+### R3b-1. Sources (one block per source)
+
+### P3PB-S1
+- Title: 99 Menu Pizza Marzano Lengkah beserta Harganya
+- Publisher: IDN Times (Dining Guide)
+- Author / editor line: Tamara Febriyanti (page footer: "written by our community writers ... reviewed by our editorial team")
+- URL opened: https://www.idntimes.com/food/dining-guide/menu-pizza-marzano-c1c2-01-b9stm-lbb9kf
+- Printed publication date: 17 Nov 2025, 11:20 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: community-writer content; no tax basis stated; photos credited to the brand Instagram)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-01 to P3PB-18 (18 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S2
+- Title: Daftar Harga Pizza Hut 2025, Ada Promo Menarik di Bulan Mei
+- Publisher: Liputan6.com (Hot)
+- Author / editor line: Fitriyani Puspa Samodra (Tim Redaksi: Fadila Adelin)
+- URL opened: https://www.liputan6.com/hot/read/6024340/daftar-harga-pizza-hut-2025-ada-promo-menarik-di-bulan-mei
+- Printed publication date: Diterbitkan 16 Mei 2025, 22:00 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (staff-written; says it compiled the prices from pizzahut.co.id on 16/5/2025, so the original is the brand site)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-19 to P3PB-22 (4 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S3
+- Title: 44 Menu Pepper Lunch 2025 Beserta Harganya
+- Publisher: IDN Times (Dining Guide)
+- Author / editor line: Putri Intan Nur Fauziah
+- URL opened: https://www.idntimes.com/food/dining-guide/pepper-lunch-menu-1-00-cqkqh-cw26mv
+- Printed publication date: 16 Jul 2025, 13:28 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: prices printed as rounded "ribuan"; no tax basis stated)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-23 to P3PB-25 (3 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S4
+- Title: 5 Resto Italia Lezat di Jakarta Buat Pilihan Makan Siang Spesial
+- Publisher: detikFood (detik.com)
+- Author / editor line: Riska Fitria
+- URL opened: https://food.detik.com/resto-dan-kafe/d-8181724/5-resto-italia-lezat-di-jakarta-buat-pilihan-makan-siang-spesial
+- Printed publication date: Selasa, 28 Okt 2025 12:00 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (staff-written; price ranges only, not item prices)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-26 to P3PB-28 (3 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S5
+- Title: 5 Pasta Murah di Jakarta, Harganya Mulai Rp 20.000
+- Publisher: detikFood (detik.com)
+- Author / editor line: Yenny Mustika Sari
+- URL opened: https://food.detik.com/info-kuliner/d-7744610/5-pasta-murah-di-jakarta-harganya-mulai-rp-20-000
+- Printed publication date: Rabu, 22 Jan 2025 17:00 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (staff-written; prices approximate, "-an")
+- Access status: opened (HTTP 200)
+- Rows: P3PB-29 to P3PB-33 (5 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S6
+- Title: Harga Kopi Gula Aren di Fore, Tuku, Tomoro dan Gerai Kopi Lainnya
+- Publisher: Liputan6.com (Lifestyle, Culinary)
+- Author / editor line: Rizka Nur Laily Muallifa (Tim Redaksi: Nisa Mutia Sari)
+- URL opened: https://www.liputan6.com/lifestyle/read/5999756/harga-kopi-gula-aren-di-fore-tuku-tomoro-dan-gerai-kopi-lainnya
+- Printed publication date: Diperbarui 20 April 2025, 15:41 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: the article takes three of the four prices from Google Maps listings and one from an ordering app; only a "Diperbarui" date is printed)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-34 to P3PB-37 (4 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S7
+- Title: Menu Signature Fore dan Harganya untuk Sesi Ngopimu
+- Publisher: IDN Times (Dining Guide)
+- Author / editor line: Tamara Febriyanti (page footer: "written by our community writers ... reviewed by our editorial team")
+- URL opened: https://www.idntimes.com/food/dining-guide/menu-signature-fore-c1c2-01-b9stm-2rb915
+- Printed publication date: 19 Nov 2025, 11:50 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: community-writer content; size and tax basis not stated)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-38 to P3PB-44 (7 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S8
+- Title: 5 Promo Kopi Spesial Senin Akhir di Bulan Maret, Tomoro hingga Fore Coffee Hemat
+- Publisher: MomsMoney (Kontan group)
+- Author / editor line: Widya Oktaviana (Penulis and Editor); relays the brands' Instagram posts
+- URL opened: https://momsmoney.kontan.co.id/news/5-promo-kopi-spesial-senin-akhir-di-bulan-maret-tomoro-hingga-fore-coffee-hemat
+- Printed publication date: Senin, 30 Maret 2026 | 09:44 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak for list prices: a promo article; the "normal" price is an aside)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-45 to P3PB-45 (1 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S9
+- Title: Promo Pizza Hut Tebus Murah 1-31 Agustus 2025, Diskon 17% untuk 17 Menu Tiap Harinya
+- Publisher: MomsMoney (Kontan group)
+- Author / editor line: Widya Oktaviana (Penulis and Editor); relays the Pizza Hut Indonesia Instagram post
+- URL opened: https://momsmoney.kontan.co.id/news/promo-pizza-hut-tebus-murah-1-31-agustus-2025-diskon-17-untuk-17-menu-tiap-harinya
+- Printed publication date: Rabu, 06 Agustus 2025 | 09:19 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (promo article; prices are redemption prices, see notes)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-46 to P3PB-49 (4 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S10
+- Title: 10 Tempat Makan Salad di Jakarta, Banyak Pilihan Dressing
+- Publisher: IDN Times (Dining Guide)
+- Author / editor line: Kim Caca (byline) / Penulis: Nisrina Putri Dayani (footer)
+- URL opened: https://www.idntimes.com/food/dining-guide/tempat-makan-salad-di-jakarta-00-r95nh-598f7h
+- Printed publication date: 24 Apr 2025, 19:50 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: "mulai dari ... per orang" ranges, not item prices; no tax basis)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-50 to P3PB-57 (8 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S11
+- Title: 10 Tempat Makan di Senayan City yang Wajib Kamu Coba
+- Publisher: IDN Times (Dining Guide)
+- Author / editor line: Fasrinisyah Suryaningtyas
+- URL opened: https://www.idntimes.com/food/dining-guide/rekomendasi-tempat-makan-di-senayan-city-00-mk1yf-vz2mhp
+- Printed publication date: 02 Feb 2025, 13:35 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (weak: one price range per venue)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-58 to P3PB-58 (1 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### P3PB-S12
+- Title: Jelajahi 11 Tempat Makan Enak di Foodcourt Senayan City, Kuliner Lokal hingga Internasional
+- Publisher: Liputan6.com (Lifestyle)
+- Author / editor line: Mabruri Pudyas Salim (Tim Redaksi: Rizky Mandasari)
+- URL opened: https://www.liputan6.com/lifestyle/read/6173407/jelajahi-11-tempat-makan-enak-di-foodcourt-senayan-city-kuliner-lokal-hingga-internasional
+- Printed publication date: Diterbitkan 01 Oktober 2025, 15:00 WIB (read from the article's own byline block)
+- Access date: 2026-10-17
+- Proposed tier: 3 (staff-written; one per-person range)
+- Access status: opened (HTTP 200)
+- Rows: P3PB-59 to P3PB-59 (1 rows)
+- Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
