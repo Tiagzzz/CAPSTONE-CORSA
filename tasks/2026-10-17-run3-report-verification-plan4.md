@@ -136,3 +136,96 @@ Expected result: about 3,800 to 4,200 words with the evidence preserved in the C
 ## 8. Required before the Product Owner reviews
 
 F1 to F6 (majors). F7 to F9 and F18 to F20 are quick edits. The rest are optional polish. Re-run my trace after the edits; the figures do not need re-opening unless values change.
+
+---
+
+# Re-check (revision 2)
+
+Date: 2026-10-17. Re-verified: revised `reports/2026-10-17-purchase-triggers-and-channels.md` (now 4,489 words, about 600 of them in the new Appendix) and `data/processed/plan4-trigger-matrix.csv` (21 rows; new row "Price context"). The report and the matrix were not edited by me. No commits.
+
+## Overall verdict: ACCEPT WITH MINOR FIXES
+
+No blocker and no major remains. F1 to F6 are fixed. Residual items R1 to R6 are minor. F20 (README) is handled separately and is still open.
+
+## R0. Trace results
+
+- **Tags.** 128 tags in the new compact format `[row id; geography-agefit]` (multi-id tags expanded), 132 distinct rows. For every row: the row exists, geography code and age-fit match, and verification is VERIFIED-OPENED or CORRECTED-OPENED. 0 mismatches. A value check on every single-row tag found no wrong number (14 script flags were false positives caused by years or units preceding the tag; I checked each by hand).
+- **Summary counts.** The report's "14 J, 2 J*, 22 U, 91 N, 3 P" matches my count from the rows (J 16 including the two mall rows, U 22, N 91, P 3). Age-fit: D 94, C 24, B 14, A 0. This reconciles with the earlier stated 70% D.
+- **Appendix.** Every cited row appears in the Appendix. Register ids and bases agree with the rows (0 mismatches).
+- **Summary and hypothesis figures (100%).** 44, 40, 64, 83, 65, 48, 19, 146.8, 4.7 and 6.1, 83 (halal), 77, 35/16/40 and others all match their rows.
+- **Live sources reopened (new or changed rows).**
+  - Databoks padel (BEH-091): 326 courts in DKI Jakarta, 947 national.
+  - Kontan Liga.Tennis (BEH-095): padel 21-40 share 58.30%; about IDR 400,000 per session plus IDR 50,000.
+  - Databoks GMV (BEH-102): GrabFood USD 2.94 bn, GoFood 1.98.
+  - GoTo release (BEH-103): Delivery GTV 41.8 trillion, +8%; net revenue 9.463, +16%.
+  - Okezone (BEH-104): 157,875 spectators.
+  - Kontan Isoplus (BEH-099): 44% Jakarta, 37% Bodetabek, 19% elsewhere.
+  - Earlier re-opened: APJII 2025 and 2026 tables for the new Facebook cells (UA-N09, N11, N15, N20, N23, N27 agree with the rows and the 2026 slide I read visually: Facebook 26.9, 31.1, 31.0).
+  - All values match.
+- **Price medians.** I recomputed from `price-ladder.csv`: coffee 23 items, median 29,000; bowl 15 items, median 60,000. These match the report and the matrix.
+
+## R1. Status of F1 to F19
+
+| # | Status | Evidence in revision |
+| --- | --- | --- |
+| F1 | Fixed | Conversion figures now labelled "Context on conversion (used in no verdict or entry change)"; the Disconfirming #6 and basket-size conclusions are gone; the Team B text says no verdict rests on them. |
+| F2 | Fixed | H1 "insufficient evidence, nominally against"; all four disconfirmers tested, including the promo prong; entry change softened ("do not move budget on this evidence alone"); "declining trust" mentioned. |
+| F3 | Fixed | H3 "partly supported at the stated level; purchases untested"; 65% restated as importance vs five years ago; "not modest by itself" noted; the product caveat is in the Summary. |
+| F4 | Fixed | FAST loss "narrowed (about 57% lower)"; 20 outlets and 1,041 employees cited as a different measure; no source attributes results to the boycott; 77% flagged as a local-cuisine item; "boycott spillover" heading removed. |
+| F5 | Fixed | The ranked Analysis block and "compress the basket" are gone; the Analysis says the rows do not show what a promotion does to spend. |
+| F6 | Fixed | "Aesthetics ranks last of six prompted items; comfort, cleanliness and facilities ... in between"; Kedai Kopi vendor survey flagged; brand-attitude finding added; the "Atmosphere is not the return reason" heading is gone. |
+| F7 | Fixed | The Appendix holds full periods ("fielded 2023 (pre-window)", "February 2026"). |
+| F8 | Fixed | Percent signs and units present on every figure I checked. |
+| F9 | Fixed | New title ("national and urban-Java evidence for a Jakarta launch"); geography counts stated in the Summary. |
+| F10 | Fixed in the report | J* code with in-line caveat for the mall rows. Residual: P4W10-08 ("95 venues in Greater Jakarta", J), and the matrix still carries free-text geography for the two Susenas rows. See R5. |
+| F11 | Fixed | "period labels inferred", "still the fastest-growing monitored category but slowing"; moved out of basket size. |
+| F12 | Fixed | Wave-by-wave table, Facebook added, explicit "never trended across waves". |
+| F13 | Fixed | "tie within the surveys' margin of error"; taste 46% named. |
+| F14 | Fixed | Labels called a "transparency demand"; matcha called a proxy; "dwell time is not [documented]". |
+| F15 | Fixed | Platform revenue is not called participation; "+50 clubs" flagged as ambiguous slide wording. |
+| F16 | Fixed | Mixed sample stated for the 76%. |
+| F17 | Fixed | Order bands named in IDR; 48% vs 26% opening-promo figures reconciled in one sentence. |
+| F18 | Fixed as disclosure | "pre-window" marks in the Appendix; the Method states the departure from the plan 8 date rule. The criterion itself stays "partly met". |
+| F19 | Mostly fixed | "GAP: GAP:" prefix gone; hypotheses column remapped to "context" for price and delivery. Two cells now read only "GAP: same" (see R4). The Millennial duplication is documented. |
+
+## R2. New residual findings (all minor)
+
+| # | Location | Issue | Severity | Fix |
+| --- | --- | --- | --- | --- |
+| R1 | Summary (H4: "scale and age skew documented"), Community analysis, H4, entry change | The 21-40 "skew" is one operator's platform (Liga.Tennis, about 100,000 users, seven clubs, all racquet sports, location not stated, no population baseline), so "documented" overstates. The entry change "consider padel venues' own cafes" rests on one operator's quote (n=1) and an IDR 50,000 consumption average that covers all racquet sports. | minor | Say "one platform shows 58% aged 21-40; no baseline". Mark the cafes idea a hypothesis for the organiser interviews. |
+| R2 | Matrix, new row "Price context (Plan 3 cross-reference)" | The cell is a derived median across items (coffee: 23 items, 6 brands, mixed bases including app and Google Maps approximate prices; bowls: 2 brands) with register ids CMP-xxx and a "row set" reference instead of a row id, D-coded, geography "J / U" mixed. It is not a trigger by age cell, and a strict reading of "no D-coded cell aggregated" applies. The medians reproduce, and the limits are stated in the cell. | minor | Move it to a separate context file or the report text only, or keep it and add the row ids; state that it is not an age cell. |
+| R3 | Price, promotions and delivery: Plan 3 cross-reference and Analysis ("the listed coffee median lies above the two largest per-cup spend bands") | Listed menu prices (signature drinks, a mix of media and in-store prices) are set against Gen Z national cup-spend bands (including home-made coffee). The report labels this "indications only", which is adequate, but the comparison sentence reads as a finding. | minor | Delete the comparison sentence, or add "different bases" to it. |
+| R4 | Matrix: two cells read "GAP: same" | The reason points to a neighbouring cell, so it is not self-contained. | minor | Write the reason out. |
+| R5 | Matrix geography strings (P1C1-E01 "DKI Jakarta (province)", E06 "National - benchmark") and P4W10-08 "95 venues in Greater Jakarta" coded J | Free text instead of a J/U/N/P code; Greater Jakarta is not DKI. | minor | Code as J / N, with "Greater Jakarta" in the note (J* if consistent with the mall rows). |
+| R6 | Length | About 3,900 words of body plus the Appendix (about 600): roughly 8-9 pages. This is much improved from 6,598 words but still at or above the top of the 6-8 page target. | minor | Optional cuts: the Delivery GMV and GoTo bullet (about 90 words), the Isoplus origin bullet, the padel stock bullet details, and the Appendix into the CSV. |
+
+## R3. Bias-guard read of the new sections
+
+| Section | Result |
+| --- | --- |
+| Racing and Italian origin | Good: counts only, "circuit in Lombok, not Jakarta", explicit documented gaps (GAP-Q8-1, GAP-Q8-2) rather than "no effect". The Analysis says attendance is growing but who attends is unknown. |
+| Padel and community | Original not opened for the Core & Court count is stated; units flagged as not comparable (326 courts, 397 per CNA, 95 venues); "one operator's platform, not a market". The skew claim is slightly overstated (R1). |
+| Delivery GMV | Estimates flagged (include cancelled orders); "growth rates are not shares". No causal claim. |
+| Plan 3 price cross-reference | Limits stated; no verdict depends on it. See R2 and R3. |
+| Fact vs Analysis; Hofstede and collectivism; "no data" vs "no effect"; Jakarta vs national; proxy labels; stated vs observed | All met in the revision. Matcha is labelled as a proxy. Group effects appear only where a survey measures them. The mall survey is caveated (J*). |
+
+## R4. Updated acceptance checklist (plan §8)
+
+| Criterion | Status | Note |
+| --- | --- | --- |
+| Matrix cells complete (id, value, year, base, age-fit, geography) | Met | 249 of 249 entries parse and match their rows (200 distinct rows). The new price row uses CMP ids and a derived statistic (R2). |
+| GAP cells with reasons; no tier-4 or BLOCKED cell | Met | Two "GAP: same" cells (R4). |
+| 0 figures older than 2024-10-16 unless long-run | Partly met | Pre-window fieldwork is disclosed per row in the Appendix and in the Method, but it is a departure from the rule. |
+| `plan4-*.csv` per theme plus README method note | Partly met | README still has no entry for the matrix or `plan4-misc-run3.csv` (F20; handled separately). The Method admits this. |
+| 100% of cited sources registered with all fields | Met | The new BEH-091 to BEH-104 and CMP rows are registered (14 new BEH ids found). |
+| Report sections and verdicts (age, channel, identity tests, labelling, disconfirmers) | Met | The identity table was replaced by H5 to H7 prose and the new Racing and Italian section; each hypothesis has a verdict and an entry change. The standalone disconfirming-evidence section is now merged into H1 to H5 and "Assumptions most at risk"; this satisfies the intent. |
+| Report about 6-8 pages | Partly met | R6. |
+| Gap list and primary-research brief with reasons | Met | The "Why desk research could not answer" column was added. |
+| CAC note: listed for Team B, not used in conclusions | Met | F1 fixed. |
+| Verification report | Pending | V1 to V3 not seen by me; this file now covers V4 twice. The open items are R1 to R6, the F20 README entry and the V1 to V3 findings. |
+
+## R5. Required next
+
+1. Fix R1 (wording). The rest of R2 to R6 are optional polish.
+2. Complete F20 (README entries for the matrix and `plan4-misc-run3.csv`; state which age-fit definition governs).
+3. No re-opening of sources is needed unless values change; my trace scripts are in the scratchpad `v4/` folder.
