@@ -29,6 +29,8 @@ Rows with verdict NOT-FOUND-OPENED or DATE-FAIL are removed and listed in `2026-
 
 Age fit against the canonical bands (Gen Z 18-28, Younger Millennials 29-35, Older Millennials 36-45, Gen X 46-61): A = exact match, B = canonical band fully inside the native band, C = partial or approximate overlap, D = no age split or no usable overlap. Geography: J = Jakarta, U = urban Indonesia (several cities), N = national, P = proxy (other country or region). See Plan 4 section 4 for the full definitions. Corrections in run 1b: the Sep 2025 eating-out survey (P4W1-R04 to R07, UA-N58 to UA-N67) covers eight Java cities and excludes Jakarta, so geography is U; the Mar 2025 delivery-app survey (P4W1-R08) is national (N). No opened source gives an age split for the 25-39 core in any theme.
 
+Governing definition: the README definition above, as applied in all datasets. Plan 4 §4 used an overlap-share definition (B >75%, C 50-75%, D <50%). Codes were assigned with the README definition, so read them that way.
+
 ## Files and row counts
 
 | file | existing rows (run 1b) | new candidate rows | total |
@@ -124,3 +126,20 @@ Questions for a tax/legal adviser: see tasks/2026-10-17-run3-verification-b.md
 | **total** | **171** | **53** | **103** | **15** | **0** |
 
 Rows moved to `2026-10-16-run1-dropped-rows.csv` (now 32 rows, 4 added): T-14 (DATE-FAIL, DJP article of 2022), S-01 (DATE-FAIL, MUI fatwa of 2023-11-08, pre-window, not a long-run series; verifier verdict was VERIFIED-OPENED (relay)), S-02 and S-08 (NOT-FOUND-OPENED gap rows). Other notable fixes: Liga.Tennis rows P4W10-10 to -13 set to geography J on the orchestrator's instruction (V3-A noted that the clubs' locations are not stated); P3PB-45 price blanked (25,000 moved to notes); Fore Manuka/Peach/Berry Americanos relabelled `flavoured_americano`; P1C4-08 second source GoodStats registered as DEM-063; REG-041 to REG-044 added for the DJP country page, the SIF list and the two BKPM releases. The APEDA mirror for DEM-050, -060 and -061 was unreachable on re-check; the register now points to the USDA originals at apps.fas.usda.gov.
+
+## plan4-misc-run3.csv (community/sport, racing gap, delivery GMV; run 3)
+
+Run 3 Plan 4 miscellaneous rows covering community/sport, the racing gap and delivery GMV. Schema: the run 1b survey schema (`row_id, question, trigger_or_metric, value, unit, ref_period, base_n, population, age_band_native, canonical_band, age_fit_code, geography, proxy_note, source_key, access_status, snippet, notes, register_id, verification`). 28 data rows.
+
+| verification code | rows |
+| --- | --- |
+| VERIFIED-OPENED (original) | 2 |
+| VERIFIED-OPENED (relay) | 25 |
+| CORRECTED-OPENED | 1 |
+| BLOCKED | 0 |
+| OPENED-UNVERIFIED | 0 |
+| **total** | **28** |
+
+## plan4-trigger-matrix.csv (purchase triggers x age group)
+
+Triggers x age-group matrix built only from verified rows. Columns: `trigger_or_channel, Gen Z, Younger Millennials, Older Millennials, Gen X, 25-39 derived (GAP: no source cut), All/no age split, hypotheses`. Each cell = `value | register_id | period | age_fit | geography`, with several entries separated by ` // `; a cell with no usable verified row is `GAP` with the reason. 21 data rows (plus the header). Used by `reports/2026-10-17-purchase-triggers-and-channels.md` (companion dataset; all cells, including every GAP).
