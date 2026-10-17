@@ -1,6 +1,6 @@
 # Environmental (PESTEL) scan, Jakarta/Indonesia: raw findings
 
-Task W-ENV, run 4, Pillar 1. Accessed 2026-10-17 with `curl -sL` (browser User-Agent) through the agent proxy; no bot check bypassed. Dates are taken from page bodies. Structured rows: `data/processed/2026-10-pestel-environmental.csv` (ENV-001 to ENV-022). Sources: REG-045 to REG-056 in `sources/sources.md`.
+Task W-ENV, run 4, Pillar 1. Accessed 2026-10-17 with `curl -sL` (browser User-Agent) through the agent proxy; no bot check bypassed. Dates are taken from page bodies. Structured rows: `data/processed/2026-10-pestel-environmental.csv` (ENV-001 to ENV-022). Sources: REG-045 to REG-056 and, after the audit follow-up, REG-131 to REG-135 in `sources/sources.md`.
 
 Fact is separated from interpretation: the "Findings" sections are quotes and facts; "Reading" lines are analysis, not sourced.
 
@@ -18,6 +18,10 @@ Fact is separated from interpretation: the "Findings" sections are quotes and fa
 | ENV-S8 | REG-052 | https://pasal.id/peraturan/pergub/pergub-prov-dki-jakarta-no-142-tahun-2019 | 27 and 31 Desember 2019 |
 | ENV-S9 | REG-053 | https://www.esdm.go.id/id/media-center/arsip-berita/jaga-daya-beli-menteri-esdm-tarif-listrik-tidak-naik | Selasa, 30 Juni 2026 |
 | ENV-S10 | REG-054, REG-055 | https://www.esdm.go.id/id/media-center/arsip-berita/jaga-stabilitas-awal-tahun-2026-pemerintah-putuskan-tarif-listrik-tidak-naik ; https://www.pln.co.id/pelanggan-id/tarif-tenaga-listrik-id/penyesuaian-tarif-id | 31 Desember 2025; PLN page undated |
+| ENV-S12 | REG-131 | https://jdih.jakarta.go.id/dokumen/detail/3851/ (full text /link/download-fulltext/3851) | set 27 Dec 2019, promulgated 31 Dec 2019 |
+| ENV-S13 | REG-132 | https://jdih.jakarta.go.id/dokumen/detail/1803/ | set 8 Dec 2021 |
+| ENV-S14 | REG-135 | https://www.pln.co.id/webapi/media/file/webkorp/asset/1fa2814b-6ffd-459b-ac16-d46e515a0b3b.pdf | 1 July 2026 |
+| ENV-S15 | REG-133, REG-134 | https://jdih.jakarta.go.id/link/download-fulltext/14173 ; /14172 | set 16 Oct 2024 ; 14 Oct 2024 |
 | ENV-S11 | REG-056 | https://rmol.id/nusantara/read/2024/12/26/649963/tarif-air-pam-jaya-naik-mulai-1-januari | Kamis, 26 Desember 2024 |
 
 ## 1. Heat and climate (BMKG)
@@ -68,3 +72,11 @@ Fact is separated from interpretation: the "Findings" sections are quotes and fa
 | jdih.jakarta.go.id (search path), pasal.id P.75 path | HTTP 404 |
 
 Search-summary only (not opened, not stored as data): BRIN and Kemenko subsidence ranges, Fortune IDN B-2 tariff Rp1,444.70/kWh, Detik 1 July 2020 effective date, hukumonline Pergub 102/2021 and Perda 3/2013 notes, K III water tariff Rp21,500-23,000 per m3.
+
+## Audit follow-up (2026-10-17)
+
+- JDIH Jakarta is reachable: the search form works as `https://jdih.jakarta.go.id/pencarianHome?kata_pencarian=<title>` (the earlier "404, not usable" note was for another path). Opened: Pergub 142/2019 (record 3851, status "Berlaku", no amending relation listed; full text read, quotes in ENV-012/013 checked against it, Art. 6(2), 24, 29 added), Pergub 102/2021 (record 1803; waste duties of area managers and companies; no cup or straw rule), Kepgub 730/2024 (record 14173; image-only PDF, Annex II tariff read visually) and Pergub 37/2024 (record 14172, record page only).
+- PLN tariff PDF for Jul-Sep 2026 downloaded (image only) and read visually: B-2/TR Rp1,444.70 per kWh; expired 30 Sep 2026; Q4 2026 tariff still not found.
+- ENV-004 relabelled: 1,623 is BPBD's count of people affected (terdampak); the displaced figure is the BNPB headline "more than 1,600".
+- Still gaps: ENV-016 (PM2.5), ENV-017 (Jakarta heat), ENV-021 (flood losses; dibi.bnpb.go.id unreachable), cup and straw rule (ENV-018, partial), Q4 tariff.
+- Search-listing only (not opened): Pergub 111/2021 (fiscal incentive for eco-friendly bags), Pergub 55/2021, Perda 3/2013, Ingub 5/2026.
