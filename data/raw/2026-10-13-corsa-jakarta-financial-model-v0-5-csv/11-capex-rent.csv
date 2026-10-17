@@ -1,0 +1,55 @@
+Investment Requirement (CAPEX & pre-opening),,,,,,,,,,,,
+Blue = base quantities/unit costs (get 3 quotes each). Final amount applies the scenario cost factor (hard costs) and non-recoverable VAT.,,,,,,,,,,,,
+Note from Jonas:,This modelling assumes that the material is leased .,,,,,,,,,,,
+,,,,,,,,,,,,
+,Seats (from Revenue sheet),60,,,,,,,,,,
+,,,,,,,,,,,,
+Block,Item,Quantity,Unit cost (IDR),Base amount (IDR),Cost factor? (1/0),VAT? (1/0),Final amount (IDR),Final (CHF),% of total,Source ID(s) & key facts,How the amount was derived / check vs source,Evidence status
+A Hard,"Civil works, MEP, AC, kitchen exhaust & grease trap",150,,0,1.0,1.0,0,0,0,S10 (premium café fit-out IDR 4.5–6.5m/m²; civil 20–30% + MEP 15–20%),"(20–30% + 15–20%) × 4.5–6.5m/m² = 1.6–3.25m/m²; 3.2m/m² = top of range because kitchen exhaust, grease trap and AC are included.",Derived from sources
+A Hard,"Interior, furniture & decor",60,,0,1.0,1.0,0,0,0,S10 (furniture & fit-out 35–45% of premium budget),35–45% × 4.5–6.5m/m² × 150 m² = IDR 236–439m ÷ 60 seats = 3.9–7.3m/seat → 5.0m/seat mid-range.,Derived from sources
+A Hard,Design & supervision fee,1.0,0,0,1.0,1.0,0,0,0,S10 (design ~10% of build),10% × (civil/MEP + interior).,Sourced
+A Hard,Kitchen: combi oven,1.0,,0,1.0,1.0,0,0,0,"S68 (iCombi Pro 6-1/1E GBP 5,519 ex VAT); S71 (GBP/IDR 23,680)","5,519 × 23,680 = IDR 130.7m UK dealer price; + ~30–40% import duty, freight, local margin & installation ≈ IDR 170–185m. ⚠ v0.1 value (280m) is ~50% above this – review or justify (stand, water softener?).",Partly sourced
+A Hard,Kitchen: pasta cookers / induction range,1.0,,0,1.0,1.0,0,0,0,No source,"Quote needed (pasta boilers, induction range).",Assumption – validate
+A Hard,"Kitchen: refrigeration (reach-in, under-counter, chiller)",1.0,,0,1.0,1.0,0,0,0,No source,Quote needed.,Assumption – validate
+A Hard,"Kitchen: hood, ventilation & fire suppression",1.0,,0,1.0,1.0,0,0,0,No source,Quote needed – may be landlord scope.,Assumption – validate
+A Hard,"Kitchen: prep tables, sinks, dishwasher",1.0,,0,1.0,1.0,0,0,0,No source,Quote needed.,Assumption – validate
+A Hard,"Coffee: espresso machine (2-group, premium)",1.0,,0,1.0,1.0,0,0,0,"S69 (La Marzocco Linea PB 2-group GBP 11,748 ex VAT); S71","11,748 × 23,680 = IDR 278m UK dealer price. ⚠ v0.1 value (220m) is ~20% below – OK only with a cheaper model (e.g. Linea Classic) or local distributor price.",Partly sourced
+A Hard,Coffee: grinders (espresso + filter),2.0,,0,1.0,1.0,0,0,0,"S70 (Mahlkönig E65S USD 2,949; EK43 USD 3,899); S72 (USD/IDR 17,895)","E65S 2,949 × 17,895 = IDR 52.8m; EK43 3,899 × 17,895 = 69.8m; average ≈ 61m per grinder before import costs. ⚠ v0.1 (40m each) looks ~35% low.",Partly sourced
+A Hard,"Coffee: brew bar, water filtration",1.0,,0,1.0,1.0,0,0,0,No source,Quote needed.,Assumption – validate
+A Hard,"Drinks: blenders, juicer, ice machine",1.0,,0,1.0,1.0,0,0,0,No source,Quote needed (functional-drink equipment).,Assumption – validate
+A Hard,"Smallwares, tableware, uniforms",1.0,,0,1.0,1.0,0,0,0,No source,Assumption.,Assumption – validate
+A Hard,"Branding & signage (facade, menu boards)",1.0,,0,1.0,1.0,0,0,0,No source (reklame permit: Jakarta Bapenda),Quote needed.,Assumption – validate
+A Hard,"POS & technology (POS, KDS, Wi-Fi, CCTV, sound)",1.0,,0,1.0,1.0,0,0,0,S67 (Moka POS subscription – opex only),"Hardware (POS terminals, KDS, Wi-Fi, CCTV, sound) – quote needed.",Assumption – validate
+,Sub-total A – hard costs,,,,,,0,0,0,,,
+B Soft,"Company setup: PT PMA, notary, OSS, consultant",1.0,,0,0.0,1.0,0,0,0,S65 (PT PMA setup IDR 45.7–113m incl. KITAS),90m = upper-middle of S65 range (incl. one KITAS and consultant).,Derived from sources
+B Soft,"Licences & permits (SLHS, halal, PBG/SLF, fire, reklame)",1.0,,0,0.0,1.0,0,0,0,"S66 (halal: 12.5m registration + 3.68m LPH inspection); S03 (SLHS, PBG/SLF, fire, environment)","Halal ≈ 16.2m sourced; remaining ~44m for SLHS, PBG/SLF, fire certificate, reklame is an assumption.",Partly sourced
+B Soft,Pre-opening marketing & launch,1.0,,0,0.0,1.0,0,0,0,Brief; S52 (marketing 3–6%),180m ≈ 25% of one mature month's revenue (IDR 736m). Launch budget is an assumption.,Assumption – validate
+B Soft,Recruitment & training (incl. trainer travel from CH),1.0,,0,0.0,1.0,0,0,0,Brief,Recruitment + trainer flights/stay from Switzerland – assumption.,Assumption – validate
+B Soft,"Opening inventory (food, coffee, packaging)",1.0,,0,0.0,1.0,0,0,0,Brief; Menu sheet food cost,≈ 2–3 weeks of mature COGS (≈ IDR 200m/month) → 120m. Approximation.,Derived from sources
+B Soft,"Pre-opening utilities, deposits & misc.",1.0,,0,0.0,1.0,0,0,0,No source,Assumption.,Assumption – validate
+B Soft,Pre-opening payroll (months × full staff cost),1,166907330,166907330,0.0,0.0,166907330,7727.191204,0.1118146405,Staffing sheet; Inputs preopen_pay,Months × full monthly staff cost (formula).,Derived from sources
+,Sub-total B – soft / pre-opening,,,,,,166907330,7727.191204,0.1118146405,,,
+C Cont.,Contingency reserve (% of A + B),0.1,,,,,16690733,772.7191204,0.01118146405,S64 via Inputs contingency,% × (hard + soft) – formula.,Derived from sources
+D Lease,Rent during fit-out (before opening),2,37774218.75,75548437.5,,,75548437.5,3497.612847,0.05061144638,Inputs fitout_m; Rent_Data/Location,Formula: months × monthly rent + SC.,Derived from sources
+D Lease,Rent prepayment – first block,12,37774218.75,453290625,,,453290625,20985.67708,0.3036686783,Inputs prepay_m; S20/S21,Formula: months × monthly rent.,Derived from sources
+D Lease,Security deposit (refundable),2,37774218.75,75548437.5,,,75548437.5,3497.612847,0.05061144638,Inputs deposit_m,Formula: months × monthly rent.,Derived from sources
+E WC,Working-capital reserve (staff + fixed opex + utilities),3,234909630,704728890,,,704728890,32626.3375,0.4721123244,Inputs wc_months,Formula: months × (staff + fixed opex + utilities).,Derived from sources
+,TOTAL INVESTMENT REQUIREMENT,,,,,,1492714453,69107.1506,1,,,
+,,,,,,,,,,,,
+,Helpers for Scenarios / PnL,,,,,,,,,,,
+,"Hard costs before cost factor, incl. VAT",,,,,,0,,,,,
+,"Soft costs excl. pre-opening payroll, incl. VAT",,,,,,0,,,,,
+,Depreciable base (hard costs + their contingency share),,,,,,0,,,,,
+,Cash spent before opening (total less WC reserve),,,,,,787985563,,,,,
+,,,,,,,,,,,,
+,Note: pre-opening soft costs are expensed under IFRS; here they are treated as part of the investment (cash view). Only hard costs are depreciated.,,,,,,,,,,,
+,,,,,,,,,,,,
+,,,,,,,,,,,,
+SOURCES & CALCULATION BASIS – CAPEX (sheet-level parameters),,,,,,,,,,,,
+Figure / cells,,Value used (live),,Source ID(s) → Sources sheet,,,How the figure was derived from the source,,,,Evidence status,
+Cost factor applied to hard costs (col F),,1,,S64,,,Overrun/savings factor from Inputs row 75.,,,,Assumption – validate,
+Non-recoverable VAT (col G),,0.11,,S03,,,11% VAT added because restaurants (PBJT regime) cannot reclaim input VAT.,,,,Sourced,
+Contingency % (row 31),,0.1,,S64,,,10% = renovation benchmark (5% ground-up).,,,,Derived from sources,
+Seats driving interior cost (C4),,60,,S35,,,Dining area ÷ 1.5 m²/seat (Revenue!C4).,,,,Derived from sources,
+CHF conversion (col I),,21600,,S16,,,IDR ÷ FX rate.,,,,Sourced,
+⚠ Equipment checks vs dealer prices,,—,,"S68, S69, S70",,,"Combi oven looks ~50% high, espresso ~20% low, grinders ~35% low vs converted UK/US dealer prices (rows 10, 15, 16). Net effect small, but get Jakarta distributor quotes before 22 Oct.",,,,Partly sourced,
