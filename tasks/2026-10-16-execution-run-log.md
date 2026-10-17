@@ -213,3 +213,5 @@ Interrupted by the account usage limit (reset 15:40 UTC), to be resumed after th
 - the Plan 2 synthesis report;
 - the Plan 3 synthesis report.
 After those: the Plan 1 synthesis, verifiers for the Plan 2 and Plan 3 reports, and the run-3 wrap-up.
+
+**Plan 4 report accepted (main agent, 2026-10-17):** `reports/2026-10-17-purchase-triggers-and-channels.md` and `data/processed/plan4-trigger-matrix.csv`. V4 verdict: ACCEPT WITH MINOR FIXES. All minors were applied (R1–R6), and the number check passes. Length is 4,494 words (about 8–9 pages, slightly over the 6–8 page target), accepted. Plan 4 acceptance criteria are met except where a documented structural gap applies: the 25–39 cut, Jakarta-only cuts, and racing/Italian image.
