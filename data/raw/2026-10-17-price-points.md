@@ -2,7 +2,7 @@
 
 Collector: P3-PRICE. Plan: `tasks/2026-10-16-plan-3-competitors-price-ladder.md` (Q2, Q3, Q4, H1, H2, H8-style questions on the price ladder). Rows: `data/processed/price-ladder.csv` (30 rows in the first pass; 59 rows added in Run 3b, see the "Run 3b" section at the end). Access date for all sources: 2026-10-17.
 
-**Headline result: target not met.** 30 price points (target 40-80) and only 2 brands with usable published prices (Burgreens, Fore Coffee) instead of at least 4 per category. Almost every official brand site in scope shows menus without prices (prices sit only in the apps), the Grab and GoFood listings were not reachable without login or a bot challenge, and most media price lists found are pre-window. Nothing was estimated or filled in. Gaps are listed in section 5.
+**Headline result of the first pass (superseded in part by Run 3b at the end of this file): target not met.** 30 price points (target 40-80) and only 2 brands with usable published prices (Burgreens, Fore Coffee) instead of at least 4 per category. Almost every official brand site in scope shows menus without prices (prices sit only in the apps), the Grab and GoFood listings were not reachable without login or a bot challenge, and most media price lists found are pre-window. Nothing was estimated or filled in. Gaps are listed in section 5.
 
 ## 1. Sources used (one block per source)
 
@@ -118,7 +118,7 @@ Not comparable without adjustment: Burgreens prices exclude 10% tax and service 
 
 Collector: P3-PRICE-b. Rows `P3PB-01` to `P3PB-59` in `data/processed/price-ladder.csv` (59 rows). Temp source keys `P3PB-S1` to `P3PB-S12`. Access date for all sources: 2026-10-17. All pages were opened with curl and a browser user agent; dates below are the dates printed in each article's own byline block (sidebar and "related article" dates, many of them 2026, were ignored). Quotes are copied from the opened page text (Indonesian, verbatim, including the article's own spelling).
 
-**Result against target.** 59 rows (target 40 or more), but only 40 are numeric item prices; the other 19 are ranges, per-person spend or promo redemption prices with `price_idr` left blank. Brands per category (new rows only, year = article date): see section R3b-5. The target of at least 4 brands per category with item-level list prices is met for coffee only; Italian/pasta has one Italian restaurant brand with item prices (Pizza Marzano 2025), and healthy bowls and salads has none new at item level (only Pizza Marzano restaurant salads); the healthy-bowl brand coverage is per-person ranges.
+**Result against target.** 59 rows (target 40 or more), but only 38 are numeric item prices; the other 21 are ranges, per-person spend or promo redemption prices with `price_idr` left blank. Brands per category (new rows only, year = article date): see section R3b-5. The target of at least 4 brands per category with item-level list prices is met for coffee only; Italian/pasta has one Italian restaurant brand with item prices (Pizza Marzano 2025), and healthy bowls and salads has none new at item level (only Pizza Marzano restaurant salads); the healthy-bowl brand coverage is per-person ranges.
 
 ### R3b-1. Sources (one block per source)
 
@@ -265,3 +265,62 @@ Collector: P3-PRICE-b. Rows `P3PB-01` to `P3PB-59` in `data/processed/price-ladd
 - Access status: opened (HTTP 200)
 - Rows: P3PB-59 to P3PB-59 (1 rows)
 - Quotes: in the `snippet` column of the CSV rows above (verbatim Indonesian).
+
+### R3b-2. Opened, no row (reason)
+
+| Source | URL opened | Finding | Why no row |
+| --- | --- | --- | --- |
+| Tomoro Coffee Indonesia | https://www.tomoro-coffee.id/ (HTTP 200, 2.7 KB) | Script shell, no menu or prices | No prices |
+| Starbucks Indonesia | https://www.starbucks.co.id/ (HTTP 200) | No prices on the page (beverage pages checked in the first pass) | No prices |
+| Kopi Kenangan | https://www.kopikenangan.com/menu | HTTP 404; home page has no prices (first pass) | No prices |
+| SaladStop! Indonesia | https://saladstop.co.id/ (HTTP 200) and /menu (HTTP 404) | No prices in the HTML | No prices |
+| Crunchaus | https://www.crunchaus.com/ | Login panel ("Selamat Datang Di Admin Panel") | Not a menu |
+| Boga Group | https://www.bogagroup.com/ | Domain for sale (HugeDomains) | Not the group's site; Pepper Lunch, Bensu and Kimukatsu official menu pages were not located |
+| Pizza Hut Indonesia | https://www.pizzahut.co.id/menu (HTTP 200, 11 KB) | Script shell ("Order Now!"), menu loads from an API (not pursued, as instructed) | No prices; the Liputan6 article of 16 May 2025 (P3PB-S2) relays the brand site |
+| Pizza Marzano Indonesia | https://www.pizzamarzano.co.id/menu/pasta/ and /menu/main-menu/ | Pasta page is a single PNG image of a dish; menu pages list names only | No prices on the official site (only the April 2021 PDF, out of window). The 2025 prices come from IDN Times (P3PB-S1) |
+| Domino's Indonesia | https://www.dominos.co.id/menu | HTTP 403 | Blocked, not bypassed |
+| Union Group | https://uniongroup.co.id and https://www.uniongroup.co.id | No connection (curl 000). https://uniongroup.com answers but is a textile group (Union Limited), not the restaurant group | No menu located |
+| Ismaya | https://www.ismaya.com/ (HTTP 200, 634 KB) | No prices and no menu PDF links found | No prices |
+| Four Seasons, hotel and premium menu PDFs (SCBD, Senopati, Kuningan) | web search only | Searches for downloadable menu PDFs returned listicles and blogs (NOW! Jakarta, Chope, Nibble, Lemon8, Wanderlog), no PDF | No tier 1-3 priced menu found; strategy (3) yielded no rows |
+| Kontan MomsMoney, Pizza Hut Extra Deals 8 Jul 2025 | https://momsmoney.kontan.co.id/news/promo-pizza-hut-extra-deals-7-20-juli-regular-pizza-pastarice-cuma-rp-99000 | "1 Pan Regular Pizza + 1 Pasta/Rice (Rp 99.000)" and "1 Pasta + 1 Rice (Rp 89.000)" | Set offers, not item prices |
+| Kontan MomsMoney, 9.9 promos 9 Sep 2026 | https://momsmoney.kontan.co.id/news/9-promo-99-minuman-kekinian-2026-diskon-hemat-di-tomoro-koi-th%C3%A9-hingga-starbucks | Bundle and promo prices ("dari harga normalnya Rp 60.000" for two drinks) | Bundles, no single-item normal price |
+| Kontan MomsMoney, payday promos 26 Jan 2026 | https://momsmoney.kontan.co.id/news/7-promo-kopi-payday-januari-2026-nikmati-diskon-hingga-70-di-starbucks | Starbucks two drinks Rp 29.000 each with BCA, Rp 33.000 each otherwise (promo, 26-28 Jan 2026) | Promo price, size not stated; context only |
+
+### R3b-3. Historical / pre-window context (opened, printed date before 2024-10-16, not in the CSV)
+
+- IDN Times "55 Menu Kopi Kenangan 2025 Lengkap" (URL slug says 2025; the printed byline date is 25 Sep 2023, 15:11 WIB; the title shows 2024 and 2025 variants). Not used.
+- IDN Times "33 Menu di Starbucks Paling Favorit Beserta Harganya" 23 Aug 2023; "7 Menu Starbuck di Bawah 50 Ribu" 10 Mar 2023. Not used.
+- IDN Times "Daftar Menu Lengkap Tomoro Coffee" 16 Jan 2024; "Menu Fore Coffee Beserta Harganya" 02 Nov 2023; "Daftar Menu Djournal Coffee" 27 Oct 2023; "55 Daftar Menu Excelso" 13 Jun 2023.
+- IDN Times "64 Menu Pizza Hut 2024" 27 Apr 2024; "47 Menu Domino's Pizza 2024" 29 Apr 2024; "Daftar Menu Sec Bowl" 30 Sep 2024 (16 days before the window starts); "4 Tempat Makan Sehat di Kawasan SCBD" 13 Sep 2024; "7 Restoran Vegetarian di Jakarta Selatan" 13 Nov 2023 (displayed date); "5 Rekomendasi Restoran Healthy Food Terenak di Jaksel" 24 Aug 2021; "Anti Gagal Diet, 5 Rekomendasi Restoran Sehat" 16 Dec 2021.
+- Not opened (snippet-only from search results, so not used as figures): Kompas "6 Tempat Makan Salad" 03 Jan 2024 (Honu Central salads Rp 65.000 to 85.000), Kompas Chipotle series SaladStop June 2023, Liputan6 SaladStop warm protein bowls 2019 (Rp 80.000 to 110.000). All pre-window.
+
+### R3b-4. Leads only (tier 4 or undated; not in the CSV, not to be used as figures)
+
+From search-result text only, not opened: Majoo (Kopi Kenangan 2026, Starbucks "estimasi" Sept 2025: Caffe Latte Tall Rp 52.000, Grande Rp 57.000); Tokopedia blog (Pizza Hut, Pepper Lunch 2026 list, Kimukatsu Tokyo Ball Katsu Rp 64.000, SaladStop bowl about Rp 95.000, undated); Mamikos 2024 (Starbucks Americano Tall Rp 34.000); Shopee Inspirasi (Point Coffee, Starbucks 2023); Kumparan (Excelso, Tomoro, Starbucks, Kopi Kenangan 2024; fetch returned a blank page); Nibble.id, Lemon8 and Wanderlog (The Garden Osteria Tagliatelle Bistecca 195K, Acta Brasserie Fettuccine Mushroom 145K, William's Creamy Mushroom Spaghetti 115K; Osteria Gia Spaghetti Aglio Olio Rp 160.000 and Burro e Pepe Rp 210.000 from an undated IDN Times article); Time Out, Mojok (undated). The Tempo Starbucks lists (HTTP 403 in the first pass) were not retried. These show where Italian fine-dining pasta sits (Rp 115.000 to 225.000) but cannot be stored as figures.
+
+### R3b-5. Brands per category (Run 3b rows, year = printed article year)
+
+| Category | Brands with numeric item prices (n rows) | Brands with range / spend / promo only | Meets 4 brands? |
+| --- | --- | --- | --- |
+| (a) Italian / pasta mains | Pizza Marzano 2025 (11 pasta); Pepper Lunch 2025 (3, Japanese-style teppan pasta, rounded "ribuan"); 5 low-end street pasta kiosks 2025 (Casa Pasta, Sky Pasta, Halo Pasta, Fish Streat, Fish Lab; approximate) | Pizza Hut Indonesia 2025 (3 pasta ranges); Pizza Hut Ristorante 2025 (Pasta Con Bistecca, Spicy Arrabbiata, promo); Gior Jakarta, Bastian, Rosa Osteria 2025 (ranges or spend) | Only 1 Italian restaurant brand with item prices (Pizza Marzano). 4 or more counting the street kiosks, which are not comparable Italian restaurants. |
+| (b) Coffee | Pizza Marzano 2025 (espresso, americano, latte, cappuccino); Fore Coffee 2025 (7 signature items; Americano rows already in P3PR-025 to 030); Kopi Tuku 2025, Tomoro Coffee 2025, Kopi Kenangan 2025 (gula aren regular, one row each); Point Coffee 2026 (1 row, weak) | none | Yes, 6 brands (but only Pizza Marzano and Fore give espresso, americano or latte list prices; the rest are one signature milk-coffee each) |
+| (c) Healthy bowls and salads | Pizza Marzano 2025 (3 restaurant salads) | Pizza Hut (salad range) 2025; Pizza Hut Ristorante (2 Caesar salads, promo) 2025; per-person "from" spend 2025 for Bluezone, Hijoo, Kalegreen, Salad Hut, SaladStop!, Salam Salads, Serasa Salad Bar, The Roots (IDN Times 24 Apr 2025); SaladStop! ranges (IDN Times 02 Feb 2025, Liputan6 01 Oct 2025) | No at item level (the only healthy-bowl chain with item prices remains Burgreens from the first pass); yes at the level of 8 brands with per-person "from" spend |
+
+### R3b-6. Findings that bear on the price position (facts separate from reading)
+
+Facts (all tier 3, dated in the window):
+- Pizza Marzano Jakarta menu list, IDN Times 17 Nov 2025: pasta Rp 69.000 (Aglio Olio) to Rp 109.000 (Fettuccine Salmon Pesto, Orecchiette, Lasagna), median Rp 95.000 over 11 pasta; Cafe Latte Rp 38.000, Cafe Americano Rp 35.000, Espresso Rp 30.000; restaurant salads Rp 60.000 to Rp 105.000. Tax and service basis not stated.
+- Fore Coffee signature lattes Rp 29.000 to Rp 33.000 (IDN Times 19 Nov 2025); Fore kopi susu gula aren about Rp 27.000 at Cipete versus Tomoro about Rp 18.000, Kopi Kenangan about Rp 23.000 and Kopi Tuku about Rp 10.000 (Liputan6 20 Apr 2025, Google Maps and app prices).
+- Italian fine dining ranges (detikFood 28 Oct 2025): Gior Jakarta main dishes Rp 100.000 to Rp 250.000; Rosa Osteria (Senopati) average from Rp 200.000 per person.
+- Low-end pasta floor: about Rp 20.000 to Rp 29.000 (detikFood 22 Jan 2025).
+
+Reading (collector's analysis, not sourced data): against the Team B placeholders (pasta Rp 82.000 to 135.000, latte Rp 50.000, bowl Rp 85.000 to 110.000), the pasta placeholder overlaps the Pizza Marzano item range (Rp 69.000 to 109.000) and the lower end of Italian fine-dining mains; the latte placeholder (Rp 50.000) is above every latte list price found (maximum Rp 38.000 at Pizza Marzano, Rp 33.000 at Fore); the bowl placeholder is above every bowl and salad item found (maximum Rp 105.000 for a Pizza Marzano restaurant salad, Rp 68.000 for Burgreens bowls). Starbucks and Tomoro list prices for latte could not be obtained for the window, so the coffee-chain upper end (Starbucks) is missing and the latte reading is weak. This is direction only (H1: mixed for pasta, premium-looking for latte and bowl); n and brand counts are too small for a percentile.
+
+Disconfirming or conflicting evidence recorded: SaladStop! Senayan City is given as Rp 25.000 to 125.000 (IDN Times, 02 Feb 2025), Rp 100.000 per person from (IDN Times, 24 Apr 2025) and Rp 100.000 to 200.000 per person (Liputan6, 01 Oct 2025): three different statements for the same venue. Pizza Hut Ristorante Pasta Con Bistecca appears as Rp 105.000 (Kontan, 10 Jun 2025 anniversary promo, first pass) and Rp 102.000 (Kontan, 06 Aug 2025 redemption promo): both promos, no list price. Liputan6 Pizza Hut prices (Rp 60.000 to 72.727) are far below Pizza Marzano and Ristorante, so "pasta" spans Rp 20.000 to Rp 109.000 in the item-level rows before any premium Italian venue is added.
+
+### R3b-7. Gaps and blocked hosts
+
+- Blocked or unusable hosts (not bypassed): dominos.co.id (HTTP 403), tempo.co (HTTP 403, first pass), uniongroup.co.id (no connection), pizzahut.co.id menu (API only), tomoro-coffee.id and saladstop.co.id (no prices in HTML), kumparan.com (blank page to curl). Grab and GoFood were not retried, as instructed.
+- No tier 1-3 priced menu for: Starbucks, Kopi Kenangan, Tomoro (normal list), SaladStop!, Crunchaus, Union Group, Ismaya, Boga Group (Bensu, Kimukatsu), hotel menus in SCBD, Senopati or Kuningan.
+- No outlet-level split by district for most rows (brand-wide lists). Pizza Marzano and Pizza Hut tax and service basis unknown for 2025.
+- Primary-research route (plan section 10): photograph menus and capture app prices on the Jakarta visit for the missing chains.
