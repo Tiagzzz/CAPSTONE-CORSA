@@ -195,3 +195,21 @@ Wave 1 (4 parallel Sonnet agents, per the run-2 rate-limit lesson):
 | P3-PRICE | Plan 3 price ladder from official menus and price lists (Italian/pasta, specialty coffee, bowls; target districts) | `data/raw/2026-10-17-price-points.md`, `data/processed/price-ladder.csv` |
 | P2-TAX-FR-SENT | Plan 2 A4 tax (PBJT, CIT, treaty), A2 franchise, A6 sentiment indicators | `data/processed/2026-10-p2-tax-franchise.csv`, `data/processed/2026-10-p2-sentiment-indicators.csv`, `data/raw/2026-10-17-p2-tax-franchise-sentiment.md` |
 | P4-W10 remaining Qs | Plan 4 Q5 (community/sport age profiles), Q8 (racing/Italian image: confirm gap or find data), delivery-app AOV/frequency | `data/raw/plan4-misc-run3/findings.md`, `data/processed/plan4-misc-run3.csv` |
+
+### Run 3 status (paused by usage limit)
+
+Done and committed:
+- Plan 4 W10 rows;
+- Plan 1 C4 rows;
+- Plan 2 tax/franchise/sentiment rows;
+- Plan 3 price ladder (89 rows);
+- registration (BEH-091–104, DEM-049–063, REG-019–044, CMP-052–065);
+- verification of all run-3 rows, and the fix-up;
+- the Plan 4 report, revised once.
+
+Interrupted by the account usage limit (reset 15:40 UTC), to be resumed after the reset:
+- the V4 re-check of the revised Plan 4 report;
+- the README F20 fix;
+- the Plan 2 synthesis report;
+- the Plan 3 synthesis report.
+After those: the Plan 1 synthesis, verifiers for the Plan 2 and Plan 3 reports, and the run-3 wrap-up.
