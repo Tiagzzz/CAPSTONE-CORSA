@@ -1,13 +1,10 @@
-# CORSA Jakarta Administrative Findings/Confirmations (Matthieu, 12 October 2026)
+# CORSA Jakarta Administrative Findings/Confirmations
 
-> Markdown text version of the Google Drive file "CORSA_CAGE_Administrative_Matthieu.docx" (Drive path: 00_HSG Team / 01_Market Entry / 02_Administrative), Drive ID 1e7_Ep7cJipVM6q81vbNa4Ep4VjqMGeIZ, modified 2026-10-12. Text obtained with the Drive `read_file_content` tool on 2026-10-16. The original DOCX could not be saved to the repository (the Drive download tool returned it inline instead of writing it to disk, so no local copy was possible); the Drive original is the authoritative source.
+> Markdown version of `2026-10-12-corsa-cage-administrative-matthieu.docx` (Google Drive file "CORSA_CAGE_Administrative_Matthieu.docx", Drive path: 00_HSG Team / 01_Market Entry / 02_Administrative, Drive ID 1e7_Ep7cJipVM6q81vbNa4Ep4VjqMGeIZ, owner nomatt03@gmail.com (Matthieu), last modified 2026-10-12), converted 2026-10-17 with `pandoc` (GitHub-flavoured Markdown). The DOCX is the authoritative source. The document title above comes from the DOCX title paragraph, which pandoc keeps as metadata rather than body text. Embedded images are not reproduced here and appear as `[Figure N: ...]` placeholders (0 found).
 
 ---
 
-CORSA Jakarta  
-Administrative Findings/Confirmations
-
-CAGE framework | Matthieu | Team A | 12 October 2026
+CAGE framework \| Matthieu \| Team A \| 12 October 2026
 
 Halal certification is the main administrative finding. The October 2026 expansion changes the compliance context for covered products, while some domestic businesses were already subject to requirements from October 2024. CORSA needs to resolve the route applicable to its Indonesian operation and suppliers.
 
@@ -23,11 +20,11 @@ Use the first for regulatory background and the second for foodservice context. 
 
 ## Sources
 
-[USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
+[<u>USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8</u>](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
 
-[USDA FAS — HRI Annual ID2025-0049, 31 December 2025, pp 4–5](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food+Service+-+Hotel+Restaurant+Institutional+Annual_Jakarta_Indonesia_ID2025-0049.pdf)
+[<u>USDA FAS — HRI Annual ID2025-0049, 31 December 2025, pp 4–5</u>](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food+Service+-+Hotel+Restaurant+Institutional+Annual_Jakarta_Indonesia_ID2025-0049.pdf)
 
-[Government Regulation 42 of 2024 — Official Indonesian legislation portal](https://peraturan.go.id/id/pp-no-42-tahun-2024)
+[<u>Government Regulation 42 of 2024 — Official Indonesian legislation portal</u>](https://peraturan.go.id/id/pp-no-42-tahun-2024)
 
 # 2 What is the applicable timeline?
 
@@ -41,13 +38,13 @@ CAGE implication: do not transfer the Swiss operating model on the assumption th
 
 ## Sources
 
-[Government Regulation 42 of 2024 — Official Indonesian legislation portal](https://peraturan.go.id/id/pp-no-42-tahun-2024)
+[<u>Government Regulation 42 of 2024 — Official Indonesian legislation portal</u>](https://peraturan.go.id/id/pp-no-42-tahun-2024)
 
-[BPJPH — Certification phase effective from 18 October 2024](https://bpjph.halal.go.id/detail/masa-penahapan-usai-kewajiban-sertifikasi-halal-berlaku-mulai-18-oktober-2024)
+[<u>BPJPH — Certification phase effective from 18 October 2024</u>](https://bpjph.halal.go.id/detail/masa-penahapan-usai-kewajiban-sertifikasi-halal-berlaku-mulai-18-oktober-2024)
 
-[BPJPH — Product categories covered from 18 October 2026](https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026)
+[<u>BPJPH — Product categories covered from 18 October 2026</u>](https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026)
 
-[BPJPH 9 October 2026 — No postponement and special provisions being prepared](https://bpjph.halal.go.id/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha)
+[<u>BPJPH 9 October 2026 — No postponement and special provisions being prepared</u>](https://bpjph.halal.go.id/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha)
 
 # 3 What needs to be certified or documented?
 
@@ -61,11 +58,11 @@ The comparison with Switzerland is an entry-planning inference: Indonesian docum
 
 ## Sources
 
-[USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
+[<u>USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8</u>](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
 
-[BPJPH — Restaurant chains must maintain halal assurance at every outlet](https://bpjph.halal.go.id/main/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet)
+[<u>BPJPH — Restaurant chains must maintain halal assurance at every outlet</u>](https://bpjph.halal.go.id/main/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet)
 
-[BPJPH 25 June 2025 — Non-halal products and foreign certificate registration](https://bpjph.halal.go.id/read/penegasan-bpjph-di-sidang-wto-dari-produk-nonhalal-dapat-diimpor-hingga-skema-registrasi-halal-luar-negeri)
+[<u>BPJPH 25 June 2025 — Non-halal products and foreign certificate registration</u>](https://bpjph.halal.go.id/read/penegasan-bpjph-di-sidang-wto-dari-produk-nonhalal-dapat-diimpor-hingga-skema-registrasi-halal-luar-negeri)
 
 # 4 What must CORSA resolve before launch?
 
@@ -75,10 +72,10 @@ Clarify the business classification, menu coverage, suppliers, preparation contr
 
 ## Sources
 
-[USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
+[<u>USDA FAS — Expanding Halal Standards ID2025-0035, 27 August 2025, pp 1–8</u>](https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035)
 
-[Government Regulation 42 of 2024 — Official Indonesian legislation portal](https://peraturan.go.id/id/pp-no-42-tahun-2024)
+[<u>Government Regulation 42 of 2024 — Official Indonesian legislation portal</u>](https://peraturan.go.id/id/pp-no-42-tahun-2024)
 
-[BPJPH 9 October 2026 — No postponement and special provisions being prepared](https://bpjph.halal.go.id/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha)
+[<u>BPJPH 9 October 2026 — No postponement and special provisions being prepared</u>](https://bpjph.halal.go.id/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha)
 
-[BPJPH — Restaurant chains must maintain halal assurance at every outlet](https://bpjph.halal.go.id/main/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet)
+[<u>BPJPH — Restaurant chains must maintain halal assurance at every outlet</u>](https://bpjph.halal.go.id/main/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet)
