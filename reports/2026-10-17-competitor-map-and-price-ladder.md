@@ -148,7 +148,7 @@ No verdict rests on one source or on a small difference. Where a criterion needs
 | H4 Community concepts few (<10 venues) | **GAP** | No community-venue census in the input. |
 | H5 Mid-market casual dining under pressure | **PARTLY CONFIRMED** | Confirm criteria met for mass and mid chains: FAST net loss (CMP-001) with going-concern note and 33 fewer outlets since Dec 2024 (derived: 715-682; CMP-003, CMP-001); MAPB loss widening (CMP-006); ENAK nine-month loss (CMP-012); PZZA sales -4.54% and profit down (CMP-010). Disconfirm criterion (operators growing outlets and margin) is met by Fore (CMP-013, CMP-015) and partly by PZZA outlets +4 in H1 2026 (CMP-009) and FAST's narrowing loss. Conclusion: pressure on mass and mid-price restaurants and Starbucks; not on affordable specialty coffee. ENAK rests on a single broker mirror and a period ending Sep 2025. |
 | H6 Exits concentrate among entrants without a strong local partner | **INCONCLUSIVE** | There is no documented in-window exit with a stated reason (Section 3). The shrinking cases (KFC, Starbucks, Burger King) all have established local operators, and the unpartnered case (Flash Coffee, own entity) is expanding on targets. The set does not test the hypothesis; it gives no support to it either. |
-| H7 Oakberry shows replicability, not profitability | **GAP** | No Oakberry rows were in the input (CMP-046 is a registered Australian-rollout article only). Not tested here. |
+| H7 Oakberry shows replicability, not profitability | **GAP** | No Oakberry rows were in the input. Not tested here. |
 
 ## 6. Saturation test
 
