@@ -37,6 +37,7 @@ Analysis: the lowest hurdle is a franchise or licence to an Indonesian-owned ope
 | Tax on outlet sales and profit | PBJT 10%; CIT 22% (tags in 2.0b) | Analysis: same, at the operator | Analysis: same, at the PT | Analysis: same, at the operator |
 | Cross-border tax | Dividend 10% or 15% (tags in 2.0b) | Royalty 10% or service fee 5% (2.0b) | Dividend 15% below 25% direct (2.0b) | Analysis: royalty or service fee; question 17 |
 | Lead time and fees | GAP (NIB and Sertifikat Standar fees and time not found) | Regional STPW at most 5 working days; central STPW time GAP. [F-09 · REG-031 · Art. 4(11), 4(12)] | GAP | GAP |
+| Control and brand risk | Analysis: most control | Analysis: third party carries halal and quality burden | Analysis: shared | Analysis: weakest control |
 
 Contradictions: T16 (halal corner in a mixed kitchen) stays open (H4, questions 11-13). T17 (halal only or the PT PMA route) is resolved on the text in that both apply (section 1); Analysis: the IDR 10bn plan threshold is the larger barrier for the CHF 200k frame. T28 (entry mode absent from the final scope) is answered by the three routes and section 3; which to test first is analysis.
 
@@ -65,7 +66,7 @@ Contradictions: T16 (halal corner in a mixed kitchen) stays open (H4, questions 
 | PP 28/2025, set 5 Jun 2025 | "Berlaku"; Lampiran not opened. [E-05 · REG-002 · Art. 552] |
 | Perpres 10/2021 and 49/2021 | "Berlaku"; successor not issued. [E-01 · REG-003 · Art. 3] |
 | PP 42/2024 (halal), 17 Oct 2024 | Operative; provincial mirror. [H-01 · REG-009 · Art. 198] |
-| Kepkaban BPJPH 78/2023 | In force via PP 42/2024 Art. 196 if not conflicting; no replacement seen. [H-07 · REG-018 · Bab II] |
+| Kepkaban BPJPH 78/2023 | In force via PP 42/2024 Art. 196 if not conflicting (Art. 197 revokes PP 39/2021); no replacement seen. [H-07 · REG-018 · Bab II] |
 | Kepkaban BPJPH 22/2024 (tariffs) | Named by the BPJPH calculator; no later decision seen. [H-08 · REG-017 · Lampiran II] |
 | Perda DKI 1/2024, 5 Jan 2024 | In force from promulgation; status page not found. [T-05 · REG-019 · Art. 118] |
 | PP 35/2024 (franchise) | "Berlaku"; revoked PP 42/2007. [F-01 · REG-029 · Art. 41] |
@@ -104,7 +105,7 @@ Contradictions: T16 (halal corner in a mixed kitchen) stays open (H4, questions 
 - A foreign franchisor adds a legalised home licence and a continuity statement from the Indonesian trade attache; its franchisee gets the STPW centrally. [F-03 · REG-029 · Art. 13(3), 14(3), 15(2)]
 - Regional STPW: at most 5 working days, profit test unchanged; the central STPW of a foreign-franchise franchisee has an unknown lead time (question 9). [F-09 · REG-031 · Art. 4(11), 4(12)]
 - Prospectus 2 weeks before signing; agreement in Bahasa Indonesia. [F-08 · REG-030 · Art. 5, 6, 7]
-- Domestic goods are to be prioritised; no quota is stated. [F-06 · REG-029 · Art. 26, 27] Art. 26(1), (3), (5) bind domestic franchisors and sub-franchisors, including sub-franchisors of a foreign franchise (Art. 3(b)-(d)), not a foreign franchisor (Art. 3(a)); Art. 26(2), (4) bind franchisees (Art. 3(e)-(h)). Art. 26(2) is conditional on the franchisor's written quality standards; (4) and (5) depend on the franchisor's requirements. [F-06 · REG-029 · Art. 3(b)-(d), 26, 27, from opened text, V-P2b]
+- Domestic goods are to be prioritised; no quota is stated. [F-06 · REG-029 · Art. 26, 27] Art. 26(1), (3), (5) bind domestic franchisors and sub-franchisors, including sub-franchisors of a foreign franchise (Art. 3(b)-(d)), not a foreign franchisor (Art. 3(a)); Art. 26(2), (4) bind franchisees (Art. 3(e)-(h)). Art. 26(2) is conditional on the franchisor's written quality standards; (4) and (5) depend on the franchisor's requirements. [F-06 · REG-029 · Art. 3(b)-(d), 26, 27, from opened text]
 - Foreign franchisors and their franchisees are regulated parties. [F-07 · REG-029 · Art. 1(1), 3(a), 3(e)]
 
 ### 2.3 Route (a): PT PMA, own outlet
@@ -136,10 +137,10 @@ Analysis: three options, none legally cleared: (1) raise capital above the thres
 | ID | Verdict | Test and evidence |
 |---|---|---|
 | H1: single-outlet PT PMA feasible at about CHF 200k | **Not supported** on the text read (no relief found; questions 1-5) | Disconfirmer met: IDR 10bn per KBLI group per location, no single-outlet relief. [E-04 · REG-001 · Art. 26(1), 26(4)] |
-| H2: a local partner is legally required | **Not supported**; medium confidence | Criterion met: restaurants are open to all investors. [E-01 · REG-003 · Art. 3(2)] A partner is a commercial choice. Hukumonline (tier 3, 2026-06-25) agrees. [E-01 · REG-008 · Hukumonline] Medium confidence: annex read by OCR; new Perpres pending. |
+| H2: a local partner is legally required | **Not supported**; medium confidence | Criterion met: restaurants are open to all investors. [E-01 · REG-003 · Art. 3(2)] A partner is a commercial choice. Hukumonline (tier 3, 2026-06-25) agrees. [E-01 · REG-008 · Hukumonline] Medium confidence: annex read by OCR; new Perpres pending. [E-02 · REG-007 · Keppres 38/2025] |
 | H3: licence/franchise is lowest risk | **Undetermined** | For: foreign franchisors are regulated parties with an STPW route [F-07 · REG-029 · Art. 3(a)]; royalty ceiling 10%. Against: the profit test and the unresolved 5-year rule (section 1). STPW fees not found; brand control is qualitative. |
-| H4: halal kitchen corner workable | **Not supported**; open until BPJPH answers | Criterion not met: separation of place and tools including serving [H-06 · REG-009 · Art. 6(4), 20, 21, 22(3)], applied to every kitchen and outlet [H-07 · REG-018 · Bab II B.3(b)]. Labelled non-halal items are allowed in principle. No partial-scope text found. |
-| H5: regulation is manageable, not a blocker | **Refuted** | The threshold and the pending Perpres are listed disconfirmers. [E-04 · REG-001 · Art. 26] Permits are a standard NIB route. [E-09 · REG-002 · Art. 132] |
+| H4: halal kitchen corner workable | **Not supported**; open until BPJPH answers | Criterion not met: separation of place and tools including serving [H-06 · REG-009 · Art. 6(4), 20, 21, 22(3)], applied to every kitchen and outlet [H-07 · REG-018 · Bab II B.3(b)]. Labelled non-halal items are allowed in principle [H-05 · REG-009 · Art. 2(2)]. No partial-scope text found. |
+| H5: regulation is manageable, not a blocker | **Refuted** | The threshold and the pending Perpres are listed disconfirmers. [E-04 · REG-001 · Art. 26] [E-02 · REG-007 · Keppres 38/2025] Permits are a standard NIB route. [E-09 · REG-002 · Art. 132] |
 | H6: boycott risk to a European brand is low | **Undetermined** | Section 5: no verified row names a Swiss or Italian brand; losses at US-linked operators are large but not attributed to boycotts. |
 
 ## 5. Political and boycott risk

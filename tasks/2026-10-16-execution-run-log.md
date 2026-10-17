@@ -230,3 +230,5 @@ The owner asked to pause the automated task and the running agents.
 
 ## Run 4 started (2026-10-17): Pillar 1 priority
 Owner instruction updated the task and restarted the run. The plan is `tasks/2026-10-17-run4-plan-pillar1.md`. Order: verify Plan 2 report, framework outline, customer profiles, CAGE, PESTEL, verifiers, then post-Pillar-1 items. The run-3 wrap-up and PR follow at the end. No scheduled task exists; the work runs in this session.
+
+**Plan 2 report accepted (main agent, 2026-10-17):** `reports/2026-10-17-regulatory-entry-pathway.md`. V-P2 (ACCEPT WITH FIXES, F1-F16), V-P2b (N1-N11), V-P2c recheck (D1-D3 and CSV slips): all applied. Tag trace 95/95. Open: the CHF rates stay labelled "undated, unsourced" (no BI/SNB rate found); "Art. 197 revokes PP 39/2021" in section 2.1 has no source-backed row yet (V-P2 opened PP 42/2024 Art. 196-198); section 8 still names V-P2b in a method note. Re-check H-12 and H-04 on 19-20 Oct 2026.
