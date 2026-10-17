@@ -215,3 +215,15 @@ Interrupted by the account usage limit (reset 15:40 UTC), to be resumed after th
 After those: the Plan 1 synthesis, verifiers for the Plan 2 and Plan 3 reports, and the run-3 wrap-up.
 
 **Plan 4 report accepted (main agent, 2026-10-17):** `reports/2026-10-17-purchase-triggers-and-channels.md` and `data/processed/plan4-trigger-matrix.csv`. V4 verdict: ACCEPT WITH MINOR FIXES. All minors were applied (R1–R6), and the number check passes. Length is 4,494 words (about 8–9 pages, slightly over the 6–8 page target), accepted. Plan 4 acceptance criteria are met except where a documented structural gap applies: the 25–39 cut, Jakarta-only cuts, and racing/Italian image.
+
+**Plan 3 report accepted (main agent):** `reports/2026-10-17-competitor-map-and-price-ladder.md`. V-P3: ACCEPT WITH FIXES. All majors and mediums applied. CMP-048 (Texas Chicken, 2023 exit) is cited only as historical context, which is allowed. Pending small items for the final fix-up: F4 (correction note in price-points.md) and F12 (CMP-040 register fix). Unmet Plan 3 criteria (venue dataset, heat table, saturation verdict, Oakberry reconciliation) are documented gaps that need primary or field research.
+
+**Plan 1 report accepted (main agent):** `reports/2026-10-17-demand-economics.md`. V-P1: ACCEPT WITH FIXES. Majors F1–F5 applied, and the number check passes. Minors F6–F15 and a `data/processed/demand/README.md` method note are left for the final fix-up. Unmet: the funnel criterion, because no source gives guests per day or visit frequency. It is a documented gap for primary research.
+
+## Paused by the owner (2026-10-17)
+
+The owner asked to pause the automated task and the running agents.
+- Stopped: the V-P2 verifier of the Plan 2 report. It was interrupted before writing its review, so the Plan 2 report (`reports/2026-10-17-regulatory-entry-pathway.md`) is **unverified**.
+- No scheduled run is pending: run 4 was never scheduled, and the scheduled-task list is empty.
+
+**To resume:** re-run V-P2 on the Plan 2 report, apply the remaining small fixes (Plan 3 F4/F12, Plan 1 minors F6–F15, demand README), then write the final summary in `reports/`.

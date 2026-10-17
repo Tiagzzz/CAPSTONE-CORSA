@@ -7,7 +7,7 @@ Date: 2026-10-17. Author: P3-E-synth (synthesis writer, no new research). Status
 ## 1. Summary
 
 - **Listed operators.** The mass and mid-market chains are under pressure but not uniformly. Fast Food Indonesia (FAST, KFC) lost Rp61.1 bn in Jan-Jun 2026 (CMP-001; national) and flags going-concern uncertainty (CMP-001); its outlet count fell from 715 (31 Dec 2024) to 682 (30 Jun 2026) (CMP-003, CMP-001; national). MAP Boga (MAPB, Starbucks and others) lost Rp121.5 bn in Jan-Jun 2026, wider than the Rp80.2 bn loss a year earlier (CMP-006; national). Champ Resto (ENAK) swung to a nine-month loss in 2025 (CMP-012; national). Pizza Hut's operator (PZZA) stayed profitable but its H1 2026 sales fell 4.54% (CMP-010; national). Fore Coffee (FORE) is the opposite case: revenue +51.7% in H1 2026 (derived) and 377 outlets (CMP-013; national).
-- **Foreign entrants.** 16 verified in-window cases, none a documented full exit with a stated reason; four are shrinking. No base rate is given (n<10 documented exits, and the set is not a census).
+- **Foreign entrants.** 16 verified in-window cases, none a documented full exit with a stated reason; four are shrinking (two of the four, Starbucks and Mixue, rest on a single tier 3 relay each). No base rate is given (n<10 documented exits, and the set is not a census).
 - **Price ladder.** Item prices are thin and concentrated: 67 numeric prices, three brands hold 83.6%. Latte median 29,000 (n=7, 2 brands), pasta 86,500 (n=20, mixed types), bowl 60,000 (n=15, 2 brands) (price-ladder.csv; Jakarta; 2025 to Oct 2026 captures). No district split exists.
 - **Hypotheses.** H1 inconclusive; H2 inconclusive; H3 and H4 gap; H5 partly confirmed; H6 inconclusive; H7 gap. The saturation test is a gap.
 - **Implication (Analysis).** District price position cannot be set; the latte placeholder is above every sourced latte; pasta is inside the one Italian brand's range. Field sampling is needed first.
@@ -25,11 +25,11 @@ All statements are unaudited interim unless marked audited. Press relays (tier 3
 | Revenue | Rp2.79 trn vs Rp2.40 trn; +16.1% (derived) | CMP-001; Jan-Jun 2026 vs Jan-Jun 2025; national |
 | Net result | Loss Rp61.1 bn vs Rp142.3 bn; loss narrowed about 57% (derived) | CMP-001; Jan-Jun 2026 vs 2025; national |
 | Net result | Q1 profit Rp12.7 bn vs loss Rp40.1 bn | CMP-002; Jan-Mar 2026 vs 2025; national |
-| FY2025 loss | Total Rp369.24 bn (Rp366.04 bn attributable) | CMP-005 (relay); FY2025 audited; national |
+| FY2025 loss | Total Rp369.24 bn (the attributable figure is not on the cited page and is omitted) | CMP-005 (relay); FY2025 audited; national |
 | Going concern | Management acknowledges uncertainty; relies on shareholder support | CMP-001; 30 Jun 2026; national |
 | Jakarta share | Revenue of the "Jakarta RSC" segment Rp980.0 bn of Rp2.79 trn = 35.1% (derived) | CMP-001; Jan-Jun 2026; Jakarta management region (not strictly DKI) |
 
-Analysis: the loss is shrinking and Q1 2026 was profitable, but outlets fell at every reported date (715, 698, 695, 690, 686, 682; CMP-003, CMP-002, CMP-001; national).
+Analysis: the loss is shrinking and Q1 2026 was profitable, but outlets fell at every traceable reported date (715 at 31 Dec 2024, 690 at 31 Dec 2025, 686 at 31 Mar 2026, 682 at 30 Jun 2026; CMP-003, CMP-002, CMP-001; national).
 
 ### 2.2 MAPB (Starbucks and other MAP brands)
 
@@ -38,7 +38,7 @@ Analysis: the loss is shrinking and Q1 2026 was profitable, but outlets fell at 
 | Revenue | Rp1.67 trn vs Rp1.52 trn; +9.9% (derived); all MAPB brands, no brand split | CMP-006; Jan-Jun 2026 vs 2025; national |
 | Net result | Loss Rp121.5 bn vs Rp80.2 bn; widened 51.5% (derived) | CMP-006; Jan-Jun 2026 vs 2025; national |
 | FY2025 | Revenue Rp3.236 trn vs Rp3.228 trn (+0.24%, derived, flat); loss Rp150.8 bn vs Rp146.1 bn | CMP-007; FY2025 audited; national |
-| Closures | 11 outlets closed (period not stated; the opening pace in the same article is self-contradictory and not used) | BEH-048; 2025; national, tier 3 relay |
+| Closures | 11 outlets closed (period not stated; the opening pace in the same article is self-contradictory and not used) | BEH-048; 2025; national, tier 3 relay. Section 3.1 cites 16 closed in H1 2025 from another single tier 3 outlet; the two counts (11 vs 16) cover unstated or different periods and are not reconciled |
 
 Context: parent MAPI (mostly non-F&B retail) grew net revenue 23.4% to Rp24.2 trn in H1 2026 (CMP-008; national); F&B is not split out. MAPB outlet total and Jakarta count are not printed (gap).
 
@@ -76,13 +76,13 @@ Limit: the latest ENAK data are nine months to September 2025; FY2025, Q1 and H1
 | Net profit | Rp56.5 bn vs Rp42.0 bn; +34.4% (derived); margin 5.6% vs 6.3% (derived) | CMP-013; Jan-Jun 2026 vs 2025 |
 | FY2026 guidance | 100 new outlets, capex about Rp250 bn, revenue growth about 50%, profit growth about 70% (management target, not outcome) | CMP-017; FY2026; national |
 
-Analysis: Fore grows fast and is profitable, but net profit growth in H1 2026 (+34.4%, derived) is below its 70% target and the margin slipped. About half its network is already outside Greater Jakarta (derived 47% inside), so its Jakarta presence is not a district-level density measure.
+Analysis: Fore grows fast and is profitable, but net profit growth in H1 2026 (+34.4%, derived) is below its 70% target (half-year growth vs a full-year target, not like-for-like) and the margin slipped. About half its network is already outside Greater Jakarta (derived 47% inside), so its Jakarta presence is not a district-level density measure.
 
 Revenue per outlet is derived, covers different periods and is not same-store, so it is not compared across operators. None of the five discloses same-store growth or average ticket, and none prints a Jakarta-only outlet count.
 
 ## 3. Foreign entrants and exits
 
-**Window rule.** Per the owner rule, exits older than 2 years are historical only. The cut-off date used in the data is 2024-10-16. Cases are counted by the printed date of the source.
+**Window rule.** Per the owner rule, exits older than 2 years are historical only. The cut-off date used in the data is 2024-10-16. Cases are classified by exit date, not by the date of the article that reports them (an in-window article about a 2020 to 2023 exit does not make it an in-window exit); the plan's wording "exit or its reporting" is read the stricter way.
 
 ### 3.1 In-window cases (16 verified rows)
 
@@ -91,16 +91,16 @@ Counts by reported direction (foreign-entrants.csv, status as recorded; sources 
 - **Expanding or new (6):** Paris Baguette (Korea, licence-type via Erajaya, expanding at 21 May 2026, CMP-019; national) ; CHAGEE (China, joint venture with Erajaya, 36 stores at 27 Mar 2026, CMP-024; national, not Jakarta-only) ; ZUS Coffee (Malaysia, partnership with Kapal Api, first store end May 2026, CMP-020; Jakarta); Flash Coffee (Singapore-founded, 80 and 130 store targets, interview 25 Jul 2025, CMP-026; national, targets only, no actual count); Harlan + Holden (CMP-036; Jakarta, listed open 1 Feb 2026); Pizza Marzano (UK, 23 restaurants at 9 Sep 2025, CMP-037; national, last check Sep 2025).
 - **Stable or still open (6):** Popeyes (25 stores, store EBITDA margin -20.3%, Oct-Dec 2025, CMP-028; national); Pizza Hut (control case; FY2025 net sales Rp3.05 trn vs Rp2.79 trn, BEH-052; national); Fuglen, Hario Cafe, Cafe Kitsune, Kurasu Kissaten (listed open on 1 Feb 2026 in a media list, CMP-035, CMP-036; Jakarta). "Still open" is a status observation, not evidence of profitability.
 - **Shrinking (4):** KFC (715 to 690, FAST, CMP-031, CMP-003; national); Starbucks (11 opened and 16 closed in H1 2025, per a single tier 3 outlet, CMP-030; national); Burger King (147 to 138, Oct-Dec 2024 vs Oct-Dec 2025, CMP-028; national); Mixue (Indonesia named among markets with closures; the Indonesia split is not disclosed, and the three outlets relay one VnExpress report, so it is weak, CMP-032, CMP-033, CMP-034; scope unresolved).
-- **Documented full exit in window: none** among the 16. Texas Chicken's licensee reported a FY2025 net loss of Rp955.25 million on sales of Rp1.8 bn after closing all outlets (CMP-003; FY2025; national). The closure date is not printed in the opened article, so it is not assigned to the window with certainty, and the reason is not documented.
+- **Documented full exit in window: none** among the 16. Texas Chicken, which appeared in the FY2025 results of its licensee (net loss Rp955.25 million, sales Rp1.8 bn; CMP-003; FY2025; national), had already closed all restaurants in August 2023 (CMP-048, Okezone, 19 Aug 2023; national). It is a 2023 exit, therefore historical (Section 3.3), and not in the in-window count.
 - **Not counted:** Saizeriya (announced, subsidiary planned December 2026, CMP-043) and Blue Bottle (not entered, CMP-045).
 
 ### 3.2 No base rate
 
-The plan requires no percentage when n<10. Here the documented full exits in window number zero or one, the 16 cases were collected from leads and media lists rather than from a census, and the controls (Pizza Hut, Pizza Marzano) were added to counter survivorship bias. A survival percentage from this set would not be meaningful and none is given.
+The plan requires no percentage when n<10. Here the documented full exits in window number zero, the 16 cases were collected from leads and media lists rather than from a census, and the controls (Pizza Hut, Pizza Marzano) were added to counter survivorship bias. A survival percentage from this set would not be meaningful and none is given.
 
 ### 3.3 Historical cases (not in any rate)
 
-Hard Rock Cafe Jakarta exited 2023, entered 1992 (CMP-049; Jakarta); Fish & Co. exited 31 Dec 2022 (CMP-049, CMP-050; national); Marché Mövenpick exited 2020, entered 2009 (CMP-049; national); Karen's Diner closed Nov 2023 when its pop-up contract expired (CMP-050; Jakarta). All four are older than the window; reasons are not documented except Karen's Diner (contract expiry, reported by the outlet).
+Hard Rock Cafe Jakarta exited 2023, entered 1992 (CMP-049; Jakarta); Fish & Co. exited 31 Dec 2022 (CMP-049, CMP-050; national); Marché Mövenpick exited 2020, entered 2009 (CMP-049; national); Karen's Diner closed Nov 2023 when its pop-up contract expired (CMP-050; Jakarta). Texas Chicken (all restaurants closed by Aug 2023, CMP-048; national) is a fifth historical case; the raw note `data/raw/2026-10-17-foreign-entrants.md` holds further pre-window context rows. All are older than the window and are in no rate; reasons are not documented except Karen's Diner (contract expiry, reported by the outlet). Texas Chicken is the only weak-local-partner exit on file and, being historical, does not support H6.
 
 ### 3.4 Claims not made
 
@@ -132,9 +132,9 @@ Source: price-ladder.csv, 89 rows, 67 with a numeric price; statistics are the D
 
 ### Comparison with Team B placeholders
 
-Source: `data/raw/2026-10-13-corsa-jakarta-financial-model-v0-5-csv/06-menu.csv`, "ILLUSTRATIVE placeholder menu", prices net of 10% PBJT, "not definitive at all". The plan quotes pasta 82-135k, latte 50k and bowl 85-110k. The CSV matches the first two (Arrabbiata 82,000 to Truffle cream 135,000; Latte/flat white 50,000) but contains no bowl at 85-110k; its bowl-type item is "Yogurt / oat bowl" at 65,000, and the plan figure appears to refer to a different range. The CSV's own benchmark cells cite sources (S31, S33, S46) that are not part of this input and were not tested here.
+Source: `data/raw/2026-10-13-corsa-jakarta-financial-model-v0-5-csv/06-menu.csv`, "ILLUSTRATIVE placeholder menu", prices net of 10% PBJT, "not definitive at all". The plan quotes pasta 82-135k, latte 50k and bowl 85-110k. The CSV matches the first two (Arrabbiata 82,000 to Truffle cream 135,000; Latte/flat white 50,000) but contains no bowl at 85-110k; its bowl-type item is "Yogurt / oat bowl" at 65,000, and the plan figure looks like a transposed pasta range (the CSV benchmark table has "Common Grounds, Tobiko truffle pasta, 97,500, Dine-in (85-110k)"). Note: `data/raw/2026-10-17-price-points.md` section 7 still repeats the "bowl 85 to 110k" wording and should be marked superseded. The CSV's own benchmark cells cite, for lattes, 27-30k casual, 38-48k smart-casual/specialty, 55-60k mall (S46) and Common Grounds 45-52k (S31); these sources are not part of this input and were not verified here.
 
-Analysis: pasta placeholders (82,000 to 135,000, six items) sit inside or near the Pizza Marzano list range of 69,000 to 109,000 (median 95,000; CMP-054; 17 Nov 2025; Jakarta); five of six are at or below 109,000, and only Truffle cream (135,000) is above the brand's highest price. Basis differs (net of PBJT vs unstated). The latte placeholder (50,000) is above every one of the 7 sourced lattes (highest 38,000, median 29,000; CMP-060, CMP-054; Nov 2025; Jakarta): about 1.7 times the median (derived, 50,000/29,000). Two brands only, one chain-dominated. The bowl placeholder (65,000) is 5,000 above the Burgreens-led bowl median (60,000) and inside the 50,000 to 105,000 range, before tax and service on Burgreens. Functional drinks (48,000 to 55,000) sit near the Burgreens range 27,000 to 52,000 (median 45,000; CMP-052).
+Analysis: pasta placeholders (82,000 to 135,000, six items) sit inside or near the Pizza Marzano list range of 69,000 to 109,000 (median 95,000; CMP-054; 17 Nov 2025; Jakarta); five of six are at or below 109,000, and only Truffle cream (135,000) is above the brand's highest price. Basis differs (net of PBJT vs unstated). The latte placeholder (50,000) is above every one of the 7 sourced lattes (highest 38,000, median 29,000; CMP-060, CMP-054; Nov 2025; Jakarta): about 1.7 times the median (derived, 50,000/29,000). Only 1 of the 7 is a plain latte (Pizza Marzano, 38,000); the other 6 are Fore signature lattes, so this is the mass-chain tier only. Counter-evidence: in Jakarta specialty cafes, a Detik list of 1 Feb 2026 gives drinks from Rp40,000++ (Kurasu, about) to Rp80,000++ (Hario), Fuglen from Rp60,000++, Harlan + Holden coffee Rp63,000++ and Cafe Kitsune latte/cappuccino "kisaran Rp50.000++" (P3B-11 to P3B-15; CMP-036; Jakarta; tier 3, "from" prices, not lattes), and Team B's own cited benchmarks put specialty latte at 38-48k and mall latte at 55-60k (unverified). Against these, 50,000 sits inside the specialty and mall tiers. Placement in the plan's three tiers (Q3) was not possible with the ladder. The bowl placeholder is a breakfast "Yogurt / oat bowl" (65,000 net); the ladder holds no yogurt or oat bowl (its bowl class pools Burgreens smoothie, salad and rice bowls with three Pizza Marzano salads), so the placeholder is not compared with the 60,000 median. Functional drinks (48,000 and 55,000) are inside and just above the Burgreens range 27,000 to 52,000 (median 45,000; CMP-052; before tax and service).
 
 ## 5. Hypotheses tested against the plan's own criteria
 
@@ -142,11 +142,11 @@ No verdict rests on one source or on a small difference. Where a criterion needs
 
 | # | Verdict | Reasoning against the plan's criteria |
 | --- | --- | --- |
-| H1 Placeholder at or above the district median (above P60 in Tier-1 districts) | **INCONCLUSIVE** | The test needs a bowl and latte distribution for SCBD, Senopati and Kuningan; none exists (no district split, n<4). Direction only: the latte placeholder exceeds every sourced latte (Section 4), which, if replicated, would meet the plan's "above P90: price out of line, test at lower tier" condition; the bowl placeholder differs from the median by 5,000 on 2 brands, which is a small difference and gives no verdict. |
-| H2 Specialty coffee saturated by low-price chains (3+ chain outlets within 500 m; latte median <= 35,000) | **INCONCLUSIVE** | Price leg consistent: latte median 29,000 (CMP-060, CMP-054; Nov 2025; Jakarta). But 2 brands, and Kopi Kenangan, Tomoro and Tuku prices are Google Maps approximations. Density leg untested (no outlet counts within 500 m). Fore had 151 outlets in Greater Jakarta at 31 Dec 2025 (CMP-014), which is not a district measure. |
+| H1 Placeholder at or above the district median (above P60 in Tier-1 districts) | **INCONCLUSIVE** | The test needs a bowl and latte distribution for SCBD, Senopati and Kuningan; none exists (no district split, n<4). Direction only: the latte placeholder exceeds every mass-chain latte in the ladder, but lies inside the specialty-cafe range of Rp40,000-80,000++ (CMP-036; Jakarta; Feb 2026) and the 38-60k tiers cited by Team B (unverified), so the plan's "above P90" condition is not shown. The bowl placeholder is a different item from the ladder's bowls (Section 4); no comparison is made. |
+| H2 Specialty coffee saturated by low-price chains (3+ chain outlets within 500 m; latte median <= 35,000) | **INCONCLUSIVE** | Price leg consistent: latte median 29,000 (CMP-060, CMP-054; Nov 2025; Jakarta). Counter-evidence: independent specialty cafes list drinks at Rp40,000-80,000++ (P3B-11 to P3B-15; CMP-036; Jakarta; Feb 2026), which is above the plan's 45,000 independents threshold for most of them. The latte price leg covers 2 brands, only one plain latte, and Kopi Kenangan, Tomoro and Tuku prices are Google Maps approximations. Density leg untested (no outlet counts within 500 m). Fore had 151 outlets in Greater Jakarta at 31 Dec 2025 (CMP-014), which is not a district measure. |
 | H3 Bowls and Italian less dense than coffee (3x) | **GAP** | No venue-density counts in the input. |
 | H4 Community concepts few (<10 venues) | **GAP** | No community-venue census in the input. |
-| H5 Mid-market casual dining under pressure | **PARTLY CONFIRMED** | Confirm criteria met for mass and mid chains: FAST net loss (CMP-001) with going-concern note and 33 fewer outlets since Dec 2024 (derived: 715-682; CMP-003, CMP-001); MAPB loss widening (CMP-006); ENAK nine-month loss (CMP-012); PZZA sales -4.54% and profit down (CMP-010). Disconfirm criterion (operators growing outlets and margin) is met by Fore (CMP-013, CMP-015) and partly by PZZA outlets +4 in H1 2026 (CMP-009) and FAST's narrowing loss. Conclusion: pressure on mass and mid-price restaurants and Starbucks; not on affordable specialty coffee. ENAK rests on a single broker mirror and a period ending Sep 2025. |
+| H5 Mid-market casual dining under pressure (applied to listed chains: mostly quick-service and coffee, one casual-dining group) | **PARTLY CONFIRMED** | Confirm criteria met for mass and mid chains: FAST net loss (CMP-001) with going-concern note and 33 fewer outlets since Dec 2024 (derived: 715-682; CMP-003, CMP-001); MAPB loss widening (CMP-006); ENAK nine-month loss (CMP-012); PZZA sales -4.54% and profit down (CMP-010). Disconfirm criterion (operators growing outlets and margin) is met by Fore (CMP-013, CMP-015) and partly by PZZA outlets +4 in H1 2026 (CMP-009) and FAST's narrowing loss. Conclusion: pressure on mass and mid-price restaurants and Starbucks; not on affordable specialty coffee. ENAK rests on a single broker mirror and a period ending Sep 2025. |
 | H6 Exits concentrate among entrants without a strong local partner | **INCONCLUSIVE** | There is no documented in-window exit with a stated reason (Section 3). The shrinking cases (KFC, Starbucks, Burger King) all have established local operators, and the unpartnered case (Flash Coffee, own entity) is expanding on targets. The set does not test the hypothesis; it gives no support to it either. |
 | H7 Oakberry shows replicability, not profitability | **GAP** | No Oakberry rows were in the input. Not tested here. |
 
@@ -159,10 +159,10 @@ No verdict rests on one source or on a small difference. Where a criterion needs
 Analysis: these points are interpretation of the data above, not sourced facts.
 
 1. **Price position cannot be set from this data.** No sourced distribution exists by district, and the premium vs "middle" decision (plan decision list) remains open. Do not cite percentiles for any placeholder.
-2. **Coffee at 50,000 net is the largest outlier.** Against a sourced latte median of 29,000 and a maximum of 38,000 (2 brands), a 50,000 latte is a clear premium bet. Either the specialty/third-place offer must justify it (to be tested in the field), or coffee should be priced as a traffic driver as the plan suggests if saturation is found.
+2. **Coffee at 50,000 net is above the mass-chain tier and inside the specialty tier.** It is 1.7 times the mass-chain latte median of 29,000 (derived; one chain-dominated sample, one plain latte), yet within the Rp40,000-80,000++ specialty-cafe drinks of the Feb 2026 list (CMP-036; tier 3, "from" prices) and Team B's cited 38-60k tiers (unverified). Which tier CORSA competes in is the open question; test it in the field before treating 50,000 as premium or as a price risk.
 3. **Pasta looks defensible at the middle of the placeholder range.** The Team B median (about 96,500, derived from the six net prices) is near the Pizza Marzano median (95,000), though tax basis differs and one brand is not a market.
-4. **Bowls are unbenchmarked.** One plant-based brand sets the bowl median; the 65,000 placeholder is within its range, but no statement about premium vs middle is supported.
-5. **Entrant and operator evidence is directional only.** Mass-tier chains shrink (KFC, Burger King, Starbucks) while experience-tier foreign brands expand (CHAGEE, Paris Baguette, ZUS); with no documented full exit, no survival rate can weight the risk.
+4. **Bowls are unbenchmarked.** The placeholder is a breakfast yogurt or oat bowl and the ladder holds none; no statement about premium vs middle is supported.
+5. **Entrant and operator evidence is directional only.** Mass-tier chains shrink (KFC, Burger King; Starbucks on an H1 2025 count only) while experience-tier foreign brands expand (CHAGEE, Paris Baguette, ZUS); with no documented full exit, no survival rate can weight the risk.
 
 ## 8. Gaps and primary-research brief
 
@@ -173,7 +173,7 @@ Analysis: these points are interpretation of the data above, not sourced facts.
 - Delivery-app uplift (no paired rows).
 - Jakarta-only outlet counts for all five operators; same-store sales and average ticket; ENAK FY2025 to H1 2026; MAPB Starbucks outlet total.
 - Oakberry reconciliation (H7).
-- Entrant exit dates and reasons (Texas Chicken); an actual Flash Coffee count; a later check on Pizza Marzano and Domino's.
+- Reasons for most exits; an actual Flash Coffee count; a later check on Pizza Marzano and Domino's.
 
 ### 8.2 Primary-research brief (team, field)
 
