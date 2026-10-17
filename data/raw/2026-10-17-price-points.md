@@ -76,37 +76,42 @@ Not opened (blocked): Tempo "Daftar Menu Fore Coffee dan Harganya" and Tempo Sta
 
 ## 6. DERIVED: summary statistics (min, median, max, with n)
 
-Method: computed with python3 from `data/processed/price-ladder.csv` (column `price_idr`). Median is the standard median (mean of the two middle values when n is even). One row per distinct menu item; no deduplication across channels needed (all rows in-store or media reports of in-store menus, no app rows). IDR, as listed, tax and service basis differs by source (see below). Flag: n<4 = insufficient, do not use as a distribution; "brand cap" = share of rows from one brand above the plan's 15% cap (the cap cannot be met with these data).
+Method: computed with python3 from `data/processed/price-ladder.csv` (column `price_idr`). Median is the standard median (mean of the two middle values when n is even). One row per distinct menu item; no deduplication across channels needed (all rows in-store or media reports of in-store menus, no app rows). IDR, as listed, tax and service basis differs by source (see below). Flags: n<4 = insufficient, do not use as a distribution; brands<4 = a median over fewer than 4 brands is not a market median; approx = the cell contains at least one price given as sekitar, -an, ribuan, Google Maps or ordering app (count in the "of which approx" column; see "Approx rows" below).
 
-Recomputed after Run 3b (P3-PRICE-b), 89 rows in the CSV (30 first pass + 59 Run 3b), of which 68 carry a numeric `price_idr`. Rows with a blank `price_idr` (ranges, per-person spend, promo redemption prices) are excluded from every cell below.
+Recomputed after the run-3 fix-up (2026-10-17, V3-C verdicts applied), 89 rows in the CSV, of which 67 carry a numeric `price_idr` (P3PB-45, Point Coffee, was blanked: its 25,000 "normal price" is stated once for the promo drinks and not assigned to an item; it is now in the row notes). Rows with a blank `price_idr` (ranges, per-person spend, promo redemption prices; 22 rows) are excluded from every cell below.
 
-| Category / subset | n items | n brands | Min | Median | Max | Flags |
-| --- | --- | --- | --- | --- | --- | --- |
-| pasta (all numeric item prices, all types mixed) | 20 | 8 (Burgreens, Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Pepper Lunch, Pizza Marzano, Sky Pasta) | 20,000 | 86,500 | 109,000 | ok |
-| coffee (all numeric item prices) | 24 | 7 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Pizza Marzano, Point Coffee, Tomoro Coffee) | 10,000 | 29,000 | 38,000 | ok |
-| bowl (bowls and salads) | 15 | 2 (Burgreens, Pizza Marzano) | 50,000 | 60,000 | 105,000 | brands<4 |
-| functional_drink | 9 | 1 (Burgreens) | 27,000 | 45,000 | 52,000 | brands<4 |
+| Category / subset | n items | of which approx | n brands | Min | Median | Max | Flags |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| pasta (all numeric item prices, all types mixed) | 20 | 7 | 8 (Burgreens, Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Pepper Lunch, Pizza Marzano, Sky Pasta) | 20,000 | 86,500 | 109,000 | approx |
+| coffee (all numeric item prices) | 23 | 10 | 6 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Pizza Marzano, Tomoro Coffee) | 10,000 | 29,000 | 38,000 | approx |
+| bowl (bowls and salads) | 15 | 0 | 2 (Burgreens, Pizza Marzano) | 50,000 | 60,000 | 105,000 | brands<4 |
+| functional_drink | 9 | 0 | 1 (Burgreens) | 27,000 | 45,000 | 52,000 | brands<4 |
 
-**Sub-class cells** (same numeric rows; n<4 and brand count <4 flagged; a median over fewer than 4 brands is not a market median):
+**Sub-class cells** (same numeric rows; the four Fore Manuka/Peach/Berry Americanos are now their own class `flavoured_americano`, not milk-coffee):
 
-| Category / subset | n items | n brands | Min | Median | Max | Flags |
-| --- | --- | --- | --- | --- | --- | --- |
-| pasta, Italian-restaurant list price (Pizza Marzano only) | 11 | 1 (Pizza Marzano) | 69,000 | 95,000 | 109,000 | brands<4 |
-| pasta, Japanese-style teppan (Pepper Lunch) | 3 | 1 (Pepper Lunch) | 74,000 | 79,000 | 81,000 | n<4; brands<4 |
-| pasta, plant-based (Burgreens) | 1 | 1 (Burgreens) | 60,000 | 60,000 | 60,000 | n<4; brands<4 |
-| pasta, low-end street/kiosk (Detik 22 Jan 2025, approximate) | 5 | 5 (Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Sky Pasta) | 20,000 | 25,000 | 29,000 | ok |
-| coffee, espresso + americano + long black | 5 | 3 (Burgreens, Fore Coffee, Pizza Marzano) | 22,000 | 25,000 | 35,000 | brands<4 |
-| coffee, latte (cafe latte and signature lattes) | 8 | 3 (Fore Coffee, Pizza Marzano, Point Coffee) | 25,000 | 29,000 | 38,000 | brands<4 |
-| coffee, signature milk-coffee (aren etc.) | 10 | 5 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Tomoro Coffee) | 10,000 | 28,000 | 32,000 | ok |
-| coffee, cappuccino (Pizza Marzano) | 1 | 1 (Pizza Marzano) | 38,000 | 38,000 | 38,000 | n<4; brands<4 |
-| bowl, salads (Burgreens salads + Marzano salads) | 7 | 2 (Burgreens, Pizza Marzano) | 50,000 | 65,000 | 105,000 | brands<4 |
-| bowl, rice bowls (Burgreens) | 5 | 1 (Burgreens) | 50,000 | 55,000 | 59,000 | brands<4 |
-| bowl, smoothie bowls (Burgreens) | 3 | 1 (Burgreens) | 68,000 | 68,000 | 68,000 | n<4; brands<4 |
-| functional_drink, protein shake (Burgreens) | 3 | 1 (Burgreens) | 52,000 | 52,000 | 52,000 | n<4; brands<4 |
-| functional_drink, smoothie (Burgreens) | 3 | 1 (Burgreens) | 45,000 | 45,000 | 47,000 | n<4; brands<4 |
-| functional_drink, herbal elixir (Burgreens) | 3 | 1 (Burgreens) | 27,000 | 27,000 | 35,000 | n<4; brands<4 |
+| Category / subset | n items | of which approx | n brands | Min | Median | Max | Flags |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| pasta, Italian-restaurant list price (Pizza Marzano only) | 11 | 0 | 1 (Pizza Marzano) | 69,000 | 95,000 | 109,000 | brands<4 |
+| pasta, Japanese-style teppan (Pepper Lunch) | 3 | 3 | 1 (Pepper Lunch) | 74,000 | 79,000 | 81,000 | n<4; brands<4; approx |
+| pasta, plant-based (Burgreens) | 1 | 0 | 1 (Burgreens) | 60,000 | 60,000 | 60,000 | n<4; brands<4 |
+| pasta, low-end street/kiosk (Detik 22 Jan 2025) | 5 | 4 | 5 (Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Sky Pasta) | 20,000 | 25,000 | 29,000 | approx |
+| coffee, espresso + americano + long black | 5 | 2 | 3 (Burgreens, Fore Coffee, Pizza Marzano) | 22,000 | 25,000 | 35,000 | brands<4; approx |
+| coffee, latte (cafe latte and signature lattes) | 7 | 0 | 2 (Fore Coffee, Pizza Marzano) | 29,000 | 29,000 | 38,000 | brands<4 |
+| coffee, signature milk-coffee (aren etc.; Fore fruit Americanos removed) | 6 | 4 | 5 (Burgreens, Fore Coffee, Kopi Kenangan, Kopi Tuku, Tomoro Coffee) | 10,000 | 23,500 | 32,000 | approx |
+| coffee, flavoured/fruit americano (Fore only; relabelled, no milk) | 4 | 4 | 1 (Fore Coffee) | 29,000 | 29,000 | 31,000 | brands<4; approx |
+| coffee, cappuccino (Pizza Marzano) | 1 | 0 | 1 (Pizza Marzano) | 38,000 | 38,000 | 38,000 | n<4; brands<4 |
+| bowl, salads (Burgreens salads + Marzano salads) | 7 | 0 | 2 (Burgreens, Pizza Marzano) | 50,000 | 65,000 | 105,000 | brands<4 |
+| bowl, rice bowls (Burgreens) | 5 | 0 | 1 (Burgreens) | 50,000 | 55,000 | 59,000 | brands<4 |
+| bowl, smoothie bowls (Burgreens) | 3 | 0 | 1 (Burgreens) | 68,000 | 68,000 | 68,000 | n<4; brands<4 |
+| functional_drink, protein shake (Burgreens) | 3 | 0 | 1 (Burgreens) | 52,000 | 52,000 | 52,000 | n<4; brands<4 |
+| functional_drink, smoothie (Burgreens) | 3 | 0 | 1 (Burgreens) | 45,000 | 45,000 | 47,000 | n<4; brands<4 |
+| functional_drink, herbal elixir (Burgreens) | 3 | 0 | 1 (Burgreens) | 27,000 | 27,000 | 35,000 | n<4; brands<4 |
 
-Not comparable without adjustment: Burgreens prices exclude 10% tax and service charge ("++"), Fore media prices do not state a basis. Do not mix them in a district median.
+**Approx rows (17 of the 67 numeric rows).** P3PR-025 to P3PR-030 (Fore, IDN Times, "sekitar Rp22 ribu" etc.), P3PB-23 to P3PB-25 (Pepper Lunch, "Rp74 ribuan" etc.), P3PB-30 to P3PB-33 (street pasta, "Rp20.000-an" etc.), P3PB-34 to P3PB-37 (Kopi Tuku, Tomoro, Kopi Kenangan: Google Maps; Fore Cipete: ordering-app price that may carry a platform markup). They are counted at face value in the statistics; treat the coffee and street-pasta cells as indicative.
+
+**Brand concentration (share of the 67 numeric rows).** Burgreens 24 (35.8%), Pizza Marzano 18 (26.9%), Fore Coffee 14 (20.9%), Pepper Lunch 3 (4.5%), and eight brands with 1 row each (1.5% each: Casa Pasta, Fish Lab, Fish Streat, Halo Pasta, Sky Pasta, Kopi Tuku, Tomoro Coffee, Kopi Kenangan). The top three brands hold 83.6% of the numeric rows, so the plan's 15% per-brand cap is not met. Within cells: pasta is 55% Pizza Marzano; coffee is 61% Fore Coffee; bowl is 80% Burgreens; functional_drink is 100% Burgreens. Read every all-brand median as a median of a few brands, not of the Jakarta market.
+
+Not comparable without adjustment: Burgreens prices exclude 10% tax and service charge ("++"), the media prices (Fore, Pizza Marzano, Pepper Lunch and others) do not state a basis. Do not mix them in a district median. The all-types "pasta" median (86,500) mixes street kiosk, teppan, plant-based and Italian-restaurant prices and is not a market median.
 
 ## 7. Hypotheses touched (direction)
 

@@ -107,3 +107,20 @@ Plan 2 schema note: `2026-10-p2-entry-requirements.csv` does not use the survey 
 Rows moved to `2026-10-16-run1-dropped-rows.csv` (now 28 rows): DATE-FAIL P3B-18, 19, 21, 23, 24, 25 (foreign-entrants.csv; context kept in `data/raw/2026-10-17-foreign-entrants.md` under "Historical / pre-window context") and DERIVED-MOVE P1C1-P07 (population-spend.csv; value in the notes of P1C1-P01 to P06). foreign-entrants.csv therefore has 23 rows (29 - 6) and population-spend.csv 25 (26 - 1). BLOCKED rows: P3BF-030 (IDX 403, gap row) and P3B-17 (Domino's 250 outlets, RRI blocked; window_class IN-WINDOW-PROVISIONAL).
 
 Geography code note (run 2): J means Jakarta (DKI) only. Greater Jakarta (Jabodetabek) cuts are coded U, for example P3BF-033 (Fore outlets, metric `outlets_jabodetabek`).
+
+## Run 3 files (2026-10-17)
+
+Run 3 added `plan4-misc-run3.csv`, `demand/wheat-foodservice.csv`, `2026-10-p2-tax-franchise.csv`, `2026-10-p2-sentiment-indicators.csv` and `price-ladder.csv`. Three independent verifiers (`tasks/2026-10-17-run3-verification-{a,b,c}.md`) opened the sources; a fix-up set `verification` on every row from the verdict and applied each correction (notes prefixed "Run 3 verification" or "Run 3 fix-up"). The first four files use the survey schema of run 1b (`wheat-foodservice.csv`, `plan4-misc-run3.csv`), the Plan 2 schema (`tax-franchise`: `row_id, question, finding, value, unit, rule_date, instrument, article, ...`) or the sentiment schema (`indicator, reported_fact_value, ref_period_and_type, scope_base, ...`); `price-ladder.csv` adds `brand, item, category, price_idr, tax_service_included, channel, district, item_class, price_basis`. Price statistics are in the DERIVED table of `data/raw/2026-10-17-price-points.md` (recomputed from the CSV, with an "of which approx" column and a brand-concentration note).
+
+Questions for a tax/legal adviser: see tasks/2026-10-17-run3-verification-b.md
+
+| file | rows | original | relay | corrected | BLOCKED |
+| --- | --- | --- | --- | --- | --- |
+| plan4-misc-run3.csv | 28 | 2 | 25 | 1 | 0 |
+| demand/wheat-foodservice.csv | 23 | 10 | 8 | 5 | 0 |
+| 2026-10-p2-tax-franchise.csv | 23 (24 - T-14) | 16 | 2 | 5 | 0 |
+| 2026-10-p2-sentiment-indicators.csv | 8 (11 - S-01, S-02, S-08) | 1 | 4 | 3 | 0 |
+| price-ladder.csv | 89 | 24 | 64 | 1 | 0 |
+| **total** | **171** | **53** | **103** | **15** | **0** |
+
+Rows moved to `2026-10-16-run1-dropped-rows.csv` (now 32 rows, 4 added): T-14 (DATE-FAIL, DJP article of 2022), S-01 (DATE-FAIL, MUI fatwa of 2023-11-08, pre-window, not a long-run series; verifier verdict was VERIFIED-OPENED (relay)), S-02 and S-08 (NOT-FOUND-OPENED gap rows). Other notable fixes: Liga.Tennis rows P4W10-10 to -13 set to geography J on the orchestrator's instruction (V3-A noted that the clubs' locations are not stated); P3PB-45 price blanked (25,000 moved to notes); Fore Manuka/Peach/Berry Americanos relabelled `flavoured_americano`; P1C4-08 second source GoodStats registered as DEM-063; REG-041 to REG-044 added for the DJP country page, the SIF list and the two BKPM releases. The APEDA mirror for DEM-050, -060 and -061 was unreachable on re-check; the register now points to the USDA originals at apps.fas.usda.gov.
