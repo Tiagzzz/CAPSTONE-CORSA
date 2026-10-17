@@ -1,12 +1,12 @@
 # Purchase triggers and acquisition channels: national and urban-Java evidence for a Jakarta launch
 
-Date: 2026-10-17. Plan: `tasks/2026-10-16-plan-4-purchase-triggers-channels.md`. Status: DRAFT revised after verification V4; awaiting re-verification and the Product Owner. Companion dataset: `data/processed/plan4-trigger-matrix.csv` (all cells, including every GAP).
+Date: 2026-10-17. Plan: `tasks/2026-10-16-plan-4-purchase-triggers-channels.md`. Status: DRAFT revised after verification V4; awaiting re-verification and the Product Owner. Revised 2026-10-17 by the main-session audit: "Facts pointing the other way" now lists the seven verified downside rows it had left out (seven national rows added to the counts and the Appendix). Companion dataset: `data/processed/plan4-trigger-matrix.csv` (all cells, including every GAP).
 
 **How to read the figures.** Each figure is followed by a tag `[row id; geography-agefit]`. Row ids point to `data/processed/plan4-*.csv` and `demand/*.csv`; register id, reference period and base of every row are in the Appendix. Geography: J Jakarta, J* Jabodetabek or Greater Jakarta scope (mall survey, venue count; caveat in the text), U urban Indonesia (mostly Java; the Jakpat September 2025 sample excludes Jakarta), N national, P proxy (other markets or categories). Age-fit: A exact, B and C partial overlap with the canonical bands (Gen Z 18-28, Younger Millennials 29-35, Older Millennials 36-45, Gen X 46-61), D none. Only rows whose source was opened (VERIFIED-OPENED or CORRECTED-OPENED) are used. Percentages are shares of respondents unless stated; most are stated, multiple-answer, tier-3 online-panel results. Text starting "Analysis:" is interpretation; the rest is sourced fact. Nothing is interpolated, summed across answer categories or scaled to Jakarta.
 
 ## Summary
 
-- **Evidence base.** No row gives a 25-39 cut. Of 130 distinct rows cited, 12 Jakarta (J), 3 Jakarta-coded with a caveat (J*), 22 urban Java (U), 90 national (N), 3 proxy (P). Findings are directional, not Jakarta estimates.
+- **Evidence base.** No row gives a 25-39 cut. Of 137 distinct rows cited, 12 Jakarta (J), 3 Jakarta-coded with a caveat (J*), 22 urban Java (U), 97 national (N), 3 proxy (P). Findings are directional, not Jakarta estimates.
 - **Verdicts** (scale: supported / partly supported / not supported / insufficient evidence). H1 insufficient evidence, nominally against (one survey, 44% against 40%, inside the margin of error). H2 insufficient evidence. H3 partly supported at the stated level, purchases untested (one vendor release, food products). H4 insufficient evidence (scale documented; one platform shows 58% aged 21-40, no baseline; purchase influence absent). H5 insufficient evidence. H6 insufficient evidence (attendance only). H7 insufficient evidence. H8 insufficient evidence.
 - **Discovery.** Friends and family come first, 44% [P4W1-R04; U-D], then TikTok food influencer accounts 40% [P4W1-R05; U-D]. Margin of error under five points; no age split or Jakarta cut.
 - **Choice and health.** Price attracts 64% to a new place [UA-N58; U-D]; tasty menu is the top revisit reason, 83% [P4W7b-14; N-D]. For 65% healthy nutrition matters more than five years ago [P4W4-04; N-D]; 48% would pay more than 10% extra for food with added nutrition [P4W4-01; N-D], 19% would pay 20% extra [P4W4-02; N-D] (food products, not restaurants).
@@ -123,7 +123,14 @@ Each verdict is tested against the plan's own disconfirmers (plan 4, section 2).
 
 **H8 Halal cues influence venue choice.** Consumers who buy depending on a halal label 83% [P4W7b-18; N-D]: a 2023 vendor survey cited by the halal-assurance agency, all product categories, headline ("aware") in conflict with the quote ("buy"); no venue, age or Jakarta row. **Verdict: insufficient evidence.** Entry change: certification stays an entry condition (plan 2); do not size the marketing weight of halal before a primary survey item runs.
 
-**Assumptions most at risk (Analysis).** "Social first", "premium without a price barrier" and "atmosphere and novelty bring people back" are untested or weakly supported: reasons to test, not proofs of failure. Facts pointing the other way: Jakarta consumer confidence index 146.8 in Sep 2026 [P1C2-20; J-D]; restaurant spending in Mandiri card data grew 4.7% yoy in Q3 2026 against 6.1% in 2025 (period labels inferred), still the fastest-growing monitored category but slowing [P1C2-29; N-D]. No national-culture argument is used; group effects appear only where a survey item measures them.
+**Assumptions most at risk (Analysis).** "Social first", "premium without a price barrier" and "atmosphere and novelty bring people back" are untested or weakly supported: reasons to test, not proofs of failure. Facts pointing the other way (national unless marked; none has a Jakarta-by-age cut):
+
+- Middle-class budgets: middle-class food consumption (Susenas household food group, not restaurant spend) grew 0.9% in 2025 against 4.6% in 2024, while non-food grew 6.4% [P1C2-09; N-D]; the share of workers earning a middle-class income fell from 14.5% (2018) to 7.1% (2025) [P1C2-10; N-D]; median real wages in medium- and high-skilled jobs fell by about 1% and 2% a year over 2018-2025 (the row note links the high-skilled group to office workers) [P1C2-11; N-D]; the Mandiri Saving Index for the middle savings group was 100.4 in February 2026, the lowest since October 2023 [P1C2-33; N-D].
+- Eating out as a cut item: dining out (23%) is among the top categories Gen X+ respondents reduced [P4W9-28; N-D]; Millennials name takeout and international travel as their main areas of retrenchment (qualitative; single relay, and Detik names savings and holidays instead) [P4W9-29; N-D]; 66% of Millennials name cooking at home as a money-saving strategy (pre-window fieldwork) [P4W9-16; U-C].
+- A premium foreign comparable: nine-month 2025 sales of MAPB, the Starbucks Indonesia licensee, fell 2.77% (IDR 2.42 trillion to 2.35 trillion) while its loss widened [Q6-006, Q6-005; N-D].
+- Mixed signals: Jakarta consumer confidence index 146.8 in Sep 2026, 3.2 points below August (150.0) [P1C2-20; J-D]; restaurant spending in Mandiri card data grew 4.7% yoy in Q3 2026 against 6.1% in 2025 (period labels inferred), still the fastest-growing monitored category but slowing [P1C2-29; N-D].
+
+The BLOCKED report naming eating out among the most-cut items (disconfirming-evidence table A, row 8) is excluded under the method rule. No national-culture argument is used; group effects appear only where a survey item measures them.
 
 ## Gaps and the primary-research brief
 
@@ -183,7 +190,7 @@ Format: register id; reference period ("pre-window": fieldwork before 2024-10-16
 - **BEH-045, BEH-051, BEH-020**; Jan-Sep 2025 vs Jan-Sep 2024; n not stated: Q6-001
 - **BEH-047, BEH-021**; To Sep 2025; n not stated: Q6-004
 - **BEH-048**; Nov 2025; n/a (event or market count): UC-N11
-- **BEH-048, BEH-049, DEM-025, BEH-022**; Jan-Sep 2025 vs Jan-Sep 2024; n not stated: Q6-005
+- **BEH-048, BEH-049, DEM-025, BEH-022**; Jan-Sep 2025 vs Jan-Sep 2024; n not stated: Q6-005, Q6-006
 - **BEH-052, BEH-053, BEH-054, BEH-023**; FY2025 vs FY2024; n not stated: Q6-007
 - **BEH-059**; Jan 2025; n=4,857: UD-N05
 - **BEH-059, BEH-033**; Jan 2025; n=4,857: SD05, SD06
@@ -198,6 +205,7 @@ Format: register id; reference period ("pre-window": fieldwork before 2024-10-16
 - **BEH-082**; fieldwork 22-24 Apr 2026; n=1,238: P4W9-03a, P4W9-03b, P4W9-04a, P4W9-04b
 - **BEH-083**; fieldwork 13-14 Mar 2025; n=1,343: P4W9-06, P4W9-05, P4W9-07
 - **BEH-086**; fieldwork Mar-Aug 2024 (pre-window); n=750: P4W9-19, P4W9-18, P4W9-16
+- **BEH-088**; fieldwork 17-21 Apr 2025; n=2,067 adults 18+ (per-generation n not printed): P4W9-28, P4W9-29
 - **BEH-091**; end-2025; n not stated: P4W10-01
 - **BEH-092**; 2025; n not stated: P4W10-05, P4W10-06
 - **BEH-093**; end-2025; n not stated: P4W10-02
@@ -211,8 +219,11 @@ Format: register id; reference period ("pre-window": fieldwork before 2024-10-16
 - **BEH-104**; 9-11 Oct 2026; n not stated: P4W10-28
 - **DEM-001**; Fieldwork 6-9 Dec 2024; n=896: UE-N03, P1C3-01, UE-N04
 - **DEM-002**; Jan-Apr 2025; n=266: P1C3-02, UE-N06
+- **DEM-021**; February 2026; Bank Mandiri deposit customers (middle group: savings Rp1-10 million): P1C2-33
 - **DEM-031**; March 2026 Susenas; n/a: P1C1-E01
 - **DEM-032**; March 2025 Susenas; n/a: P1C1-E06
 - **DEM-034**; September 2026; Jakarta households, CCI sample 4,600: P1C2-20
+- **DEM-035**; calendar year 2025 vs 2024; national (Susenas): P1C2-09
+- **DEM-039**; 2018 to 2025; employed persons (labour force surveys): P1C2-10, P1C2-11
 - **DEM-046**; Q3 2026; n not stated: P1C2-29
 
