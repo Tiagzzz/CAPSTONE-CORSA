@@ -227,3 +227,6 @@ The owner asked to pause the automated task and the running agents.
 - No scheduled run is pending: run 4 was never scheduled, and the scheduled-task list is empty.
 
 **To resume:** re-run V-P2 on the Plan 2 report, apply the remaining small fixes (Plan 3 F4/F12, Plan 1 minors F6–F15, demand README), then write the final summary in `reports/`.
+
+## Run 4 started (2026-10-17): Pillar 1 priority
+Owner instruction updated the task and restarted the run. The plan is `tasks/2026-10-17-run4-plan-pillar1.md`. Order: verify Plan 2 report, framework outline, customer profiles, CAGE, PESTEL, verifiers, then post-Pillar-1 items. The run-3 wrap-up and PR follow at the end. No scheduled task exists; the work runs in this session.
