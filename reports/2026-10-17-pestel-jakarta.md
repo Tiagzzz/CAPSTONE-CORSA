@@ -8,12 +8,12 @@ Date: 2026-10-17. Status: DRAFT; Team A decides the wording. Research, not legal
 
 ## Summary for investors
 
-- **Political:** the rules for a foreign-owned restaurant are open on paper (no foreign-ownership cap found for restaurants), but a successor investment-list regulation is in drafting (Keppres 38/2025 programme) and halal special provisions were announced on 9 Oct 2026. Realised investment grew in 2025 and H1 2026; Jakarta is the largest province by realised investment. Street protests in Jakarta did not target outlets in the cited reports.
-- **Economic:** Jakarta spends more per head than the country and confidence is high, yet the national middle class and middle-class wages are shrinking and the top spending class saves more. Evidence points to an affluent-tier story, not a broad middle-class one, and is mixed even there.
-- **Social:** price and taste lead stated choice; friends and family lead discovery; health interest is high but willingness to pay a 20% premium is 19% (national, food products). Jakarta padel stock is documented (326 courts end-2025) and one Jakarta race grew 70% in 2025: thin evidence of community growth.
+- **Political:** the rules for a foreign-owned restaurant are open on paper (no foreign-ownership cap found for restaurants), but a successor investment-list regulation is in drafting (Keppres 38/2025 programme) and halal special provisions are being drafted (BPJPH, 9 Oct 2026). Realised investment grew in 2025 and H1 2026; Jakarta is the largest province by realised investment. Street protests in Jakarta did not target outlets in the cited reports.
+- **Economic:** Jakarta spends more per head than the country and confidence is high, yet the national middle class and middle-class wages are shrinking and the top spending class saves more. Analysis: evidence points to an affluent-tier story, not a broad middle-class one, and is mixed even there.
+- **Social:** price and taste lead stated choice; friends and family lead discovery; health interest is high but willingness to pay a 20% premium is 19% (national, food products). Jakarta padel stock is documented (326 courts end-2025) and one Jakarta race grew 70% in 2025: Analysis: thin evidence of community growth.
 - **Technological:** QRIS payments and delivery apps are mass-market; creator links are opened by more people than buy through them (national, not food-specific).
-- **Environmental:** recurring flooding, land subsidence in the north, and packaging rules are real operating factors. Air quality, Jakarta heat, flood losses and cup rules are gaps; the July-September 2026 electricity tariff has expired and the October one was not found.
-- **Legal:** the largest finding is the PT PMA investment minimum of IDR 10bn excluding land and building, per city and per 2-digit KBLI 56 [E-04; N-D], above the team's single-outlet budget frame (CHF conversion not re-verified; see the Plan 2 report). Franchise to a local partner avoids it but brings its own tests. Halal certification is already mandatory for large businesses. See the regulatory report for routes.
+- **Environmental:** recurring flooding, land subsidence in the north, and Analysis: these and the packaging rules are real operating factors. Air quality, Jakarta heat, flood losses and cup rules are gaps; the July-September 2026 electricity tariff has expired and the October one was not found.
+- **Legal:** Analysis: the largest finding is the PT PMA investment minimum of IDR 10bn excluding land and building, per city and per 2-digit KBLI 56 [E-04; N-D], above the team's single-outlet budget frame (CHF conversion not re-verified; see the Plan 2 report). Franchise to a local partner avoids it but brings its own tests [F-04; N-D]. Halal certification has been enforced for medium and large businesses since 18 Oct 2024 [H-02; N-D]; whether a PMA counts as large for halal is an analysis step [H-03; N-D]. See the regulatory report for routes.
 
 ## 1. Political
 
@@ -101,7 +101,7 @@ Date: 2026-10-17. Status: DRAFT; Team A decides the wording. Research, not legal
 | Packaging rules | Cafes and restaurants covered by the producer roadmap, 30% waste-reduction target against 2029 generation, period 2020-2029 [ENV-009; N-D]; straw, foam and single-use bag ban effective 1 Jan 2030, not yet in force [ENV-010; N-D]; P.75/2019 status "Berlaku" [ENV-011; N-D] | Plan compostable packaging early | Medium |
 | Jakarta bag rule | Official JDIH text: mall managers must bind tenants and each tenant may not provide single-use plastic shopping bags (Pergub 142/2019, Art. 6) [ENV-012; J-D]; managers face warning, forced payment of IDR 5m to 25m, licence suspension or revocation, a tenant knowingly allowing such bags a written warning; status "Berlaku" [ENV-013; J-D], [ENV-019; J-D] | A mall cafe is bound through the mall and can itself be warned; takeaway cups are not addressed | High |
 | Energy | Jul-Sep 2026 tariff unchanged for 13 non-subsidised groups [ENV-014; N-D]; class B-2 (6,600 VA to 200 kVA) Rp1,444.70 per kWh for Jul-Sep 2026 [ENV-020; N-D]; that quarter expired on 30 Sep 2026 and the Q4 tariff was not found | No verified current tariff; the level is a reference only | Medium |
-| Water | New PAM Jaya tariffs from Jan 2025 per a news relay [ENV-015; J-D, relay tier 3]; Kepgub 730/2024 Annex II: Niaga/Industri Menengah IDR 6,825 / 12,500 / 17,500 per m3 for 0-10 / 11-20 / above 20 m3, read from an image PDF; the class that applies to a cafe was not read [ENV-022; J-D] | A small cost line at these rates; class to confirm | Medium |
+| Water | New PAM Jaya tariffs from Jan 2025 per a news relay [ENV-015; J-D, relay tier 3]; Kepgub 730/2024 Annex II: Niaga/Industri Menengah IDR 6,825 / 12,500 / 17,500 per m3 for 0-10 / 11-20 / above 20 m3, read from an image PDF; the class that applies to a cafe was not read [ENV-022; J-D] | Analysis: modest at these printed rates; class to confirm | Medium |
 | Waste duties | Pergub 102/2021: area managers and companies must manage waste and avoid single-use packaging; no cup or straw rule named (partial gap) [ENV-018; J-D] | General duty; no cup rule found | Medium |
 | Gaps | PM2.5 [ENV-016]; Jakarta heat [ENV-017]; flood losses [ENV-021] | GAP: no claim | n/a |
 
@@ -118,23 +118,23 @@ Date: 2026-10-17. Status: DRAFT; Team A decides the wording. Research, not legal
 | PT PMA capital | Paid-up capital at least IDR 2.5bn per PT [E-03; N-D]; total investment above IDR 10bn excluding land and building, per 2-digit KBLI 56 per city [E-04; N-D]; PMA treated as a large enterprise, PT mandatory [E-07; N-D] | A single-outlet own PT PMA is likely out of budget; lawyer to confirm | High |
 | Licensing | NIB plus Sertifikat Standar for medium risk [E-09; N-D]; KBLI 56101 large scale medium-high per Hukumonline [E-10; N-D, relay tier 3]; mall tenants can use landlord permits, 5 working days check; fees and lead time GAP [E-13; N-D] | Timeline unknown | Medium |
 | Franchise | PP 35/2024 replaced PP 42/2007 [F-01; N-D]; STPW needed by all parties [F-02; N-D]; 3 years of operation plus 2 audited profitable years [F-04; N-D], conflicting with Permendag 71/2019's 5 years [F-05; N-D]; prioritise domestic goods, no quota [F-06; N-D]; applies to foreign franchisors [F-07; N-D] | Young concept may fail the profit test | Medium |
-| Halal | Food and serving services must be certified [H-01; N-D]; medium and large businesses enforced since 18 Oct 2024 [H-02; N-D]; a PMA is classed as a large enterprise in the investment rules [E-07; N-D]; micro and small start 18 Oct 2026 [H-04; N-D]; BPJPH tariff IDR 12.5m for large or foreign-origin [H-08; N-D]; Minister to fix the foreign-product duty by 17 Oct 2026, decision not found [H-12; N-D] | Analysis: if the investment-rule class carries over, the medium/large phase applies and certification is already mandatory; this step is analysis, the halal scale test is not shown to follow that class [H-03; N-D]; lawyer question. Re-check H-04 and H-12 on 19-20 Oct | Medium (High for the dates) |
+| Halal | Food and serving services must be certified [H-01; N-D]; medium and large businesses enforced since 18 Oct 2024 [H-02; N-D]; a PMA is classed as a large enterprise in the investment rules [E-07; N-D]; micro and small start 18 Oct 2026 [H-02; N-D]; BPJPH says no postponement, special provisions being drafted [H-04; N-D]; BPJPH tariff IDR 12.5m for large or foreign-origin [H-08; N-D]; Minister to fix the foreign-product duty by 17 Oct 2026, decision not found [H-12; N-D] | Analysis: if the investment-rule class carries over, the medium/large phase applies and certification is already mandatory; this step is analysis, the halal scale test is not shown to follow that class [H-03; N-D]; lawyer question. Re-check H-04 and H-12 on 19-20 Oct | Medium (High for the dates) |
 | Restaurant tax | PBJT 10% [T-01; J-D]; exempt where turnover does not exceed IDR 42m a month [T-04; J-D]; the 20% reduction (Aug-Dec 2025, to 31 Jan 2026) expired [T-06; J-D]; March 2026 period only [T-07; J-D, relay] | Budget the full 10% | High |
 | Corporate tax | 22% [T-08; N-D]; 20% withholding, treaty dividends 10% to 15% [T-09, T-10; N-D]; royalties 10% [T-11; N-D]; services up to 5% [T-13; N-D]; VAT 12% on 11/12 base [T-15; N-D, relay] | Fee characterisation drives tax | Medium |
 | Permit enforcement | 185 of 397 Jakarta padel venues as printed (courts or buildings, unit unresolved; Mar 2026) lack a building permit [UC-N07; J-D]; 2 courts sealed on 4 Mar 2026 [P4W5-08; J-D] | Permits are enforced in Jakarta | Medium |
 
-SEHATI free halal scheme ran in 2025 only and is not available now (note to H-03). **So what (analysis):** On the cited rows the legal route is the first gate: the PT PMA minimum and the halal duty shape entry.
+The SEHATI free halal scheme ran in 2025; whether a 2026 round exists was not checked (note to H-03). **So what (analysis):** On the cited rows the legal route is the first gate: the PT PMA minimum and the halal duty shape entry.
 
 **What it means.** Administrative-distance consequences are in CAGE. **How to continue:** the lawyer list in `tasks/2026-10-17-run2-verification-f.md` and `tasks/2026-10-17-run3-verification-b.md`; `reports/2026-10-17-regulatory-entry-pathway.md` compares routes.
 
 ## Facts pointing the other way (risk)
 
-All verified downside, disconfirming or mixed rows in scope: the table-A rows of `data/raw/2026-10-17-disconfirming-evidence.md` plus every mapped row whose source notes say disconfirming or whose fact is a loss, closure or decline. National unless marked; none has a Jakarta-by-age cut.
+All verified downside, disconfirming or mixed rows in scope: the table-A rows of `data/raw/2026-10-17-disconfirming-evidence.md` plus every mapped row whose source notes say disconfirming or whose fact is a loss, closure or decline, with a ref period inside the research window. Selection rule for closures: P3B-26 to P3B-29 (Hard Rock Cafe Jakarta 2023, Fish & Co. 2022, Marche Movenpick 2020, Karen's Diner Nov 2023; all verified relay rows) are excluded because they are historical single-brand exits from before the window and carry no current-demand signal; they stay in the foreign-entrants dataset. National unless marked; none has a Jakarta-by-age cut.
 
 - **Demand and wages:** middle class fell 47.9m to 46.7m [P1C2-01; N-D]; middle-class wage share 14.5% (2018) to 7.1% (2025) and real wages -1 to -2% a year for medium- and high-skilled [P1C2-10, P1C2-11; N-D]; formal-wage share of graduates 74.1% to 67.8% (2018-2025) [P1C2-12; N-D]; growth in Q1 2026 (estimate): wealthy tier 8.0%, middle 3.5% [P1C2-26; N-D]; middle savings index 100.4 in Feb 2026, lowest since Oct 2023 [P1C2-33; N-D]; middle saving index 100.5 and upper 95.1 on 27 Sep 2026, groups by savings balance [P1C2-30; N-D]; upper group spending +5.3% in 2026 to early May, but middle and lower slowed [P1C2-31; N-D]; economists see the middle class pressured in 2026, opinion [P1C2-34; N-D]; top class saves 16.9% versus 14.4% [P1C2-18; U-D]; Central Jakarta prepared-food spend fell in 2024 [P1C1-E03; J-D]; restaurant card spending growth slowed [P1C2-29; N-D].
 - **Mixed or countering the downside:** middle group grew fastest in Ramadan 2026, seasonal [P1C2-32; N-C]; confidence 116.8 (Jul 2026), 118.5 (Aug), 117.8 (Jun) [DISC-A1, DISC-A2, DISC-A3; N-D]; upper spending -0.6% in the June 2026 school holiday, one outlet [DISC-A6; N-D]; layoffs 23,470 in Jan-May 2026 among JKP participants only, against 46,015 a year earlier, so direction mixed [DISC-A9; N-D]; real wages -1.1% a year in 2018-2024 [DISC-A16; N-D]; GDP +5.29% in Q2 2026 [DISC-A17; N-D].
-- **Operators (loss, closure, decline):** MAPB sales -2.77% in nine months 2025 [DISC-A13; N-D]; MAPB loss 108.69bn versus 79.13bn (9M 2025) [Q6-005; N-D], 150.8bn FY2025 [P3BF-017; N-D], 121.5bn versus 80.2bn H1 2026, partly exchange rate [P3BF-015; N-D]; Starbucks stores: 16 closed against 11 opened in H1 2025 (single outlet, weak) [P3B-07; N-D] versus 11 closed in 2025, period not stated [P3BF-018; N-D]; FAST: going-concern uncertainty at FY2025 [P3BF-010; N-D] and in H1 2026 statements [P3BF-009; N-D], 19 outlets and about 400 staff in 2025 to September (management statement) [Q6-004; N-D] versus 20 closed and 1,041 fewer staff per the filing [UC-N08; N-D], a Q1 2026 profit of IDR 12.7bn that the row note says did not hold [P3BF-007; N-D]; Pizza Hut revenue -4.54% in H1 2026 [P3BF-022; N-D]; ENAK swung to a loss in nine months 2025 [P3BF-028; N-D]; Popeyes store EBITDA margin -20.3% in Oct-Dec 2025 [P3B-06; N-D]; Burger King 138 versus 147 stores (Oct-Dec 2025 versus 2024) [P3B-05; N-D]; Mixue 428 overseas closures, scope unresolved [P3B-10; N-D]; Texas Chicken exited [P3BF-041; N-D].
-- **Behaviour:** friends rank above TikTok [P4W1-R04; U-D]; early adopters 7% and trend-driven shoppers 7% [P4W3-04, P4W3-05; N-D]; need-based shoppers 52% [P4W3-08; N-D]; 44% of pulse chasers who cut spending cite necessity [UB-10; N-D]; price 60% and taste 59% lead choice [UA-N65, P4W7b-02; U-D]; aesthetics last [P4W7b-14; N-D]; atmosphere not significant for Jakarta Gen Z [P4W7b-15; J-B]; students and workers rank seating, outlets and parking [P4W7b-05; U-D]; Gen X+ cut dining out 23% [P4W9-28; N-D]; groceries top for Millennials [P4W9-27; N-D]; 66% of urban Millennials cook at home [P4W9-16; U-C]; 48% say healthy options are hard to find [P4W4-05; N-D]; 43% cite cost [P4W4-06; N-D]; only 19% would pay 20% extra [P4W4-02; N-D]; peers over creators [P4W2b-11; P-D], [P4W2b-07; P-D]; micro creators hold trust better than mega ones, yet mega still lead in Indonesia [P4W2b-06; P-D]; trust in food-vlogger reviews fell after a scandal, n=85 [P4W2b-21; N-C]; reach exceeds conversion [P4W2b-14, P4W2b-16; N-D]; delivery order value trending down in South-East Asia [SD07; P-D]; padel occupancy 75% against operator claims of 87-99% [P4W10-13; N-D].
+- **Operators (loss, closure, decline):** MAPB sales -2.77% in nine months 2025 [DISC-A13; N-D]; MAPB loss 108.69bn versus 79.13bn (9M 2025) [Q6-005; N-D], 150.8bn FY2025 [P3BF-017; N-D], 121.5bn versus 80.2bn H1 2026, partly exchange rate [P3BF-015; N-D]; Starbucks stores: 16 closed against 11 opened in H1 2025 (single outlet, weak) [P3B-07; N-D] versus 11 closed in 2025, period not stated [P3BF-018; N-D]; FAST: going-concern uncertainty at FY2025 [P3BF-010; N-D] and in H1 2026 statements [P3BF-009; N-D], 19 outlets and about 400 staff in 2025 to September (management statement) [Q6-004; N-D] versus 20 closed and 1,041 fewer staff per the filing [UC-N08; N-D], a Q1 2026 profit of IDR 12.7bn that the row note says did not hold [P3BF-007; N-D]; Pizza Hut revenue -4.54% in H1 2026 [P3BF-022; N-D]; ENAK swung to a loss in nine months 2025 [P3BF-028; N-D]; Popeyes store EBITDA margin -20.3% in Oct-Dec 2025 [P3B-06; N-D]; Burger King 138 versus 147 stores (Oct-Dec 2025 versus 2024) [P3B-05; N-D]; Mixue 428 overseas closures, scope unresolved [P3B-10; N-D]; Texas Chicken exited [P3BF-041; N-D]; further FAST rows (losses narrowing but continuing): nine-month 2025 revenue -0.76% to IDR 3.56tn [Q6-002; N-D], H1 2025 revenue -3.12% to IDR 2.40tn [Q6-011; N-D], H1 2026 total net loss IDR 61.1bn versus 142.3bn [P3BF-005; N-D], FY2025 operating loss Rp312bn, down 60% [P3BF-011; N-D], FY2025 attributable loss Rp366.04bn versus 796.71bn on revenue Rp4.88tn versus 4.87tn [UC-N09; N-D].
+- **Behaviour:** friends rank above TikTok [P4W1-R04; U-D]; early adopters 7% and trend-driven shoppers 7% [P4W3-04, P4W3-05; N-D]; need-based shoppers 52% [P4W3-08; N-D]; 44% of pulse chasers who cut spending cite necessity [UB-10; N-D]; 39% of pulse chasers decreased spending [UB-07; N-D]; price 60% and taste 59% lead choice [UA-N65, P4W7b-02; U-D]; aesthetics last [P4W7b-14; N-D]; atmosphere not significant for Jakarta Gen Z [P4W7b-15; J-B]; students and workers rank seating, outlets and parking [P4W7b-05; U-D]; Gen X+ cut dining out 23% [P4W9-28; N-D]; groceries top for Millennials [P4W9-27; N-D]; 66% of urban Millennials cook at home [P4W9-16; U-C]; 54% of Gen Z limit social outings [P4W9-15; U-C]; 49% of Millennials and 56% of Gen Z choose a frugal lifestyle [P4W9-18, P4W9-19; U-C]; Millennials' main retrenchment is takeout and international travel, qualitative, one relay [P4W9-29; N-D]; 48% say healthy options are hard to find [P4W4-05; N-D]; 43% cite cost [P4W4-06; N-D]; only 19% would pay 20% extra [P4W4-02; N-D]; peers over creators [P4W2b-11; P-D], [P4W2b-07; P-D]; micro creators hold trust better than mega ones, yet mega still lead in Indonesia [P4W2b-06; P-D]; trust in food-vlogger reviews fell after a scandal, n=85 [P4W2b-21; N-C]; reach exceeds conversion [P4W2b-14, P4W2b-16; N-D]; delivery order value trending down in South-East Asia [SD07; P-D]; padel occupancy 75% against operator claims of 87-99% [P4W10-13; N-D].
 - **Supply and costs:** wheat imports -7.5% in 2025 and instant-noodle demand -0.9% [P1C4-08, P1C4-11; N-D].
 - **Legal and site:** the IDR 10bn rule is "disconfirming detail" for a single outlet [E-04; N-D]; 185 of 397 Jakarta padel venues without a building permit [UC-N07; J-D].
 - **Countering rows (balance):** Fore Coffee net income IDR 90.1bn versus 58.2bn [P3BF-035; N-D]; MAPI group H1 2026 profit +26.9% [P3BF-019; N-D]; Pizza Hut FY2025 sales +9.1-9.3% [Q6-008; N-D] and profit, [P3B-09; N-D].
@@ -147,18 +147,18 @@ Gaps: Jakarta middle-class series; any 25-39 cut; annual PM2.5; Jakarta heat; cu
 
 ## Appendix: rows used
 
-VO = VERIFIED-OPENED, CO = CORRECTED-OPENED (see Appendix note on GAP rows). Register ids are complete.
+VO = VERIFIED-OPENED, CO = CORRECTED-OPENED; GAP = gap row (ENV-016, ENV-017, ENV-021), no claim made. DISC-A# = table A row # of the disconfirming-evidence file; register ids as printed there.
 
 | row | register | period | verif. |
 |---|---|---|---|
-| DISC-A1 | DEM-005 | Jul 2026 | VO |
+| DISC-A1 | DEM-005 | Jul 2026 | VO (original) |
 | DISC-A13 | DEM-025;BEH-022 | 9M 2025 | CO |
 | DISC-A16 | DEM-018 | 2018-2024 | CO |
-| DISC-A17 | DEM-027;DEM-019 | Q2 2026 | VO |
-| DISC-A2 | DEM-006 | Aug 2026 | VO |
-| DISC-A3 | DEM-007 | Jun 2026 | VO |
-| DISC-A6 | DEM-022;DEM-009 | Jun 2026 school holiday | VO |
-| DISC-A9 | DEM-023;DEM-024;DEM-012 | Jan-May 2026 | VO |
+| DISC-A17 | DEM-027;DEM-019 | Q2 2026 | VO (relay) |
+| DISC-A2 | DEM-006 | Aug 2026 | VO (original) |
+| DISC-A3 | DEM-007 | Jun 2026 | VO (original) |
+| DISC-A6 | DEM-022;DEM-009 | Jun 2026 school holiday | VO (relay) |
+| DISC-A9 | DEM-023;DEM-024;DEM-012 | Jan-May 2026 | VO (relay) |
 | E-01 | REG-003;REG-004;REG-008 | Perpres 10/2021 set 2021-02-02 | VO (original) |
 | E-02 | REG-007 | Keppres 38/2025 set and effective 2025-12-22 | VO (relay) |
 | E-03 | REG-001 | Permen Investasi/BKPM 5/2025 set 2025-10-01, promulgated 2025-10-02 | VO (original) |
@@ -206,9 +206,11 @@ VO = VERIFIED-OPENED, CO = CORRECTED-OPENED (see Appendix note on GAP rows). Reg
 | P3B-07 | CMP-030 | H1 2025 | CO |
 | P3B-09 | BEH-052 | FY2025 vs FY2024 | VO (relay) |
 | P3B-10 | CMP-032;CMP-033;CMP-034 | FY2025 | CO |
+| P3BF-005 | CMP-001 | Jan-Jun 2026 vs Jan-Jun 2025 | VO (original) |
 | P3BF-007 | CMP-002 | Jan-Mar 2026 vs Jan-Mar 2025 | VO (original) |
 | P3BF-009 | CMP-001 | 30 Jun 2026 | VO (original) |
 | P3BF-010 | CMP-005 | FY2025 | VO (relay) |
+| P3BF-011 | CMP-004 | FY2025 | VO (relay) |
 | P3BF-015 | CMP-006 | Jan-Jun 2026 vs Jan-Jun 2025 | VO (original) |
 | P3BF-017 | CMP-007 | FY2025 vs FY2024 | VO (original) |
 | P3BF-018 | BEH-048 | 2025 | CO |
@@ -265,10 +267,14 @@ VO = VERIFIED-OPENED, CO = CORRECTED-OPENED (see Appendix note on GAP rows). Reg
 | P4W4-06 | BEH-013 | Fieldwork Jan-Feb 2025 | VO (original) |
 | P4W5-04 | BEH-017 | Oct 2025 | VO (relay) |
 | P4W5-08 | BEH-043;BEH-044;BEH-019 | 4 Mar 2026 | VO (relay) |
+| P4W9-15 | BEH-086 | fieldwork Mar-Aug 2024 | VO (original) |
 | P4W9-16 | BEH-086 | fieldwork Mar-Aug 2024 | VO (original) |
+| P4W9-18 | BEH-086 | fieldwork Mar-Aug 2024 | VO (original) |
+| P4W9-19 | BEH-086 | fieldwork Mar-Aug 2024 | VO (original) |
 | P4W9-26 | BEH-089 | fieldwork 17-21 Apr 2025 | VO (relay) |
 | P4W9-27 | BEH-089 | fieldwork 17-21 Apr 2025 | VO (relay) |
 | P4W9-28 | BEH-088 | fieldwork 17-21 Apr 2025 | VO (relay) |
+| P4W9-29 | BEH-088 | fieldwork 17-21 Apr 2025 | VO (relay) |
 | P4W1-R04 | BEH-004;BEH-040 | Fieldwork 2-7 Sep 2025 | VO (relay) |
 | P4W1-R05 | BEH-004;BEH-040 | Fieldwork 2-7 Sep 2025 | VO (relay) |
 | P4W2b-06 | BEH-005 | impact.com x Cube 2025 edition | VO (relay) |
@@ -282,10 +288,12 @@ VO = VERIFIED-OPENED, CO = CORRECTED-OPENED (see Appendix note on GAP rows). Reg
 | P4W7b-14 | BEH-066 | Survey 14-19 Oct 2025 | VO (relay) |
 | P4W7b-15 | BEH-067 | Peer-reviewed article, Vol. 19 No. 1, February 2026 | VO (original) |
 | Q6-001 | BEH-045;BEH-051;BEH-020 | Jan-Sep 2025 vs Jan-Sep 2024 | VO (relay) |
+| Q6-002 | BEH-045;BEH-051;BEH-020 | Jan-Sep 2025 | VO (relay) |
 | Q6-004 | BEH-047;BEH-021 | To Sep 2025 | VO (relay) |
 | Q6-005 | BEH-048;BEH-049;DEM-025;BEH-022 | Jan-Sep 2025 vs Jan-Sep 2024 | VO (original) |
 | Q6-007 | BEH-052;BEH-053;BEH-054;BEH-023 | FY2025 vs FY2024 | VO (relay) |
 | Q6-008 | BEH-052;BEH-053;BEH-054;BEH-023 | FY2025 | CO |
+| Q6-011 | BEH-050;BEH-025 | H1 2025 | VO (relay) |
 | S-03 | REG-033 | Survey published 2025-05-15 | VO (relay) |
 | S-04 | REG-034 | Fieldwork 2025-09-08 to 2025-09-13 | CO |
 | S-05 | REG-035 | Presented 2025-03-06 at Indonesia Muslim Market Outlook 2025 | CO |
@@ -317,10 +325,12 @@ VO = VERIFIED-OPENED, CO = CORRECTED-OPENED (see Appendix note on GAP rows). Reg
 | UA-N21 | BEH-038 | 2026 | VO (original) |
 | UA-N54 | BEH-039 | Fieldwork 13-14 Mar 2025 | VO (original) |
 | UA-N65 | BEH-040 | Fieldwork 2-7 Sep 2025 | VO (original) |
+| UB-07 | BEH-010 | Sep 2024 | VO (original) |
 | UB-10 | BEH-010 | Sep 2024 | VO (original) |
 | UC-N04 | BEH-017 | Oct 2025 vs Oct 2024 | VO (relay) |
 | UC-N07 | BEH-044;BEH-019 | Mar 2026 | VO (relay) |
 | UC-N08 | BEH-045 | to 30 Sep 2025 | VO (relay) |
+| UC-N09 | BEH-052 | FY2025 | CO |
 | UC-N11 | BEH-048 | Nov 2025 | VO (relay) |
 | UD-N10 | BEH-031 | 2026 target | VO (relay) |
 | UD-N12 | BEH-036 | Jun 2026 | VO (relay) |
