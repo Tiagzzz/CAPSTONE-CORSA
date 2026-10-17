@@ -101,3 +101,15 @@ Access date for all sources: 2026-10-17. Opened with curl (browser user agent), 
 - jurnaluniv45sby.ac.id (HTTP 403).
 - journal.univetbantara.ac.id (HTTP 404 on the article link).
 - sarimelati.co.id was refused by the proxy (side effect of a Jakpat search page; not needed).
+
+## Leads (tier 4)
+
+Registrar note, 2026-10-17: the two sources below are tier 4 (CLAUDE.md section 5). They are not registered in `sources/sources.md` and their rows were moved from `data/processed/plan4-venue-run2.csv` to `data/processed/2026-10-16-run1-dropped-rows.csv` with verdict TIER-4-LEAD. They are leads only and must not carry a figure.
+
+| row_id | source (not registered) | claim as staged |
+| --- | --- | --- |
+| P4W7b-09 | GoodStats student survey (P4-W7b-S4), https://goodstats.id/article/daya-tarik-kedai-kopi-di-mata-anak-muda-2024-kebiasaan-pengeluaran-dan-alasan-mereka-ZTfhp , printed 2024-11-23, n=203, 91% aged 18-24 | factors in choosing a coffee shop: comfortable place 84, taste 75, price 73, WiFi 45, promo 37 (%, multiple answer) |
+| P4W7b-10 | same | reasons to visit a coffee shop (to enjoy coffee 57.1; to work and study among them) |
+| P4W7b-11 | same | spend per coffee-shop visit and visit length (IDR 20,000-50,000 for 1-2 hours; 23.1% stay longer) |
+| P4W7b-12 | same | coffee-shop visit frequency and favourite time (27% in one frequency category) |
+| P4W7b-16 | Politeknik Negeri Jakarta D4 thesis (P4-W7b-S7), https://repository.pnj.ac.id/30994/ , submitted 2025-08-04, n=140 purposive | halal awareness, product quality and store atmosphere positively affect coffee purchase decisions of Gen Z in DKI Jakarta (no coefficients in the abstract) |

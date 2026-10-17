@@ -61,3 +61,122 @@ P4W3-S4,data/raw/plan4-novelty/findings.md,NOT_REGISTERED,"Destinesia journal; y
 P4W4-S4,data/raw/plan4-health/findings.md,NOT_REGISTERED,Jakpat health trend; no figure in CSV
 P4W4-S5,data/raw/plan4-health/findings.md,NOT_REGISTERED,UOB ACSS 2025 / Infobank; no figure in CSV
 P4W5-S3,data/raw/plan4-community-sport/findings.md,NOT_REGISTERED,Jakarta Post coffee run; no figure in CSV
+P4-W7b-S1,data/raw/plan4-venue/findings-run2.md,BEH-030,reused existing ID (same URL)
+P4-W7b-S2,data/raw/plan4-venue/findings-run2.md,BEH-040,reused existing ID (same URL)
+P4-W7b-S3,data/raw/plan4-venue/findings-run2.md,BEH-065,
+P4-W7b-S5,data/raw/plan4-venue/findings-run2.md,BEH-066,
+P4-W7b-S6,data/raw/plan4-venue/findings-run2.md,BEH-067,
+P4-W7b-S8,data/raw/plan4-venue/findings-run2.md,BEH-068,
+P4-W7b-S9,data/raw/plan4-venue/findings-run2.md,BEH-069,
+P4W2b-S1,data/raw/plan4-social-proof/findings-run2.md,BEH-070,
+P4W2b-S2,data/raw/plan4-social-proof/findings-run2.md,BEH-071,
+P4W2b-S3,data/raw/plan4-social-proof/findings-run2.md,BEH-005,reused existing ID (same URL)
+P4W2b-S4,data/raw/plan4-social-proof/findings-run2.md,BEH-072,
+P4W2b-S5,data/raw/plan4-social-proof/findings-run2.md,BEH-073,
+P4W2b-S6,data/raw/plan4-social-proof/findings-run2.md,BEH-006,reused existing ID (same URL)
+P4W2b-S7,data/raw/plan4-social-proof/findings-run2.md,BEH-074,
+P4W2b-S8,data/raw/plan4-social-proof/findings-run2.md,BEH-075,
+P4W2b-S9,data/raw/plan4-social-proof/findings-run2.md,BEH-030,reused existing ID (same URL)
+P4W2b-S10,data/raw/plan4-social-proof/findings-run2.md,BEH-076,
+P4W2b-S12,data/raw/plan4-social-proof/findings-run2.md,BEH-077,
+P4W2b-S13,data/raw/plan4-social-proof/findings-run2.md,BEH-078,
+P4W2b-S14,data/raw/plan4-social-proof/findings-run2.md,BEH-079,
+P4W2b-S15,data/raw/plan4-social-proof/findings-run2.md,BEH-080,
+P4W2b-S16,data/raw/plan4-social-proof/findings-run2.md,BEH-081,
+P4W9-S1,data/raw/plan4-age-splits/findings.md,BEH-082,
+P4W9-S2,data/raw/plan4-age-splits/findings.md,BEH-083,
+P4W9-S3,data/raw/plan4-age-splits/findings.md,BEH-084,
+P4W9-S4,data/raw/plan4-age-splits/findings.md,BEH-085,
+P4W9-S5,data/raw/plan4-age-splits/findings.md,BEH-086,
+P4W9-S5b,data/raw/plan4-age-splits/findings.md,BEH-087,
+P4W9-S7,data/raw/plan4-age-splits/findings.md,BEH-088,
+P4W9-S8,data/raw/plan4-age-splits/findings.md,BEH-089,
+P4W9-S10,data/raw/plan4-age-splits/findings.md,BEH-090,
+P1-C1-S1,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-028,
+P1-C1-S2,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-029,
+P1-C1-S3,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-004,reused existing ID (same URL)
+P1-C1-S4,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-020,reused existing ID (same URL)
+P1-C1-S5,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-030,
+P1-C1-S6,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-031,
+P1-C1-S7,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-032,
+P1-C1-S8,data/raw/2026-10-17-bps-jakarta-spend-population.md,DEM-033,
+P1C2-S1,data/raw/2026-10-17-middle-class-income.md,DEM-034,
+P1C2-S2,data/raw/2026-10-17-middle-class-income.md,DEM-035,
+P1C2-S3,data/raw/2026-10-17-middle-class-income.md,DEM-036,
+P1C2-S4,data/raw/2026-10-17-middle-class-income.md,DEM-037,
+P1C2-S5,data/raw/2026-10-17-middle-class-income.md,DEM-038,
+P1C2-S6,data/raw/2026-10-17-middle-class-income.md,DEM-039,
+P1C2-S7,data/raw/2026-10-17-middle-class-income.md,DEM-040,
+P1C2-S8,data/raw/2026-10-17-middle-class-income.md,DEM-041,
+P1C2-S9,data/raw/2026-10-17-middle-class-income.md,DEM-042,
+P1C2-S10,data/raw/2026-10-17-middle-class-income.md,DEM-043,
+P1C2-S11,data/raw/2026-10-17-middle-class-income.md,DEM-044,
+P1C2-S12,data/raw/2026-10-17-middle-class-income.md,DEM-045,
+P1C2-S13,data/raw/2026-10-17-middle-class-income.md,DEM-046,
+P1C2-S14,data/raw/2026-10-17-middle-class-income.md,DEM-047,
+P1C2-S15,data/raw/2026-10-17-middle-class-income.md,DEM-048,
+P1C2-S16,data/raw/2026-10-17-middle-class-income.md,DEM-021,reused existing ID (same URL)
+P3-B-S1,data/raw/2026-10-17-listed-operators.md,CMP-001,
+P3-B-S2,data/raw/2026-10-17-listed-operators.md,CMP-002,
+P3-B-S3,data/raw/2026-10-17-listed-operators.md,CMP-003,
+P3-B-S4,data/raw/2026-10-17-listed-operators.md,CMP-004,
+P3-B-S5,data/raw/2026-10-17-listed-operators.md,CMP-005,
+P3-B-S7,data/raw/2026-10-17-listed-operators.md,CMP-006,
+P3-B-S8,data/raw/2026-10-17-listed-operators.md,CMP-007,
+P3-B-S10,data/raw/2026-10-17-listed-operators.md,BEH-048,reused existing ID (same URL)
+P3-B-S11,data/raw/2026-10-17-listed-operators.md,CMP-008,
+P3-B-S13,data/raw/2026-10-17-listed-operators.md,CMP-009,
+P3-B-S14,data/raw/2026-10-17-listed-operators.md,CMP-010,
+P3-B-S15,data/raw/2026-10-17-listed-operators.md,CMP-011,
+P3-B-S16,data/raw/2026-10-17-listed-operators.md,CMP-012,
+P3-B-S17,data/raw/2026-10-17-listed-operators.md,CMP-013,
+P3-B-S18,data/raw/2026-10-17-listed-operators.md,CMP-014,
+P3-B-S20,data/raw/2026-10-17-listed-operators.md,CMP-015,
+P3-B-S21,data/raw/2026-10-17-listed-operators.md,CMP-016,
+P3-B-S22,data/raw/2026-10-17-listed-operators.md,CMP-017,
+P3B-S1,data/raw/2026-10-17-foreign-entrants.md,CMP-018,
+P3B-S2,data/raw/2026-10-17-foreign-entrants.md,CMP-019,
+P3B-S3,data/raw/2026-10-17-foreign-entrants.md,CMP-020,
+P3B-S4,data/raw/2026-10-17-foreign-entrants.md,CMP-021,
+P3B-S5,data/raw/2026-10-17-foreign-entrants.md,CMP-022,
+P3B-S6,data/raw/2026-10-17-foreign-entrants.md,CMP-023,
+P3B-S7,data/raw/2026-10-17-foreign-entrants.md,CMP-024,
+P3B-S8,data/raw/2026-10-17-foreign-entrants.md,CMP-025,
+P3B-S9,data/raw/2026-10-17-foreign-entrants.md,CMP-026,
+P3B-S10,data/raw/2026-10-17-foreign-entrants.md,CMP-027,
+P3B-S11,data/raw/2026-10-17-foreign-entrants.md,CMP-028,
+P3B-S12,data/raw/2026-10-17-foreign-entrants.md,CMP-029,
+P3B-S13,data/raw/2026-10-17-foreign-entrants.md,CMP-030,
+P3B-S14,data/raw/2026-10-17-foreign-entrants.md,BEH-045,reused existing ID (same URL)
+P3B-S15,data/raw/2026-10-17-foreign-entrants.md,BEH-046,reused existing ID (same URL)
+P3B-S16,data/raw/2026-10-17-foreign-entrants.md,CMP-031,
+P3B-S17,data/raw/2026-10-17-foreign-entrants.md,BEH-052,reused existing ID (same URL)
+P3B-S18,data/raw/2026-10-17-foreign-entrants.md,CMP-032,
+P3B-S19,data/raw/2026-10-17-foreign-entrants.md,CMP-033,
+P3B-S20,data/raw/2026-10-17-foreign-entrants.md,CMP-034,
+P3B-S21,data/raw/2026-10-17-foreign-entrants.md,CMP-035,
+P3B-S22,data/raw/2026-10-17-foreign-entrants.md,CMP-036,
+P3B-S23,data/raw/2026-10-17-foreign-entrants.md,CMP-037,
+P3B-S24,data/raw/2026-10-17-foreign-entrants.md,CMP-038,
+P3B-S25,data/raw/2026-10-17-foreign-entrants.md,CMP-039,
+P3B-S26,data/raw/2026-10-17-foreign-entrants.md,CMP-040,
+P3B-S27,data/raw/2026-10-17-foreign-entrants.md,CMP-041,
+P3B-S28,data/raw/2026-10-17-foreign-entrants.md,CMP-042,
+P3B-S29,data/raw/2026-10-17-foreign-entrants.md,CMP-043,
+P3B-S30,data/raw/2026-10-17-foreign-entrants.md,CMP-044,
+P3B-S31,data/raw/2026-10-17-foreign-entrants.md,CMP-045,
+P3B-S32,data/raw/2026-10-17-foreign-entrants.md,CMP-046,
+P3B-S33,data/raw/2026-10-17-foreign-entrants.md,CMP-047,
+P3B-S34,data/raw/2026-10-17-foreign-entrants.md,CMP-048,
+P3B-S35,data/raw/2026-10-17-foreign-entrants.md,CMP-049,
+P3B-S36,data/raw/2026-10-17-foreign-entrants.md,CMP-050,
+P3B-S37,data/raw/2026-10-17-foreign-entrants.md,CMP-051,
+P4-W7b-S4,data/raw/plan4-venue/findings-run2.md,TIER-4-LEAD,GoodStats republication of student survey (n=203); rows P4W7b-09 to P4W7b-12 moved to dropped-rows file
+P4-W7b-S7,data/raw/plan4-venue/findings-run2.md,TIER-4-LEAD,PNJ D4 thesis (n=140); row P4W7b-16 moved to dropped-rows file
+P4W2b-S11,data/raw/plan4-social-proof/findings-run2.md,NOT_REGISTERED,Bain e-Conomy SEA press release; no CSV row (context only)
+P4W9-S6,data/raw/plan4-age-splits/findings.md,NOT_REGISTERED,YouGov original article; no CSV row keyed to it (gated tables via relays)
+P4W9-S9,data/raw/plan4-age-splits/findings.md,NOT_REGISTERED,"Detik Finance YouGov briefing; used only in notes, no CSV row keyed to it"
+P3-B-S6,data/raw/2026-10-17-listed-operators.md,NOT_REGISTERED,"Kontan FAST FY2025 loss; reconciliation notes only, no CSV row keyed to it"
+P3-B-S9,data/raw/2026-10-17-listed-operators.md,NOT_REGISTERED,"Harian Energi MAPB H1 2026; corroboration only, no CSV row keyed to it"
+P3-B-S12,data/raw/2026-10-17-listed-operators.md,NOT_REGISTERED,"Starbucks Indonesia about-us page (undated); gap only, no CSV row"
+P3-B-S19,data/raw/2026-10-17-listed-operators.md,NOT_REGISTERED,key withdrawn by the worker
