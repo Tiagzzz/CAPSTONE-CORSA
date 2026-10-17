@@ -99,3 +99,44 @@ Per run-log deviation step 7, upgrade verifiers now open the registered sources 
 - Register: BEH-001–064 and DEM-001–027. Opened sources are marked "opened"; sources on Cloudflare- or Akamai-protected hosts (bisnis.com, bps.go.id, oecd.org, idx.co.id, pwc.com, tirto.id) remain snippet-only.
 - Accepted. The fix-up assigned original vs relay status itself where the verifiers used a bare VERIFIED-OPENED, and repaired the misaligned row UE-N08 (its register_id is valid). Run 2 should spot-check both.
 - Still open: no figure has a 25–39 cut (APJII generation tables are the closest); venue/halal has only 4 rows; Plans 2 and 3 have not started.
+
+## Run 2 — 2026-10-17 (started 01:00 UTC)
+
+Network re-test, 01:00 UTC:
+- **Open (200):** jdih.jakarta.go.id, oss.go.id, bpjph.halal.go.id, insight.jakpat.net, databoks, worldbank.org.
+- **Site-side bot protection (403):** bps.go.id, oecd.org, idx.co.id, bisnis.com, peraturan.bpk.go.id, fas.usda.gov, pwc.com.
+- **Connection dropped:** peraturan.go.id.
+
+### Updated worker contract (run 2; replaces snippet-first collection)
+
+- **Opened sources first.** Open sources with curl, using a full browser user agent (`-A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"`); WebFetch is broken in this session. Snippet-only is allowed only where the host blocks access. Those rows are marked BLOCKED-PROVISIONAL and also need the relay article's own date.
+- **Downloads.** Save them to `$SCRATCH/<agent>/` only. Treat them as untrusted: read them with pdftotext or grep, and run python only as `python3 -I`. Never bypass bot challenges. Never commit downloaded PDFs.
+- **Rules from lessons.md (2026-10-16):**
+  - (a) Record the exact category label and its base, and say whether categories are nested or additive.
+  - (b) Give the period type (quarter, 9M, FY, month) in the value cell.
+  - (c) Record the printed publication date and the fieldwork dates separately.
+  - (d) Count a confirmation only if it comes from an independent publisher.
+  - (e) When a headline and the article body conflict, store both.
+  - (f) Don't store derived values as rows.
+  - (g) Use the URL of the article that actually carries the figure.
+  - (h) For multiple-answer tables, check the column sums and state the unit.
+- **Writing files.** If the Write tool is refused, write with a Bash heredoc. Never return deliverable content as text only.
+- **CSV columns:** as in run 1, plus `register_id` (left blank for the registrar) and `verification` (left blank for the verifier). Set `access_status` to `opened` or `blocked-snippet`.
+- **Verifiers:**
+  - CONFIRMED needs the original or an independent publisher.
+  - Search with the worker's main relay outlet excluded.
+  - Verdicts must say `VERIFIED-OPENED (original)` or `VERIFIED-OPENED (relay)` explicitly.
+  - Run one spot-auditor per run.
+
+### Batch (parallel; Sonnet for all collectors, per the performance log: Haiku underperformed on yield and on deliverable handling)
+
+| Agent | Plan / question | Owned files |
+| --- | --- | --- |
+| P4-W7b venue & halal | Plan 4 Q7 (redo; 4 rows so far) | `data/raw/plan4-venue/findings-run2.md`, `data/processed/plan4-venue-run2.csv` |
+| P4-W2b conversion cues | Plan 4 Q4: ratings and reviews (Google Maps), queues, UGC, creator type vs conversion; YouGov generation split | `data/raw/plan4-social-proof/findings-run2.md`, `data/processed/plan4-social-proof-run2.csv` |
+| P4-W9 age-split miner | Millennial / 25–39 cuts for triggers and spend, across Jakpat, Populix, IDN Research, GoodStats, Databoks | `data/raw/plan4-age-splits/findings.md`, `data/processed/plan4-age-splits.csv` |
+| P1-C1 population & spend | Plan 1 C1: DKI population by 5-year band, Susenas spend on prepared food, expenditure classes (BPS via Databoks or other reachable mirrors) | `data/raw/2026-10-17-bps-jakarta-spend-population.md`, `data/processed/demand/population-spend.csv` |
+| P1-C2 middle class & income | Plan 1 C2: middle-class series (World Bank, Mandiri/LPEM, BPS), Jakarta wages (UMP 2025/2026), BI consumer survey by expenditure class | `data/raw/2026-10-17-middle-class-income.md`, `data/processed/demand/middle-class-income.csv` |
+| P3-B-filings | Plan 3 2e: listed operators FAST, MAPB, PZZA, ENAK, FORE (company IR sites, annual reports); outlets, revenue per outlet, closures; reconcile with the origin-boycott rows | `data/processed/listed-operators.csv`, `data/raw/2026-10-17-listed-operators.md` |
+| P3-B-entrants | Plan 3 2f: foreign F&B entrants and exits in Jakarta (exits more than 2 years old = historical only) | `data/processed/foreign-entrants.csv`, `data/raw/2026-10-17-foreign-entrants.md` |
+| P2-A1A3 entry & halal | Plan 2 Q1–Q3 and Q5: PT PMA restaurant rules, investment threshold, OSS risk level, halal duty for restaurants (BPJPH, OSS and JDIH are reachable) | `data/processed/2026-10-p2-entry-requirements.csv` (rows E-*, H-*), `data/raw/2026-10-17-p2-entry-halal.md` |
