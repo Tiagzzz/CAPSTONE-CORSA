@@ -1,17 +1,17 @@
 # Demand economics for CORSA Jakarta: target pool, spend, and hypotheses H1-H8
 
-Plan 1 synthesis (Team A, Pillar 1). Date: 2026-10-17. Status: DRAFT, awaiting independent verification. Inputs: only rows marked VERIFIED-OPENED or CORRECTED-OPENED in `data/processed/demand/*.csv` and the evidence table in `data/raw/2026-10-17-disconfirming-evidence.md`. Plan 4 spend rows and listed-operator rows are used for cross-reference only. No new research was done.
+Plan 1 synthesis (Team A). Date: 2026-10-17. Status: DRAFT, awaiting independent verification. Inputs: only VERIFIED-OPENED or CORRECTED-OPENED rows of `data/processed/demand/*.csv` and the disconfirming-evidence table; Plan 4 spend rows and listed-operator rows for cross-reference. No new research.
 
-**How to read this report.** Facts are cited as [row_id; register_id; period; base; geography]. Geography codes: J = Jakarta, U = urban Indonesia, N = national. Text after "Analysis:" is our reading, not sourced data. Rows marked "relay" are news or data-portal copies of an original that was not opened (tier 3). Verdict words: CONFIRMED and DISCONFIRMED apply only when the plan's own criterion is met by sourced data; NOT CONFIRMED means evidence leans against but the criterion is not met; UNDETERMINED means the data cannot test the criterion.
+**How to read this report.** Facts are cited as [row_id; register_id; period; base; geography]. Geography codes: J = Jakarta, U = urban Indonesia, N = national. "Analysis:" marks our reading, not sourced data. "Relay" rows are news or data-portal copies of an unopened original (tier 3). CONFIRMED and DISCONFIRMED apply only when the plan's criterion is met; NOT CONFIRMED means evidence leans against but the criterion is unmet; UNDETERMINED means the data cannot test it.
 
 ## 1. Summary
 
-1. **No hypothesis is cleanly confirmed.** Two of the eight lean against the team's view (H2, H3), one is mixed (H7), and five cannot be tested with public data (H1, H4, H5, H6, H8; H1 and H8 matter most for the model). Per the plan, the disconfirming results come first.
+1. **No hypothesis is cleanly confirmed.** Two of the eight lean against the team's view (H2, H3), one is mixed (H7), and five cannot be tested with public data (H1, H4, H5, H6, H8; H1 and H8 matter most for the model). 
 2. **H2 "growing middle class" should not be used in the interim presentation.** The national middle class fell from 57.33 million (2019) to 47.85 million (2024) [P1C2-05, P1C2-06; DEM-037; N] and from 47.9 to 46.7 million in 2025 [P1C2-01; DEM-035; N]. A Jakarta middle-class series was not found. The upper tier is a different story: several bank datasets show it growing faster than the middle (section 2.3), but it is small and the numbers are relays.
 3. **H3 is not confirmed, and the owner's 4-bowl threshold cannot be tested properly.** The only usable prepared-food figure is a city mean, not an upper-class median. At the South Jakarta mean of Rp548,413 per person per month (2024) [P1C1-E02; DEM-030; J], four bowls at Rp85,000-110,000 would take 62-80% of all prepared-food spending (Analysis). The 4-bowl threshold is the owner's flagged assumption, not a sourced figure.
-4. **Pool size looks sufficient on arithmetic, but H1 and H8 are undetermined.** Residents aged 25-39: 244,600 in Jakarta Pusat and 535,920 in Jakarta Selatan (June 2024, DERIVED) [P1C1-P06, P1C1-S06; DEM-028, DEM-029; J]. The two missing links are the share of them in the affordable classes and the capture rate. Both are GAPs. Public data give no guests per day for any comparable venue.
-5. **Wheat is not shrinking** (USDA food use 9.4 to 9.8 million tonnes) [P1C4-04; DEM-050; N], but restaurant pasta is not separated in any source, and 88% of households still consume rice [P1C4-14; DEM-057; N].
-6. **For Team B:** the evidence validates the UMP input exactly (Rp5,729,876) and gives a sourced range for wage growth (6.17-6.5%). For guests per day, visit frequency and dine-in tickets there is **no sourced range: GAP**. Section 6 lists what each source does and does not support.
+4. **H1 and H8 are undetermined.** Residents aged 25-39: 244,600 in Jakarta Pusat and 535,920 in Jakarta Selatan (June 2024, DERIVED) [P1C1-P06, P1C1-S06; DEM-028, DEM-029; J]. The class share and capture rate are GAPs, and no public source gives guests per day for a comparable venue.
+5. **Wheat is not shrinking** (USDA food use 9.4 to 9.8 million tonnes) [P1C4-04; DEM-050; N], but restaurant pasta is not separated and 88% of households still consume rice [P1C4-14; DEM-057; N].
+6. **For Team B:** the UMP input matches its source (Rp5,729,876) and wage growth has a sourced range (6.17-6.5%). Guests per day, visit frequency and dine-in tickets are **GAP**.
 
 ## 2. Target pool
 
@@ -30,9 +30,8 @@ BPS data as printed by Databoks (relay; the BPS table was not opened). DKI-wide 
 | P1C1-S04 | 35-39 | 178,160 | June 2024 | full population | Jakarta Selatan | DEM-029 |
 | P1C1-S06 (DERIVED) | 25-39 | 535,920 | June 2024 | sum of three bands | Jakarta Selatan | DEM-029 |
 
-The printed shares sum to 22.80% of Jakarta Pusat and 22.71% of Jakarta Selatan [P1C1-P06, P1C1-S06]. Total South Jakarta population is 2.36 million, rounded as printed (2024) [P1C1-S07; DEM-029; J].
 
-Analysis: these counts are all residents of all income classes. They do not include commuters, who are probably a large part of the SCBD and Kuningan lunch trade, and they do not say how many live in the three target districts. The sources do not give a district split.
+Analysis: these are residents of all income classes. They exclude commuters (probably a large part of the lunch trade) and give no district split.
 
 ### 2.2 Income, wages and spend levels (facts)
 
@@ -43,37 +42,31 @@ Analysis: these counts are all residents of all income classes. They do not incl
 | Food share of spend, DKI | 38.93% (2025); 39.66% (2024) | P1C1-F01, P1C1-F02; DEM-004 | annual; per capita; J |
 | Food share of spend, South Jakarta | 34.96% (2025); 38.08% (2024) | P1C1-F03, P1C1-F04; DEM-020 | annual; per capita; J |
 | Expenditure Gini, DKI vs national | 0.435 (highest province) vs 0.368 | P1C2-28; DEM-045 | Mar 2026; households; J/N |
-| Poor share, DKI | 4.14% (449.07 thousand persons) | P1C1-C01; DEM-033 | Sep 2024; population; J |
 | Average monthly wage of employees, Jakarta | Rp5.9 million; national Rp3.33 million | P1C2-23; DEM-042 | Aug 2025; Sakernas employees; J/N |
-| Average wage, Diploma IV/S1 and above | Rp4.8 million | P1C2-24; DEM-043 | Aug 2025; employees; N |
 | UMP DKI | Rp5,729,876 (+6.17%); 2025: Rp5,396,761 (+6.5%) | P1C2-21; DEM-040; P1C2-22; DEM-041 | 2026 and 2025; workers under one year of service; J |
 | Consumer Confidence Index, Jakarta | 146.8 (national 118.1) | P1C2-20; DEM-034 | Sep 2026; households in 18-city sample; J |
-| CCI, expenditure class above Rp5 million | 123.5; saving-to-income ratio 16.9% vs 14.4% a year earlier | P1C2-14, P1C2-18; DEM-034 | Sep 2026; about 4,600 households; U |
 
-Analysis: South Jakarta spends 1.4 times the DKI average per head (4,083,229 / 2,962,412, 2025). Its food share fell 3.1 points in one year while total spend rose, so extra income went mostly to non-food items [P1C1-F04 notes]. The Gini and the rank-1 position point to a concentrated top tier that a headcount of the middle class understates. The wage gap (Jakarta 1.8 times the national mean) shows the premium but is an all-sector mean; there is no Jakarta wage table by education (GAP). The highest class is optimistic but saves more than a year ago, which cuts against a spend-more story.
+Analysis: South Jakarta spends 1.4 times the DKI average per head (4,083,229 / 2,962,412, 2025). Its food share fell 3.1 points in a year while total spend rose, so extra income went mostly to non-food items [P1C1-F04 notes]. The Gini and the rank-1 position point to a concentrated top tier that a middle-class headcount understates. The Jakarta wage is an all-sector mean; a Jakarta wage table by education is a GAP.
 
 ### 2.3 Middle-class trend (facts)
 
 | Series | Value | Row; register_id | Period; base; geography |
 | --- | --- | --- | --- |
-| Middle class, about | 59.5 million | P1C2-07; DEM-038 | 2018; CORE economist, definition not stated; N |
 | Middle class (BPS) | 57.33 million (21.5%) | P1C2-05; DEM-037 | 2019; population; N |
 | Middle class (BPS Susenas) | 47.85 million (17.13%) | P1C2-06; DEM-037 | Mar 2024; population; N |
 | Middle class (Mandiri from Susenas) | 47.9 million (2024) to 46.7 million (2025; 16.6%) | P1C2-01; DEM-035 | annual; population; N |
-| Aspiring middle class | 137.5 to 142.0 million (50.4% in 2025) | P1C2-02; DEM-035 | 2024 to 2025; N |
 | Upper class (above 17x poverty line) | 1.1 to 1.2 million (0.4%) | P1C2-03; DEM-035 | 2024 to 2025; N |
 | Workers on middle-class wages (World Bank) | 14.5% (2018) to 7.1% (2025) | P1C2-10; DEM-039 | annual; employed persons; N |
 | Real wage change, medium and high skilled | about -1 and -2% a year, vs +1.7% for low-skilled | P1C2-11; DEM-039 | 2018-2025; N |
 | Per-capita consumption growth by class | upper 6.8%, middle 4.1%, national 4.6% | P1C2-08; DEM-035 | 2025 vs 2024; N |
 | Growth by tier (BRI) | wealthy 8.0% (estimate), middle 3.5%, lower 3.6% | P1C2-26; DEM-044 | Q1 2026; tiers not defined; N |
 | Upper-group spend growth (MSI) | +5.3% yoy vs +3.1% in 2025 | P1C2-31; DEM-047 | 2026 to 5 May; card data; N |
-| Deposits above Rp2 billion vs Rp100-500 million | +15.99% vs +3.15% yoy | P1C2-27; DEM-044 | Apr 2026; LPS accounts; N |
 
-Definitions: middle class is 3.5-17 times the poverty line per person per month, upper class above 17 times [P1C2-04; DEM-036; N]. The 57.33 to 47.85 million fall uses BPS figures relayed by Kontan; the 47.9 to 46.7 million step is Mandiri Institute using the same Susenas data, so these are one underlying source and not two. The plan's "57.3M to 46.7M" combines the BPS 2019 point with the Mandiri 2025 point. The 2018 figure should not be spliced with 2019 because its definition is not stated [P1C2-07 notes].
+Definitions: middle class is 3.5-17 times the poverty line per person per month, upper class above 17 times [P1C2-04; DEM-036; N]. The 57.33 to 47.85 million fall uses BPS figures relayed by Kontan; the 47.9 to 46.7 million step is Mandiri Institute using the same Susenas data, so these are one underlying source and not two. The plan's "57.3M to 46.7M" combines the BPS 2019 point with the Mandiri 2025 point. 
 
-Counter-evidence: during the 2026 Ramadan to Lebaran window the middle group grew fastest (+4.1% vs upper +2.6%, lower +2.1%; seasonal) [P1C2-32; DEM-048; N]. The upper group's spending fell 0.6% against the pre-holiday period in the June 2026 school holidays [disconfirming-evidence row 6; DEM-022;DEM-009; N], reported by one outlet.
+Counter-evidence: in the 2026 Ramadan to Lebaran window the middle group grew fastest (+4.1% vs upper +2.6%; seasonal) [P1C2-32; DEM-048; N]. Upper-group spending fell 0.6% against the pre-holiday period in the June 2026 school holidays [disconfirming-evidence row 6; DEM-022;DEM-009; N], one outlet.
 
-Analysis: the "growing middle class" claim fails at national level, with a decline of about 2.5% in 2025 that is larger than the rounding of the figures (47.9 vs 46.7). The upper-class headcount change (1.1 to 1.2 million) is within the one-decimal rounding and cannot be called growth. The stronger evidence for a growing top tier is that three different institutions (Mandiri, BRI, LPS via BRI) show the upper group outgrowing the middle; each is a relay and none is Jakarta-specific. Wording that survives the evidence: "a narrower middle and a concentrated upper tier whose Jakarta size is not measured".
+Analysis: the "growing middle class" claim fails nationally; the 2025 decline of about 2.5% exceeds the rounding of the figures (47.9 vs 46.7). The upper-class change (1.1 to 1.2 million) is within one-decimal rounding and is not growth. Mandiri and BRI both show the upper group outgrowing the middle, but both are relays and national. Wording that survives: "a narrower middle and a concentrated upper tier whose Jakarta size is not measured".
 
 ## 3. Food away from home and café spend
 
@@ -88,9 +81,9 @@ Analysis: the "growing middle class" claim fails at national level, with a decli
 | Indonesia | 248,501 | P1C1-E06; DEM-032 | Mar 2025; per capita; N |
 | Indonesia | 261,543 (32.5% of food spend Rp804,430) | P1C4-17; DEM-059 | Sep 2025; per capita; N |
 
-"Prepared food and drink" (makanan dan minuman jadi) covers everything bought ready to eat, from warung to cafés. The split between café and warung is a **GAP**. Per-class values (upper vs middle) are a **GAP**.
+"Prepared food and drink" covers everything bought ready to eat, from warung to cafés. The café share and per-class values are **GAP**.
 
-Period mismatches to keep in mind: the DKI figure is March 2026, the city figures are 2024 annual (Databoks premium teasers), the national figures are March and September 2025. Comparisons across these rows (for example DKI against national, 2.1 times) mix periods and rounds and are indicative only. The South Jakarta +25% jump against Pusat -2.5% in the same year is large and unexplained; treat the 2024 city values with caution.
+Period mismatches: DKI is March 2026, the cities are 2024 annual (Databoks teasers), national is March and September 2025. Cross-row comparisons (DKI vs national, 2.1 times) mix periods and are indicative only. South Jakarta +25% against Pusat -2.5% in the same year is unexplained; treat the 2024 city values with caution.
 
 ### 3.2 Coffee, lunch and frequency
 
@@ -99,17 +92,14 @@ Period mismatches to keep in mind: the DKI figure is March 2026, the city figure
 | Gen Z coffee consumers spending under Rp10,000 per cup (bought or made) | 48% | P1C3-01; DEM-001 | Dec 2024 fieldwork; n=896; N online panel |
 | Gen Z coffee drinkers spending Rp10,000-25,000 per cup | 30% | UE-N04; DEM-001 | Dec 2024; n=896; N |
 | Price as main factor when buying coffee | 47% | UE-N03; DEM-001 | Dec 2024; n=896; N |
-| Coffee consumed in last six months, Gen Z; Millennials | 67%; 74% | P4W9-01a, P4W9-01b; BEH-082 | 22-24 Apr 2026; n=1,238; N |
 | Average delivery lunch order: Millennials; Gen Z; Gen X | Rp65,130; Rp58,609; Rp63,250 | P4W9-05, P4W9-06, P4W9-07; BEH-083 | 13-14 Mar 2025; n=1,343 delivery-app users; N |
 | Delivery order size: under Rp50,000; Rp50,000-100,000; Rp100,000-150,000 | 42%; 42%; 11% | SD05, SD06, UD-N05; BEH-059 | Jan 2025; n=4,857; N |
 | Usually eat out for dinner; lunch | 41%; 37% | P1C3-03, P1C3-04; DEM-003 | Sep 2025; n=769 (base conflict 955/995); age 15-25, eight Java cities, Jakarta not separated; U |
-| Eat out 2-3 times a day or more | 19% | UE-N05; DEM-003 | Sep 2025; n=769; U |
 | Mall visitors naming dining as most common activity | 68% (a second article gives 64%) | P1C3-02; DEM-002 | Jan-Apr 2025; 266 of 800; non-probability, Jabodetabek malls; J |
-| Dining out among top-three spend categories, Gen Z | 14% | P4W9-26; BEH-089 | Apr 2025; n=2,067 adults 18+; N |
 
-**Frequency: GAP.** No opened source gives visits per month for ages 25-39 in Jakarta. The closest figures are all younger (15-25), national or delivery-only. No row separates the 25-39 core from other ages. Coffee and lunch rows cover Gen Z (younger than the target) or delivery orders (a different channel from dine-in); both are proxies. The Dec 2024 coffee survey asks about cups "bought or made", so it includes home coffee.
+**Frequency: GAP.** No opened source gives visits per month for ages 25-39 in Jakarta. The closest rows are younger (15-25), national or delivery-only, and no row isolates the 25-39 core. The coffee survey counts cups "bought or made", so it includes home coffee.
 
-Analysis: a Jakarta Selatan resident spends about Rp548,000 a month on all prepared food (2024). Divided by the model's weighted average spend of about Rp103,400 per guest (derived from the model weights, not an input), this is a ceiling of about 5.3 visits a month if every prepared-food rupiah went to CORSA-priced meals. The real figure for an average resident is far lower, and the target group is above average, so the ceiling says only that "4+ visits a month" is not demonstrated.
+Analysis: a Jakarta Selatan resident spends about Rp548,000 a month on all prepared food (2024). Divided by the model's weighted average spend of about Rp103,400 per guest (derived from the model weights, not an input), this is a ceiling of about 5.3 visits a month if every prepared-food rupiah went to CORSA-priced meals. The real figure for an average resident is far lower; the ceiling only shows that "4+ visits a month" is not demonstrated.
 
 ## 4. Wheat, pasta and food service context
 
@@ -117,16 +107,13 @@ Analysis: a Jakarta Selatan resident spends about Rp548,000 a month on all prepa
 | --- | --- | --- | --- |
 | Wheat used for food (FSI), USDA | 9.4 to 9.8 million tonnes (+4.3%); 10 million forecast 2026/27 | P1C4-04; DEM-050 | Jul-Jun 2024/25 to 2025/26; N |
 | Wheat imports, USDA PSD | 10,452 to 13,023 thousand tonnes | P1C4-01; DEM-049 | Jul-Jun trade years; N |
-| Wheat grain imports, BPS via Databoks | 11.72 to 10.84 million tonnes (-7.5%) | P1C4-08; DEM-051;DEM-063 | calendar 2024 to 2025; N |
-| Wheat flour consumption, APTINDO | 7.41 million tonnes in 2024 (+8.04%); 7.09 million tonnes Jan-Nov 2025 (+4.87%) | P1C4-09; DEM-052; P1C4-07; DEM-050 | 2024; Jan-Nov 2025; N |
 | Instant noodle demand, WINA | 14,680 to 14,540 million servings (-0.9%) | P1C4-11; DEM-054 | 2024 to 2025; N |
 | Households consuming rice; instant noodles; wheat flour | 88%; 71%; 32% | P1C4-14; DEM-057 | Susenas 2024; 341,802 households; N |
-| Rice per person per month, urban+rural | 6.49 kg (6.81 in 2022) | P1C4-15; DEM-057 | 2024; N |
 | Food service sector (HRI) | US$29 billion (2024); US$30 billion (2025) | P1C4-18; DEM-060; P1C4-20; DEM-061 | 2024; 2025; N |
 | Foodservice sales split: full-service; fast food; cafes/bars; street stalls | 79%; 7%; 6%; 5% | P1C4-19; DEM-060 | 2024; N |
 | Restaurants and rumah makan, DKI vs national | 202,983 vs 2,511,128 | P1C4-21; DEM-062 | 2024; establishments; J/N |
 
-Conflicts: USDA's import series (up) and BPS's calendar-2025 import series (down 7.5%) differ in period and are not reconciled. USDA's food use (up) rests on USDA alone. Instant noodles are down 0.9% in one table and reported as up 1.0% in USDA text, with a unit error [P1C4-11 notes]. Cafes and bars are the smallest named formal segment at 6% (national) [P1C4-19]. USDA also reports middle-class and Gen Z consumers fuelling bakery and foodservice, and names Tous Les Jours, Monsieur Spoon and Paris Baguette. Pasta is not named as a foodservice segment [P1C4-23; DEM-061].
+Conflicts: USDA imports (up) and BPS calendar-2025 imports (down 7.5%, 11.72 to 10.84 million tonnes) [P1C4-08; DEM-051;DEM-063] differ in period and are unreconciled. USDA food use rests on USDA alone. Instant noodles are down 0.9% in one table and up 1.0% in USDA text, with a unit error [P1C4-11 notes]. Cafes and bars are the smallest named formal segment [P1C4-19]. USDA names Tous Les Jours, Monsieur Spoon and Paris Baguette as growth chains; pasta is not a named foodservice segment [P1C4-23; DEM-061].
 
 Analysis: the data show wheat is mainstream (71% of households use instant noodles) but do not measure restaurant pasta, taste or repeat purchase. Rice remains the norm.
 
