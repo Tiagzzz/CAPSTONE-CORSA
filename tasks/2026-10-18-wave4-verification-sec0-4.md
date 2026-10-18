@@ -86,3 +86,36 @@
 
 - Halal 18 Oct 2026 phase: date stated, "date-sensitive" labelled (BPJPH special provisions still being drafted, H-04): OK.
 - Plastic-bag rule validity: F-21. PBJT March 2026 relief not mentioned: OK (not used).
+
+## Fix status (sections 0-4 of the report)
+
+| finding_id | fixed | how |
+|---|---|---|
+| F-01 | yes | Pizza Marzano pasta named, "city, outlet and tax basis not stated", code ns-D; Burgreens kept J-D before tax/service |
+| F-02 | yes | "48% of Gen Z coffee consumers spend under IDR10k to buy or make a cup" |
+| F-03 | yes | S-03 relabelled as agreement that some party benefits (n=810); S-04 n=643 self-selected; "nationally" removed |
+| F-04 | yes | "in 2025" added; cite changed to SD11/SD16 |
+| F-05 | yes | Both sentences now say delivery-app users typically spend under IDR 50,000 per order (another 42% IDR 50-100k in line 61) |
+| F-06 | yes | Liga.Tennis users, all racquet sports, per session spend |
+| F-07 | yes | National online-panel, no Jakarta/age cut; rice n=601 |
+| F-08 | yes | 303cd526232af5f link deleted; F03 cited with existing South Jakarta link; "2025" |
+| F-09 | yes | Ticket stated as about IDR120k net (about 132k with PBJT), pasta 89,000-105,000 net, labelled v0.5 placeholder (team: analysis/notes/r2_pillar1_notes.md), re-confirm against v0.6 |
+| F-10 | yes | Upper-group growth 5.3% vs 3.1% as lower/middle slowed |
+| F-11 | yes | "19% at 20% more" |
+| F-12 | yes | P4W10-12 added, all racquet sports; 61 clubs "not yet operating", area inferred |
+| F-13 | yes | CNA 185 of 397 registered courts (unit unclear), UC-N07; sealing 4 March 2026 |
+| F-14 | yes | "Indonesia (national online adults)/Sep 2024/D" |
+| F-15 | yes | "behind friends/family at 44% as a first source" |
+| F-16 | yes | Beauty shoppers, 62% vs 33% |
+| F-17 | yes | REG-039 URL; PMA and PMDN combined |
+| F-18 | yes | 2.8% sales decline at MAP Boga (9M 2025) |
+| F-19 | yes | Scope doc cited |
+| F-20 | yes | Confidence split high/medium, T-12 12.5% note |
+| F-21 | yes | JDIH status Berlaku, checked 2026-10-17, scope caveat |
+| F-22 | yes | "JMA normals, period not printed" (lines 67, 94) |
+| F-23 | yes | "reported flooded in the 12:00 WIB update on 23 January 2026" |
+| F-24 | yes | 64% second article and non-probability caveat |
+| F-25 | yes | "eight Java cities excluding Jakarta" |
+| F-26 | yes | Cites data/processed/2026-10-pillar1-mapping.csv; codes in handoff (also applied to the identical citation in section 1 line 33) |
+
+Verification: verify_report.py: unsourced=0, forbidden_hits=0.

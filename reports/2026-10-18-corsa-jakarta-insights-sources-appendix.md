@@ -3,7 +3,7 @@
 **Date:** 2026-10-18  
 **Companion Document:** `reports/2026-10-18-corsa-jakarta-insights-report.md` (Deliverable 1)  
 **Claim Ledger:** `data/processed/2026-10-18-claim-ledger.csv`  
-**Source Register:** 325 entries in `sources/sources.md`; 122 cited in Deliverable 1 (Part A); 203 not cited (Part B.1).  
+**Source Register:** 325 entries in `sources/sources.md`; 123 cited in Deliverable 1 (Part A); 202 not cited (Part B.1).  
 
 ---
 
@@ -93,6 +93,7 @@
 | `BEH-092` | Padel Clubs Spread in Jakarta, Most in South Jakarta | Databoks (Katadata) relaying Core & Court | 3 | 2026-02-26 (printed 26/02/2026 13:43 WIB) | https://databoks.katadata.co.id/en/sport/statistics/699fe8353db5d/padel-clubs-spread-in-jakarta-most-in-south-jakarta | 3. Run and padel communities — occasion and acquisition engine | 1 |
 | `BEH-094` | Province with the most expensive average padel court rental costs in 2025 (Bali ranks at the top) | Databoks (Katadata, Nabilah Muhamad) relaying Core & Court-Growell Indonesia Padel Report 2025 | 3 | 2026-02-18 (printed 18/02/2026 19:27 WIB) | https://databoks.katadata.co.id/en/sport/statistics/69957685c7ceb/this-is-the-province-with-the-most-expensive-average-padel-court-rental-costs-in-2025-with-bali-ranking-at-the-top | 3. Run and padel communities — occasion and acquisition engine | 1 |
 | `BEH-095` | Industri Olahraga Raket Kian Berkembang, Segmen Padel Catat Pertumbuhan Signifikan | Kontan (industri.kontan.co.id, Leni Wandira) relaying Liga.Tennis Racquet Sports Report 2026 press release (original not opened) | 3 | 2026-04-13 (printed Senin, 13 April 2026 19:08 WIB) | https://industri.kontan.co.id/news/industri-olahraga-raket-kian-berkembang-segmen-padel-catat-pertumbuhan-signifikan | 3. Run and padel communities — occasion and acquisition engine | 2 |
+| `BEH-096` | Industri Olahraga Raket Kian Berkembang, Padel Jadi Motor Baru | Fortune Indonesia (Desy Yuliastuti) carrying the same Liga.Tennis press text as BEH-095 | 3 | 2026-04-14 (printed 14 Apr 2026, 15:46 WIB) | https://www.fortuneidn.com/luxury/industri-olahraga-raket-kian-berkembang-padel-jadi-motor-baru-00-4vfn9-pmcmzj/amp | 3. Run and padel communities — occasion and acquisition engine | 1 |
 | `BEH-102` | GrabFood, GoFood, and ShopeeFood Sales in Indonesia Increased in 2025 | Databoks (Katadata) relaying Momentum Works | 3 | 2026-02-20 (printed 20/02/2026 12:27 WIB) | https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6997ed8e89309/grabfood-gofood-and-shopeefood-sales-in-indonesia-increased-in-2025 | Technological | 1 |
 | `CMP-023` | Erajaya Bawa CHAGEE ke Indonesia, Tawarkan Teh Premium ala Teapresso | Kontan (industri.kontan.co.id) | 3 | 2025-04-11 | https://industri.kontan.co.id/news/erajaya-bawa-chagee-ke-indonesia-tawarkan-teh-premium-ala-teapresso | 5. Competitors, benchmark and price position | 1 |
 | `CMP-025` | CHAGEE's Indonesia playbook: scaling tea culture across Jakarta and Bali | Marketing-Interactive (interview with the CHAGEE Indonesia GM) | 3 | 2026-04-28 (page prints "published 28 April 2026"; the 2026-09-30 and 2026-10-07 tags belong to other articles in the sidebar) | https://www.marketing-interactive.com/chagee-s-indonesia-playbook-scaling-tea-culture-across-jakarta-and-bali | 5. Competitors, benchmark and price position | 1 |
@@ -182,14 +183,14 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `BLOCKED` | The source could not be opened (bot challenge, 403, page gone), so it could not be verified | 73 |
 | `NOT-CONFIRMED` | Pre-verification opened the source, but it does not support the claim (value, period, base or wording differ) | 22 |
 | `OUT-OF-WINDOW` | Before the 2024-10-16 cutoff, or superseded | 21 |
-| `DUPLICATE` | The same fact comes from a stronger source | 5 |
+| `DUPLICATE` | The same fact comes from a stronger source | 4 |
 | `TIER4-LEAD` | Lead only | 11 |
 | `CONTRADICTED` | A stronger source conflicts | 0 |
 | `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 32 |
 | `CONDENSED-OUT` | Relevant but cut for length (names the long report that still holds it) | 142 |
 | `UNVERIFIED-NOT-USED` | Pre-verification item (check=if_used) with no verdict and not cited in the report | 47 |
 
-### B.1 Register entries not cited (203)
+### B.1 Register entries not cited (202)
 
 | ID | Tier | Title | Publisher | Part B code | Reason |
 |---|---:|---|---|---|---|
@@ -323,7 +324,6 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `REG-007` | 3 | Pemerintah Akan Perbarui Perpres terkait Bidang Usaha Penanaman Modal | DDTCNews (DDTC) | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-pestel-jakarta.md`, `reports/2026-10-17-regulatory-entry-pathway.md`. |
 | `REG-015` | 1 | FAQ BPJPH | BPJPH | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-cage-switzerland-jakarta.md`, `reports/2026-10-17-pestel-jakarta.md`, `reports/2026-10-17-regulatory-entry-pathway.md`. |
 | `BEH-093` | 3 | Number of Padel Clubs and Courts in Indonesia Grew Rapidly Through 2025 | Databoks (Katadata) relaying Core & Court | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-customer-target-profiles.md`, `reports/2026-10-17-purchase-triggers-and-channels.md`. |
-| `BEH-096` | 3 | Industri Olahraga Raket Kian Berkembang, Padel Jadi Motor Baru | Fortune Indonesia (Desy Yuliastuti) carrying the same Liga.Tennis press text as BEH-095 | `DUPLICATE` | Same press text as BEH-095, so not an independent second source. |
 | `BEH-097` | 3 | Cashing in on padel: The new courtside economy of Jakarta | The Jakarta Post Weekender (Aqraa Sagir) | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-customer-target-profiles.md`, `reports/2026-10-17-purchase-triggers-and-channels.md`. |
 | `BEH-098` | 3 | Antusiasme Pelari Jabodetabek, Sisi Unik di Balik Ramainya Pocari Sweat Run di Bandung | Good News From Indonesia (GNFI) relaying organizer data (Pocari Sweat / PT Amerta Indah Otsuka) | `OFF-SCOPE` | Title names Bandung, outside the Jakarta Selatan / Jakarta Pusat corridors; served: Pocari Sweat Run 2025 Bandung participants (16,000 Bandung edition. |
 | `BEH-099` | 3 | Lari Tak Kenal Usia, Peserta 72 Tahun Ikut Isoplus Run di PIK 2 | Kontan Momsmoney | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-customer-target-profiles.md`. |

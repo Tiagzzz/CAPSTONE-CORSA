@@ -4,8 +4,8 @@
   "appendix_path": "reports/2026-10-18-corsa-jakarta-insights-sources-appendix.md",
   "claim_ledger_path": "data/processed/2026-10-18-claim-ledger.csv",
   "word_counts": {
-    "raw_words": 7514,
-    "prose_words": 7001,
+    "raw_words": 7738,
+    "prose_words": 7202,
     "ceiling": 10000,
     "raw_under_ceiling": true,
     "prose_under_ceiling": true
@@ -17,9 +17,9 @@
   "disallowed_preverification_fact_citations": [],
   "forbidden_string_hits_report": [],
   "forbidden_string_hits_appendix": [],
-  "sources_used_count": 122,
-  "sources_unused_count": 203,
-  "distinct_row_ids_cited": 134,
+  "sources_used_count": 123,
+  "sources_unused_count": 202,
+  "distinct_row_ids_cited": 137,
   "model_sheets_cited": [
     "Annual",
     "Dashboard",
