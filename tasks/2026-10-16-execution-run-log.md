@@ -215,3 +215,42 @@ Interrupted by the account usage limit (reset 15:40 UTC), to be resumed after th
 After those: the Plan 1 synthesis, verifiers for the Plan 2 and Plan 3 reports, and the run-3 wrap-up.
 
 **Plan 4 report accepted (main agent, 2026-10-17):** `reports/2026-10-17-purchase-triggers-and-channels.md` and `data/processed/plan4-trigger-matrix.csv`. V4 verdict: ACCEPT WITH MINOR FIXES. All minors were applied (R1–R6), and the number check passes. Length is 4,494 words (about 8–9 pages, slightly over the 6–8 page target), accepted. Plan 4 acceptance criteria are met except where a documented structural gap applies: the 25–39 cut, Jakarta-only cuts, and racing/Italian image.
+
+**Plan 3 report accepted (main agent):** `reports/2026-10-17-competitor-map-and-price-ladder.md`. V-P3: ACCEPT WITH FIXES. All majors and mediums applied. CMP-048 (Texas Chicken, 2023 exit) is cited only as historical context, which is allowed. Pending small items for the final fix-up: F4 (correction note in price-points.md) and F12 (CMP-040 register fix). Unmet Plan 3 criteria (venue dataset, heat table, saturation verdict, Oakberry reconciliation) are documented gaps that need primary or field research.
+
+**Plan 1 report accepted (main agent):** `reports/2026-10-17-demand-economics.md`. V-P1: ACCEPT WITH FIXES. Majors F1–F5 applied, and the number check passes. Minors F6–F15 and a `data/processed/demand/README.md` method note are left for the final fix-up. Unmet: the funnel criterion, because no source gives guests per day or visit frequency. It is a documented gap for primary research.
+
+## Paused by the owner (2026-10-17)
+
+The owner asked to pause the automated task and the running agents.
+- Stopped: the V-P2 verifier of the Plan 2 report. It was interrupted before writing its review, so the Plan 2 report (`reports/2026-10-17-regulatory-entry-pathway.md`) is **unverified**.
+- No scheduled run is pending: run 4 was never scheduled, and the scheduled-task list is empty.
+
+**To resume:** re-run V-P2 on the Plan 2 report, apply the remaining small fixes (Plan 3 F4/F12, Plan 1 minors F6–F15, demand README), then write the final summary in `reports/`.
+
+## Run 4 started (2026-10-17): Pillar 1 priority
+Owner instruction updated the task and restarted the run. The plan is `tasks/2026-10-17-run4-plan-pillar1.md`. Order: verify Plan 2 report, framework outline, customer profiles, CAGE, PESTEL, verifiers, then post-Pillar-1 items. The run-3 wrap-up and PR follow at the end. No scheduled task exists; the work runs in this session.
+
+**Plan 2 report accepted (main agent, 2026-10-17):** `reports/2026-10-17-regulatory-entry-pathway.md`. V-P2 (ACCEPT WITH FIXES, F1-F16), V-P2b (N1-N11), V-P2c recheck (D1-D3 and CSV slips): all applied. Tag trace 95/95. Open: the CHF rates stay labelled "undated, unsourced" (no BI/SNB rate found); "Art. 197 revokes PP 39/2021" in section 2.1 has no source-backed row yet (V-P2 opened PP 42/2024 Art. 196-198); section 8 still names V-P2b in a method note. Re-check H-12 and H-04 on 19-20 Oct 2026.
+
+**Customer target profiles accepted (main agent, 2026-10-17):** `reports/2026-10-17-customer-target-profiles.md`. V-PROF (ACCEPT WITH FIXES, F1-F15) and V-PROF2 (R1-R6) all applied; tag trace clean (195 CSV rows + 8 disconfirming-table rows, no BLOCKED rows used). Open: body about 8,500 words, over the 6,000 target (Team A decides what to cut); the final geography-letter comparison was not re-run after R1-R6 (the previous run showed only the intended J* re-codes); P1C1-S07 tag shows age-fit D where the row has n/a (trivial). Three CSV geography cells re-coded J to J* (P1C3-02, UE-N06, P4W10-08).
+
+**CAGE report accepted (main agent, 2026-10-17):** `reports/2026-10-17-cage-switzerland-jakarta.md`, `data/processed/2026-10-cage-geo-culture.csv` (40 rows: 30 verified, 10 gaps), sources REG-100 to REG-130. V-CAGE (F1-F19) and V-CAGE2 (R1-R10) applied; main-agent scripted check that all named downside rows are cited. Matthieu register: 174 claims, 161 verified, 5 corrected, 8 unverified (reasons given). Open: P1C2-18 values read from a table image, unconfirmed; the report is very long (about 14,000 words including the register), so the interim should use its summary; no Swiss-side data collected (CAGE measured from the Jakarta side); REG-901 not renumbered.
+
+**PESTEL report accepted (main agent, 2026-10-17):** `reports/2026-10-17-pestel-jakarta.md`, `data/processed/2026-10-pestel-environmental.csv` (22 rows: 19 with data, 3 gaps: ENV-016, 017, 021), sources REG-045 to REG-056 and REG-131 to REG-135. V-PEST (F1-F17) and V-PEST2 applied; 0 wrong figures. Open: ENV-015 stays tier 3 (RMOL relay); no Jakarta technology row; Pergub 37/2024 read as a record page only; body about 4,300 words plus a 173-row Appendix.
+
+**Framework outline accepted (main agent, 2026-10-17):** `reports/2026-10-17-pillar1-framework-outline.md`, 456 words. V-OUT fixes F1-F8 applied. Both interim dates are named (meeting 5: 21 Oct; scope: 22 Oct 08:00-12:00, to confirm with Heiko). Before it goes to Samuel, re-read it against the final state of the three reports.
+
+**Pillar 1 status:** outline, profiles, CAGE and PESTEL drafted, independently verified and accepted ahead of the 21 Oct 12:00 UTC limit. Next: balance check on the Plan 1-3 reports, lawyer/tax list, date-sensitive re-checks on 19-20 Oct, then wrap-up and PR.
+
+**Balance check and lawyer/tax list accepted (main agent, 2026-10-18):** rule 3 applied to the Plan 1, 2 and 3 reports (Plan 1: 20 to 43 downside rows cited; Plan 2 section 5: 12 to 23; Plan 3: 29 to 35). V-BAL found one medium issue (the Plan 2 "no boycott cause stated" wording, contradicted by P3B-08 and P3B-07), fixed; the H6 verdict stays "Undetermined". No conclusion changed. The consolidated list is `tasks/2026-10-17-lawyer-and-tax-questions.md` (36 items: 20 lawyer, 9 tax, 7 BPJPH/LPH).
+
+## Run 3 complete
+
+Final content commit: `8882305` on `claude/kind-hopper-2nopv7` (this log entry is added in the commit after it). Pillar 1 deliverables (outline, customer profiles, CAGE, PESTEL) are drafted, independently verified and accepted. The 11 open label rows are fixed (`tasks/2026-10-17-run4-label-fixes.md`; three more J* re-codes).
+
+**Not done, for the owner:**
+- Date-sensitive re-checks: H-12 (PP 42/2024 Art. 160(3), 19-20 Oct 2026), BPJPH special provisions for imports and UMK (H-04), any new DKI PBJT reduction decree for Sep-Dec 2026 (T-07). They fall on or after 19 Oct; nothing was re-checked on 18 Oct. If one changes, update the Pillar 1 reports and the lawyer list.
+- The independent verifier for the 11 label fixes (`tasks/2026-10-17-run4-label-fixes.md`) has not run; the PESTEL, CAGE and profiles verifiers re-read the rows they cite but not every fixed cell.
+- Open items per report are listed above (profiles body about 8,500 words; CAGE about 14,000 words; Plan 2 "Art. 197" row; unsourced CHF rate; P1C2-18 table image unconfirmed; ENV-015 tier 3).
+- Before the outline goes to Samuel, re-read it against the final reports and confirm the interim date (21 vs 22 Oct) with Heiko.
