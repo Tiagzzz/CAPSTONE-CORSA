@@ -15,7 +15,7 @@ Acceptance: the script exits 0, outputs are deterministic on a rerun, and every 
 
 ## 2. Map model changes to the report (worker W2, Sonnet)
 Owns: `reports/2026-10-18-corsa-jakarta-insights-report.md`, `data/processed/2026-10-18-claim-ledger.csv` (via the script).
-1. List the claims that depend on the model: `python3 -c "import csv;[print(r['claim_id'],r['section']) for r in csv.DictReader(open('data/processed/2026-10-18-claim-ledger.csv')) if r['depends_on']=='model_v0.6']"`. There are 74 of 152 ledger rows. Also grep the report for `v0.6`, `CHF` and `Annual!`.
+1. List the claims that depend on the model: `python3 -c "import csv;[print(r['claim_id'],r['section']) for r in csv.DictReader(open('data/processed/2026-10-18-claim-ledger.csv')) if r['depends_on']=='model_v0.6']"`. There are 77 of 152 ledger rows. Also grep the report for `v0.6`, `CHF` and `Annual!`.
 2. Match each changed figure to its claims and report cells. Update the figure, cell reference and model version. Change `depends_on` to the new model label (for example `model_v0.7`) and make the labelling consistent in `verify_report.py` if it hardcodes `model_v0.6`.
 3. Re-check the Phase 1 model flags and state in the text whether each is closed:
    - only 13 of 60 `PnL_Monthly` months populated (`C4:O53`), with `Annual` years 2–5 at zero;
@@ -47,7 +47,7 @@ Owns: `tasks/2026-10-19-phase2-verification.md`.
 
 ## 6. Rerun checks, release (orchestrator plus W2)
 1. `python3 analysis/run_all.py --model-path data/raw/<new>.xlsx` (full, including links). Then confirm `python3 analysis/verify_report.py` regenerates the ledger and appendix.
-2. Acceptance, from `analysis/outputs/verify_report_summary.json`: words ≤ 10,000, unsourced = 0, forbidden_hits = 0 (no Singapore/Dubai/Hong Kong comparison, no HSG staff names).
+2. Acceptance, from `analysis/outputs/verify_report_summary.json`: `word_counts.raw_words` ≤ 10,000, `unsourced_numeric_statements_count` = 0, `disallowed_preverification_fact_citations` empty, `forbidden_string_hits_report` and `forbidden_string_hits_appendix` empty (no Singapore/Dubai/Hong Kong comparison, no HSG staff names).
 3. Bump the report to v1.1. Rewrite the section 12 open points and Phase 2 paragraph, and add a v1.1 changelog entry: new model, Paul's sources, changed figures, closed or open gaps.
 4. Add lines to `tasks/2026-10-18-progress.md` (what, who, result).
 5. Checkpoint commits after each step with the prefix `claude:` (or the agent prefix), with the Co-Authored-By trailer. `git push`, update the PR description (sources used, verification result). Do not merge.
@@ -62,6 +62,6 @@ Owns: `tasks/2026-10-19-phase2-verification.md`.
 - Placeholder model inputs not replaced with primary observations and quotes.
 - v0.6 model: 13 of 60 P&L months, `Annual` years 2–5 invalid, displayed NPV/IRR and payback invalid.
 - Pre-verification: 11 UNREACHABLE and 5 NOT-CONFIRMED items from wave 2b remain open; 47 `if_used` items unverified unless used.
-- 6 ledger claims have `depends_on=team_unverified`: re-check them if Paul's sources cover them.
+- 5 ledger claims have `depends_on=team_unverified`: re-check them if Paul's sources cover them.
 - `analysis/verify_report.py` hardcodes the label `model_v0.6` (lines ~317, ~326 for `depends_on`/`verification`, ~736 for appendix A.4). Before re-running on the new model, change these to the new version label, or the ledger will mislabel model-dependent claims.
 - CORSA's own menu price points in the report now cite v0.6 `Menu` cells (`Menu!C7:C12`, `Menu!H30`) and `Inputs!F17`; when the new model arrives, re-cite them to its `Menu` cells and recheck values.

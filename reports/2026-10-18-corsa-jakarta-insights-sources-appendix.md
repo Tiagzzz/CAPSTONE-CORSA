@@ -183,10 +183,10 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `BLOCKED` | The source could not be opened (bot challenge, 403, page gone), so it could not be verified | 73 |
 | `NOT-CONFIRMED` | Pre-verification opened the source, but it does not support the claim (value, period, base or wording differ) | 22 |
 | `OUT-OF-WINDOW` | Before the 2024-10-16 cutoff, or superseded | 21 |
-| `DUPLICATE` | The same fact comes from a stronger source | 4 |
+| `DUPLICATE` | The same fact comes from a stronger source | 3 |
 | `TIER4-LEAD` | Lead only | 11 |
 | `CONTRADICTED` | A stronger source conflicts | 0 |
-| `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 32 |
+| `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 33 |
 | `CONDENSED-OUT` | Relevant but cut for length (names the long report that still holds it) | 142 |
 | `UNVERIFIED-NOT-USED` | Pre-verification item (check=if_used) with no verdict and not cited in the report | 47 |
 
@@ -383,7 +383,7 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `REG-111` | 4 | Running with Rhyme and Peace: Finding Joy on Jakarta Streets | Running Crews (RunningCrews Editorial blog) | `TIER4-LEAD` | Tier 4 source in the register; lead only, never the sole basis for a figure. |
 | `REG-113` | 3 | Mencicipi menu warteg sehat di Fedwell | ANTARA News | `OUT-OF-WINDOW` | Published 2018-09-26, before the 2024-10-16 cutoff. |
 | `REG-114` | 3 | 25hours Hotel Jakarta The Oddbird (Accor booking page) | Accor (hotel group) | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-cage-switzerland-jakarta.md`. |
-| `REG-117` | 1 | WMO monthly normals: Zuerich/Fluntern (station 06660) | Japan Meteorological Agency, Tokyo Climate Center | `DUPLICATE` | Same Zurich monthly-normals table as REG-116. |
+| `REG-117` | 1 | WMO monthly normals: Zuerich/Fluntern (station 06660) | Japan Meteorological Agency, Tokyo Climate Center | `OFF-SCOPE` | Zurich climate-normals companion to REG-116 (Jakarta); served the CAGE geographic-distance question, not needed in the report. |
 | `REG-122` | 4 | Common Grounds official link page | Common Grounds (brand, via Linktree) | `TIER4-LEAD` | Tier 4 source in the register; lead only, never the sole basis for a figure. |
 | `REG-123` | 4 | Pison Senopati | Pison Indonesia (brand) | `TIER4-LEAD` | Tier 4 source in the register; lead only, never the sole basis for a figure. |
 | `REG-124` | 4 | SaladStop Indonesia locations | SaladStop Indonesia (brand) | `TIER4-LEAD` | Tier 4 source in the register; lead only, never the sole basis for a figure. |
