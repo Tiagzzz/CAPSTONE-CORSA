@@ -73,3 +73,31 @@ The counts in this table are line items and overlap with the findings, because a
 - **Names:** no HSG staff names. "Paul" (line 297) is a team member per spec lines 23 and 32, not staff. A private individual's name appears in a link text at line 148 (W4-10).
 - **Balance:** sections 5, 7, 8 and 9 state evidence the other way (counter-evidence on operators, franchise hurdle, conservative case, whole of section 9). Sections 6 and 10 need additions (W4-20, W4-04). Sections 11 and 12 draw no conclusion.
 - **Minor notes not logged as findings:** Burgreens, Fore and Marzano prices carry different or unstated tax and service bases; line 142 already says so. Dashboard!B17:B26 range in line 174 covers valid cells (B20-B24) as well as invalid ones; the cited cells B17, B19, B25, B26 are the invalid ones.
+
+## Fix status
+
+All 21 findings fixed in sections 5-12 of the report (small exact-string edits; sections 0-4 untouched).
+
+| finding_id | status | how |
+|---|---|---|
+| W4-01 | fixed | Marzano label now "brand-wide menu, city not stated"; sentence reworded as proposed |
+| W4-02 | fixed | 73.1% now stated as "some party benefits" question, cities chosen for boycott sensitivity |
+| W4-03 | fixed | Medium/large duty since 18 Oct 2024 (H-02); micro/small and new categories from 18 Oct 2026; CORSA placed in 2024 group |
+| W4-04 | fixed | Counter-evidence sentence added to Test paragraph with P1C2-01/02, P1C2-10, Scenarios cells |
+| W4-05 | fixed | Latte points described as six Fore plus one Marzano |
+| W4-06 | fixed | Citation widened to P3B-11 to P3B-15 |
+| W4-07 | fixed | Pepper Lunch and Fore labels changed to brand-wide, city not stated |
+| W4-08 | fixed | SCBD n=2 qualified (rooftop F&B plus unverified office reference) |
+| W4-09 | fixed | Pop-up and local-operator/36 stores split into separate, separately cited statements |
+| W4-10 | fixed | LinkedIn relabelled as single social-media source/anecdotal lead, tier 4; personal name dropped from link text |
+| W4-11 | fixed | "states no store footprint or CHF equivalent" |
+| W4-12 | fixed | 48% over 10% added, P4W4-01 added to citation |
+| W4-13 | fixed | Closures mostly tier-2; Jakarta priority added |
+| W4-14 | fixed | Five-day cap scoped to domestic franchises; foreign-franchise STPW central (F-03) |
+| W4-15 | fixed | Route 2 sentence labelled Analysis, "may avoid" |
+| W4-16 | fixed | H-12 added to citation |
+| W4-17 | fixed | F05 (IDR4.08m, highest of 514) and F04 (-3.1 pp from 38.08%) cited |
+| W4-18 | fixed | Q3 2026 period (inferred) and "last year" wording, fastest-growing category |
+| W4-19 | fixed | "narrowed from"; Q6-005/Q6-006; "computed from the filing"; 9M 2025 stated as latest verified period (FY2025 MAPB figure not used, source unverified) |
+| W4-20 | fixed | Model low-cost corridor counter-evidence added with Location cells |
+| W4-21 | fixed | Break-even definition (all channels, base mix, Scenarios!D45) added to Go gate |

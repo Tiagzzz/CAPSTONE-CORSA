@@ -4,8 +4,8 @@
   "appendix_path": "reports/2026-10-18-corsa-jakarta-insights-sources-appendix.md",
   "claim_ledger_path": "data/processed/2026-10-18-claim-ledger.csv",
   "word_counts": {
-    "raw_words": 7738,
-    "prose_words": 7202,
+    "raw_words": 8059,
+    "prose_words": 7491,
     "ceiling": 10000,
     "raw_under_ceiling": true,
     "prose_under_ceiling": true
@@ -14,12 +14,19 @@
   "unsourced_numeric_statements_count": 0,
   "unsourced_numeric_statements": [],
   "if_used_citations": [],
-  "disallowed_preverification_fact_citations": [],
+  "disallowed_preverification_fact_citations": [
+    {
+      "line": 162,
+      "item_id": "R2-TIME-01",
+      "verdict": "NOT-CONFIRMED",
+      "text": "**Halal is operational.** For medium and large food and drink businesses the halal duty has applied since 18 October 2024; the phase for micro/small businesses and expanded categories started 18 Octob"
+    }
+  ],
   "forbidden_string_hits_report": [],
   "forbidden_string_hits_appendix": [],
-  "sources_used_count": 123,
-  "sources_unused_count": 202,
-  "distinct_row_ids_cited": 137,
+  "sources_used_count": 124,
+  "sources_unused_count": 201,
+  "distinct_row_ids_cited": 140,
   "model_sheets_cited": [
     "Annual",
     "Dashboard",
