@@ -1,6 +1,36 @@
 {
-  "report_exists": false,
+  "report_exists": true,
   "report_path": "reports/2026-10-18-corsa-jakarta-insights-report.md",
-  "status": "awaiting_deliverable_1",
-  "message": "Deliverable 1 not yet created. Run verify_report.py again after writing reports/2026-10-18-corsa-jakarta-insights-report.md."
+  "appendix_path": "reports/2026-10-18-corsa-jakarta-insights-sources-appendix.md",
+  "claim_ledger_path": "data/processed/2026-10-18-claim-ledger.csv",
+  "word_counts": {
+    "raw_words": 7514,
+    "prose_words": 7001,
+    "ceiling": 10000,
+    "raw_under_ceiling": true,
+    "prose_under_ceiling": true
+  },
+  "claims_logged": 152,
+  "unsourced_numeric_statements_count": 0,
+  "unsourced_numeric_statements": [],
+  "if_used_citations": [],
+  "disallowed_preverification_fact_citations": [],
+  "forbidden_string_hits_report": [],
+  "forbidden_string_hits_appendix": [],
+  "sources_used_count": 122,
+  "sources_unused_count": 203,
+  "distinct_row_ids_cited": 134,
+  "model_sheets_cited": [
+    "Annual",
+    "Dashboard",
+    "Location",
+    "Menu",
+    "MonteCarlo",
+    "PnL_Monthly",
+    "ReadMe",
+    "Rent_Data",
+    "Research_Tracker",
+    "Scenarios",
+    "Sensitivity"
+  ]
 }

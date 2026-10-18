@@ -31,7 +31,7 @@ FORBIDDEN_STRINGS = [
 ]
 
 MODEL_CITATION_PATTERN = re.compile(
-    r"(?:model\s+v0\.6\s*:|[A-Za-z_0-9 ()]+![A-Z]{1,2}\d+|\b(?:Inputs|Dashboard|Scenarios|PnL_Monthly|Annual|Rent_Data|Location|Menu|Revenue|Staffing|OPEX|CAPEX \(Buy\)|CAPEX \(Rent\)|Funding|Sensitivity|MonteCarlo|Sources|Research_Tracker|Cover|ReadMe)![A-Z]{1,2}\d+|\bS\d{2,3}\b|\bR\d{2}\b)",
+    r"(?:model\s+v0\.6\s*:|[A-Za-z_0-9 ()]+![A-Z]{1,2}\d+|\b(?:Inputs|Dashboard|Scenarios|PnL_Monthly|Annual|Rent_Data|Location|Menu|Revenue|Staffing|OPEX|CAPEX \(Buy\)|CAPEX \(Rent\)|Funding|Sensitivity|MonteCarlo|Sources|Research_Tracker|Cover|ReadMe)![A-Z]{1,2}\d+|(?<![A-Za-z0-9_-])(?:S\d{2,3}|R\d{2})(?![A-Za-z0-9_-]))",
     re.IGNORECASE,
 )
 TEAM_CITATION_PATTERN = re.compile(
@@ -55,6 +55,13 @@ def load_json(path: Path, default=None):
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
     return default
+
+
+def load_csv(path: Path):
+    if not path.exists():
+        return []
+    with open(path, "r", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
 
 
 def count_words(text: str):
@@ -125,6 +132,13 @@ def parse_report_and_generate_artifacts():
     row_index = load_json(OUT_DIR / "row_index.json", {})
     blocked_data = load_json(OUT_DIR / "blocked_rows.json", {})
     unused_reasons_override = load_json(OUT_DIR / "unused_source_reasons.json", {})
+    preverify_rows = load_csv(PREVERIFY_PATH)
+    preverify_by_item = {r["item_id"]: r for r in preverify_rows}
+    preverify_by_row_id = defaultdict(list)
+    for r in preverify_rows:
+        for row_id in row_index:
+            if re.search(rf"(?<![A-Za-z0-9_-]){re.escape(row_id)}(?![A-Za-z0-9_-])", r.get("origin", "")):
+                preverify_by_row_id[row_id].append(r)
 
     id_pattern, cage_claim_to_src, url_to_src_ids = build_dynamic_id_matcher(sources_reg, row_index)
 
@@ -149,6 +163,8 @@ def parse_report_and_generate_artifacts():
     current_section = "Header / Title"
     claims = []
     unsourced_statements = []
+    if_used_citations = []
+    disallowed_preverification_fact_citations = []
     cited_row_ids_by_section = defaultdict(set)
     cited_src_ids_by_section = defaultdict(set)
     cited_model_sheets = set()
@@ -181,6 +197,17 @@ def parse_report_and_generate_artifacts():
         mcites = MODEL_CITATION_PATTERN.findall(line)
         tcites = TEAM_CITATION_PATTERN.findall(line)
         has_label = bool(LABEL_PATTERN.search(line))
+        pv_rows = []
+        for item_id, pv in preverify_by_item.items():
+            if re.search(rf"(?<![A-Za-z0-9_-]){re.escape(item_id)}(?![A-Za-z0-9_-])", line):
+                pv_rows.append(pv)
+            if pv.get("check") == "if_used":
+                for source_id in re.findall(r"\bS\d{2,3}\b", pv.get("origin", "")):
+                    if re.search(rf"(?<![A-Za-z0-9_-]){re.escape(source_id)}(?![A-Za-z0-9_-])", line):
+                        pv_rows.append(pv)
+        for rid in rids:
+            pv_rows.extend(preverify_by_row_id.get(rid, []))
+        pv_rows = list({r["item_id"]: r for r in pv_rows}.values())
 
         for u_match in re.findall(r"https?://[^\s,;)\"|]+", line):
             nu = norm_url(u_match)
@@ -245,9 +272,17 @@ def parse_report_and_generate_artifacts():
             if re.search(r"\bAssumption\s*:|\*\*Assumption:\*\*", line, re.IGNORECASE):
                 c_type = "assumption"
             elif re.search(r"\bAnalysis\s*:|\*\*Analysis:\*\*", line, re.IGNORECASE):
-                c_type = "inference"
+                c_type = "analysis"
             else:
                 c_type = "fact"
+
+            for pv in pv_rows:
+                if pv.get("check") == "if_used":
+                    if_used_citations.append({"line": line_no, "item_id": pv["item_id"], "text": line[:200]})
+                if pv.get("verdict") in {"NOT-CONFIRMED", "UNREACHABLE"}:
+                    disallowed_preverification_fact_citations.append(
+                        {"line": line_no, "item_id": pv["item_id"], "verdict": pv["verdict"], "text": line[:200]}
+                    )
 
             if rids or sids:
                 v_by = "source_text"
@@ -261,7 +296,7 @@ def parse_report_and_generate_artifacts():
             ev_level = "high"
             if c_type == "assumption":
                 ev_level = "low"
-            elif c_type == "inference":
+            elif c_type == "analysis":
                 ev_level = "medium"
             elif rids:
                 tiers = [row_index[r].get("primary_tier") for r in rids if r in row_index and row_index[r].get("primary_tier")]
@@ -270,8 +305,33 @@ def parse_report_and_generate_artifacts():
             elif not all_src_ids:
                 ev_level = "unknown"
 
-            verification = "verified" if all_src_ids or has_label else "unverified"
-            depends_on = ";".join(rids[:4]) if c_type in ("inference", "assumption") and rids else ""
+            pv_item_ids = list(dict.fromkeys(r["item_id"] for r in pv_rows))
+            row_labels = list(dict.fromkeys(
+                row_index[r].get("verification", "") for r in rids if r in row_index and row_index[r].get("verification")
+            ))
+            if pv_item_ids:
+                verification = ";".join(pv_item_ids)
+            elif row_labels:
+                verification = ";".join(row_labels)
+            elif mcites:
+                verification = "model_v0.6_cell"
+            elif sids or tcites:
+                verification = "source_register"
+            elif has_label:
+                verification = "labelled_analysis"
+            else:
+                verification = "unverified"
+
+            if mcites:
+                depends_on = "model_v0.6"
+            elif tcites:
+                depends_on = "team_unverified"
+            else:
+                depends_on = "none"
+
+            pv_checkers = list(dict.fromkeys(r.get("checked_by", "") for r in pv_rows if r.get("checked_by")))
+            if pv_checkers:
+                v_by = ";".join(pv_checkers)
 
             clean_claim = re.sub(r"\s+", " ", line.strip("| ").strip())
             if len(clean_claim) > 280:
@@ -353,6 +413,8 @@ def parse_report_and_generate_artifacts():
         "claims_logged": len(claims),
         "unsourced_numeric_statements_count": len(unsourced_statements),
         "unsourced_numeric_statements": unsourced_statements[:25],
+        "if_used_citations": if_used_citations,
+        "disallowed_preverification_fact_citations": disallowed_preverification_fact_citations,
         "forbidden_string_hits_report": forbidden_hits,
         "forbidden_string_hits_appendix": appendix_forbidden,
         "sources_used_count": len(used_src_ids),
