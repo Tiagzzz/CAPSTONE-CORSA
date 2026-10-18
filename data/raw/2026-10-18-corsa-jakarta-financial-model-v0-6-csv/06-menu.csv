@@ -1,0 +1,61 @@
+"Menu, Pricing & Food Cost (Kasavana–Smith menu engineering)",,,,,,,,,,,,,,,,
+ILLUSTRATIVE placeholder menu – replace prices with your pricing decision and food costs with recipe costing from supplier quotes. Prices are NET of 10% PBJT.,,,,,,,,,,,,,,,,
+Note Jonas,This sheets gives an idea of pricing of potential dishes and takes as source the comparisons  provided by expanding Tiago's datasets (italian restaurants in Jakarta),,,,,,,,,,,,,,,
+,"It will be more relevant with team 1 inputs on potential menu, numbers such as COGS, popularity will be much better estimated ",,,,,,,,,,,,,,,
+,"The CORSA pricing is here to give an idea, but not definitive at all",,,,,,,,,,,,,,,
+Category,Item,Price net (IDR),Food cost (IDR),Cost %,Contribution (IDR),Units per 100 guests,Revenue / 100 guests,Cost / 100 guests,Revenue mix,Popularity in category,Menu-engineering class,CM × units (helper),Guest price incl. PBJT,Price benchmark (source),Food-cost benchmark & check,Evidence status
+Pasta,Cacio e pepe,89000,24000,0.2696629213483146,65000,12,1068000,288000,0.1066719936076708,0.21818181818181817,Plowhorse,780000,97900.00000000001,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 27% vs S50 food 28–35%; S49 FSR max 30.3% → below range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Pasta,"Carbonara (beef bacon, halal)",98000,30000,0.30612244897959184,68000,15,1470000,450000,0.14682381142628845,0.2727272727272727,Plowhorse,1020000,107800.00000000001,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 31% vs S50 food 28–35%; S49 FSR max 30.3% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Pasta,Ragù bolognese,105000,34000,0.3238095238095238,71000,11,1155000,374000,0.11536156612065522,0.2,Star,781000,115500.00000000001,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 32% vs S50 food 28–35%; S49 FSR max 30.3% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Pasta,Pesto genovese,95000,28000,0.29473684210526313,67000,8,760000,224000,0.0759089093088294,0.14545454545454545,Plowhorse,536000,104500.00000000001,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 29% vs S50 food 28–35%; S49 FSR max 30.3% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Pasta,Truffle cream,135000,45000,0.3333333333333333,90000,5,675000,225000,0.0674190970834998,0.09090909090909091,Puzzle,450000,148500,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 33% vs S50 food 28–35%; S49 FSR max 30.3% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Pasta,Arrabbiata (vegan),82000,20000,0.24390243902439024,62000,4,328000,80000,0.03276068717538953,0.07272727272727272,Dog,248000,90200.00000000001,"S46: in-zone pasta venue medians avg ~133k (9 venues), mid-premium tier 80–165k; PBTP Blok M ~80k; S33 Pasta, Bitte! 86k, Toscana 155k","Cost 24% vs S50 food 28–35%; S49 FSR max 30.3% → below range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Coffee,Espresso,32000,6000,0.1875,26000,5,160000,30000,0.015980823012385136,0.1,Dog,130000,35200,S31: Common Grounds espresso 32k (= model price),"Cost 19% vs S49 coffee bev. cost 15–20%; S50 beverage 15–25% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Coffee,Americano (hot/iced),40000,7000,0.175,33000,12,480000,84000,0.04794246903715541,0.24,Plowhorse,396000,44000,"S46: latte 27–30k casual, 38–48k smart-casual/specialty, 55–60k mall; S31 Common Grounds latte 45–52k, espresso 32k","Cost 18% vs S49 coffee bev. cost 15–20%; S50 beverage 15–25% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Coffee,Latte / flat white,50000,12000,0.24,38000,19,950000,228000,0.09488613663603676,0.38,Star,722000,55000.00000000001,"S46: latte 27–30k casual, 38–48k smart-casual/specialty, 55–60k mall; S31 Common Grounds latte 45–52k, espresso 32k","Cost 24% vs S49 coffee bev. cost 15–20%; S50 beverage 15–25% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Coffee,Signature iced coffee,58000,14000,0.2413793103448276,44000,10,580000,140000,0.05793048341989612,0.2,Star,440000,63800.00000000001,"S46: latte 27–30k casual, 38–48k smart-casual/specialty, 55–60k mall; S31 Common Grounds latte 45–52k, espresso 32k","Cost 24% vs S49 coffee bev. cost 15–20%; S50 beverage 15–25% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Coffee,Filter / manual brew,55000,12000,0.21818181818181817,43000,4,220000,48000,0.021973631642029565,0.08,Puzzle,172000,60500.00000000001,"S46: latte 27–30k casual, 38–48k smart-casual/specialty, 55–60k mall; S31 Common Grounds latte 45–52k, espresso 32k","Cost 22% vs S49 coffee bev. cost 15–20%; S50 beverage 15–25% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Functional drinks,Matcha / protein shake,55000,15000,0.2727272727272727,40000,6,330000,90000,0.03296044746304435,0.6,Star,240000,60500.00000000001,S46: non-coffee drinks in-zone avg ~44k (5 venues); S46 PBTP matcha latte 55k,"Cost 27% vs S50 beverage 15–25% → ABOVE range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Functional drinks,Kombucha / ginger shot,48000,14000,0.2916666666666667,34000,4,192000,56000,0.019176987614862164,0.4,Plowhorse,136000,52800.00000000001,S46: non-coffee drinks in-zone avg ~44k (5 venues); S46 PBTP matcha latte 55k,"Cost 29% vs S50 beverage 15–25% → ABOVE range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Breakfast & snacks,Croissant / pastry,38000,13000,0.34210526315789475,25000,10,380000,130000,0.0379544546544147,0.4,Plowhorse,250000,41800,S31: Common Grounds breakfast 65–95k; S46: dessert in-zone avg ~65k,"Cost 34% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Breakfast & snacks,Focaccia sandwich,75000,24000,0.32,51000,6,450000,144000,0.0449460647223332,0.24,Star,306000,82500,S31: Common Grounds breakfast 65–95k; S46: dessert in-zone avg ~65k,"Cost 32% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Breakfast & snacks,Yogurt / oat bowl,65000,20000,0.3076923076923077,45000,4,260000,80000,0.02596883739512585,0.16,Puzzle,180000,71500,S31: Common Grounds breakfast 65–95k; S46: dessert in-zone avg ~65k,"Cost 31% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Breakfast & snacks,Tiramisu,55000,16000,0.2909090909090909,39000,5,275000,80000,0.027467039552536956,0.2,Star,195000,60500.00000000001,S46: dessert in-zone avg ~65k; bon! dessert 55k,"Cost 29% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Add-ons,Extra parmigiano,15000,5000,0.3333333333333333,10000,6,90000,30000,0.00898921294446664,0.4,Plowhorse,60000,16500,No direct benchmark – priced as % uplift on mains,"Cost 33% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Add-ons,Burrata add-on,45000,22000,0.4888888888888889,23000,3,135000,66000,0.01348381941669996,0.2,Puzzle,69000,49500.00000000001,No direct benchmark – priced as % uplift on mains,"Cost 49% vs S50 food 28–35% → ABOVE range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+Add-ons,Oat milk / extra shot,9000,3000,0.3333333333333333,6000,6,54000,18000,0.005393527766679984,0.4,Plowhorse,36000,9900,No direct benchmark – priced as % uplift on mains,"Cost 33% vs S50 food 28–35% → within range. Item cost itself = estimate, recipe costing pending.",Partly sourced
+,TOTAL / BLENDED,,,,,155,10012000,2865000,,,,,,,,
+,,,,,,,,,,,,,,,,
+,Blended F&B food & beverage cost % (feeds the model),,,0.2861566120655214,,,,,,,,,,,,
+,Implied average net spend per guest (menu mix),,,100120,vs. revenue model blended spend →,,103375,OK,,,,,,,,
+,,,,,,,,,,,,,,,,
+Category,Revenue share,Cost %,,,,,,,,,,,,,,
+Pasta,0.5449460647223332,0.30076979472140764,,,,,,,,,,,,,,
+Coffee,0.238713543747503,0.2217573221757322,,,,,,,,,,,,,,
+Functional drinks,0.05213743507790651,0.2796934865900383,,,,,,,,,,,,,,
+Breakfast & snacks,0.13633639632441072,0.31794871794871793,,,,,,,,,,,,,,
+Add-ons,0.027866560127846583,0.40860215053763443,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+COMPETITOR PRICE BENCHMARKS (collect 10–15 comparables; dine-in prices preferred over delivery-app prices),,,,,,,,,,,,,,,,
+Venue,Item,Price (IDR),Channel,Area,Source,,,,,,,,,,,
+Common Grounds,Latte,48000,Dine-in (range 45–52k),Various,S31,,,,,,,,,,,
+Common Grounds,Espresso,32000,Dine-in,Various,S31,,,,,,,,,,,
+Common Grounds,Tobiko truffle pasta,97500,Dine-in (85–110k),Various,S31,,,,,,,,,,,
+Common Grounds Citywalk,Café latte,61100,Delivery app,Sudirman,S32,,,,,,,,,,,
+Common Grounds Citywalk,Mac and cheese,113600,Delivery app,Sudirman,S32,,,,,,,,,,,
+"Pasta, Bitte!",Smoked beef carbonara,86000,Dine-in,Kemang,S33,,,,,,,,,,,
+Toscana,Spaghetti con vongole,155000,Dine-in,Kemang,S33,,,,,,,,,,,
+Caffè Milano,Per person band,75000,Mid-point of 50–100k,Grand Indonesia,S34,,,,,,,,,,,
+Warung Pasta,Pasta,32500,Mid-point of 18–47k (value),Kemang,S34,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Kasavana–Smith rule: Star = high contribution & popularity ≥ 70% of fair share in its category; Plowhorse = popular/low CM; Puzzle = high CM/unpopular; Dog = both low (S39).,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+SOURCES & CALCULATION BASIS – Menu,,,,,,,,,,,,,,,,
+Figure / cells,,Value used (live),,Source ID(s) → Sources sheet,,,How the figure was derived from the source,,,,,,,Evidence status,,
+Net prices C5:C24,,100120,,"S46, S31, S33, S34",,,Placeholder prices positioned against competitor medians (col O). Typical pasta 98k is ~26% below the in-zone average of ~133k (S46 Price_Summary).,,,,,,,Partly sourced,,
+Food costs D5:D24,,0.2861566120655214,,"S49, S50",,,Unit costs are estimates; their cost % is checked against category benchmarks (col P). Blended cost % (E27) feeds the model.,,,,,,,Partly sourced,,
+Units per 100 guests G5:G24,,155,,—,,,Menu mix is an assumption; replace with POS data from the Zurich pop-up.,,,,,,,Assumption – validate,,
+Guest price incl. PBJT (col N),,0.1,,S13,,,Net price × (1 + 10% PBJT).,,,,,,,Sourced,,
+Competitor benchmark table A38:F47,,—,,S31–S34,,,"Prices as published (dine-in or delivery app, marked in col D).",,,,,,,Sourced,,
+Menu-engineering classes (col L),,—,,S39,,,"Kasavana–Smith: contribution vs category average, popularity vs 70% rule.",,,,,,,Model formula,,

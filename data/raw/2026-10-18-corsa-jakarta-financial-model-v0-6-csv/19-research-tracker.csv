@@ -1,0 +1,17 @@
+Research Tracker – Brief Questions → Model → Evidence,,,,,
+,,,,,
+,,,,,
+Key question (brief),Where in model,Status,Next research step,Who / how,Sources found so far (IDs)
+Realistic investment requirement?,"CAPEX, Scenarios",Placeholder,"3 fit-out quotes for a 150 m² F&B shell; equipment quotes from distributors (combi oven, espresso machine)","Contractors, distributors","S10, S64–S70 (equipment prices converted, 3 items flagged)"
+Is CHF 200k enough? Does the bank have to be involved?,"Funding, Dashboard",Desk,"Confirm PT PMA capital rules (IDR 2.5bn paid-up, IDR 10bn plan) and alternatives; ask a Swiss bank about parent-level financing","Indonesian lawyer, Swiss bank","S01, S02, S19, S65"
+Main CAPEX blocks?,CAPEX,Placeholder,Validate split hard/soft/lease/WC with 2 Jakarta operators,Operator interviews,"S10, S64"
+Monthly operating costs?,"OPEX, Staffing",Placeholder,"Get insurance, accounting, POS quotes; PLN load (kVA) estimate",Quotes,"S11, S55–S57, S67 (insurance, accounting still open)"
+Realistic rent levels by district?,"Rent_Data, Location",Desk,Add 10+ ground-floor listings per district; ask 2 brokers for deal (not asking) rents & lease terms; get JLL/Colliers PDF,"Brokers, uni portal",S20–S29
+Staff structure & salaries?,Staffing,Desk,Check salaries with 2–3 F&B recruiters / job ads (JobStreet) for premium cafés,"Recruiters, job ads","S04–S09, S73–S76"
+Food cost & gross margin?,Menu,Placeholder,"Recipe-cost 6 pastas + 5 coffees with Jakarta supplier prices (imported durum pasta, parmigiano, local alternatives)",Suppliers,"S49, S50 (benchmarks only – recipe costing open)"
+Pricing that works in Jakarta?,"Menu (benchmarks), Inputs",Desk,Collect 15 comparables (dine-in prices) in Senopati/SCBD; position price ladder,"Menus, store visits, GoFood","S31–S34, S46"
+Daily revenue to break even?,"Scenarios, Dashboard",Model ready,Refine once fixed costs validated,–,"S49, S51"
+Payback period?,"Annual, Dashboard, Sensitivity",Model ready,Refine ramp-up with operator interviews,Operators,"S60, S62, S63"
+Conservative / base / optimistic?,"Inputs, Scenarios",Model ready,Agree scenario logic with CORSA,CORSA team,"S58, S59"
+Biggest financial risks & sensitive assumptions?,"Sensitivity, MonteCarlo",Model ready,Interpret tornado; focus research on top 3 drivers,–,S42
+Footfall & customer profile by district?,Location,Placeholder,"Count passers-by & guests at 3 comparables per district (weekday lunch, weekend); map competitors on Google Maps",Field work,S46 (review velocity proxy)
