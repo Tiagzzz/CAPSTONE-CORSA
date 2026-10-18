@@ -48,3 +48,11 @@ Proposed replacements:
 ## Coexistence
 
 Both fixers' edits appear together (for example l.100 and l.140 Marzano wording, l.267 and l.41 boycott wording, l.128 and l.148). No conflict markers; `verify_report.py` unsourced=0, forbidden_hits=0. Note: the new geography code `ns` (l.100) and "codes in handoff" (l.29) refer to `tasks/2026-10-18-handoff.md`, which has no entry for `ns`; define it there or write "not stated".
+
+## Fix status (round 2)
+
+- W4-01: l.140 Marzano label now "city and outlet not stated/no age split". FIXED.
+- W4-03: CORSA halal classification now labelled **Assumption** with counsel confirmation. FIXED.
+- W4-04: `Scenarios!C34` added to the conservative negative-EBITDA citation. FIXED.
+- F-09: v0.5 placeholder framing and IDR120k/132k ticket removed; report cites `Menu!H30` (blended net spend 103,375), `Menu!C7:C9`, `Menu!C7:C12`, `Inputs!F17`. No hand-typed derived total, no script needed. FIXED.
+- Minor `ns` code: replaced by "geography not stated" in l.100. FIXED.

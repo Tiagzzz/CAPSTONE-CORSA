@@ -168,7 +168,7 @@ Per project evidence policy, internal team Phase 1 documents are audited as base
 ### A.4 Financial Model v0.6 Sheets & Embedded Sources Audited (`model v0.6: ...`)
 
 - **Workbook Path:** `data/raw/2026-10-18-corsa-jakarta-financial-model-v0-6.xlsx` (20 sheets; CSV mirror in `data/raw/2026-10-18-corsa-jakarta-financial-model-v0-6-csv/`).
-- **Sheets Cited in Deliverable 1:** `Annual`, `Dashboard`, `Location`, `Menu`, `MonteCarlo`, `PnL_Monthly`, `ReadMe`, `Rent_Data`, `Research_Tracker`, `Scenarios`, `Sensitivity`
+- **Sheets Cited in Deliverable 1:** `Annual`, `Dashboard`, `Inputs`, `Location`, `Menu`, `MonteCarlo`, `PnL_Monthly`, `ReadMe`, `Rent_Data`, `Research_Tracker`, `Scenarios`, `Sensitivity`
 - **Model Embedded `Sources` Sheet (`Sources!A5:G108`, `S01`–`S104`):** Contains 104 source entries across 11 categories (`Macro & FX`, `Tax & Regulation`, `Location & Rent`, `Fit-Out & Equipment`, `Menu & COGS`, `Demand & Revenue`, `Staffing & Labor`, `OPEX & Utilities`, `Competitors`, `Industry Benchmarks`, `Equipment Financing & Leasing`).
 - **Model Embedded `Research_Tracker` Sheet (`Research_Tracker!A5:F17`, `R01`–`R13`):** Tracks 13 core parameter blocks — **5 `Placeholder`** (`R04` dine-in seat turns, `R05` delivery orders/day, `R06` menu prices, `R07` ingredient COGS %, `R09` renovation/fit-out cost/m²), **4 `Desk`** (`R01` rent, `R02` upfront lease years, `R12` utility bills, `R13` ramp-up curve), and **4 `Model ready`** (`R03` PBJT 10%, `R08` salaries, `R10` espresso machine, `R11` PT PMA legal setup).
 

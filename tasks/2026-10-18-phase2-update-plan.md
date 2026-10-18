@@ -64,4 +64,4 @@ Owns: `tasks/2026-10-19-phase2-verification.md`.
 - Pre-verification: 11 UNREACHABLE and 5 NOT-CONFIRMED items from wave 2b remain open; 47 `if_used` items unverified unless used.
 - 6 ledger claims have `depends_on=team_unverified`: re-check them if Paul's sources cover them.
 - `analysis/verify_report.py` hardcodes the label `model_v0.6` (lines ~317, ~326 for `depends_on`/`verification`, ~736 for appendix A.4). Before re-running on the new model, change these to the new version label, or the ledger will mislabel model-dependent claims.
-- CORSA's own menu price points in the report are v0.5 placeholders cited to `analysis/notes/r2_pillar1_notes.md`; re-cite them to the new model's `Menu` cells.
+- CORSA's own menu price points in the report now cite v0.6 `Menu` cells (`Menu!C7:C12`, `Menu!H30`) and `Inputs!F17`; when the new model arrives, re-cite them to its `Menu` cells and recheck values.
