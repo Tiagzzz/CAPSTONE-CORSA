@@ -3,7 +3,7 @@
 **Date:** 2026-10-18  
 **Companion Document:** `reports/2026-10-18-corsa-jakarta-insights-report.md` (Deliverable 1)  
 **Claim Ledger:** `data/processed/2026-10-18-claim-ledger.csv`  
-**Source Register:** 325 entries in `sources/sources.md`; 124 cited in Deliverable 1 (Part A); 201 not cited (Part B.1).  
+**Source Register:** 325 entries in `sources/sources.md`; 123 cited in Deliverable 1 (Part A); 202 not cited (Part B.1).  
 
 ---
 
@@ -35,7 +35,6 @@
 | `REG-012` | Wajib Halal Berlaku 18 Oktober 2026, BPJPH Siapkan Aturan yang Memudahkan Pelaku Usaha | BPJPH | 1 | 2026-10-09 | https://bpjph.halal.go.id/main/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha | 7. Entry route, regulation and adviser questions; Legal | 2 |
 | `REG-013` | Tak Hanya Makanan-Minuman, Ini Jenis Produk yang Wajib Bersertifikat Halal Mulai 18 Oktober 2026 | BPJPH | 1 | 2026-06-05 | https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026 | 7. Entry route, regulation and adviser questions | 1 |
 | `REG-014` | Jelang Wajib Halal, BPJPH Ingatkan Jaringan Restoran Jaga Konsistensi JPH di Setiap Outlet | BPJPH | 1 | 2026-09-03 | https://bpjph.halal.go.id/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet | 7. Entry route, regulation and adviser questions | 1 |
-| `REG-015` | FAQ BPJPH | BPJPH | 1 | undated (footer 'Copyright 2026') | https://bpjph.halal.go.id/faq | 7. Entry route, regulation and adviser questions | 1 |
 | `REG-016` | Kalkulator Biaya Sertifikasi Halal | BPJPH | 1 | undated (footer 'Copyright 2026') | https://bpjph.halal.go.id/kalkulator-biaya-sh | 7. Entry route, regulation and adviser questions | 1 |
 | `REG-017` | Keputusan Kepala BPJPH Nomor 22 Tahun 2024 (Perubahan Keempat atas Kepkaban 141/2021) tentang Penetapan Tarif Layanan BLU BPJPH | BPJPH (file on cmsbl.halal.go.id) | 1 | 2024-03-28 | https://cmsbl.halal.go.id/uploads/Kepkaban_22_2024_Perubahan_IV_Kepkaban_141_Tahun_2021_9a2ede13b7.pdf | 7. Entry route, regulation and adviser questions | 1 |
 | `REG-018` | Keputusan Kepala BPJPH Nomor 78 Tahun 2023 tentang Pedoman Sertifikasi Halal Makanan dan Minuman dengan Pengolahan | BPJPH (file on cmsbl.halal.go.id) | 1 | 2023-09-12 | https://cmsbl.halal.go.id/uploads/78_2023_SK_Pedoman_Sertifikasi_Halal_Makanan_dan_Minuman_dengan_Pengelolahan_3aa915efdf.pdf | 7. Entry route, regulation and adviser questions | 1 |
@@ -188,10 +187,10 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `TIER4-LEAD` | Lead only | 11 |
 | `CONTRADICTED` | A stronger source conflicts | 0 |
 | `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 32 |
-| `CONDENSED-OUT` | Relevant but cut for length (names the long report that still holds it) | 141 |
+| `CONDENSED-OUT` | Relevant but cut for length (names the long report that still holds it) | 142 |
 | `UNVERIFIED-NOT-USED` | Pre-verification item (check=if_used) with no verdict and not cited in the report | 47 |
 
-### B.1 Register entries not cited (201)
+### B.1 Register entries not cited (202)
 
 | ID | Tier | Title | Publisher | Part B code | Reason |
 |---|---:|---|---|---|---|
@@ -323,6 +322,7 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | `REG-005` | 1 | Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 2025, Peraturan BPS Nomor 7 Tahun 2025 (booklet) | Badan Pusat Statistik; hosted on JDIH BKPM | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-regulatory-entry-pathway.md`. |
 | `REG-006` | 1 | OSS RBA - Memahami Transisi KBLI 2025 dalam Ekosistem Perizinan Berusaha | OSS / Kementerian Investasi dan Hilirisasi/BKPM | `OFF-SCOPE` | Not needed for the report's questions; served: KBLI 2025 transition and PP 28 date (5 Oct 2025) (`2026-10-p2-entry-requirements.csv`). |
 | `REG-007` | 3 | Pemerintah Akan Perbarui Perpres terkait Bidang Usaha Penanaman Modal | DDTCNews (DDTC) | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-pestel-jakarta.md`, `reports/2026-10-17-regulatory-entry-pathway.md`. |
+| `REG-015` | 1 | FAQ BPJPH | BPJPH | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-cage-switzerland-jakarta.md`, `reports/2026-10-17-pestel-jakarta.md`, `reports/2026-10-17-regulatory-entry-pathway.md`. |
 | `BEH-093` | 3 | Number of Padel Clubs and Courts in Indonesia Grew Rapidly Through 2025 | Databoks (Katadata) relaying Core & Court | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-customer-target-profiles.md`, `reports/2026-10-17-purchase-triggers-and-channels.md`. |
 | `BEH-097` | 3 | Cashing in on padel: The new courtside economy of Jakarta | The Jakarta Post Weekender (Aqraa Sagir) | `CONDENSED-OUT` | Cut for length; still held in `reports/2026-10-17-customer-target-profiles.md`, `reports/2026-10-17-purchase-triggers-and-channels.md`. |
 | `BEH-098` | 3 | Antusiasme Pelari Jabodetabek, Sisi Unik di Balik Ramainya Pocari Sweat Run di Bandung | Good News From Indonesia (GNFI) relaying organizer data (Pocari Sweat / PT Amerta Indah Otsuka) | `OFF-SCOPE` | Title names Bandung, outside the Jakarta Selatan / Jakarta Pusat corridors; served: Pocari Sweat Run 2025 Bandung participants (16,000 Bandung edition. |

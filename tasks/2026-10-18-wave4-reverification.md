@@ -68,3 +68,4 @@ Both fixers' edits appear together (for example l.100 and l.140 Marzano wording,
 | `ns` code | PASS | l.100 now "geography not stated"; no stray `ns` token found. |
 
 `analysis/verify_report.py`: unsourced=0, forbidden_hits=0.
+H-12 flag: NOT CONFIRMED (PDF is a scan with no text layer, no OCR available; 800k not verifiable; quote: none); removed 'plus IDR 800k foreign-certificate registration' clause and H-12 from the line-162 citation, kept IDR 12.5m (H-08/H-09).
