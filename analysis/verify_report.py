@@ -391,6 +391,7 @@ def parse_report_and_generate_artifacts():
         cited_team_files=cited_team_files,
         blocked_data=blocked_data,
         unused_reasons_override=unused_reasons_override,
+        claims=claims,
     )
 
     appendix_forbidden = []
@@ -435,26 +436,149 @@ def parse_report_and_generate_artifacts():
     return summary
 
 
-def classify_unused_source_reason(s: dict, unused_reasons_override: dict) -> str:
+PART_B_CODES = {
+    "BLOCKED": "The source could not be opened (bot challenge, 403, page gone), so it could not be verified",
+    "NOT-CONFIRMED": "Pre-verification opened the source, but it does not support the claim (value, period, base or wording differ)",
+    "OUT-OF-WINDOW": "Before the 2024-10-16 cutoff, or superseded",
+    "DUPLICATE": "The same fact comes from a stronger source",
+    "TIER4-LEAD": "Lead only",
+    "CONTRADICTED": "A stronger source conflicts",
+    "OFF-SCOPE": "Not needed for the report's questions (names the question it served)",
+    "CONDENSED-OUT": "Relevant but cut for length (names the long report that still holds it)",
+    "UNVERIFIED-NOT-USED": "Pre-verification item (check=if_used) with no verdict and not cited in the report",
+}
+REASON_OVERRIDES_PATH = ROOT / "analysis" / "appendix_reason_overrides.json"
+WINDOW_START = (2024, 10, 16)
+NON_TARGET_CITY_RE = re.compile(r"\b(Bogor|Bekasi|Depok|Tangerang|Surabaya|Bali|Bandung)\b")
+ACCESS_FAIL_RE = re.compile(r"\b(not opened|snippet-only|blocked|unreachable|timeout)\b", re.IGNORECASE)
+HTTP_FAIL_RE = re.compile(r"\b(403|404)\b")
+
+
+def _esc(text) -> str:
+    return re.sub(r"\s+", " ", str(text or "")).replace("|", "\\|").strip()
+
+
+def _trunc_words(text, n=25) -> str:
+    words = re.sub(r"\s+", " ", str(text or "")).split()
+    return " ".join(words[:n]) + (" ..." if len(words) > n else "")
+
+
+def _first_clause(text, n=18) -> str:
+    t = re.sub(r"\s+", " ", str(text or "")).strip()
+    t = re.split(r"(?<=[.;])\s", t)[0].rstrip(".;")
+    return _trunc_words(t, n)
+
+
+def _load_overrides(legacy: dict) -> dict:
+    """Merge legacy {id: reason} overrides with analysis/appendix_reason_overrides.json ({id: {code, reason}})."""
+    merged = {}
+    for k, v in (legacy or {}).items():
+        merged[k] = v
+    for k, v in (load_json(REASON_OVERRIDES_PATH, {}) or {}).items():
+        if not k.startswith("_"):
+            merged[k] = v
+    return merged
+
+
+def _override_pair(ov):
+    if isinstance(ov, dict):
+        return ov["code"], ov["reason"]
+    m = re.match(r"^([A-Z0-9-]+):\s*(.*)$", str(ov))
+    if m and m.group(1) in PART_B_CODES:
+        return m.group(1), m.group(2)
+    return "CONDENSED-OUT", str(ov)
+
+
+def _published_before_window(published: str) -> bool:
+    m = re.match(r"^\s*(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?", published or "")
+    if not m:
+        return False
+    y = int(m.group(1))
+    mo = int(m.group(2)) if m.group(2) else None
+    d = int(m.group(3)) if m.group(3) else None
+    if mo is None:
+        return y < WINDOW_START[0]
+    if d is None:
+        return (y, mo) < WINDOW_START[:2]
+    return (y, mo, d) < WINDOW_START
+
+
+def build_reference_index(sources_reg: dict):
+    """Map source id -> (long reports 2026-10-17-*.md citing it, data/processed CSVs holding it)."""
+    ids = sorted(sources_reg, key=len, reverse=True)
+    if not ids:
+        return {}, {}
+    pat = re.compile(r"(?<![A-Za-z0-9_-])(" + "|".join(re.escape(i) for i in ids) + r")(?![A-Za-z0-9_-])")
+    in_reports, in_csvs = defaultdict(set), defaultdict(set)
+    for p in sorted((ROOT / "reports").glob("2026-10-17-*.md")):
+        for sid in set(pat.findall(p.read_text(encoding="utf-8"))):
+            in_reports[sid].add(p.name)
+    for p in sorted((ROOT / "data" / "processed").rglob("*.csv")):
+        if p.name in {"2026-10-18-claim-ledger.csv", "2026-10-18-preverification.csv"}:
+            continue
+        for sid in set(pat.findall(p.read_text(encoding="utf-8"))):
+            in_csvs[sid].add(p.name)
+    return in_reports, in_csvs
+
+
+def classify_unused_source_reason(s: dict, unused_reasons_override: dict, in_reports=None, in_csvs=None):
+    """Return (code, one-line reason) for a register entry not cited in the report."""
     sid = s["id"]
     if sid in unused_reasons_override:
-        return unused_reasons_override[sid]
+        return _override_pair(unused_reasons_override[sid])
 
-    acc = (s.get("accessed") or "").lower()
-    used_for = (s.get("used_for") or "")
-    title = (s.get("title") or "")
+    acc = s.get("accessed") or ""
+    used_for = s.get("used_for") or ""
+    title = s.get("title") or ""
 
-    if not s.get("is_opened", True) or any(k in acc for k in ["not opened", "403", "404", "blocked", "timeout", "unreachable", "snippet"]):
-        return f"Access restricted / not opened in full ({s.get('accessed')}); excluded as sole support under strict source-verification policy."
-    if "dropped" in used_for.lower() or "excluded" in used_for.lower():
-        return "Underlying row was dropped or excluded during Run 1 / Pillar 1 scope audit (out-of-corridor or non-applicable sector)."
-    if any(k in title.lower() for k in ["bogor", "bekasi", "depok", "tangerang", "surabaya", "bali", "bandung"]):
-        return "Covers non-target municipality outside CORSA's Jakarta Selatan / Jakarta Pusat entry corridors; retained in repository for regional context only."
+    if (not s.get("is_opened", True)) or ACCESS_FAIL_RE.search(acc) or (HTTP_FAIL_RE.search(acc) and not re.search(r"\bopened\b", acc, re.IGNORECASE)):
+        return "BLOCKED", f"Not opened in full ({_trunc_words(re.sub(r'^\\d{4}-\\d{2}-\\d{2};\\s*', '', acc), 14)}); could not be verified."
+    if _published_before_window(s.get("published", "")):
+        return "OUT-OF-WINDOW", f"Published {_trunc_words(s.get('published'), 6)}, before the 2024-10-16 cutoff."
     if s.get("tier") == 4:
-        return "Tier 4 directory/social/listing source superseded by Tier 1–3 primary regulatory, BPS, or operator disclosures in Deliverable 1."
-    if s.get("tier") == 3 and any(k in title.lower() for k in ["menu", "grabfood", "gofood", "pergikuliner", "harga"]):
-        return "Granular SKU price/menu source aggregated into `data/processed/price-ladder.csv` distributional metrics (`compute_stats.py`); individual SKU row not cited separately in prose."
-    return "Background or corroborating reference in `data/processed/` CSVs; superseded in Deliverable 1 prose by direct Tier 1/2 statutory or official statistical citations covering the same topic."
+        return "TIER4-LEAD", "Tier 4 source in the register; lead only, never the sole basis for a figure."
+    m = NON_TARGET_CITY_RE.search(title)
+    if m:
+        return "OFF-SCOPE", f"Title names {m.group(1)}, outside the Jakarta Selatan / Jakarta Pusat corridors; served: {_first_clause(used_for)}."
+    reports = sorted((in_reports or {}).get(sid, []))
+    if reports:
+        return "CONDENSED-OUT", "Cut for length; still held in " + ", ".join(f"`reports/{r}`" for r in reports) + "."
+    csvs = sorted((in_csvs or {}).get(sid, []))
+    if csvs:
+        return "OFF-SCOPE", f"Not needed for the report's questions; served: {_first_clause(used_for)} (`{csvs[0]}`" + (f" +{len(csvs)-1} more" if len(csvs) > 1 else "") + ")."
+    return "OFF-SCOPE", f"Not referenced in any CSV or 2026-10-17 report; served: {_first_clause(used_for)}."
+
+
+def classify_preverification(r: dict, cited: set, overrides: dict):
+    """Return (state, code, reason); state is 'used' or 'unused'."""
+    iid, verdict = r["item_id"], r.get("verdict", "")
+    if iid in overrides:
+        code, reason = _override_pair(overrides[iid])
+        return "unused", code, reason
+    host = re.sub(r"^https?://([^/]+).*$", r"\1", r.get("source_url", "") or "")
+    if verdict == "NOT-CONFIRMED":
+        why = r.get("corrected_value") or r.get("evidence_quote") or "source does not support the claim"
+        return "unused", "NOT-CONFIRMED", _trunc_words(why, 30)
+    if verdict == "UNREACHABLE":
+        return "unused", "BLOCKED", f"Unreachable in wave 2b ({host or 'no URL'}); could not be verified."
+    if verdict in {"CONFIRMED", "CORRECTED"}:
+        if iid in cited:
+            return "used", "", ""
+        return "unused", "CONDENSED-OUT", f"Verified in wave 2b ({verdict}) but not cited in the report; origin `{_trunc_words(r.get('origin'), 8)}`."
+    if iid in cited:
+        return "used", "", ""
+    return "unused", "UNVERIFIED-NOT-USED", "check=if_used item with no verdict; not run and not cited in the report."
+
+
+
+def _count_claims_for_source(sid, rowids, claims):
+    keys = {sid} | set(rowids)
+    n = 0
+    for c in claims:
+        toks = {t.strip() for t in re.split(r";", c.get("source_ids", ""))}
+        if toks & keys:
+            n += 1
+    return n
 
 
 def generate_sources_appendix(
@@ -466,49 +590,140 @@ def generate_sources_appendix(
     cited_team_files,
     blocked_data,
     unused_reasons_override,
+    claims=None,
 ):
+    claims = claims or []
+    overrides = _load_overrides(unused_reasons_override)
     all_sources = list(sources_reg.values())
+    in_reports, in_csvs = build_reference_index(sources_reg)
+
+    preverify = load_csv(PREVERIFY_PATH)
+    cited_pv = set()
+    pv_sections = defaultdict(set)
+    pv_ids = {r["item_id"] for r in preverify}
+    for c in claims:
+        for tok in re.split(r"[;\s]+", c.get("verification", "")):
+            if tok in pv_ids:
+                cited_pv.add(tok)
+                pv_sections[tok].add(c["section"])
+    pv_state = {r["item_id"]: classify_preverification(r, cited_pv, overrides) for r in preverify}
+    pv_confirmed_rows = set()  # BLOCKED/GAP row ids confirmed (CONFIRMED/CORRECTED) in wave 2b
+    for r in preverify:
+        if r.get("verdict") in {"CONFIRMED", "CORRECTED"}:
+            for rid in re.findall(r"[A-Za-z0-9][A-Za-z0-9-]*", r.get("origin", "")):
+                pv_confirmed_rows.add(rid)
+
+    unused_sources = [s for s in all_sources if s["id"] not in used_src_ids]
+    src_rows = []
+    for s in unused_sources:
+        code, reason = classify_unused_source_reason(s, overrides, in_reports, in_csvs)
+        src_rows.append((s, code, reason))
+
+    # Blocked / gap rows (union with the excluded-rows CSV), not confirmed in wave 2b
+    row_entries = []
+    seen = set()
+    unreachable_items = defaultdict(list)
+    for r in preverify:
+        if r.get("verdict") == "UNREACHABLE":
+            for rid in re.findall(r"[A-Za-z0-9][A-Za-z0-9-]*", r.get("origin", "")):
+                unreachable_items[rid].append(r["item_id"])
+    for kind, key in (("BLOCKED", "blocked_rows"), ("GAP", "gap_rows")):
+        for b in blocked_data.get(key, []):
+            rid = b["row_id"]
+            if rid in seen:
+                continue
+            seen.add(rid)
+            if rid in pv_confirmed_rows:
+                continue
+            topic = b.get("question_or_metric") or b.get("question") or b.get("claim_short") or "See CSV"
+            note = b.get("gaps") or b.get("notes") or b.get("reason_excluded") or ""
+            if rid in overrides:
+                code, reason = _override_pair(overrides[rid])
+            elif rid in unreachable_items:
+                code, reason = "BLOCKED", f"Unreachable in wave 2b (item {', '.join(unreachable_items[rid])}); could not be verified."
+            elif kind == "GAP":
+                code, reason = "BLOCKED", "Evidence gap: " + _first_clause(re.sub(r"^GAP:\s*", "", note), 25) + "."
+            else:
+                if note.startswith("GAP:"):
+                    code, reason = "BLOCKED", "Blocked, not confirmed in wave 2b: " + _first_clause(note[4:], 25) + "."
+                else:
+                    code, reason = "BLOCKED", "Source blocked or opened only as a snippet; not confirmed in wave 2b."
+            row_entries.append((rid, b.get("file", b.get("source_file", "")), kind, topic, code, reason))
+    excl_csv = ROOT / "data" / "processed" / "2026-10-pillar1-mapping-excluded.csv"
+    for r in load_csv(excl_csv):
+        rid = r.get("row_id", "")
+        if not rid or rid in seen or rid in pv_confirmed_rows:
+            continue
+        seen.add(rid)
+        row_entries.append((rid, r.get("source_file", ""), r.get("verification", "BLOCKED"), r.get("claim_short", ""), "BLOCKED", "Excluded: " + _first_clause(r.get("reason_excluded", ""), 25) + "."))
+
+    dropped_map = {
+        "UNCONFIRMED": "NOT-CONFIRMED", "DERIVED": "NOT-CONFIRMED", "DERIVED-MOVE": "NOT-CONFIRMED",
+        "NOT-FOUND-OPENED": "NOT-CONFIRMED", "DUPLICATE-MERGED": "DUPLICATE", "DATE-FAIL": "OUT-OF-WINDOW",
+        "TIER-4-LEAD": "TIER4-LEAD",
+    }
+    dropped = []
+    for r in load_csv(ROOT / "data" / "processed" / "2026-10-16-run1-dropped-rows.csv"):
+        rid = r.get("row_id", "")
+        if rid in overrides:
+            code, reason = _override_pair(overrides[rid])
+        else:
+            code = dropped_map.get(r.get("verdict", ""), "NOT-CONFIRMED")
+            reason = _first_clause(re.sub(r"^(Run \d\w? )?(\(?[A-Za-z0-9-]+\)?\s*)?(registrar|verifier)?[^:]{0,40}:\s*", "", r.get("reason", "")), 30) + "."
+        dropped.append((r, code, reason))
+
+    pv_unused = [(r, *pv_state[r["item_id"]][1:]) for r in preverify if pv_state[r["item_id"]][0] == "unused"]
+    pv_used = [r for r in preverify if pv_state[r["item_id"]][0] == "used"]
+
+    counts = defaultdict(int)
+    for _, c, _ in src_rows:
+        counts[c] += 1
+    for r, c, _ in pv_unused:
+        counts[c] += 1
+    for e in row_entries:
+        counts[e[4]] += 1
+    for _, c, _ in dropped:
+        counts[c] += 1
+
     lines = [
-        "# Deliverable 2: CORSA Jakarta Market-Entry Insights — Sources & Verification Appendix",
+        "# Deliverable 2: CORSA Jakarta Market-Entry Insights — Sources Appendix",
         "",
         "**Date:** 2026-10-18  ",
         "**Companion Document:** `reports/2026-10-18-corsa-jakarta-insights-report.md` (Deliverable 1)  ",
         "**Claim Ledger:** `data/processed/2026-10-18-claim-ledger.csv`  ",
-        f"**Repository Source Register Total:** {len(all_sources)} registered sources in `sources/sources.md` (`{len(used_src_ids)}` used in Deliverable 1; `{len(all_sources) - len(used_src_ids)}` not directly used in Deliverable 1, documented with explicit reasons in Part B).  ",
+        f"**Source Register:** {len(all_sources)} entries in `sources/sources.md`; {len(used_src_ids)} cited in Deliverable 1 (Part A); {len(unused_sources)} not cited (Part B.1).  ",
         "",
         "---",
         "",
         "## Part A — Sources Used in Deliverable 1",
         "",
-        "### A.1 External Primary & Secondary Sources Used (`sources/sources.md`, Grouped by Quality Tier)",
+        "### A.1 Register sources cited in the report",
         "",
+        "| ID | Title | Publisher | Tier | Publication date | URL | Report sections | Claims |",
+        "|---|---|---|---:|---|---|---|---:|",
     ]
-
-    used_sources = [s for s in all_sources if s["id"] in used_src_ids]
-    for tier in [1, 2, 3, 4]:
-        tier_sources = [s for s in used_sources if s.get("tier") == tier]
-        lines.append(f"#### Tier {tier} Sources Used ({len(tier_sources)} sources)")
-        lines.append("")
-        if not tier_sources:
-            lines.append("_None cited in this tier._")
-            lines.append("")
-            continue
-        lines.append("| Source ID | Title | Publisher / Institution | Published | Accessed | Linked `row_id`s / Report Sections | URL |")
-        lines.append("|---|---|---|---|---|---|---|")
-        for s in tier_sources:
-            sid = s["id"]
-            rids = sorted(src_id_to_rowids.get(sid, set()))
-            secs = sorted(src_id_to_sections.get(sid, set()))
-            rid_str = ", ".join(f"`{r}`" for r in rids[:8]) + (f" (+{len(rids)-8} more)" if len(rids) > 8 else "")
-            sec_str = "; ".join(secs[:3]) + (f" (+{len(secs)-3} more)" if len(secs) > 3 else "")
-            usage_col = f"{rid_str} — {sec_str}".strip(" —")
-            lines.append(
-                f"| `{sid}` | {s['title']} | {s['publisher']} | {s['published']} | {s['accessed']} | {usage_col} | {s['primary_url']} |"
-            )
-        lines.append("")
+    used_sources = sorted((s for s in all_sources if s["id"] in used_src_ids), key=lambda s: (s.get("tier") or 9, s["id"]))
+    for s in used_sources:
+        sid = s["id"]
+        secs = sorted(src_id_to_sections.get(sid, set()))
+        sec_str = "; ".join(secs[:3]) + (f" (+{len(secs)-3} more)" if len(secs) > 3 else "")
+        n = _count_claims_for_source(sid, src_id_to_rowids.get(sid, set()), claims)
+        lines.append(f"| `{sid}` | {_esc(s['title'])} | {_esc(s['publisher'])} | {s.get('tier')} | {_esc(s['published'])} | {s['primary_url']} | {_esc(sec_str)} | {n} |")
+    lines.append("")
 
     lines.extend([
-        "### A.2 Internal Team Baseline Documents Audited & Cited (`team: ...`)",
+        "### A.2 Wave-2b pre-verified items cited in the report",
+        "",
+        "| Item ID | Origin | Verdict | Claim (first 25 words) | Report sections |",
+        "|---|---|---|---|---|",
+    ])
+    for r in pv_used:
+        lines.append(f"| `{r['item_id']}` | {_esc(_trunc_words(r['origin'], 10))} | {r.get('verdict') or 'no verdict'} | {_esc(_trunc_words(r['claim']))} | {_esc('; '.join(sorted(pv_sections[r['item_id']])[:3]))} |")
+    lines.append("")
+
+    # Reuse the existing team-file and model-sheet blocks (A.3 / A.4).
+    lines.extend([
+        "### A.3 Internal Team Baseline Documents Audited & Cited (`team: ...`)",
         "",
         "Per project evidence policy, internal team Phase 1 documents are audited as baseline claims to be tested against external evidence, never as proof of external market facts.",
         "",
@@ -518,144 +733,91 @@ def generate_sources_appendix(
         "| `research/internal/phase-1/PESTEL_Analysis_Updated (2).pdf` | Team Phase 1 PESTEL Analysis (Jakarta F&B Market Entry) | Audited claim-by-claim in Section 2 (`team: PESTEL_Analysis_Updated (2).pdf`); verified, refined, or corrected against Tier 1–3 statutory and BPS records. |",
         "| `research/internal/phase-1/CAGE Analysis - Indonesian F&B Market Entry for CORSA.pdf` | Team Phase 1 CAGE Distance Analysis (Switzerland vs Indonesia) | Audited claim-by-claim in Section 3 (`team: CAGE Analysis - Indonesian F&B Market Entry for CORSA.pdf`); cross-checked against 174-claim register in `reports/2026-10-17-cage-switzerland-jakarta.md`. |",
         "",
-        "### A.3 Financial Model v0.6 Sheets & Embedded Sources Audited (`model v0.6: ...`)",
+        "### A.4 Financial Model v0.6 Sheets & Embedded Sources Audited (`model v0.6: ...`)",
         "",
         "- **Workbook Path:** `data/raw/2026-10-18-corsa-jakarta-financial-model-v0-6.xlsx` (20 sheets; CSV mirror in `data/raw/2026-10-18-corsa-jakarta-financial-model-v0-6-csv/`).",
         "- **Sheets Cited in Deliverable 1:** " + (", ".join(f"`{sh}`" for sh in sorted(cited_model_sheets)) if cited_model_sheets else "All 20 sheets audited."),
         "- **Model Embedded `Sources` Sheet (`Sources!A5:G108`, `S01`–`S104`):** Contains 104 source entries across 11 categories (`Macro & FX`, `Tax & Regulation`, `Location & Rent`, `Fit-Out & Equipment`, `Menu & COGS`, `Demand & Revenue`, `Staffing & Labor`, `OPEX & Utilities`, `Competitors`, `Industry Benchmarks`, `Equipment Financing & Leasing`).",
         "- **Model Embedded `Research_Tracker` Sheet (`Research_Tracker!A5:F17`, `R01`–`R13`):** Tracks 13 core parameter blocks — **5 `Placeholder`** (`R04` dine-in seat turns, `R05` delivery orders/day, `R06` menu prices, `R07` ingredient COGS %, `R09` renovation/fit-out cost/m²), **4 `Desk`** (`R01` rent, `R02` upfront lease years, `R12` utility bills, `R13` ramp-up curve), and **4 `Model ready`** (`R03` PBJT 10%, `R08` salaries, `R10` espresso machine, `R11` PT PMA legal setup).",
         "",
+    ])
+
+    lines.extend([
+        "",
         "---",
         "",
-        "## Part B — Sources & Rows Not Used in Deliverable 1 (with Specific Reason for Each)",
+        "## Part B — Sources and Rows Not Used in Deliverable 1",
         "",
-        "### B.1 Registered Sources in `sources/sources.md` Not Cited in Deliverable 1",
+        "Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDENSED-OUT` reasons for register entries are derived by the script from where the source id appears (2026-10-17 long reports, then `data/processed/` CSVs); entries in `analysis/appendix_reason_overrides.json` replace the script's choice.",
         "",
-        f"All **{len(all_sources) - len(used_src_ids)}** entries from `sources/sources.md` that are not directly cited in Part A are listed below with the specific reason for non-use.",
+        "| Code | Meaning | Rows |",
+        "|---|---|---:|",
+    ])
+    for code, meaning in PART_B_CODES.items():
+        lines.append(f"| `{code}` | {meaning} | {counts.get(code, 0)} |")
+    lines.extend([
         "",
-        "| Source ID | Tier | Title | Publisher | Access Status in Repo | Specific Reason Not Used in Deliverable 1 |",
+        f"### B.1 Register entries not cited ({len(src_rows)})",
+        "",
+        "| ID | Tier | Title | Publisher | Part B code | Reason |",
         "|---|---:|---|---|---|---|",
     ])
-
-    unused_sources = [s for s in all_sources if s["id"] not in used_src_ids]
-    for s in unused_sources:
-        reason = classify_unused_source_reason(s, unused_reasons_override)
-        lines.append(
-            f"| `{s['id']}` | Tier {s.get('tier')} | {s['title']} | {s['publisher']} | {s['accessed']} | {reason} |"
-        )
+    for s, code, reason in src_rows:
+        lines.append(f"| `{s['id']}` | {s.get('tier')} | {_esc(s['title'])} | {_esc(s['publisher'])} | `{code}` | {_esc(reason)} |")
 
     lines.extend([
         "",
-        "### B.2 Unconfirmed `BLOCKED` Rows, `GAP` Rows, and Pre-Verification Outcomes (`data/processed/2026-10-18-preverification.csv`)",
+        f"### B.2 Pre-verification items not used ({len(pv_unused)})",
         "",
-        "Every row marked `BLOCKED` or `GAP` across the repository was isolated by `analysis/inventory.py` (`analysis/outputs/blocked_rows.json`) and subjected to targeted pre-verification (`data/processed/2026-10-18-preverification.csv`). Any row not confirmed from an opened Tier 1–3 document was excluded from supporting any factual claim in Deliverable 1 and is logged below:",
+        "Source: `data/processed/2026-10-18-preverification.csv`. Items with a CONFIRMED or CORRECTED verdict that are cited in the report are listed in Part A.2.",
         "",
+        "| Item ID | Origin | Check | Verdict | Claim (first 25 words) | Part B code | Reason |",
+        "|---|---|---|---|---|---|---|",
     ])
-
-    if PREVERIFY_PATH.exists():
-        lines.append("#### Pre-Verification Table (`data/processed/2026-10-18-preverification.csv`)")
-        lines.append("")
-        with open(PREVERIFY_PATH, "r", encoding="utf-8") as f:
-            pv_rows = list(csv.DictReader(f))
-        if pv_rows:
-            cols = list(pv_rows[0].keys())
-            lines.append("| " + " | ".join(cols) + " |")
-            lines.append("|" + "|".join(["---"] * len(cols)) + "|")
-            for r in pv_rows:
-                lines.append("| " + " | ".join(str(r.get(c, "")).replace("|", "\\|").replace("\n", " ") for c in cols) + " |")
-            lines.append("")
+    for r, code, reason in pv_unused:
+        lines.append(f"| `{r['item_id']}` | {_esc(_trunc_words(r['origin'], 10))} | {r.get('check','')} | {r.get('verdict') or 'none'} | {_esc(_trunc_words(r['claim']))} | `{code}` | {_esc(reason)} |")
 
     lines.extend([
-        "#### Complete Register of 26 `BLOCKED` Rows and 9 `GAP` Rows in Repository CSVs & Tables",
         "",
-        "| Row ID | Source File | Status | Topic / Metric | Reason Excluded from Factual Claims (or Pre-Verification Outcome) |",
+        f"### B.3 `BLOCKED` and `GAP` rows in the CSVs not confirmed in wave 2b ({len(row_entries)})",
+        "",
+        "Rows confirmed or corrected in wave 2b are omitted here (they appear in Part A.2 or B.2).",
+        "",
+        "| Row ID | File | Status | Topic / metric | Part B code | Reason |",
+        "|---|---|---|---|---|---|",
+    ])
+    for rid, f, kind, topic, code, reason in row_entries:
+        lines.append(f"| `{rid}` | `{Path(str(f)).name}` | `{kind}` | {_esc(_trunc_words(topic, 18))} | `{code}` | {_esc(reason)} |")
+
+    lines.extend([
+        "",
+        f"### B.4 Run 1 dropped rows ({len(dropped)})",
+        "",
+        "Source: `data/processed/2026-10-16-run1-dropped-rows.csv`.",
+        "",
+        "| Row ID | File | Claim | Part B code | Reason |",
         "|---|---|---|---|---|",
     ])
-
-    for b in blocked_data.get("blocked_rows", []):
-        topic = b.get("question_or_metric") or b.get("question") or "See CSV"
-        notes = b.get("notes") or b.get("gaps") or "Source blocked by HTTP 403 / Cloudflare / timeout during Runs 1–4; never cited as factual support."
-        lines.append(
-            f"| `{b['row_id']}` | `{b['file']}` | `{b['verification']}` | {str(topic)[:90]} | {str(notes)[:160]} |"
-        )
-
-    for g in blocked_data.get("gap_rows", []):
-        topic = g.get("question_or_metric") or g.get("question") or "Evidence gap"
-        notes = g.get("notes") or g.get("gaps") or "Explicitly logged as an open evidence gap requiring Phase 2 primary validation."
-        lines.append(
-            f"| `{g['row_id']}` | `{g['file']}` | `{g['verification']}` | {str(topic)[:90]} | {str(notes)[:160]} |"
-        )
-
-    dropped_csv = ROOT / "data" / "processed" / "2026-10-16-run1-dropped-rows.csv"
-    lines.extend([
-        "",
-        "### B.3 Run 1 Dropped Rows (`data/processed/2026-10-16-run1-dropped-rows.csv` — 26 Rows)",
-        "",
-        "These 26 rows were removed from active analytical tables during the Run 1 quality audit and are never cited in Deliverable 1:",
-        "",
-        "| Original File | Row Key | Dimension / Topic | Metric | Value | Reason Dropped |",
-        "|---|---|---|---|---|---|",
-    ])
-    if dropped_csv.exists():
-        with open(dropped_csv, "r", encoding="utf-8") as f:
-            for r in csv.DictReader(f):
-                lines.append(
-                    f"| `{r.get('original_file','')}` | `{r.get('row_key','')}` | {r.get('dimension','')} / {r.get('topic','')} | "
-                    f"{r.get('metric','')} | {r.get('value','')} {r.get('unit','')} | {r.get('reason_dropped','')} |"
-                )
-
-    excl_csv = ROOT / "data" / "processed" / "2026-10-pillar1-mapping-excluded.csv"
-    lines.extend([
-        "",
-        "### B.4 Pillar 1 Mapping Excluded Rows (`data/processed/2026-10-pillar1-mapping-excluded.csv` — 18 Rows)",
-        "",
-        "These 18 rows (`P1M-011` to `P1M-028`) were excluded during the Run 4 scope audit because they did not verify active healthy/grain-bowl/salad/smoothie-bowl venues inside Jakarta Selatan or Jakarta Pusat:",
-        "",
-        "| Row ID | Brand / Venue | Category / Format | Corridor | Status | Reason Excluded |",
-        "|---|---|---|---|---|---|",
-    ])
-    if excl_csv.exists():
-        with open(excl_csv, "r", encoding="utf-8") as f:
-            for r in csv.DictReader(f):
-                lines.append(
-                    f"| `{r.get('row_id','')}` | {r.get('brand_or_venue','')} | {r.get('category_format','')} | "
-                    f"{r.get('corridor_area','')} | `{r.get('verification_status','')}` | {r.get('notes','')} |"
-                )
+    for r, code, reason in dropped:
+        lines.append(f"| `{r.get('row_id','')}` | `{r.get('file','')}` | {_esc(_trunc_words(r.get('claim',''), 18))} | `{code}` | {_esc(reason)} |")
 
     lines.extend([
         "",
         "---",
         "",
-        "## Part C — Structured Placeholder for Paul's Phase 2 Primary Validation & Model v0.7+ Sources",
+        "## Part C — Pending: Paul's Phase 2 Sources",
         "",
-        "This section provides the ready-to-fill verification tables for Phase 2 primary field research in Jakarta and the corresponding updates to the CORSA financial model (`v0.7+`).",
+        "Paul's sources arrive on 19 Oct 2026 and will pass the wave-2b pre-verification before they are used in the report.",
         "",
-        "### C.1 Phase 2 Primary Field & Supplier Validation Log (To Be Populated in Phase 2)",
-        "",
-        "| Phase 2 Source ID | Validation Category | Target Model Cells / `Research_Tracker` ID | Counterparty / Informant (Role, District, Date) | Verified Quotation / Term Sheet / Field Observation | Evidence Artifact (PDF / Quote / Photo Path) | Verification Status |",
-        "|---|---|---|---|---|---|---|",
-        "| `P2-SRC-01` | Retail Lease & Upfront Prepayment Terms | `R01`, `R02` (`Rent_Data!E6:M13`, `Inputs!E28:G28`) | _[e.g., 3 commercial brokers / landlords in Senopati, Cipete, Menteng]_ | _[Quoted base rent Rp/m²/mo, service charge, minimum lease term, 1-yr vs 2-yr upfront prepayment requirement]_ | _[Pending Phase 2 term sheets]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-02` | Contractor Fit-Out & MEP Quotes (150 m²) | `R09` (`CAPEX (Buy)!E8:G13`, `CAPEX (Rent)!E8:G13`) | _[e.g., 2 Jakarta F&B interior/MEP contractors]_ | _[Itemized BOQ for civil, electrical upgrade, grease trap, HVAC, custom millwork]_ | _[Pending Phase 2 contractor BOQs]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-03` | Commercial Kitchen & Espresso Equipment Quotes / Leasing | `R10` (`CAPEX (Buy)!E15:G22`, `CAPEX (Rent)!B101:M116`) | _[e.g., PT Toffin Indonesia, Rotaryana, ORI Leasing / multifinance]_ | _[Written quotes for 2-group espresso machine, grinders, bronze-die pasta extruder, refrigeration; eligibility of newly incorporated PT PMA for equipment lease]_ | _[Pending Phase 2 vendor quotes]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-04` | Wholesale Ingredient & Packaging Price Lists (BOM) | `R07` (`Menu!J7:L24`) | _[e.g., Sukanda Djaya / Indoguna / local specialty roasters / semolina importers]_ | _[Delivered wholesale prices per kg/L for durum semolina, imported cheeses, specialty arabica beans, proteins, and eco-packaging]_ | _[Pending Phase 2 supplier price lists]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-05` | Corridor Footfall & Daypart Seat-Turn Counts | `R04`, `R05` (`Revenue!D8:F12`, `Revenue!D17:F20`) | _[e.g., Observational seat-turn & queue logging at 6 benchmark venues across Senopati, SCBD, Menteng, Kemang, Cipete]_ | _[Observed weekday vs weekend covers by daypart (breakfast, lunch, afternoon, dinner) and GoFood/GrabFood rider pickup counts]_ | _[Pending Phase 2 field tally sheets]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-06` | Consumer Willingness-to-Pay & Menu Price Testing | `R06` (`Menu!E7:G24`) | _[e.g., Intercept surveys / tasting panels with Jakarta Selatan & Pusat target customers aged 25–39]_ | _[Price sensitivity and bundle preference for fresh pasta + coffee/elixir combinations at Rp 85k–135k net]_ | _[Pending Phase 2 survey dataset]_ | `PENDING_PHASE_2` |",
-        "| `P2-SRC-07` | PT PMA Incorporation, Notary, & BPJPH Halal Certification Quotes | `R11` (`CAPEX (Buy)!E34:G38`, `OPEX!C28:C33`) | _[e.g., Jakarta corporate notary + BPJPH LPH halal inspection agency]_ | _[Binding legal fee schedule for PT PMA setup, OSS-RBA KBLI 56101/56303/10794 verification, SLHS, and Halal SJPH audit timeline]_ | _[Pending Phase 2 legal/LPH proposals]_ | `PENDING_PHASE_2` |",
-        "",
-        "### C.2 Phase 2 Financial Model Update Log (`v0.6` -> `v0.7+` Checklist)",
-        "",
-        "| Model Fix ID | Sheet & Cell Range in `v0.6` | Defect / Gap in `v0.6` | Required Update in `v0.7+` | Status |",
-        "|---|---|---|---|---|",
-        "| `MOD-FIX-01` | `PnL_Monthly!P4:BJ48` | Months 14–60 are completely unpopulated (only Months 1–13 in `C4:O48` exist), causing `Annual` Y2–Y5, `Dashboard!B17` (Y3 EBITDA), `Dashboard!B19` (5-yr NPV), `Dashboard!B25` (Payback), and `Dashboard!B26` (5-yr IRR) to fail or truncate. | Extend monthly formulas across all 60 columns (`C` to `BJ`), incorporating annual inflation (`Inputs!H11`), lease renewal/prepayment stepping in Year 3 and Year 5, and 36-month equipment lease maturity (`CAPEX (Rent)!H47`). | `OPEN_FOR_V0.7` |",
-        "| `MOD-FIX-02` | `Scenarios!C35:E35` & `PnL_Monthly!C34:O34` | Depreciation formula (`='CAPEX (Buy)'!$F$32*0.65/60`) hardcodes Base Buy-mode hard costs even when `Inputs!H4 = 2` (Lease mode) or Conservative/Optimistic scenarios are active. | Link depreciation dynamically to active scenario and owned-asset base (excluding leased equipment principal under operating lease or separating finance-lease amortization). | `OPEN_FOR_V0.7` |",
-        "| `MOD-FIX-03` | `MonteCarlo!A36:K1035` | Simulates static 1-month steady-state EBITDA and simple steady-state payback (`CAPEX / (12 * EBITDA)`), ignoring 12-month ramp-up cash burn and multi-year lease cash outflows. | Integrate 60-month cash-flow series into Monte Carlo simulation to compute true multi-year NPV, IRR, and minimum cash trough probabilities. | `OPEN_FOR_V0.7` |",
-        "| `MOD-FIX-04` | `Inputs!F21` vs Scope Doc | Model uses `150 m²` usable area / `60 seats` (`Inputs!F21`, `Revenue!C5`), whereas `docs/scope/2026-10-16-project-scope-summary.md` specifies `60–80 m²` (`15–30 seats`). | Reconcile store footprint archetype (flagship 150 m² dine-in bistro vs 70 m² compact kiosk/café) and run parallel unit economics for both footprints. | `OPEN_FOR_V0.7` |",
+        "| ID | Title | Publisher | Tier | URL | Pre-verification verdict | Sections |",
+        "|---|---|---|---:|---|---|---|",
     ])
 
     with open(APPENDIX_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
     print(f"[verify_report] Wrote Deliverable 2 appendix to {APPENDIX_PATH}")
+    print("[verify_report] Part B rows per code: " + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
 
 
 if __name__ == "__main__":
