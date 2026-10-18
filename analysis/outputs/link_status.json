@@ -1,0 +1,3271 @@
+{
+  "total_source_entries": 325,
+  "unique_urls_checked": 325,
+  "skip_network": false,
+  "status_counts_by_source_entry": {
+    "200_ok": 266,
+    "403_429_503_restricted_or_challenge": 28,
+    "timeout_or_connection_error": 23,
+    "http_500": 4,
+    "404_410_not_found": 4
+  },
+  "status_counts_by_unique_url": {
+    "200_ok": 266,
+    "403_429_503_restricted_or_challenge": 28,
+    "http_500": 4,
+    "timeout_or_connection_error": 23,
+    "404_410_not_found": 4
+  },
+  "entries": [
+    {
+      "id": "BEH-001",
+      "title": "Penetrasi Internet Indonesia Menurut Generasi 2025, Milenial dan Gen Z Terdepan (GoodStats data page)",
+      "url": "https://data.goodstats.id/statistic/penetrasi-internet-indonesia-menurut-generasi-2025-milenial-dan-gen-z-terdepan-jw8fn",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-002",
+      "title": "Digital 2026: Indonesia",
+      "url": "https://datareportal.com/reports/digital-2026-indonesia",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-003",
+      "title": "GoFood: Indonesia's Favorite Online Food Delivery Service Across Generations (March 2025)",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/68877660027f9/gofood-indonesias-favorite-online-food-delivery-service-across-generations-march-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-004",
+      "title": "Dari Mana Publik Dapat Informasi Soal Tempat Makan Baru? (GoodStats data page)",
+      "url": "https://data.goodstats.id/statistic/dari-mana-publik-dapat-informasi-soal-tempat-makan-baru-3WlAm",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-005",
+      "title": "Study: 76% of Indonesians shop through creators despite declining trust",
+      "url": "https://www.marketing-interactive.com/study-76-of-indonesians-shop-through-creators-despite-declining-trust",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-006",
+      "title": "Riset 2026: AI ubah cara konsumen berbelanja, namun kreator tetap jadi penentu keputusan pembelian",
+      "url": "https://pasardana.id/news/2026/7/27/riset-tebaru-2026-ai-ubah-cara-konsumen-berbelanja-namun-kreator-tetap-jadi-penentu-keputusan-pembelian",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened); 2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-007",
+      "title": "Rayuan Influencer Kian Ampuh Jadi Kompas Berbelanja",
+      "url": "https://tirto.id/rayuan-influencer-kian-ampuh-jadi-kompas-berbelanja-hd1f",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Cloudflare 403 on tirto.id, no bypass)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-008",
+      "title": "e-Conomy SEA 2025 press release",
+      "url": "https://www.bain.com/it/about-bain/media-center/press-releases/sea/e-conomy-sea-2025/",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-009",
+      "title": "Millennials & Gen Z Report: Exploring the Hip F&B Phenomenon (coverage: Survei Populix ungkap laki-laki dan milenial cenderung lebih gercep perihal kuliner kekinian)",
+      "url": "https://mediaasuransinews.co.id/ekonomi/survei-populix-ungkap-laki-laki-dan-milenial-cenderung-lebih-gercep-perihal-kuliner-kekinian/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened (relay page); Populix report page also opened but shows no figures",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-010",
+      "title": "Beyond the purchase: understanding the Indonesian consumer's shopping personality",
+      "url": "https://yougov.com/articles/50874-beyond-the-purchase-understanding-the-indonesian-consumers-shopping-personality",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-011",
+      "title": "Viral Marketing, Fear of Missing Out and Impulsive Buying Behavior Among Gen Z in Jakarta",
+      "url": "https://publikasi.mercubuana.ac.id/index.php/Jurnal_Mix/article/view/32233",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-012",
+      "title": "Deret Bisnis Raffi Ahmad yang Tutup Selain RANS Nusantara Hebat",
+      "url": "https://www.cnnindonesia.com/ekonomi/20250225184612-92-1202389/deret-bisnis-raffi-ahmad-yang-tutup-selain-rans-nusantara-hebat",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-013",
+      "title": "NIQ: Indonesian Consumers Reassess Health Priorities, Seek Greater Transparency, Support, and Smart Solutions (Global State of Health & Wellness 2025)",
+      "url": "https://nielseniq.com/global/en/news-center/2025/niq-indonesian-consumers-reassess-health-priorities-seek-greater-transparency-support-and-smart-solutions/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-014",
+      "title": "Economic instability and cost of living pressures influencing Indonesian consumer decisions and priorities according to PwC Voice of the Consumer 2025",
+      "url": "https://www.pwc.com/id/en/media-centre/press-release/2025/english/economic-instability-and-cost-of-living-pressures-influencing-indonesian-consumer-decisions-and-priorities-according-to-pwc-voice-of-the-consumer-2025.html",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; pwc.com Akamai 403, no bypass)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-015",
+      "title": "PwC Voice of the Consumer 2026 survey (Indonesia press release); report PDF https://www.pwc.com/id/en/publications/consumer-markets/pwc-voice-of-the-consumer-2026-indonesia.pdf",
+      "url": "https://www.pwc.com/id/en/media-centre/press-release/2026/english/voice-of-the-consumer-2026-survey.html",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; pwc.com Akamai 403, no bypass)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-016",
+      "title": "Strava Indonesia training data ahead of Jakarta Running Festival 2025 (page-level attribution unconfirmed; also https://gizmologi.id/apps/strava-pelari-jakarta-running-festival-2025/ and https://data.goodstats.id/statistic/16-km-per-minggu-begini-rajinnya-pelari-indonesia-di-strava-Nz7B3)",
+      "url": "https://www.indotelko.com/read/1761172765/jelang-jrf-2025ini-rahasia-latihan-pelari-indonesia",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-017",
+      "title": "Fakta JRF 2025: Jakarta Running Festival Tarik 27.300 Pelari dari 48 Negara",
+      "url": "https://www.merdeka.com/peristiwa/read/8044556/fakta-jrf-2025-jakarta-running-festival-tarik-27300-pelari-dari-48-negara-destinasi-sport-tourism-asia-tenggara",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-018",
+      "title": "Indonesia dilanda demam padel, apa saja dampak positifnya",
+      "url": "https://www.goodnewsfromindonesia.id/2026/02/23/indonesia-dilanda-demam-padel-apa-saja-dampak-positifnya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-019",
+      "title": "North Jakarta Seals Two Padel Courts Over Permit Violations",
+      "url": "https://rri.co.id/en/archipelago/2239870/north-jakarta-seals-two-padel-courts-over-permit-violations",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; rri.co.id 403); Cloudflare 403 on 2026-10-16",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-020",
+      "title": "KFC Indonesia (FAST) Masih Merugi Meski Tekanan Boikot Sudah Mengendur",
+      "url": "https://market.bisnis.com/read/20251128/192/1932477/kfc-indonesia-fast-masih-merugi-meski-tekanan-boikot-sudah-mengendur",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-021",
+      "title": "KFC Indonesia (FAST) Tutup 19 Gerai dan PHK 400 Karyawan Tahun Ini",
+      "url": "https://market.bisnis.com/read/20251002/192/1916844/kfc-indonesia-fast-tutup-19-gerai-dan-phk-400-karyawan-tahun-ini",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-022",
+      "title": "Rugi Emiten Pengelola Starbucks (MAPB) Membengkak Jadi Rp108,69 Miliar per Kuartal III/2025",
+      "url": "https://market.bisnis.com/read/20251103/192/1925648/rugi-emiten-pengelola-starbucks-mapb-membengkak-jadi-rp10869-miliar-per-kuartal-iii2025",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-023",
+      "title": "Pengelola Pizza Hut (PZZA) Berbalik Laba Rp24,75 Miliar pada 2025",
+      "url": "https://market.bisnis.com/read/20260331/192/1963277/pengelola-pizza-hut-pzza-berbalik-laba-rp2475-miliar-pada-2025",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-024",
+      "title": "Berbalik Laba Pizza Hut (PZZA) Kantongi Rp15,91 Miliar per Kuartal III/2025",
+      "url": "https://market.bisnis.com/read/20251028/192/1923926/berbalik-laba-pizza-hut-pzza-kantongi-rp1591-miliar-per-kuartal-iii2025",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-025",
+      "title": "Laju Pemulihan Emiten Terdampak Boikot Israel: FAST, PZZA, UNVR hingga MAPB",
+      "url": "https://market.bisnis.com/read/20251202/7/1933293/laju-pemulihan-emiten-terdampak-boikot-israel-fast-pzza-unvr-hingga-mapb",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-026",
+      "title": "Berjaya Food posts record RM292m loss as Starbucks Malaysia hit by boycott impact, downsizing",
+      "url": "https://www.malaymail.com/news/money/2025/08/28/berjaya-food-posts-record-rm292m-loss-as-starbucks-malaysia-hit-by-boycott-impact-downsizing/189163",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Malay Mail 403)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-027",
+      "title": "MotoGP Mandalika 2025 spectators reached 140,000",
+      "url": "https://inp.polri.go.id/artikel/motogp-mandalika-2025-spectators-reached-140000",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-028",
+      "title": "Indonesia 2025 Mandalika MotoGP draws 142,000 spectators: Thohir",
+      "url": "https://mataram.antaranews.com/berita/494029/indonesia-2025-mandalika-motogp-draws-142000-spectators-thohir",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-029",
+      "title": "MotoGP Mandalika 2025 Spectators Increase, Set New Record",
+      "url": "https://databoks.katadata.co.id/en/transportation-logistics/statistics/68e3153d39cbd/motogp-mandalika-2025-spectators-increase-set-new-record",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-030",
+      "title": "Healthy living and coffee trends in 2025",
+      "url": "https://insight.jakpat.net/healthy-living-and-coffee-trends-in-2025/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-031",
+      "title": "BI mencatat nilai transaksi QRIS capai Rp 164,48 triliun pada Januari 2026 (and related Kontan QRIS pieces)",
+      "url": "https://keuangan.kontan.co.id/news/bi-mencatat-nilai-transaksi-qris-capai-rp-16448-triliun-pada-januari-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "BEH-032",
+      "title": "Consumer Considerations in Choosing Online Food Delivery Apps (Databoks); related Kontan English: Jakpat research: GoFood the most used online food delivery application",
+      "url": "https://databoks.katadata.co.id/en/consumer-services/statistics/67fcb4a454912/consumer-considerations-in-choosing-online-food-delivery-apps",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-033",
+      "title": "Snapcart online food delivery survey Indonesia 2025",
+      "url": "https://snapcart.global/?p=21083",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; snapcart.global serves only a generic landing page)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-034",
+      "title": "New report: Southeast Asia food delivery GMV grew 18% to hit US$22.7B in 2025",
+      "url": "https://thelowdown.momentum.asia/new-report-southeast-asia-food-delivery-gmv-grew-18-to-hit-us22-7b-in-2025/",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; thelowdown.momentum.asia Cloudflare 403)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-035",
+      "title": "Grab Kuasai Layanan Pesan Antar Makanan di RI 2025, Kalahkan Gojek dan ShopeeFood",
+      "url": "https://teknologi.bisnis.com/read/20260128/84/1947981/grab-kuasai-layanan-pesan-antar-makanan-di-ri-2025-kalahkan-gojek-dan-shopeefood",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-036",
+      "title": "Utang PayLater Warga RI Tembus Rp 44 Triliun, OJK Sebut Gaya Hidup Generasi Muda",
+      "url": "https://katadata.co.id/digital/fintech/6a72915a14032/utang-paylater-warga-ri-tembus-rp-44-trilun-ojk-sebut-gaya-hidup-generasi-muda",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-037",
+      "title": "Survei Penetrasi Internet dan Perilaku Penggunaan Internet Indonesia 2025 (full report PDF, 132 pp.)",
+      "url": "https://survei.apjii.or.id/uploads/1790827857401-Survei-Penetrasi-Internet-dan-Perilaku-Penggunaan-Internet-2025.pdf",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-038",
+      "title": "Survei Penetrasi Internet dan Perilaku Penggunaan Internet Indonesia 2026 (full report PDF, 133 pp.)",
+      "url": "https://survei.apjii.or.id/uploads/1790827973204-Survei-Penetrasi-Internet-dan-Perilaku-Penggunaan-Internet-2026.pdf",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-039",
+      "title": "Online food delivery trend drops, buyers look for discounts (Jakpat Insight article; same content as insight.jakpat.net/?p=19464)",
+      "url": "https://insight.jakpat.net/online-food-delivery-trend-drops-buyers-look-for-discounts/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-040",
+      "title": "Strong traditional tastes in the local F&B market (Jakpat Insight article)",
+      "url": "https://insight.jakpat.net/strong-traditional-tastes-in-the-local-fb-market/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-041",
+      "title": "Strava, pelari Jakarta Running Festival 2025 (Gizmologi)",
+      "url": "https://gizmologi.id/apps/strava-pelari-jakarta-running-festival-2025/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "BEH-042",
+      "title": "Global Padel Report 2025 (Playtomic and Strategy&)",
+      "url": "https://8258038.fs1.hubspotusercontent-na1.net/hubfs/8258038/Global%20Padel%20Report/PLAYTOMIC_GLOBAL%20_PADEL_REPORT_2025.pdf",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-043",
+      "title": "Dua Lapangan Padel Tak Berizin di Ancol dan Penjaringan Disegel",
+      "url": "https://www.metrotvnews.com/read/ba4CPmyw-dua-lapangan-padel-tak-berizin-di-ancol-dan-penjaringan-disegel",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-044",
+      "title": "Lapangan padel Jakarta tak berizin disegel (CNA Indonesia)",
+      "url": "https://www.cna.id/indonesia/lapangan-padel-jakarta-tak-berizin-disegel-45161",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-045",
+      "title": "Tutup 20 Gerai, Pangkas 1.041 Karyawan, Rugi KFC (FAST) Turun 57% [title reconstructed from URL slug]",
+      "url": "https://www.cnbcindonesia.com/market/20251103181906-17-681892/tutup-20-gerai-pangkas-1041-karyawan-rugi-kfc--fast--turun-57",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-046",
+      "title": "KFC blak-blakan soal kondisi bisnis: Covid, boikot, daya beli turun [title reconstructed from URL slug]",
+      "url": "https://www.cnbcindonesia.com/market/20251006112734-17-673167/kfc-blak-blakan-soal-kondisi-bisnis-covid-boikot-daya-beli-turun",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-047",
+      "title": "Masih rugi, KFC (FAST) tutup 19 gerai, PHK 400 karyawan tahun ini [title reconstructed from URL slug]",
+      "url": "https://www.cnbcindonesia.com/market/20251003175848-17-672723/masih-rugi-kfc--fast--tutup-19-gerai-phk-400-karyawan-tahun-ini",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-048",
+      "title": "Rugi MAPB bengkak jadi Rp108 M, Starbucks sudah ditinggal warga RI [title reconstructed from URL slug]",
+      "url": "https://www.cnbcindonesia.com/market/20251105153124-17-682591/rugi-mapb-bengkak-jadi-rp108-m-starbucks-sudah-ditinggal-warga-ri",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-049",
+      "title": "Rugi pengelola Starbucks Indonesia bengkak jadi Rp 108 miliar [title reconstructed from URL slug]",
+      "url": "https://money.kompas.com/read/2025/11/06/134413026/rugi-pengelola-starbucks-indonesia-bengkak-jadi-rp-108-miliar",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 500,
+      "live_check_status": "http_500"
+    },
+    {
+      "id": "BEH-050",
+      "title": "Pengelola KFC (FAST) bukukan rugi Rp 138 M pada semester I 2025 [title reconstructed from URL slug]",
+      "url": "https://www.cnbcindonesia.com/market/20250805163958-17-655290/pengelola-kfc--fast--bukukan-rugi-rp-138-m-pada-semester-i-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-051",
+      "title": "Cutting stores and employees, KFC (FAST) losses shrink 57% in Q3 2025 [title reconstructed from URL slug]",
+      "url": "https://databoks.katadata.co.id/en/market/statistics/690aa3eab46ec/cutting-stores-and-employees-kfc-fast-losses-shrink-57-in-q3-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-052",
+      "title": "Beda nasib Pizza Hut-KFC: satu untung, satu buntung",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8453630/beda-nasib-pizza-hut-kfc-satu-untung-satu-buntung",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-053",
+      "title": "Putus tren negatif, laba PZZA melambung 13.398 persen [title reconstructed from URL slug]",
+      "url": "https://www.emitennews.com/news/putus-tren-negatif-laba-pzza-melambung-13398-persen",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-054",
+      "title": "Saham PZZA akan beri dividen Rp5 miliar, cek profil dan kinerja emiten ini [title reconstructed from URL slug]",
+      "url": "https://stocksetup.kontan.co.id/news/saham-pzza-akan-beri-dividen-rp5-miliar-cek-profil-dan-kinerja-emiten-ini",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "BEH-055",
+      "title": "PZZA pamer laba tapi mulai dibuang broker besar [title reconstructed from URL slug]",
+      "url": "https://www.kabarbursa.com/market-hari-ini/pzza-pamer-laba-tapi-mulai-dibuang-broker-besar",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 404,
+      "live_check_status": "404_410_not_found"
+    },
+    {
+      "id": "BEH-056",
+      "title": "Pendapatan naik 11%, PZZA genjot ekspansi gerai di 2026 [title reconstructed from URL slug]",
+      "url": "https://wartaekonomi.co.id/read590887/pendapatan-naik-11-pzza-genjot-ekspansi-gerai-di-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 404,
+      "live_check_status": "404_410_not_found"
+    },
+    {
+      "id": "BEH-057",
+      "title": "Berjaya Food FY2025 net loss widens to RM291.99 million as revenue drops 36.5% [descriptive title; headline not captured]",
+      "url": "https://theedgemalaysia.com/node/768462",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-058",
+      "title": "Berjaya Food sinks deeper into the red in FY25",
+      "url": "https://www.thestar.com.my/business/business-news/2025/08/27/berjaya-food-sinks-deeper-into-the-red-in-fy25",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-059",
+      "title": "Average Indonesian consumer spending per online food order (Databoks relaying Snapcart)",
+      "url": "https://databoks.katadata.co.id/en/consumer-durables-apparel/statistics/67aed0bf3061f/average-indonesian-consumer-spending-per-online-food-order",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-060",
+      "title": "Southeast Asia food delivery market surges to US$22.7B (QSR Media)",
+      "url": "https://qsrmedia.com/in-focus/southeast-asia-food-delivery-market-surges-227b",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-061",
+      "title": "Grab dominates online food delivery services in Southeast Asia in 2025 (Databoks)",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6984601ec6fac/grab-dominates-online-food-delivery-services-in-southeast-asia-in-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-062",
+      "title": "Bank Indonesia news release, Board of Governors Meeting January 2026 (sp_281326)",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_281326.aspx",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened (needs full browser user-agent)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-063",
+      "title": "Bank Indonesia news release, Board of Governors Meeting 18-19 February 2026 (sp_284326)",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_284326.aspx",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened (needs full browser user-agent)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-064",
+      "title": "OJK peringatkan bahaya FOMO dan overspending PayLater bagi generasi muda",
+      "url": "https://www.fortuneidn.com/finance/ojk-peringatkan-bahaya-fomo-dan-overspending-paylater-bagi-generasi-muda-00-ccw2k-2899j7",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-001",
+      "title": "How much do Gen Z spend on coffee? This survey reveals",
+      "url": "https://databoks.katadata.co.id/en/consumer-services/statistics/677cd50372d4a/how-much-do-gen-z-spend-on-coffee-this-survey-reveals",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-002",
+      "title": "Mall-visiting Behavior of Indonesian Respondents in Early 2025",
+      "url": "https://databoks.katadata.co.id/en/consumer-services/statistics/68786fdf28828/mall-visiting-behavior-of-indonesian-respondents-in-early-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-003",
+      "title": "How Often Do Young Indonesians Eat Out? Here's the 2025 Survey",
+      "url": "https://databoks.katadata.co.id/en/consumer-services/statistics/690475fe722ca/how-often-do-young-indonesians-eat-out-heres-the-2025-survey",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-004",
+      "title": "Pengeluaran per Kapita DKI Jakarta 2025: Kenaikan Jadi Rp2,96 Juta per Bulan",
+      "url": "https://databoks.katadata.co.id/layanan-konsumen-kesehatan/statistik/e5b26141744c322/pengeluaran-per-kapita-dki-jakarta",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-005",
+      "title": "Survei Konsumen Juli 2026 (Bank Indonesia news release No.28/154/DKom)",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2815426.aspx",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-006",
+      "title": "Survei Konsumen Agustus 2026: Keyakinan Konsumen Meningkat (Bank Indonesia news release No.28/183/DKom)",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2818326.aspx",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-007",
+      "title": "Survei Konsumen Juni 2026 (Bank Indonesia news release No.28/133/DKom)",
+      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2813326.aspx",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-008",
+      "title": "Laporan MSI: Belanja Masyarakat Naik Jelang Ramadan, Tabungan Kelas Menengah Turun",
+      "url": "https://ekonomi.bisnis.com/read/20260226/9/1955844/laporan-msi-belanja-masyarakat-naik-jelang-ramadan-tabungan-kelas-menengah-turun",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-009",
+      "title": "Belanja Masyarakat pada Libur Sekolah 2026 Melambat dari Tahun Lalu",
+      "url": "https://ekonomi.bisnis.com/read/20260624/9/1982987/belanja-masyarakat-pada-libur-sekolah-2026-melambat-dari-tahun-lalu",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-010",
+      "title": "Nestapa Kelas Menengah: Konsumsi Melemah, Lapangan Kerja Sempit, Tabungan Seret",
+      "url": "https://ekonomi.bisnis.com/read/20260202/9/1949044/nestapa-kelas-menengah-konsumsi-melemah-lapangan-kerja-sempit-tabungan-seret",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-011",
+      "title": "Downgrade Lifestyle Makin Ramai, Benarkah Daya Beli Kelas Menengah Turun?",
+      "url": "https://finansial.bisnis.com/read/20261014/55/2012550/downgrade-lifestyle-makin-ramai-benarkah-daya-beli-kelas-menengah-turun",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-012",
+      "title": "Kemnaker Catat 23.470 Pekerja Kena PHK Januari-Mei 2026",
+      "url": "https://ekonomi.bisnis.com/read/20260608/12/1979230/kemnaker-catat-23470-pekerja-kena-phk-januari-mei-2026",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-013",
+      "title": "Data Kemnaker: PHK Januari 2026 Turun Jadi 359 Orang, Tahun Lalu 10.026",
+      "url": "https://ekonomi.bisnis.com/read/20260308/12/1958671/data-kemnaker-phk-januari-2026-turun-jadi-359-orang-tahun-lalu-10026",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-014",
+      "title": "Harga BBM Naik, Pengusaha Hotel Teriak Biaya Operasional Bengkak",
+      "url": "https://ekonomi.bisnis.com/read/20260623/12/1982761/harga-bbm-naik-pengusaha-hotel-teriak-biaya-operasional-bengkak",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-015",
+      "title": "Emiten Pengelola Starbucks MAP Boga (MAPB) Raih Penjualan Rp3,2 Triliun pada 2025",
+      "url": "https://market.bisnis.com/read/20260331/192/1963298/emiten-pengelola-starbucks-map-boga-mapb-raih-penjualan-rp32-triliun-pada-2025",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-016",
+      "title": "Rugi Pengelola Starbucks (MAPB) Membengkak Imbas Depresiasi Rupiah Semester I/2026",
+      "url": "https://market.bisnis.com/read/20260730/192/1992274/rugi-pengelola-starbucks-mapb-membengkak-imbas-depresiasi-rupiah-semester-i2026",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-017",
+      "title": "FORE Ogah Ikut Tren Kopi Keliling 'Jemput Bola', Sebut Beda Kelas",
+      "url": "https://market.bisnis.com/read/20260225/192/1955761/fore-ogah-ikut-tren-kopi-keliling-jemput-bola-sebut-beda-kelas",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-018",
+      "title": "IEP December 2025 Macro Presentation (Indonesia Economic Prospects)",
+      "url": "https://thedocs.worldbank.org/en/doc/2058d67adda4a910ceab72209ddec8f3-0070012025/original/IEP-December-2025-Macro-Presentation.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 404,
+      "live_check_status": "404_410_not_found"
+    },
+    {
+      "id": "DEM-019",
+      "title": "Pertumbuhan Ekonomi RI Kuartal II/2026 Capai 5,29%, Ini Faktor Pendorongnya",
+      "url": "https://ekonomi.bisnis.com/read/20260805/9/1993830/pertumbuhan-ekonomi-ri-kuartal-ii2026-capai-529-ini-faktor-pendorongnya",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "DEM-020",
+      "title": "Pengeluaran per kapita Kota Jakarta Selatan (Databoks relaying BPS Susenas)",
+      "url": "https://databoks.katadata.co.id/layanan-konsumen-kesehatan/statistik/721e41cd0521a99/pengeluaran-per-kapita-kota-jakarta-selatan",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-021",
+      "title": "Kelas menengah royal belanja jelang Lebaran, tapi tabungannya menipis",
+      "url": "https://www.cnbcindonesia.com/research/20260317113109-128-719750/kelas-menengah-royal-belanja-jelang-lebaran-tapi-tabungannya-menipis",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-022",
+      "title": "Belanja lesu di Juni 2026, kelompok atas mulai tahan pengeluaran",
+      "url": "https://leisure.harianjogja.com/r-1260940/belanja-lesu-di-juni-2026-kelompok-atas-mulai-tahan-pengeluaran",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-023",
+      "title": "23.470 pekerja kena PHK pada Januari-Mei 2026, Jawa Barat terbanyak",
+      "url": "https://www.kompas.com/tren/read/2026/06/04/154500265/23.470-pekerja-kena-phk-pada-januari-mei-2026-jawa-barat-terbanyak",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 500,
+      "live_check_status": "http_500"
+    },
+    {
+      "id": "DEM-024",
+      "title": "23.470 pekerja kena PHK sepanjang Januari-Mei 2026",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8517409/23-470-pekerja-kena-phk-sepanjang-januari-mei-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-025",
+      "title": "MAP Boga Adiperkasa consolidated financial statements, 9 months to 30 September 2025 (unaudited)",
+      "url": "https://www.mbai.co.id/wp-content/uploads/2025/10/9M-2025-MBA.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 206,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-026",
+      "title": "Pendapatan Fore Coffee tembus Rp 1 triliun, per hari laku 140.000 gelas [title reconstructed from URL slug]",
+      "url": "https://money.kompas.com/read/2026/08/06/100200426/pendapatan-fore-coffee-fore-tembus-rp-1-triliun-per-hari-laku-140.000-gelas-",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 500,
+      "live_check_status": "http_500"
+    },
+    {
+      "id": "DEM-027",
+      "title": "BPS: ekonomi Indonesia tumbuh 5,29 persen pada triwulan II 2026 (Antara)",
+      "url": "https://www.antaranews.com/berita/5680447/bps-ekonomi-indonesia-tumbuh-529-persen-pada-triwulan-ii-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-16; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-065",
+      "title": "Fasilitas yang Paling Dibutuhkan di Kedai Kopi untuk Gen Z",
+      "url": "https://goodstats.id/article/fasilitas-yang-paling-dibutuhkan-di-kedai-kopi-untuk-gen-z-26CoT",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-066",
+      "title": "Hampir 50% Publik RI Pilih Nongkrong di Kafe Sebagai Self-Reward",
+      "url": "https://goodstats.id/article/hampir-50-publik-ri-pilih-nongkrong-di-kafe-sebagai-self-reward-2HFQJ",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-067",
+      "title": "Antecedents of Revisit Intention of Generation Z at Coffee Shops in Indonesia",
+      "url": "https://journal.unpas.ac.id/index.php/jrbm/article/view/38365",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 206,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-068",
+      "title": "How Lifestyle, Cafe Atmosphere Shape, and Customer Experience and Revisit Intention among Gen Z: Evidence from Tomoro Coffee Sumbawa",
+      "url": "https://jurnal.stieww.ac.id/index.php/semnas/article/view/1323",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-069",
+      "title": "BPJPH Ungkap 83 Persen Konsumen RI Sadar Produk Halal",
+      "url": "https://www.cnnindonesia.com/ekonomi/20250621151902-92-1242248/bpjph-ungkap-83-persen-konsumen-ri-sadar-produk-halal",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-070",
+      "title": "Ini Dia Topik yang Banyak Dicari di Media Sosial 2025",
+      "url": "https://goodstats.id/article/ini-dia-topik-yang-banyak-dicari-di-media-sosial-2025-rsjw5",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-071",
+      "title": "10 Alasan Publik RI Cari Tempat Makan Baru, dari Harga Murah hingga Menu Unik!",
+      "url": "https://goodstats.id/article/10-alasan-konsumen-ri-mencari-tempat-makan-baru-dari-harga-murah-hingga-menu-unik-oYCEU",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-072",
+      "title": "Report: 54% of Indonesian beauty shoppers trust peer reviews over influencers",
+      "url": "https://www.marketing-interactive.com/report-54-of-indonesian-beauty-shoppers-trust-peer-reviews-over-influencers",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-073",
+      "title": "Perbedaan Pola Belanja Online Gen Z, Milenial dan Gen X",
+      "url": "https://marketing.co.id/en/?p=150059",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-074",
+      "title": "Live Shopping vs Affiliate Links: Which Wins Consumers?",
+      "url": "https://insight.jakpat.net/live-shopping-vs-affiliate-links-which-wins-consumers/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-075",
+      "title": "Online Shopping 2026: The Rise of Shoppertainment",
+      "url": "https://insight.jakpat.net/online-shopping-2026-the-rise-of-shoppertainment/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-076",
+      "title": "Indonesia's digital economy closes in on US$100b as video commerce, AI adoption surge",
+      "url": "https://www.marketing-interactive.com/indonesia-s-digital-economy-closes-in-on-us-100b-as-video-commerce-ai-adoption-surge",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-077",
+      "title": "Pengaruh Rating dan Ulasan Google Maps terhadap Brand Loyalty yang di Mediasi Customer Trust pada Dua Tempat Makan di Surakarta",
+      "url": "https://ejournal.nusantaraglobal.ac.id/index.php/sentri/article/view/5565",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-078",
+      "title": "Pengaruh Konten Media Sosial Tiktok Dan Konten Media Sosial Instagram Terhadap Minat Beli Konsumen Genz Di Umkm Kuliner Situbondo",
+      "url": "https://e-journal.hamzanwadi.ac.id/index.php/jpek/article/view/34042",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-079",
+      "title": "Krisis Kepercayaan Digital: Persepsi Konsumen terhadap Ulasan Food Vlogger",
+      "url": "https://jerkin.org/index.php/jerkin/article/view/1265",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-080",
+      "title": "Pengaruh Fear of Missing Out, Gaya Hidup dan Kelompok Referensi terhadap Perilaku Konsumtif Kuliner Kekinian Mahasiswa FEB Universitas Pattimura Ambon",
+      "url": "https://ojs3.unpatti.ac.id/index.php/manis/article/download/19282/10535",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-081",
+      "title": "Alasan Psikologis Kenapa Orang Rela Antre Demi Makanan Viral",
+      "url": "https://www.cnbcindonesia.com/lifestyle/20251208124146-33-692062/alasan-psikologis-kenapa-orang-rela-antre-demi-makanan-viral/amp",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-082",
+      "title": "Ini Minuman yang Sering Dikonsumsi Gen Z dan Milenial 2026",
+      "url": "https://data.goodstats.id/statistic/ini-minuman-yang-sering-dikonsumsi-gen-z-dan-milenial-2026-3m1im",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-083",
+      "title": "Makanan Cepat Saji Tempati Urutan Pertama untuk Pilihan Menu Makan Siang",
+      "url": "https://goodstats.id/article/makanan-cepat-saji-tempati-urutan-pertama-untuk-pilihan-menu-makan-siang-ezXmH",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-084",
+      "title": "Camilan Favorit Gen Z saat Order Online, 41% Suka Jajanan Sunda",
+      "url": "https://goodstats.id/article/camilan-favorit-gen-z-saat-order-online-41-suka-jajanan-sunda-di-2025-gUjJ4",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-085",
+      "title": "Most Popular Snack Foods Ordered on Indonesian Online Food Delivery Apps",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/688782781f63f/most-popular-snack-foods-ordered-on-indonesian-online-food-delivery-apps",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-086",
+      "title": "Indonesia Millennial and Gen Z Report 2025 (IMGR 2025), full PDF",
+      "url": "https://cdn.gnfi.net/goodstats/uploads/publications/files/2025/08/27/indonesia-millennial-and-gen-z-report-2025-vvhOWWB6M6.pdf",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-087",
+      "title": "QRIS Jadi Metode Bayar Andalan Gen Z dan Milenial, Ini Frekuensi Penggunaannya",
+      "url": "https://goodstats.id/article/qris-metode-pembayaran-andalan-gen-z-dan-milenial-54Cpb",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-088",
+      "title": "Study: 68% of Indonesians hopeful amid financial strains, but spending splits by generation",
+      "url": "https://www.marketing-interactive.com/study-68-of-indonesians-hopeful-amid-financial-strains-but-spending-splits-by-generation",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-089",
+      "title": "Gen Z Indonesia prioritaskan identitas dan gaya hidup di tengah ekonomi lesu",
+      "url": "https://www.campaignindonesia.id/article/gen-z-indonesia-prioritaskan-identitas-dan-gaya-hidup-di-tengah-ekonomi-lesu/1927729",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-090",
+      "title": "Korean Street Food Is Trending, But Are Our Hearts Still With Local Snacks?",
+      "url": "https://insight.jakpat.net/korean-street-food-is-trending-but-are-our-hearts-still-with-local-snacks/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-028",
+      "title": "The Majority of Jakarta Pusat's Population in 2024 Will Be of Working Age",
+      "url": "https://databoks.katadata.co.id/en/demographics/statistics/7c056964f536090/the-majority-of-jakarta-pusats-population-in-2024-will-be-of-working-age",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-029",
+      "title": "21.83% of South Jakarta's population in 2024 will be aged 0-14 years.",
+      "url": "https://databoks.katadata.co.id/en/demographics/statistics/687652ae17582ab/2183-of-south-jakartas-population-in-2024-will-be-aged-0-14-years",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-030",
+      "title": "Rata-Rata Pengeluaran Perkapita Sebulan untuk Makanan dan Minuman Jadi di Kota Jakarta Pusat 2018 - 2024",
+      "url": "https://databoks.katadata.co.id/pdb/statistik/303cd526232af5f/pengeluaran-perkapita-sebulan-untuk-makanan-dan-minuman-jadi-kota-jakarta-pusat-2024",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-031",
+      "title": "Belanja Warga DKI Jakarta Rp 3,07 per Kapita/Bulan, Buat Apa Saja?",
+      "url": "https://www.cnbcindonesia.com/news/20261007153057-4-774163/belanja-warga-dki-jakarta-rp-307-per-kapita-bulan-buat-apa-saja",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-032",
+      "title": "Pengeluaran Makanan Jadi Capai Rp248 Ribu, Lampaui Komoditas Makanan Lain",
+      "url": "https://data.goodstats.id/statistic/pengeluaran-makanan-jadi-capai-rp248-ribu-lampaui-komoditas-makanan-lain-SgBeB",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-033",
+      "title": "Jumlah penduduk miskin di Jakarta turun",
+      "url": "https://www.antaranews.com/berita/4585326/jumlah-penduduk-miskin-di-jakarta-turun",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-034",
+      "title": "Survei Konsumen September 2026 (siaran pers No.28/216/DKom and report SK-September-2026.pdf)",
+      "url": "https://www.bi.go.id/id/publikasi/laporan/Documents/SK-September-2026.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-035",
+      "title": "Jumlah Kelas Menengah Turun Lebih Dalam di 2025 Tertekan Daya Beli dan Konsumsi",
+      "url": "https://nasional.kontan.co.id/news/jumlah-kelas-menengah-turun-lebih-dalam-di-2025-tertekan-daya-beli-dan-konsumsi",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-036",
+      "title": "Komposisi Penduduk Indonesia Menurut Kelas Ekonomi 2025",
+      "url": "https://data.goodstats.id/statistic/komposisi-penduduk-indonesia-menurut-kelas-ekonomi-2025-QLCdE",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-037",
+      "title": "Jumlah Kelas Menengah Turun, ADB Prediksi Ekonomi RI Terganggu, Siapa Kelas Menengah?",
+      "url": "https://nasional.kontan.co.id/news/jumlah-kelas-menengah-turun-adb-prediksi-ekonomi-ri-terganggu-siapa-kelas-menengah",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-038",
+      "title": "Daya Beli Kelas Menengah Tergerus: Ini Pemicu Ancaman PHK 2026",
+      "url": "https://nasional.kontan.co.id/news/daya-beli-kelas-menengah-tergerus-ini-pemicu-ancaman-phk-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-039",
+      "title": "Indonesia Economic Prospects (IEP), June 2026: Managing Risks, Unlocking Productivity",
+      "url": "https://documents1.worldbank.org/curated/en/099060926111525068/pdf/P513006-58b80446-5646-4a53-b39c-800d0fa99b73.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-040",
+      "title": "Daftar Lengkap UMP 2026 di Seluruh Provinsi, DKI Jakarta Tertinggi dengan Rp5.729.876",
+      "url": "https://www.kompas.tv/info-publik/639870/daftar-lengkap-ump-2026-di-seluruh-provinsi-dki-jakarta-tertinggi-dengan-rp5-729-876",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-041",
+      "title": "Naik Rp 329.380, UMP Jakarta 2025 Jadi Rp 5.396.761",
+      "url": "https://nasional.kontan.co.id/news/naik-rp-329380-ump-jakarta-2025-jadi-rp-5396761",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-042",
+      "title": "Jakarta Jadi Provinsi dengan Upah Buruh Tertinggi per Agustus 2025",
+      "url": "https://data.goodstats.id/statistic/jakarta-jadi-provinsi-dengan-upah-buruh-tertinggi-per-agustus-2025-npvsb",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-043",
+      "title": "Rata-rata Upah Buruh Menurut Tingkat Pendidikan per Agustus 2025",
+      "url": "https://data.goodstats.id/statistic/rata-rata-upah-buruh-menurut-tingkat-pendidikan-per-agustus-2025-ML0Zn",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-044",
+      "title": "Indonesia's Wealthy Elite Drives Consumption Surge as Middle Class Faces Squeeze",
+      "url": "https://investortrust.id/macro/112261/indonesias-wealthy-elite-drives-consumption-surge-as-middle-class-faces-squeeze",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-045",
+      "title": "7 Provinsi dengan Ketimpangan Pengeluaran Penduduk Tertinggi Maret 2026",
+      "url": "https://data.goodstats.id/statistic/7-provinsi-dengan-ketimpangan-pengeluaran-penduduk-tertinggi-maret-2026-URgif",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-046",
+      "title": "Mandiri Spending Index: Belanja Masyarakat Melambat, Keuangan Kelas Bawah Tertekan",
+      "url": "https://nasional.kontan.co.id/news/mandiri-spending-index-belanja-masyarakat-melambat-keuangan-kelas-bawah-tertekan",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-047",
+      "title": "Mandiri Spending Index Mei 2026 Melandai, Masyarakat Mulai Rem Belanja Pasca Lebaran",
+      "url": "https://nasional.kontan.co.id/news/mandiri-spending-index-mei-2026-melandai-masyarakat-mulai-rem-belanja-pasca-lebaran",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-048",
+      "title": "Mandiri Institute: Kelas menengah penggerak konsumsi di Ramadhan 2026",
+      "url": "https://www.antaranews.com/berita/5528284/mandiri-institute-kelas-menengah-penggerak-konsumsi-di-ramadhan-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-001",
+      "title": "Fast Food Indonesia Tbk consolidated interim financial statements as of 30 June 2026 (unaudited)",
+      "url": "https://files.kfcku.com/uploads/media/fast-food-indonesia-tbk_consolidation_30jun26.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-002",
+      "title": "Fast Food Indonesia Tbk consolidated financial statements as of 31 March 2026 (unaudited)",
+      "url": "https://files.kfcku.com/uploads/media/fast-food-indonesia-tbk_consolidation_31_mar_26_1.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-003",
+      "title": "KFC vs CFC vs Pizza Hut, Siapa Paling Laku?",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8452609/kfc-vs-cfc-vs-pizza-hut-siapa-paling-laku",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-004",
+      "title": "KFC Masih Rugi Rp369 Miliar di 2025, Tutup Puluhan Gerai",
+      "url": "https://economy.okezone.com/read/2026/04/20/278/3213518/kfc-masih-rugi-rp369-miliar-di-2025-tutup-puluhan-gerai?page=all",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-005",
+      "title": "Pengelola KFC (FAST) Sukses Pangkas Rugi Bersih Hingga 53,74% pada 2025",
+      "url": "https://stockwatch.id/pengelola-kfc-fast-sukses-pangkas-rugi-bersih-hingga-5374-pada-2025/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-006",
+      "title": "PT MAP Boga Adiperkasa Tbk and subsidiaries, interim consolidated financial statements 30 June 2026 (unaudited)",
+      "url": "https://www.mbai.co.id/wp-content/uploads/2026/07/FS-MAPB-1H-2026.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 206,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-007",
+      "title": "PT MAP Boga Adiperkasa Tbk and subsidiaries, consolidated financial statements 31 December 2025 (audited)",
+      "url": "https://www.mbai.co.id/wp-content/uploads/2026/03/PT-MAP-BOGA-ADIPERKASA-Tbk-31-DECEMBER-2025LR.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 206,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-008",
+      "title": "MAP Delivers Resilient Growth in H1'26 (2Q 2026 Financial Report Press Release)",
+      "url": "https://www.map.co.id/corporate-en/2q-2026-financial-report-press-release/",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 404,
+      "live_check_status": "404_410_not_found"
+    },
+    {
+      "id": "CMP-009",
+      "title": "Gerai Pizza Hut di Indonesia, Nasibnya Sekarang",
+      "url": "https://investor.id/market/455625/gerai-pizza-hut-di-indonesia-nasibnyasekarang",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-010",
+      "title": "Akhiri Episode Negatif, PZZA Tabulasi Laba Rp8,4 Miliar",
+      "url": "https://www.emitennews.com/news/akhiri-episode-negatif-pzza-tabulasi-laba-rp84-miliar",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-011",
+      "title": "Konsisten Raih Cuan, Pizza Hut Cetak Laba Rp6 M di Kuartal I-2026",
+      "url": "https://www.cnbcindonesia.com/market/20260508151832-17-733517/konsisten-raih-cuan-pizza-hut-cetak-laba-rp6-m-di-kuartal-i-2026",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-012",
+      "title": "PT Champ Resto Indonesia Tbk financial statements 30 September 2025 (unaudited)",
+      "url": "https://indopremier.com/xdir/news/LAPORAN%20KEUANGAN/2025/q3///ENAK_Q3_2025.pdf",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-013",
+      "title": "PT Fore Kopi Indonesia Tbk interim consolidated financial statements 30 June 2026 (unaudited)",
+      "url": "https://fore.coffee/wp-content/uploads/2026/07/FORE-Financial-Report-1H26-Unaudited.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-014",
+      "title": "Annual Report 2025, PT Fore Kopi Indonesia Tbk (outlet map)",
+      "url": "https://fore.coffee/wp-content/uploads/2026/04/Annual-Report-FORE-2025.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-015",
+      "title": "PT Fore Kopi Indonesia Tbk consolidated financial statements 31 December 2025 (audited)",
+      "url": "https://fore.coffee/wp-content/uploads/2026/03/FORE-Financial-Report-FY-2025-Audited.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-016",
+      "title": "IDX filings for ENAK: annual report 2025 and Q1 2026 financial statements (not opened)",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202605/04f6561fde_d800dd309f.pdf",
+      "tier": 1,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; snippet-only (blocked host)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "CMP-017",
+      "title": "Laporan Hasil Paparan Publik Tahunan 2026 (Q&A with Kontan)",
+      "url": "https://fore.coffee/wp-content/uploads/2026/05/Laporan-Hasil-Public-Expose-FORE-2026.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-018",
+      "title": "Paris Baguette Strengthens Its Presence in Indonesia, Continuing Growth into 2026",
+      "url": "https://erajaya.com/news/paris-baguette-perkuat-kehadiran-di-indonesia-lanjutkan-momentum-pertumbuhan-di-2026",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-019",
+      "title": "Paris Baguette Indonesia Marks New Chapter with Halal Certification Across All Stores",
+      "url": "https://erajaya.com/news/paris-baguette-resmi-raih-sertifikasi-halal-untuk-seluruh-gerai-di-indonesia",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-020",
+      "title": "Zus Coffee brews up Indonesia expansion",
+      "url": "https://insideretail.asia/2026/05/zus-coffee-brews-up-indonesia-expansion/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-021",
+      "title": "Gandeng Kapal Api, ZUS Coffee Resmi Hadir di Jakarta",
+      "url": "https://www.jpnn.com/news/gandeng-kapal-api-zus-coffee-resmi-hadir-di-jakarta",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-022",
+      "title": "CHAGEE announces Grand Opening of First Store in Indonesia",
+      "url": "https://www.erajaya.com/news/chagee-umumkan-pembukaan-gerai-pertama-di-indonesia",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-023",
+      "title": "Erajaya Bawa CHAGEE ke Indonesia, Tawarkan Teh Premium ala Teapresso",
+      "url": "https://industri.kontan.co.id/news/erajaya-bawa-chagee-ke-indonesia-tawarkan-teh-premium-ala-teapresso",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-024",
+      "title": "A New Chapter Begins: CHAGEE Celebrates Its Grand Opening in Bali",
+      "url": "https://erajaya.com/news/perjalanan-baru-dimulai-chagee-resmikan-gerai-perdana-di-bali",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-025",
+      "title": "CHAGEE's Indonesia playbook: scaling tea culture across Jakarta and Bali",
+      "url": "https://www.marketing-interactive.com/chagee-s-indonesia-playbook-scaling-tea-culture-across-jakarta-and-bali",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-026",
+      "title": "Flash Coffee Ekspansi 130 Gerai, Ubah Konsep dan Rambah Kota Baru",
+      "url": "https://momsmoney.kontan.co.id/news/flash-coffee-ekspansi-130-gerai-ubah-konsep-dan-rambah-kota-baru",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-027",
+      "title": "Flash Coffee Doubling Down on Indonesia",
+      "url": "https://www.rli.uk.com/flash-coffee-doubling-down-on-indonesia/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-028",
+      "title": "Restaurant Brands Asia Limited, Q3 FY26 investor presentation (Indonesia pages)",
+      "url": "https://nsearchives.nseindia.com/corporate/RBA_03022026182049_Finalupload.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-029",
+      "title": "Restaurant Brands Asia Limited, Q4 FY23 investor presentation (Indonesia pages)",
+      "url": "https://bseindia.com/xml-data/corpfiling/AttachHis/3b5e6802-e9ac-4242-a68f-77bfe444f46e.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-030",
+      "title": "MAP Boga (MAPB) Targetkan Buka 40 Gerai Starbucks di 2025, Fokus di Wilayah Ini",
+      "url": "https://investortrust.id/market/71087/map-boga-mapb-targetkan-buka-40-gerai-starbucks-di-2025-fokus-di-wilayah-ini",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-031",
+      "title": "KFC Franchisee in Indonesia Cuts 25 Locations, Reduces Workforce",
+      "url": "https://jakartaglobe.id/business/kfc-franchisee-in-indonesia-cuts-25-locations-reduces-workforce",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-032",
+      "title": "Mixue Tutup 428 Gerai, Indonesia-Vietnam Paling Terdampak",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8466651/mixue-tutup-428-gerai-indonesia-vietnam-paling-terdampak",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-033",
+      "title": "Mixue Tutup 428 Gerai, Rugi?",
+      "url": "https://www.cnbcindonesia.com/research/20260422153138-128-728961/mixue-tutup-428-gerai-rugi",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-034",
+      "title": "Bisnis Gerai Minuman di Tengah Tekanan Ekonomi, Ada yang Tutup dan Berkembang",
+      "url": "https://www.suara.com/bisnis/2026/05/31/152000/bisnis-gerai-minuman-di-tengah-tekanan-ekonomi-ada-yang-tutup-dan-berkembang",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-035",
+      "title": "Segarnya Shakeratto Latte Buatan Kafe Asal Norwegia yang Buka di Jakarta",
+      "url": "https://food.detik.com/info-kuliner/d-7728418/segarnya-shakeratto-latte-buatan-kafe-asal-norwegia-yang-buka-di-jakarta",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-036",
+      "title": "5 Kafe Kopi Hits Asal Luar Negeri Ada di Jakarta, Intip Menu Favoritnya",
+      "url": "https://food.detik.com/resto-dan-kafe/d-8334297/5-kafe-kopi-hits-asal-luar-negeri-ada-di-jakarta-intip-menu-favoritnya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-037",
+      "title": "Pizza Marzano Resmi Hadir di Kuta Beachwalk Bali dengan Konsep Baru dan Menu Spesial",
+      "url": "https://www.industry.co.id/read/144577/pizza-marzano-resmi-hadir-di-kuta-beachwalk-bali-dengan-konsep-baru-dan-menu-spesial",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-038",
+      "title": "Domino's Pizza Bidik Pasar NTB, Gerai Kedua di Mataram Segera Beroperasi",
+      "url": "https://rri.co.id/en/kuliner/2527004/dominos-pizza-bidik-pasar-ntb-gerai-kedua-di-mataram-segera-beroperasi",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; snippet-only (blocked host)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-039",
+      "title": "Paris Baguette Buka di PIK, Simak Promo dan Menu Barunya",
+      "url": "https://momsmoney.kontan.co.id/news/paris-baguette-buka-di-pik-simak-promo-dan-menu-barunya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-040",
+      "title": "Domino's Pizza Tutup Ratusan Gerai, Rugi Rp56,8 Miliar",
+      "url": "https://www.cnbcindonesia.com/news/20250903180907-4-664038/dominos-pizza-tutup-ratusan-gerai-rugi-rp568-miliar",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-041",
+      "title": "% Arabica opens its first drive-thru outlet in Asia",
+      "url": "https://www.worldcoffeeportal.com/news/arabica-opens-its-first-drive-thru-outlet-in-asia/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-042",
+      "title": "Cotti Coffee opens first location in Indonesia",
+      "url": "https://www.verdictfoodservice.com/news/cotti-coffee-first-location-indonesia/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "CMP-043",
+      "title": "Saizeriya Akan Buka di Indonesia? Restoran Italia Jepang Ini Siapkan Anak Usaha",
+      "url": "https://ohayojepang.kompas.com/read/5973/saizeriya-akan-buka-di-indonesia-restoran-italia-jepang-ini-siapkan-anak-usaha?page=all",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-044",
+      "title": "Tim Hortons to enter Malaysia in August 2024 with Kuala Lumpur stores",
+      "url": "https://www.worldcoffeeportal.com/news/tim-hortons-to-enter-malaysia-in-august-2024-with-kuala-lumpur-stores/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-045",
+      "title": "Blue Bottle Coffee to open first location in Southeast Asia",
+      "url": "https://insideretail.asia/2025/03/10/blue-bottle-coffee-to-open-first-location-in-southeast-asia/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-046",
+      "title": "Acai cafe Oakberry opens seven stores in Australia-wide rollout",
+      "url": "https://insideretail.com.au/sectors/food-beverage/acai-cafe-oakberry-opens-seven-stores-in-australia-wide-rollout-202310",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-047",
+      "title": "Setelah 10 Tahun, Carl's Jr. Indonesia Bakal Tutup Operasionalnya Akhir 2023",
+      "url": "https://industri.kontan.co.id/news/setelah-10-tahun-carls-jr-indonesia-bakal-tutup-operasionalnya-akhir-2023",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-048",
+      "title": "Texas Chicken Tutup Seluruh Gerai di Indonesia",
+      "url": "https://economy.okezone.com/read/2023/08/19/455/2867188/texas-chicken-tutup-seluruh-gerai-di-indonesia",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-049",
+      "title": "Penutupan 10 Restoran Ini Jadi Kehilangan Terbesar Dunia Kuliner Indonesia",
+      "url": "https://food.detik.com/foto-kuliner/d-8549519/penutupan-10-restoran-ini-jadi-kehilangan-terbesar-dunia-kuliner-indonesia",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-050",
+      "title": "Pernah Hadir di Indonesia, 5 Gerai Fast Food Asing ini Resmi Hengkang!",
+      "url": "https://food.detik.com/info-kuliner/d-8074043/pernah-hadir-di-indonesia-5-gerai-fast-food-asing-ini-resmi-hengkang",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-051",
+      "title": "INFOGRAFIK: Tidak Benar Waralaba Restoran Burger Cepat Saji Akan Tutup Permanen",
+      "url": "https://www.kompas.com/cekfakta/read/2024/06/11/120500282/infografik--tidak-benar-waralaba-restoran-burger-cepat-saji-akan-tutup",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 500,
+      "live_check_status": "http_500"
+    },
+    {
+      "id": "REG-001",
+      "title": "Peraturan Menteri Investasi dan Hilirisasi/Kepala BKPM Nomor 5 Tahun 2025 tentang Pedoman dan Tata Cara Penyelenggaraan Perizinan Berusaha Berbasis Risiko dan Fasilitas Penanaman Modal melalui OSS",
+      "url": "https://jdih-storage.bkpm.go.id/jdih/jdih/2025Permeninvesthil005-.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-002",
+      "title": "Peraturan Pemerintah Nomor 28 Tahun 2025 tentang Penyelenggaraan Perizinan Berusaha Berbasis Risiko",
+      "url": "https://jdih-storage.bkpm.go.id/jdih/jdih/Salinan-PP-Nomor-28-Tahun-2025-.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: jdih-storage.bkpm.go.id)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-003",
+      "title": "Peraturan Presiden Nomor 10 Tahun 2021 tentang Bidang Usaha Penanaman Modal",
+      "url": "https://jdih-storage.bkpm.go.id/jdih/userfiles/documents/2023/10/2021._10_Perpres_Bidang_Usaha_Penanaman_Modal_.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: jdih-storage.bkpm.go.id)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-004",
+      "title": "Peraturan Presiden Nomor 49 Tahun 2021 tentang Perubahan atas Peraturan Presiden Nomor 10 Tahun 2021",
+      "url": "https://jdih.kemenkoinfra.go.id/dokumen/file/perpres/2021/salinan-perpres-nomor-49-tahun-2021.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: jdih.kemenkoinfra.go.id; JDIH BKPM page was empty)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-005",
+      "title": "Klasifikasi Baku Lapangan Usaha Indonesia (KBLI) 2025, Peraturan BPS Nomor 7 Tahun 2025 (booklet)",
+      "url": "https://jdih-storage.bkpm.go.id/jdih/jdih/Booklet-Klasifikasi-Baku-Lapangan-Usaha-Indonesia-Tahun-2025-.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: jdih-storage.bkpm.go.id)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-006",
+      "title": "OSS RBA - Memahami Transisi KBLI 2025 dalam Ekosistem Perizinan Berusaha",
+      "url": "https://oss.go.id/berita/memahami-transisi-kbli-2025-dalam-ekosistem-perizinan-berusaha",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-007",
+      "title": "Pemerintah Akan Perbarui Perpres terkait Bidang Usaha Penanaman Modal",
+      "url": "https://news.ddtc.co.id/berita/nasional/1817066/pemerintah-akan-perbarui-perpres-terkait-bidang-usaha-penanaman-modal",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-008",
+      "title": "Bisakah PT PMA Mendirikan Usaha Restoran? (Klinik Hukumonline, Easybiz)",
+      "url": "https://www.hukumonline.com/klinik/a/bisakah-pt-pma-mendirikan-usaha-restoran--lt6a3d0cc52dc29/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-009",
+      "title": "Peraturan Pemerintah Nomor 42 Tahun 2024 tentang Penyelenggaraan Bidang Jaminan Produk Halal",
+      "url": "https://jdih.sumutprov.go.id/assets/reg/1735286333884_PP_NOMOR_42_TAHUN_2024.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: jdih.sumutprov.go.id; peraturan.go.id unreachable)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-010",
+      "title": "Wajib Halal Berlaku, 2 Sanksi Menunggu",
+      "url": "https://bpjph.halal.go.id/read/wajib-halal-berlaku-2-sanksi-menunggu",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-011",
+      "title": "BPJPH: 17 Oktober 2026 Produk Makanan-Minuman UMK Harus Sudah Bersertifikat Halal, Bagaimana dengan Produk Luar Negeri?",
+      "url": "https://bpjph.halal.go.id/read/bpjph-17-oktober-2026-produk-makanan-minuman-umk-harus-sudah-bersertifikat-halal-bagaimana-dengan-produk-luar-negeri",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-012",
+      "title": "Wajib Halal Berlaku 18 Oktober 2026, BPJPH Siapkan Aturan yang Memudahkan Pelaku Usaha",
+      "url": "https://bpjph.halal.go.id/main/read/wajib-halal-berlaku-18-oktober-2026-bpjph-siapkan-aturan-yang-memudahkan-pelaku-usaha",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-013",
+      "title": "Tak Hanya Makanan-Minuman, Ini Jenis Produk yang Wajib Bersertifikat Halal Mulai 18 Oktober 2026",
+      "url": "https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-014",
+      "title": "Jelang Wajib Halal, BPJPH Ingatkan Jaringan Restoran Jaga Konsistensi JPH di Setiap Outlet",
+      "url": "https://bpjph.halal.go.id/read/jelang-wajib-halal-bpjph-ingatkan-jaringan-restoran-jaga-konsistensi-jph-di-setiap-outlet",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-015",
+      "title": "FAQ BPJPH",
+      "url": "https://bpjph.halal.go.id/faq",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-016",
+      "title": "Kalkulator Biaya Sertifikasi Halal",
+      "url": "https://bpjph.halal.go.id/kalkulator-biaya-sh",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-017",
+      "title": "Keputusan Kepala BPJPH Nomor 22 Tahun 2024 (Perubahan Keempat atas Kepkaban 141/2021) tentang Penetapan Tarif Layanan BLU BPJPH",
+      "url": "https://cmsbl.halal.go.id/uploads/Kepkaban_22_2024_Perubahan_IV_Kepkaban_141_Tahun_2021_9a2ede13b7.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-018",
+      "title": "Keputusan Kepala BPJPH Nomor 78 Tahun 2023 tentang Pedoman Sertifikasi Halal Makanan dan Minuman dengan Pengolahan",
+      "url": "https://cmsbl.halal.go.id/uploads/78_2023_SK_Pedoman_Sertifikasi_Halal_Makanan_dan_Minuman_dengan_Pengelolahan_3aa915efdf.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-091",
+      "title": "Jakarta, the Indonesian Province with the Most Padel Courts in 2025",
+      "url": "https://databoks.katadata.co.id/en/sport/statistics/699fdb88687d7/jakarta-the-indonesian-province-with-the-most-padel-courts-in-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-092",
+      "title": "Padel Clubs Spread in Jakarta, Most in South Jakarta",
+      "url": "https://databoks.katadata.co.id/en/sport/statistics/699fe8353db5d/padel-clubs-spread-in-jakarta-most-in-south-jakarta",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-093",
+      "title": "Number of Padel Clubs and Courts in Indonesia Grew Rapidly Through 2025",
+      "url": "https://databoks.katadata.co.id/en/sport/statistics/699fd44e1c1db/number-of-padel-clubs-and-courts-in-indonesia-grew-rapidly-through-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-094",
+      "title": "Province with the most expensive average padel court rental costs in 2025 (Bali ranks at the top)",
+      "url": "https://databoks.katadata.co.id/en/sport/statistics/69957685c7ceb/this-is-the-province-with-the-most-expensive-average-padel-court-rental-costs-in-2025-with-bali-ranking-at-the-top",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-095",
+      "title": "Industri Olahraga Raket Kian Berkembang, Segmen Padel Catat Pertumbuhan Signifikan",
+      "url": "https://industri.kontan.co.id/news/industri-olahraga-raket-kian-berkembang-segmen-padel-catat-pertumbuhan-signifikan",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "BEH-096",
+      "title": "Industri Olahraga Raket Kian Berkembang, Padel Jadi Motor Baru",
+      "url": "https://www.fortuneidn.com/luxury/industri-olahraga-raket-kian-berkembang-padel-jadi-motor-baru-00-4vfn9-pmcmzj/amp",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-097",
+      "title": "Cashing in on padel: The new courtside economy of Jakarta",
+      "url": "https://weekender.thejakartapost.com/prosperity-and-progress/2025/09/06/cashing-in-on-padel-the-new-courtside-economy-of-jakarta.html",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-098",
+      "title": "Antusiasme Pelari Jabodetabek, Sisi Unik di Balik Ramainya Pocari Sweat Run di Bandung",
+      "url": "https://www.goodnewsfromindonesia.id/2026/08/27/antusiasme-pelari-jabodetabek-sisi-unik-di-balik-ramainya-pocari-sweat-run-di-bandung",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-099",
+      "title": "Lari Tak Kenal Usia, Peserta 72 Tahun Ikut Isoplus Run di PIK 2",
+      "url": "https://momsmoney.kontan.co.id/news/lari-tak-kenal-usia-peserta-72-tahun-ikut-isoplus-run-di-pik-2",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "BEH-100",
+      "title": "Gen Z Mengubah Arus Olahraga, AI Jadi Alat Latihan Baru",
+      "url": "https://www.fortuneidn.com/news/gen-z-mengubah-arus-olahraga-ai-jadi-alat-latihan-baru-00-4vfn9-b9ybdw/amp",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-101",
+      "title": "Online Food Delivery Sales in Indonesia Increased in 2025",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6997ea4ef2c96/online-food-delivery-sales-in-indonesia-increased-in-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-102",
+      "title": "GrabFood, GoFood, and ShopeeFood Sales in Indonesia Increased in 2025",
+      "url": "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/6997ed8e89309/grabfood-gofood-and-shopeefood-sales-in-indonesia-increased-in-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-103",
+      "title": "GoTo Beats Guidance Achieving Record Results as it Reports 2025 Fourth Quarter and Full Year Earnings",
+      "url": "https://www.gotocompany.com/en/news/press/goto-beats-guidance-achieving-record-results-as-it-reports-2025-fourth-quarter-and-full-year-earnings",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "BEH-104",
+      "title": "MotoGP Indonesia 2026 Pecahkan Rekor Penonton, Tembus 157 Ribu Orang!",
+      "url": "https://www.rctiplus.com/news/detail/okezone/5491488/motogp-indonesia-2026-pecahkan-rekor-penonton--tembus-157-ribu-orang-",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-049",
+      "title": "Grain: World Markets and Trade (October 2026), wheat tables (USDA PSD)",
+      "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-050",
+      "title": "Indonesia: Grain and Feed Annual, report ID2026-0010",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Grain%20and%20Feed%20Annual_Jakarta_Indonesia_ID2026-0010.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (USDA original at apps.fas.usda.gov, opened by verifier V3-A 2026-10-17; earlier opened via APEDA mirror)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-051",
+      "title": "Australia, Negara Pemasok Biji Gandum Terbesar untuk Indonesia pada 2025",
+      "url": "https://databoks.katadata.co.id/perdagangan/statistik/6a868a6a4f38a/australia-negara-pemasok-biji-gandum-terbesar-untuk-indonesia-pada-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-052",
+      "title": "BPS Lapor Impor Gandum Cs Nyaris Nol, Bos Pengusaha Terigu Buka Suara",
+      "url": "https://www.cnbcindonesia.com/news/20250318151755-4-619666/bps-lapor-impor-gandum-cs-nyaris-nol-bos-pengusaha-terigu-buka-suara",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-053",
+      "title": "Sokong Industri Bakery Asia, Zeelandia Bangun Pabrik di Indonesia",
+      "url": "https://www.fortuneidn.com/business/sokong-industri-bakery-asia-zeelandia-bangun-pabrik-di-indonesia-00-ccw2k-ygrxf2",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-054",
+      "title": "Demand Rankings, Global Demand table (instant noodles)",
+      "url": "https://instantnoodles.org/en/noodles/demand/table/",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-055",
+      "title": "RI Jadi Raksasa Baru Mi Instan Global: Konsumsi Tembus 14 Miliar Porsi",
+      "url": "https://www.cnbcindonesia.com/research/20251119114153-128-686534/ri-jadi-raksasa-baru-mi-instan-global-konsumsi-tembus-14-miliar-porsi",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-056",
+      "title": "Rata-Rata Anggaran Penduduk Kota Jakarta Pusat untuk Membeli Mie Instan Rp3.615,26 per Kapita per Minggu",
+      "url": "https://databoks.katadata.co.id/ekonomi-makro/statistik/ea7f69a2dbc30d3/rata-rata-anggaran-penduduk-kota-jakarta-pusat-untuk-membeli-mie-instan-rp3-615-26-per-kapita-per-minggu",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-057",
+      "title": "Preferensi Konsumsi Rumah Tangga terhadap Pangan Sumber Karbohidrat di Indonesia (SEAGRI Vol. 14 No. 1)",
+      "url": "https://jim.unisma.ac.id/index.php/SEAGRI/article/download/30157/22843",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "DEM-058",
+      "title": "10 Komoditas Penyumbang Garis Kemiskinan Terbesar di Indonesia 2025",
+      "url": "https://data.goodstats.id/statistic/10-komoditas-penyumbang-garis-kemiskinan-terbesar-di-indonesia-2025-nxyIJ",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-059",
+      "title": "Pengeluaran Warga RI untuk Rokok Melampaui Belanja Beras pada September 2025",
+      "url": "https://databoks.katadata.co.id/en/infographics/2026/06/05/pengeluaran-warga-ri-untuk-rokok-melampaui-belanja-beras-pada-september-2025",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-060",
+      "title": "Indonesia: Food Service - Hotel Restaurant Institutional Annual, report ID2025-0049",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food%20Service%20-%20Hotel%20Restaurant%20Institutional%20Annual_Jakarta_Indonesia_ID2025-0049.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (USDA original at apps.fas.usda.gov, opened by verifier V3-A 2026-10-17; earlier opened via APEDA mirror)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-061",
+      "title": "Indonesia: Food Processing Ingredients Annual, report ID2026-0011",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Food%20Processing%20Ingredients%20Annual_Jakarta_Indonesia_ID2026-0011.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (USDA original at apps.fas.usda.gov, opened by verifier V3-A 2026-10-17; earlier opened via APEDA mirror)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-062",
+      "title": "10 Provinsi dengan Jumlah Restoran/Rumah Makan Terbanyak (Tahun 2024)",
+      "url": "https://data.goodstats.id/statistic/10-provinsi-dengan-jumlah-restoranrumah-makan-terbanyak-5R8BM",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "DEM-063",
+      "title": "Impor Gandum Indonesia Masih Tinggi, Negara Mana yang Jadi Pemasok Utama?",
+      "url": "https://goodstats.id/article/impor-gandum-indonesia-masih-tinggi-negara-mana-yang-jadi-pemasok-utama-6WGss",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-019",
+      "title": "Perda Provinsi DKI Jakarta Nomor 1 Tahun 2024 tentang Pajak Daerah dan Retribusi Daerah (Salinan)",
+      "url": "https://bapenda.jakarta.go.id/peraturan-perpajakan/unduh/perda-nomor-1-tahun-2024-tentang-pajak-dan-retribusi-daerah",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-020",
+      "title": "PBJT Makanan dan Minuman (Jenis Pajak page)",
+      "url": "https://bapenda.jakarta.go.id/jenis/pajak-restoran",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-021",
+      "title": "Keputusan Gubernur DKI Jakarta Nomor 722 Tahun 2025 tentang Pengurangan PBJT atas Jasa Perhotelan dan Makanan dan/atau Minuman",
+      "url": "https://jdih.jakarta.go.id/dokumenPeraturanDirectory/0031/2025KEPGUB0031722.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-022",
+      "title": "Gubernur DKI Beri Diskon Pajak Restoran dan Hotel hingga 20 Persen",
+      "url": "https://news.ddtc.co.id/berita/daerah/1818539/gubernur-dki-beri-diskon-pajak-restoran-dan-hotel-hingga-20-persen",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-023",
+      "title": "Tax Treaty Rates",
+      "url": "https://pajak.go.id/index.php/en/tax-treaty-rates",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-024",
+      "title": "Agreement between the Republic of Indonesia and the Swiss Confederation for the Avoidance of Double Taxation (file named \"Tax Treaty Swiss (Modified by MLI) - EN\")",
+      "url": "https://pajak.go.id/sites/default/files/2025-05/Tax%20Treaty%20Swiss%20%28Modified%20by%20MLI%29%20-%20EN%20.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-025",
+      "title": "Aspek Perpajakan Wajib Pajak Badan (DJP education deck, 162 slides)",
+      "url": "https://pajak.go.id/sites/default/files/2026-07/Aspek%20Perpajakan%20WP%20Baru%20Terdaftar%20%28Badan%20dan%20OP%29.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-026",
+      "title": "Pemotongan Pajak Penghasilan Pasal 26",
+      "url": "https://www.pajak.go.id/id/pemotongan-pajak-penghasilan-pasal-26",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-027",
+      "title": "Makan di Restoran Tidak Kena PPN",
+      "url": "https://www.pajak.go.id/id/artikel/makan-di-restoran-tidak-kena-ppn",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-028",
+      "title": "PMK Terbaru soal PPN 12% Akhirnya Terbit, Begini Perinciannya",
+      "url": "https://news.ddtc.co.id/berita/nasional/1807939/pmk-terbaru-soal-ppn-12-akhirnya-terbit-begini-perinciannya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-029",
+      "title": "Peraturan Pemerintah Nomor 35 Tahun 2024 tentang Waralaba",
+      "url": "https://jdih.kemendag.go.id/peraturan/peraturan-pemerintah-nomor-35-tahun-2024-tentang-waralaba-1",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "REG-030",
+      "title": "Peraturan Menteri Perdagangan Nomor 71 Tahun 2019 tentang Penyelenggaraan Waralaba",
+      "url": "https://jdih.kemendag.go.id/peraturan/peraturan-menteri-perdagangan-nomor-71-tahun-2019-penyelenggaraan-waralaba",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "REG-031",
+      "title": "Peraturan Menteri Perdagangan Nomor 25 Tahun 2025 tentang Tata Cara Penerbitan Surat Tanda Pendaftaran Waralaba oleh Pemerintah Daerah",
+      "url": "https://jdih.kemendag.go.id/peraturan/peraturan-menteri-perdagangan-republik-indonesia-nomor-25-tahun-2025-tentang-tata-cara-penerbitan-surat-tanda-pendaftaran-waralaba-oleh-pemerintah-daerah-1",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "REG-032",
+      "title": "Fatwa MUI Nomor 83 Tahun 2023 tentang Hukum Dukungan Terhadap Perjuangan Palestina (PDF)",
+      "url": "https://fatwamui.com/storage/554/Fatwa-MUI-Nomor-83-Tahun-2023-tentang-Hukum-Dukungan-Terhadap-Perjuangan-Palestina.pdf",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (mirror: fatwamui.com)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-033",
+      "title": "Survei: Publik Sadar Ada Pihak Diuntungkan di Balik Boikot Produk Terafiliasi Israel",
+      "url": "https://rmol.id/nusantara/read/2025/05/15/666584/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-034",
+      "title": "Kenapa Publik RI Setuju untuk Boikot Produk Israel?",
+      "url": "https://goodstats.id/article/kenapa-publik-ri-setuju-untuk-boikot-produk-israel-n84Sj",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-035",
+      "title": "Gerakan boikot produk diduga terafiliasi Israel jadi momentum kebangkitan brand lokal",
+      "url": "https://infobanknews.com/gerakan-boikot-produk-diduga-terafiliasi-israel-jadi-momentum-kebangkitan-brand-lokal/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-036",
+      "title": "Massa Aksi Bela Palestina Geruduk Kedubes AS, Rekayasa Lalin Disiapkan, Ribuan Aparat Polisi Dikerahkan",
+      "url": "https://www.jawapos.com/nasional/015571966/massa-aksi-bela-palestina-geruduk-kedubes-as-rekayasa-lalin-disiapkan-ribuan-aparat-polisi-dikerahkan",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-037",
+      "title": "Massa aksi bela Palestina mulai bubarkan diri",
+      "url": "https://www.antaranews.com/berita/5169289/massa-aksi-bela-palestina-mulai-bubarkan-diri/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-038",
+      "title": "Naik 12,7%, Realisasi Investasi Tahun 2025 Tembus Rp 1.931,2 Triliun",
+      "url": "https://nasional.kontan.co.id/news/naik-127-realisasi-investasi-tahun-2025-tembus-rp-19312-triliun",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "REG-039",
+      "title": "Realisasi Investasi Semester I Tembus Rp1.010 T, Mayoritas dari Modal Asing",
+      "url": "https://katadata.co.id/amp/berita/nasional/6a588db0af3cf/realisasi-investasi-semester-i-tembus-rp1010-t-mayoritas-dari-modal-asing",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-040",
+      "title": "Realisasi Investasi Semester I/2026 Tembus Rp1.010,6 Triliun",
+      "url": "https://news.ddtc.co.id/berita/nasional/1820896/realisasi-investasi-semester-i2026-tembus-rp10106-triliun",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-041",
+      "title": "Switzerland (DJP country page carrying the 1988 Agreement and Protocol and the 2007 amending Protocol)",
+      "url": "https://www.pajak.go.id/en/p3b/switzerland",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (verifier V3-B)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-042",
+      "title": "Swiss double taxation agreements (DBA-Liste EN, status 1 January 2026)",
+      "url": "https://www.sif.admin.ch/dam/en/sd-web/Rq53YeWNalWg/DBA-Liste%20EN-per%2001.01.2026.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (verifier V3-B)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-043",
+      "title": "Realisasi Investasi 2025 Lampaui Target, Hilirisasi Melompat 43,3 Persen",
+      "url": "https://www.bkpm.go.id/id/info/siaran-pers/realisasi-investasi-2025-lampaui-target-hilirisasi-melompat-43-3-persen",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (verifier V3-B)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-044",
+      "title": "Realisasi Investasi Semester I 2026 Tembus Rp 1.010 T, Serap 1,4 Juta Tenaga Kerja Langsung",
+      "url": "https://bkpm.go.id/id/info/siaran-pers/realisasi-investasi-semester-i-2026-tembus-rp-1-010-t-serap-1-4-juta-tenaga-kerja-langsung",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (verifier V3-B)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-901",
+      "title": "Empat Permendag Dicabut, Izin Usaha Waralaba Kini Lebih Cepat",
+      "url": "https://nasional.kontan.co.id/news/empat-permendag-dicabut-izin-usaha-waralaba-kini-lebih-cepat",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (main-session audit; numbered from 901 so it cannot clash with the cloud session's REG sequence)",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-052",
+      "title": "Burgreens menu book (\"BUKU_MENU_BURGREENS.pdf\"), linked from the \"Our Menu / Download our menu\" page",
+      "url": "https://www.burgreens.com/files/BUKU_MENU_BURGREENS.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-053",
+      "title": "\"Daftar Menu Americano Fore Lengkap dengan Harganya\"",
+      "url": "https://www.idntimes.com/food/dining-guide/menu-americano-fore-c1c2-01-3kz8p-0pt5h4",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-054",
+      "title": "99 Menu Pizza Marzano Lengkah beserta Harganya",
+      "url": "https://www.idntimes.com/food/dining-guide/menu-pizza-marzano-c1c2-01-b9stm-lbb9kf",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-055",
+      "title": "Daftar Harga Pizza Hut 2025, Ada Promo Menarik di Bulan Mei",
+      "url": "https://www.liputan6.com/hot/read/6024340/daftar-harga-pizza-hut-2025-ada-promo-menarik-di-bulan-mei",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-056",
+      "title": "44 Menu Pepper Lunch 2025 Beserta Harganya",
+      "url": "https://www.idntimes.com/food/dining-guide/pepper-lunch-menu-1-00-cqkqh-cw26mv",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-057",
+      "title": "5 Resto Italia Lezat di Jakarta Buat Pilihan Makan Siang Spesial",
+      "url": "https://food.detik.com/resto-dan-kafe/d-8181724/5-resto-italia-lezat-di-jakarta-buat-pilihan-makan-siang-spesial",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-058",
+      "title": "5 Pasta Murah di Jakarta, Harganya Mulai Rp 20.000",
+      "url": "https://food.detik.com/info-kuliner/d-7744610/5-pasta-murah-di-jakarta-harganya-mulai-rp-20-000",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-059",
+      "title": "Harga Kopi Gula Aren di Fore, Tuku, Tomoro dan Gerai Kopi Lainnya",
+      "url": "https://www.liputan6.com/lifestyle/read/5999756/harga-kopi-gula-aren-di-fore-tuku-tomoro-dan-gerai-kopi-lainnya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-060",
+      "title": "Menu Signature Fore dan Harganya untuk Sesi Ngopimu",
+      "url": "https://www.idntimes.com/food/dining-guide/menu-signature-fore-c1c2-01-b9stm-2rb915",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-061",
+      "title": "5 Promo Kopi Spesial Senin Akhir di Bulan Maret, Tomoro hingga Fore Coffee Hemat",
+      "url": "https://momsmoney.kontan.co.id/news/5-promo-kopi-spesial-senin-akhir-di-bulan-maret-tomoro-hingga-fore-coffee-hemat",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-062",
+      "title": "Promo Pizza Hut Tebus Murah 1-31 Agustus 2025, Diskon 17% untuk 17 Menu Tiap Harinya",
+      "url": "https://momsmoney.kontan.co.id/news/promo-pizza-hut-tebus-murah-1-31-agustus-2025-diskon-17-untuk-17-menu-tiap-harinya",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "CMP-063",
+      "title": "10 Tempat Makan Salad di Jakarta, Banyak Pilihan Dressing",
+      "url": "https://www.idntimes.com/food/dining-guide/tempat-makan-salad-di-jakarta-00-r95nh-598f7h",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-064",
+      "title": "10 Tempat Makan di Senayan City yang Wajib Kamu Coba",
+      "url": "https://www.idntimes.com/food/dining-guide/rekomendasi-tempat-makan-di-senayan-city-00-mk1yf-vz2mhp",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "CMP-065",
+      "title": "Jelajahi 11 Tempat Makan Enak di Foodcourt Senayan City, Kuliner Lokal hingga Internasional",
+      "url": "https://www.liputan6.com/lifestyle/read/6173407/jelajahi-11-tempat-makan-enak-di-foodcourt-senayan-city-kuliner-lokal-hingga-internasional",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-045",
+      "title": "Anomali Suhu Udara Rata-Rata Tahun 2025",
+      "url": "https://www.bmkg.go.id/iklim/anomali-suhu-udara/anomali-suhu-udara-rata-rata-tahun-2025",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-046",
+      "title": "UPDATE INFO TERKINI GENANGAN 23 JANUARI 2026 S.D PUKUL 12:00 WIB",
+      "url": "https://bpbd.jakarta.go.id/berita/ZUgrczNHR29McHZMVmpncm5LcXVoZz09/update-info-terkini-genangan-23-januari-2026-s-d-pukul-12-00-wib",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-047",
+      "title": "Lebih dari 1.600 Warga Jakarta Mengungsi Akibat Banjir: Kebutuhan Terpenuhi dengan Baik",
+      "url": "https://bnpb.go.id/berita/lebih-dari-1600-warga-jakarta-mengungsi-akibat-banjir-kebutuhan-terpenuhi-dengan-baik",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-048",
+      "title": "Penurunan Permukaan Tanah Jakarta Melambat, Perlindungan Pesisir Terus Diperkuat",
+      "url": "https://dsda.jakarta.go.id/detail-artikel/penurunan-permukaan-tanah-jakarta-melambat-perlindungan-pesisir-terus-diperkuat/172",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-049",
+      "title": "Ringkasan Eksekutif Dokumen Informasi Kinerja Pengelolaan Lingkungan Hidup Daerah (DIKPLHD) Provinsi DKI Jakarta Tahun 2025",
+      "url": "https://lingkunganhidup.jakarta.go.id/uploads/images/galery/ringkasan%20eksekutif%20dikplhd%20jakarta%202025_20250918065722.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-050",
+      "title": "Peraturan Menteri LHK Nomor P.75/MENLHK/SETJEN/KUM.1/10/2019 tentang Peta Jalan Pengurangan Sampah oleh Produsen (full text PDF)",
+      "url": "https://info3r.kemenlh.go.id/uploads/faq/1705915980_Permen%20LHK%20No.%2075%20Tahun%202019.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-051",
+      "title": "Peraturan Menteri LHK No P.75/MENLHK/SETJEN/KUM.1/10/2019 (JDIH record)",
+      "url": "https://jdih.kemenkoinfra.go.id/id/peraturan-menteri-lingkungan-hidup-dan-kehutanan-no-p75menlhksetjenkum1102019-tahun-2019",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-052",
+      "title": "Pergub DKI Jakarta Nomor 142 Tahun 2019 tentang Kewajiban Penggunaan Kantong Belanja Ramah Lingkungan pada Pusat Perbelanjaan, Toko Swalayan dan Pasar Rakyat (text on Pasal.id)",
+      "url": "https://pasal.id/peraturan/pergub/pergub-prov-dki-jakarta-no-142-tahun-2019",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-053",
+      "title": "Jaga Daya Beli, Menteri ESDM: Tarif Listrik Tidak Naik (Siaran Pers 038.Pers/04/SJI/2026)",
+      "url": "https://www.esdm.go.id/id/media-center/arsip-berita/jaga-daya-beli-menteri-esdm-tarif-listrik-tidak-naik",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-054",
+      "title": "Jaga Stabilitas Awal Tahun 2026, Pemerintah Putuskan Tarif Listrik Tidak Naik (Siaran Pers 102.Pers/04/SJI/2025)",
+      "url": "https://www.esdm.go.id/id/media-center/arsip-berita/jaga-stabilitas-awal-tahun-2026-pemerintah-putuskan-tarif-listrik-tidak-naik",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-055",
+      "title": "Penyesuaian Tarif (page listing \"Dokumen Penyesuaian Tarif Kuartal 3 2026\")",
+      "url": "https://www.pln.co.id/pelanggan-id/tarif-tenaga-listrik-id/penyesuaian-tarif-id",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened page only; the linked tariff PDF was retrieved later and is REG-135",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-056",
+      "title": "Tarif Air PAM Jaya Naik Mulai 1 Januari",
+      "url": "https://rmol.id/nusantara/read/2024/12/26/649963/tarif-air-pam-jaya-naik-mulai-1-januari",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened (W-ENV)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-100",
+      "title": "Indonesia's Expanding Halal Standards with Trade Impacts on the Horizon, report ID2025-0035",
+      "url": "https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Indonesia%27s+Expanding+Halal+Standards+with+Trade+Impacts+on+the+Horizon_Jakarta_Indonesia_ID2025-0035",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-101",
+      "title": "Masa Penahapan Usai, Kewajiban Sertifikasi Halal Berlaku Mulai 18 Oktober 2024",
+      "url": "https://bpjph.halal.go.id/detail/masa-penahapan-usai-kewajiban-sertifikasi-halal-berlaku-mulai-18-oktober-2024",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-102",
+      "title": "Penegasan BPJPH Di Sidang WTO: Dari Produk Nonhalal Dapat Diimpor hingga Skema Registrasi Halal Luar Negeri",
+      "url": "https://bpjph.halal.go.id/read/penegasan-bpjph-di-sidang-wto-dari-produk-nonhalal-dapat-diimpor-hingga-skema-registrasi-halal-luar-negeri",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-103",
+      "title": "Larangan di Resto Bersertifikat Halal untuk Apa?",
+      "url": "https://halalmui.org/larangan-di-resto-bersertifikat-halal-untuk-apa/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-104",
+      "title": "Country comparison tool: Indonesia and Switzerland (6-D model)",
+      "url": "https://www.theculturefactor.com/country-comparison-tool?countries=indonesia%2Cswitzerland",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-105",
+      "title": "Motivasi dan gaya hidup sehat berkelanjutan terhadap pembelian makanan sehat pada generasi Z (Zahra, F.A.; Muflikhati, I.)",
+      "url": "https://repository.ipb.ac.id/handle/123456789/158947",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-106",
+      "title": "The Influence of Lifestyle and Brand Image on Coffee Purchase Behaviour at Coffee-to-Go Shop (Nurdiyanti, S.N.; Johan, I.R.), J. Child, Family, and Consumer Studies 3(2), 95-106",
+      "url": "https://journal.ipb.ac.id/jcfcs/article/view/56121",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-107",
+      "title": "Inclusion Coffee Shop as Third Place: User Design and Experience Perspective (Anggiani, Ayudya, Sukmajati), Border Jurnal Arsitektur 7(1)",
+      "url": "https://border.upnjatim.ac.id/index.php/border/article/download/782/86/1106",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-108",
+      "title": "Faktor-Faktor Yang Mempengaruhi Konsumen Kedai Kopi Dalam Membeli Minuman Kopi di Kota Jakarta Selatan (Wicaksono, F.T.), Skripsi, abstract PDF",
+      "url": "https://repository.unsoed.ac.id/4291/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-109",
+      "title": "Consumer Insights: Local Food and Beverage Market (Jakpat Insight)",
+      "url": "https://insight.jakpat.net/consumer-insights-local-food-beverage-market/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-110",
+      "title": "The Coffee Run: A third space for every pace (Adelia Anjani Putri)",
+      "url": "https://weekender.thejakartapost.com/the-weekend-digest/2025/06/04/the-coffee-run-a-third-space-for-every-pace.html",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-111",
+      "title": "Running with Rhyme and Peace: Finding Joy on Jakarta Streets",
+      "url": "https://runningcrews.com/blog/running-with-rhyme-and-peace-jakarta",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-112",
+      "title": "IKPI Runner Community Gelar Sunset Run 5K di GBK, Perkuat Kebugaran dan Keakraban Anggota",
+      "url": "https://ikpi.or.id/ikpi-runner-community-gelar-sunset-run-5k-di-gbk-perkuat-kebugaran-keakraban-anggota/",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-113",
+      "title": "Mencicipi menu warteg sehat di Fedwell",
+      "url": "https://www.antaranews.com/berita/752109/mencicipi-menu-warteg-sehat-di-fedwell",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-114",
+      "title": "25hours Hotel Jakarta The Oddbird (Accor booking page)",
+      "url": "https://all.accor.com/hotel/C1I1/index.en.shtml",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-115",
+      "title": "Indikator SDM Kesehatan: Rasio Nakes dan Named Terhadap Populasi, populasi per kabupaten/kota 2026 (source of population: BPS)",
+      "url": "https://eplanning-ditjennakes.kemkes.go.id/indikator/user/rasio_populasi/SKMRSKAB/prov/31",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-116",
+      "title": "WMO monthly normals: Jakarta/Soekarno-Hatta (station 96749)",
+      "url": "https://ds.data.jma.go.jp/gmd/tcc/tcc/products/climate/normal/parts/NrmMonth_e.php?stn=96749",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-117",
+      "title": "WMO monthly normals: Zuerich/Fluntern (station 06660)",
+      "url": "https://ds.data.jma.go.jp/gmd/tcc/tcc/products/climate/normal/parts/NrmMonth_e.php?stn=06660",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-118",
+      "title": "Flights from Zurich to Jakarta (timetable page)",
+      "url": "https://www.emirates.com/english/destinations/zrh/cgk/flights-from-zurich-to-jakarta",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 503,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-119",
+      "title": "LSZH to WIII route: 6003 NM, 11118 km",
+      "url": "https://www.1flt.com/routes/lszh-wiii",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-120",
+      "title": "IANA Time Zone Database 2026e: files asia and europe",
+      "url": "https://data.iana.org/time-zones/tzdb/asia",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-121",
+      "title": "Mysterious Sunday only lasts 23 hours due to the time change (Keystone-SDA)",
+      "url": "https://www.bluewin.ch/en/news/sunday-only-lasts-23-hours-due-to-the-time-change-li.2628820",
+      "tier": 3,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-122",
+      "title": "Common Grounds official link page",
+      "url": "https://linktr.ee/common.grounds.coffee",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-123",
+      "title": "Pison Senopati",
+      "url": "https://pisonindonesia.com/pison-senopati/",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-124",
+      "title": "SaladStop Indonesia locations",
+      "url": "https://saladstop.co.id/locations/",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-125",
+      "title": "Burgreens About Us and menu directory",
+      "url": "https://www.burgreens.com/about-us",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-126",
+      "title": "HONU Poke and Matcha Bar link page",
+      "url": "https://linktr.ee/honueats",
+      "tier": 4,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-127",
+      "title": "Halal literacy, certification and food and beverage purchase intention in East Jakarta (Fikri, S.R.; Gusniarti)",
+      "url": "https://journal.uir.ac.id/index.php/syarikat/article/view/21687",
+      "tier": 2,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; not opened (HTTP 403 bot challenge on article and PDF, not bypassed)",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-128",
+      "title": "Jakarta Retail Market Report Q2 2026",
+      "url": "https://www.colliers.com/en-id/research/jakarta-retail-market-report-q2-2026",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; not opened (HTTP 403 bot challenge, not bypassed)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-129",
+      "title": "Penduduk, laju pertumbuhan, kepadatan penduduk menurut kabupaten/kota di Provinsi DKI Jakarta (BPS DKI Jakarta table)",
+      "url": "https://jakarta.bps.go.id/id/statistics-table/3/V1ZSbFRUY3lTbFpEYTNsVWNGcDZjek53YkhsNFFUMDkjMw%3D%3D/penduduk--laju-pertumbuhan-penduduk--distribusi-persentase-penduduk--kepadatan-penduduk--rasio-jenis-kelamin-penduduk-menurut-kabupaten-kota-di-provinsi-dki-jakarta--2022.html",
+      "tier": 1,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; not opened (HTTP 403 bot challenge, not bypassed)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-130",
+      "title": "Pergeseran Makna Warung Kopi Sebagai Third Place Pada Kalangan Mahasiswa (thesis)",
+      "url": "https://www.repository.uinjkt.ac.id/dspace/handle/123456789/71502",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-17; not opened (connection failed on both host spellings)",
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
+    },
+    {
+      "id": "REG-131",
+      "title": "Peraturan Gubernur Nomor 142 Tahun 2019 tentang Kewajiban Penggunaan Kantong Belanja Ramah Lingkungan pada Pusat Perbelanjaan, Toko Swalayan dan Pasar Rakyat (JDIH Jakarta record 3851 and full-text PDF)",
+      "url": "https://jdih.jakarta.go.id/dokumen/detail/3851/peraturan-gubernur-nomor-142-tahun-2019-tentang-kewajiban-penggunaan-kantong-belanja-ramah-lingkungan-pada-pusat-perbelanjaan-toko-swalayan-dan-pasar-rakyat",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-132",
+      "title": "Peraturan Gubernur Nomor 102 Tahun 2021 tentang Kewajiban Pengelolaan Sampah di Kawasan dan Perusahaan (JDIH Jakarta record 1803)",
+      "url": "https://jdih.jakarta.go.id/dokumen/detail/1803/peraturan-gubernur-nomor-102-tahun-2021-tentang-kewajiban-pengelolaan-sampah-di-kawasan-dan-perusahaan",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-133",
+      "title": "Keputusan Gubernur Nomor 730 Tahun 2024 tentang Tarif Air Minum Perumda Air Minum Jaya (JDIH Jakarta record 14173; image-only PDF)",
+      "url": "https://jdih.jakarta.go.id/link/download-fulltext/14173",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-134",
+      "title": "Peraturan Gubernur Nomor 37 Tahun 2024 tentang Tata Cara Perhitungan dan Penetapan Tarif Air Minum Perumda Air Minum Jaya (JDIH Jakarta record 14172)",
+      "url": "https://jdih.jakarta.go.id/link/download-fulltext/14172",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-135",
+      "title": "Penetapan Penyesuaian Tarif Tenaga Listrik Bulan Juli - September 2026 (tariff table, image-only PDF)",
+      "url": "https://www.pln.co.id/webapi/media/file/webkorp/asset/1fa2814b-6ffd-459b-ac16-d46e515a0b3b.pdf",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-17",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    }
+  ]
+}

@@ -1,0 +1,2128 @@
+{
+  "selection_rule": "All verified/corrected rows from data/raw/2026-10-17-disconfirming-evidence.md Table A (8 rows; rows 5, 8, 15 excluded as BLOCKED) plus all verified/corrected rows across data/processed/**/*.csv whose direction, notes, or findings document macro/middle-class contraction, operator losses/closures/going-concern warnings, boycott impact, consumer retrenchment/price resistance, or legal/site barriers. Historical pre-window exits (P3B-26 to P3B-29) and BLOCKED rows are listed separately with explicit exclusion reasons.",
+  "total_verified_downside_or_mixed_count": 115,
+  "counts_by_group": {
+    "disconfirming_table_a_verified": 8,
+    "demand_and_macro_downside": 29,
+    "operators_and_competitors_downside": 38,
+    "consumer_behaviour_and_triggers_downside": 30,
+    "supply_legal_and_site_downside": 10,
+    "historical_closures_excluded_from_base_rate": 4,
+    "countering_positive_rows_for_balance": 6
+  },
+  "keyword_disconfirm_hits": [
+    "DISC-A1",
+    "DISC-A13",
+    "DISC-A16",
+    "DISC-A17",
+    "DISC-A2",
+    "DISC-A3",
+    "DISC-A6",
+    "DISC-A9",
+    "E-04",
+    "P1C1-E03",
+    "P1C2-01",
+    "P1C2-10",
+    "P1C2-11",
+    "P1C2-12",
+    "P1C2-18",
+    "P1C2-26",
+    "P1C2-31",
+    "P1C2-32",
+    "P1C2-33",
+    "P1C2-34",
+    "P1C4-08",
+    "P1C4-11",
+    "P3B-05",
+    "P3B-16",
+    "P3BF-007",
+    "P3BF-019",
+    "P3BF-022",
+    "P3BF-035",
+    "P3PB-50",
+    "P3PB-51",
+    "P3PB-52",
+    "P3PB-53",
+    "P3PB-54",
+    "P3PB-55",
+    "P3PB-56",
+    "P3PB-57",
+    "P4W1-R04",
+    "P4W10-13",
+    "P4W2b-06",
+    "P4W2b-07",
+    "P4W2b-14",
+    "P4W2b-21",
+    "P4W3-04",
+    "P4W3-05",
+    "P4W3-08",
+    "P4W5-08",
+    "P4W7b-02",
+    "P4W7b-05",
+    "P4W7b-14",
+    "P4W7b-15",
+    "P4W9-16",
+    "P4W9-27",
+    "SD07"
+  ],
+  "groups": {
+    "disconfirming_table_a_verified": [
+      {
+        "row_id": "DISC-A1",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-005"
+        ],
+        "question_or_metric": "Hypothesis H3,H5 (mixed)",
+        "value": "116.8",
+        "unit": "index (Consumer Confidence Index, >100 = optimistic)",
+        "ref_period": "Jul 2026",
+        "notes": "Disconfirming table A row 1; direction=mixed"
+      },
+      {
+        "row_id": "DISC-A2",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-006"
+        ],
+        "question_or_metric": "Hypothesis H3,H5 (mixed)",
+        "value": "118.5",
+        "unit": "index (CCI)",
+        "ref_period": "Aug 2026",
+        "notes": "Disconfirming table A row 2; direction=mixed"
+      },
+      {
+        "row_id": "DISC-A3",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-007"
+        ],
+        "question_or_metric": "Hypothesis H3,H5 (mixed)",
+        "value": "117.8",
+        "unit": "index (CCI)",
+        "ref_period": "Jun 2026",
+        "notes": "Disconfirming table A row 3; direction=mixed"
+      },
+      {
+        "row_id": "DISC-A6",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-022",
+          "DEM-009"
+        ],
+        "question_or_metric": "Hypothesis H3 (disconfirms)",
+        "value": "-0.6",
+        "unit": "% vs pre-holiday period, upper-income group spending (Mandiri Spending Index)",
+        "ref_period": "June 2026 school holiday",
+        "notes": "Disconfirming table A row 6; direction=disconfirms"
+      },
+      {
+        "row_id": "DISC-A9",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-023",
+          "DEM-024",
+          "DEM-012"
+        ],
+        "question_or_metric": "Hypothesis H1,H3 (mixed)",
+        "value": "23,470",
+        "unit": "workers laid off (Kemnaker, national)",
+        "ref_period": "Jan-May 2026",
+        "notes": "Disconfirming table A row 9; direction=mixed"
+      },
+      {
+        "row_id": "DISC-A13",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-025",
+          "BEH-022"
+        ],
+        "question_or_metric": "Hypothesis H8 (disconfirms)",
+        "value": "-2.77",
+        "unit": "% YoY sales, MAPB (Rp2,354,383m vs Rp2,421,339m, computed from the filing)",
+        "ref_period": "9M 2025 (Jan-Sep)",
+        "notes": "Disconfirming table A row 13; direction=disconfirms"
+      },
+      {
+        "row_id": "DISC-A16",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-018"
+        ],
+        "question_or_metric": "Hypothesis H2,H3 (disconfirms)",
+        "value": "n/a (qualitative; real wages -1.1% a year 2018-2024)",
+        "unit": "real wages declined since 2018; mid-skilled employment shrinking vs low- and high-wage jobs (national)",
+        "ref_period": "World Bank Indonesia Economic Prospects, Dec 2025",
+        "notes": "Disconfirming table A row 16; direction=disconfirms"
+      },
+      {
+        "row_id": "DISC-A17",
+        "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-027",
+          "DEM-019"
+        ],
+        "question_or_metric": "Hypothesis H2 (mixed)",
+        "value": "5.29",
+        "unit": "% YoY GDP growth, Indonesia",
+        "ref_period": "Q2 2026",
+        "notes": "Disconfirming table A row 17; direction=mixed"
+      }
+    ],
+    "demand_and_macro_downside": [
+      {
+        "row_id": "P1C2-01",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-035"
+        ],
+        "question_or_metric": "Middle-class population, Mandiri Institute from BPS Susenas (per-capita expenditure 3.5-17x poverty line)",
+        "value": "46.7 (2025) vs 47.9 (2024); 16.6% of population in 2025",
+        "unit": "million persons",
+        "ref_period": "calendar year 2025 vs 2024 (Susenas, annual)",
+        "notes": "Disconfirms national growth of the middle class. Kontan prints a fall of \"sekitar 1,1 juta\"; GoodStats (S3 page) writes 1,2 juta for the same two rounded numbers (47.9-46.7 = 1.2); both recorded, rounding. Prior-year fall 0.4 million (same article). Mandiri Institute computation on BPS data, not a BPS release; BPS original not opened (bps.go.id Cloudflare)."
+      },
+      {
+        "row_id": "P1C2-02",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-035"
+        ],
+        "question_or_metric": "Aspiring middle class (\"menuju kelas menengah\", 1.5-3.5x poverty line)",
+        "value": "142.0 (2025) vs 137.5 (2024); 50.4% of population in 2025",
+        "unit": "million persons",
+        "ref_period": "calendar year 2025 vs 2024",
+        "notes": "Supports \"pool below the middle class is growing\" (downward mobility plus entry from vulnerable); nested categories: classes are additive (poor 23.9m, vulnerable 67.9m, aspiring 142.0m, middle 46.7m, upper 1.2m, same article). Share 49.2% in 2024 per Investortrust 2026-02-17 (not opened as a row source)."
+      },
+      {
+        "row_id": "P1C2-03",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-035"
+        ],
+        "question_or_metric": "Upper class (>17x poverty line, Mandiri Institute classification) population",
+        "value": "1.2 (2025), up from 1.1 (2024); 0.4% of population",
+        "unit": "million persons",
+        "ref_period": "calendar year 2025 vs 2024",
+        "notes": "Mixed: upper tier is stable to slightly growing but is only 0.4% of the national population. Scale check for the target segment: the official upper class is about 1.2 million people nationally. Audit follow-up (2026-10-17): Label fix: Kontan page reopened: attributes the figures to Mandiri Institute; the \">17x poverty line\" definition and Susenas base are not on the page (confirmed only by other outlets per audit). No figure changed."
+      },
+      {
+        "row_id": "P1C2-05",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-037"
+        ],
+        "question_or_metric": "BPS middle-class population 2019 (start of the 57.3M to 47.85M series)",
+        "value": "57.33 (21.5% of population)",
+        "unit": "million persons",
+        "ref_period": "calendar year 2019",
+        "notes": "Kontan 2025-05-05 relaying ADB Asian Development Outlook April 2025 context. The article is internally inconsistent: 47.85m is dated \"2021\" and the 21.5% is dated \"2029\" (typo for 2019); the share 17.1% is dated 2024. Both year labels recorded (rule e). Series ends at the BPS 2024 round; BPS original not opened (Cloudflare). Run 2 verification (2026-10-17): Kontan prints \"pada 2029\" for the 2019 baseline (printed typo, already recorded)."
+      },
+      {
+        "row_id": "P1C2-06",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-037"
+        ],
+        "question_or_metric": "BPS middle-class population, latest BPS-labelled point (47.85M)",
+        "value": "47.85 (2024; BPS Susenas March 2024, 17.13% of population; Kontan prints the year as 2021, a printed typo)",
+        "unit": "million persons",
+        "ref_period": "2024 (Susenas March 2024); Kontan prints 2021 in error (it also prints 17.1% for 2024 and 21.5% for 2029 instead of 2019)",
+        "notes": "Run 2 verification (2026-10-17): year corrected to 2024. Kontan prints '47,85 juta pada 2021' but '17,1% pada 2024' in the same sentence; the 2021 is a recorded printed typo. Year evidence (used in notes only, not as row sources because their dates, 2024-08-30, fall before the 2024-10-16 cut-off): detikFinance 30 Aug 2024 ('47,85 juta jiwa pada 2024 ... 17,13% ... dari 57,33 juta') and Katadata (Susenas March 2024, 57,33 to 47,85 juta). Mandiri Institute 47.9m for 2024 (row 1) agrees. Do not use the 2021 BPS figure (53.83m per other outlets). Gap: BPS 2025 official class series not found (Mandiri computation only)."
+      },
+      {
+        "row_id": "P1C2-08",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-035"
+        ],
+        "question_or_metric": "Middle-class per-capita consumption growth vs upper class",
+        "value": "4.1% middle vs 4.6% national vs 6.8% upper",
+        "unit": "% yoy, per capita",
+        "ref_period": "calendar year 2025 vs 2024",
+        "notes": "Mixed: middle class is the slowest-growing class (aspiring 4.8%, vulnerable 5.0%, poor 4.7% in the same article), while the upper class grows fastest (6.8%). Supports a \"narrower but richer top tier\" reading (H2 restated). Mandiri Institute on BPS data."
+      },
+      {
+        "row_id": "P1C2-09",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-035"
+        ],
+        "question_or_metric": "Middle-class consumption growth, food vs non-food",
+        "value": "food 0.9% vs non-food 6.4% (food 4.6% in 2024; non-food 3.2% in 2024)",
+        "unit": "% yoy",
+        "ref_period": "calendar year 2025 vs 2024",
+        "notes": "Mixed for F&B: middle-class food (household food) spending almost flat, but lifestyle/non-food spending grew (transport +22.5%, handphones +31.2% in the same article). \"Food\" here is the Susenas food group, not restaurant spend. Headline vs body not in conflict."
+      },
+      {
+        "row_id": "P1C2-10",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-039"
+        ],
+        "question_or_metric": "Share of workers earning middle-class wages (World Bank definition)",
+        "value": "14.5% (2018) to 7.1% (2025)",
+        "unit": "% of workers",
+        "ref_period": "2018 to 2025 (annual)",
+        "notes": "Disconfirms. Resolves the 14%-to-8% vs 14.5%-to-7% press conflict noted in Plan 1: the IEP June 2026 report itself prints 14.5 to 7.1 (2018 to 2025). Definition (footnote 17): threshold = (3.5 x poverty line x 4)/1.5 (a family of four with 1.5 earners); a worker-income measure, not the BPS expenditure class. The 14% to 8% (2019 to 2024) variant is from press coverage only (not opened). Report states the middle-class population \"has followed the same trajectory, declining since 2018\"."
+      },
+      {
+        "row_id": "P1C2-11",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-039"
+        ],
+        "question_or_metric": "Real wage change by skill group, 2018 to 2025",
+        "value": "medium- and high-skilled -1 and -2 percent per year; low-skilled +1.7 percent per year; overall median real wage about -0.5 percent per year",
+        "unit": "% per year (CAGR of median real wage)",
+        "ref_period": "2018 to 2025",
+        "notes": "Disconfirms for the target segment (high-skilled office workers: managers, professionals, technicians, clerical). Updates the Dec 2025 deck row in data/raw/2026-10-17-disconfirming-evidence.md (row 16: -1.1% a year 2018-2024, a different period and edition); not a duplicate. Page prints \"1 and 2\" in order medium then high."
+      },
+      {
+        "row_id": "P1C2-12",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-039"
+        ],
+        "question_or_metric": "Formal wage employment share of tertiary-educated workers",
+        "value": "74.1% (2018) to 67.8% (2025)",
+        "unit": "% of tertiary-educated employment",
+        "ref_period": "2018 to 2025",
+        "notes": "Disconfirms for the graduate target segment: the better educated are drifting into informal arrangements. Proxy for 25-39 professionals (no age cut in the report)."
+      },
+      {
+        "row_id": "P1C2-13",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-039"
+        ],
+        "question_or_metric": "Household consumption role in growth and 2026 outlook (World Bank)",
+        "value": "household consumption accounted for 54 percent of Q1 2026 growth; private consumption expected to grow around 5.0 percent (2026 forecast); Q1 2026 GDP 5.6 percent yoy",
+        "unit": "percent",
+        "ref_period": "Q1 2026 (quarter); forecast year 2026",
+        "notes": "Supports aggregate demand (H1 national). Caveat in the same report: Q1 was boosted by an earlier Ramadan/Eid and fiscal stimulus; downside text says weak job quality and falling real wages \"could also constrain household consumption and limit the expansion of the middle class\". Report date: June 2026 (press release 2026-06-13)."
+      },
+      {
+        "row_id": "P1C2-14",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-034"
+        ],
+        "question_or_metric": "Consumer Confidence Index by household expenditure class: highest class",
+        "value": "123.5 (Sep 2026) for the Rp5 million+ monthly expenditure group; optimistic (>100) in all classes",
+        "unit": "index (balance score +100; >100 optimistic)",
+        "ref_period": "September 2026 (monthly survey)",
+        "notes": "Mixed/supports: highest class most confident. From the Table 2 image (page 9, read visually, not in the text layer): >Rp5 juta was 124.8 in Sep 2025 and 123.9 in Aug 2026, so slightly down year on year; Rp4.1-5 juta 122.2 (Sep 2026), Rp1-2 juta 107.1. Household-level bands, not per-capita; cross-walk to class needs average household size (README rule). National IKK 118.1 is already in the repo; not repeated."
+      },
+      {
+        "row_id": "P1C2-18",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-034"
+        ],
+        "question_or_metric": "Saving-to-income ratio of the highest expenditure class (>Rp5 million)",
+        "value": "16.9% (Sep 2026) vs 14.4% (Sep 2025); consumption ratio 72.0% vs 71.8%",
+        "unit": "% of income",
+        "ref_period": "September 2026 vs September 2025 (monthly)",
+        "notes": "Mixed/disconfirms for spend: the top class saves more of income than a year ago, i.e. caution. Values read from a table image (no text layer); verifier should re-open page 12 of SK-September-2026.pdf. The text says saving fell in most classes in Sep 2026 vs Aug 2026 (monthly), which is a different comparison."
+      },
+      {
+        "row_id": "P1C2-26",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-044"
+        ],
+        "question_or_metric": "Economic growth by income tier (BRI Office of Chief Economist, Q2-2026 outlook)",
+        "value": "wealthy tier 8.0% yoy (est.) vs middle class 3.5% vs lower tier 3.6%",
+        "unit": "% yoy",
+        "ref_period": "Q1 2026 (quarter); report published July 2026",
+        "notes": "Mixed: supports an affluent-tier demand story (H1 for upper tier) and disconfirms a broad middle-class growth story (H2). Middle-class growth 3.5% vs 4.5-4.9% in 2023-2025 per the same article. Relay of BRI report; tier definitions not shown; original BRI report not opened."
+      },
+      {
+        "row_id": "P1C2-27",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-044"
+        ],
+        "question_or_metric": "Bank deposits by size (LPS data, analysed by BRI)",
+        "value": "accounts over Rp2 billion +15.99% yoy vs Rp100-500 million accounts +3.15% yoy",
+        "unit": "% yoy",
+        "ref_period": "April 2026",
+        "notes": "Supports wealth concentration at the top (target tier) and thin buffers for the middle. Same Investortrust article: purchasing-power index April 2026 high income -0.1, middle -0.9, lower -1.0. Article date 9 Aug 2026."
+      },
+      {
+        "row_id": "P1C2-29",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-046"
+        ],
+        "question_or_metric": "Mandiri Spending Index (MSI): restaurant spending growth",
+        "value": "restaurants +4.7% yoy in Q3 2026 vs +6.1% in 2025; overall MSI growth 5.9% Q3 2026 (Sep 5.5%, lowest since Nov 2025)",
+        "unit": "% yoy (card transactions)",
+        "ref_period": "Q3 2026 (quarter, to 27 Sep 2026; period inferred from the paragraph, see notes)",
+        "notes": "Mixed: dining still the fastest-growing monitored category but decelerating; leisure flat. Not split by Jakarta or class. Kontan 2026-10-12 quoting Chief Economist Andry Asmoro. Run 2 verification (2026-10-17): the article does not print that 4,7% is Q3 (it sits in the Q3 paragraph) or that 6,1% is Q3 2025 (it says \"tahun lalu\", which may be full 2025); period labels are inferred from the paragraph."
+      },
+      {
+        "row_id": "P1C2-30",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-046"
+        ],
+        "question_or_metric": "Mandiri Saving Index by group (middle vs upper)",
+        "value": "middle 100.5 (-0.1% mom); upper 95.1 vs 94.0 a year earlier; lower 68.7 or 687.1 (article prints both)",
+        "unit": "index",
+        "ref_period": "27 September 2026",
+        "notes": "Mixed: middle stable, upper rising, lower falling. Lower-group value is printed as 68,7 in one sentence and 687,1 in another (headline/body conflict, rule e): not used. Group definition from savings balances, not expenditure (middle Rp1-10 million per Kabarbursa 2024, and CNBC 2026-03-17). Run 2 verification (2026-10-17): groups defined by savings balance, not expenditure class. MSI groups (upper/middle/lower) are defined by savings balance, not expenditure class (middle = average savings Rp1-10 million); do not mix them with BPS expenditure classes."
+      },
+      {
+        "row_id": "P1C2-31",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-047"
+        ],
+        "question_or_metric": "MSI: spending growth of upper vs lower and middle groups",
+        "value": "upper group +5.3% yoy in 2026 (to early May) vs +3.1% in 2025; lower and middle slowed",
+        "unit": "% yoy",
+        "ref_period": "2026 year to 5 May (Mandiri Macro and Market Brief Q2 2026, 11 May 2026)",
+        "notes": "Supports the upper-tier demand story (premium segments: department store, premium e-commerce, specialty store) and disconfirms the middle. Middle and lower values not printed. Kontan 2026-05-11, speaker Andre Simangunsong (Mandiri Institute). Run 2 verification (2026-10-17): groups defined by savings balance, not expenditure class. MSI groups (upper/middle/lower) are defined by savings balance, not expenditure class (middle = average savings Rp1-10 million); do not mix them with BPS expenditure classes. Run 2 verification (2026-10-17): 'to 5 May 2026' comes from the MSI level sentence, not the 5,3% sentence; the opened article does not define the upper/middle/lower groups (savings-based per DEM-046 context)."
+      },
+      {
+        "row_id": "P1C2-32",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "C",
+        "register_ids": [
+          "DEM-048"
+        ],
+        "question_or_metric": "MSI: spending growth by group in Ramadan-Lebaran 2026 (counter-evidence)",
+        "value": "middle +4.1% vs lower +2.1% vs upper +2.6% versus pre-Ramadan; Gen Z +4.4%, Millennials +3%, Gen X +1.4%",
+        "unit": "% growth vs pre-Ramadan period",
+        "ref_period": "Ramadan to Lebaran 2026 (seasonal window, reported 15 Apr 2026)",
+        "notes": "Disconfirms a uniform K-shape: in the THR window the middle group grew fastest. Seasonal, holiday-driven; contrast row 31 (full-period yoy). Generation cut (Millennial +3%) is the only age split found; Millennial native band per Mandiri not stated (canonical Older/Younger Millennials partial). Run 2 verification (2026-10-17): groups defined by savings balance, not expenditure class. MSI groups (upper/middle/lower) are defined by savings balance, not expenditure class (middle = average savings Rp1-10 million); do not mix them with BPS expenditure classes. Run 2 verification (2026-10-17): baseline is \"dibandingkan periode pra-Ramadhan\" (overall 2.9%): a seasonal window, not comparable with full-period yoy rows."
+      },
+      {
+        "row_id": "P1C2-33",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-021"
+        ],
+        "question_or_metric": "Mandiri Saving Index, middle group, Feb 2026 (opened source for BLOCKED row 5 of the disconfirming-evidence table)",
+        "value": "100.4 (Feb 2026), lowest since October 2023",
+        "unit": "index",
+        "ref_period": "February 2026",
+        "notes": "Upgrade of the BLOCKED row 5 (Bisnis MSI 2026-02-26): the savings index 100.4 and \"lowest since Oct 2023\" are now on an opened page (CNBC Indonesia 2026-03-17); the same page also reports MSI +6.5% yoy (121.6 level) and middle-class IKK rising for Rp3.1-4 million (120.7 to 122.6) and Rp4.1-5 million (124.2 to 125.5) in Feb 2026. The \"restaurant +3% (398.7)\" line of that row is still not seen. Direction mixed. Run 2 verification (2026-10-17): groups defined by savings balance, not expenditure class. MSI groups (upper/middle/lower) are defined by savings balance, not expenditure class (middle = average savings Rp1-10 million); do not mix them with BPS expenditure classes."
+      },
+      {
+        "row_id": "P1C2-34",
+        "file": "data/processed/demand/middle-class-income.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-038"
+        ],
+        "question_or_metric": "LPEM FEB UI economist view on middle-class pressure in 2026",
+        "value": "qualitative: middle class \"masih akan tertekan di 2026\" (no pro-middle-class policy such as quality job creation)",
+        "unit": "n/a (qualitative)",
+        "ref_period": "statement dated 2026-05-27",
+        "notes": "Disconfirms (opinion, tier 3). LPEM UI headcount figures (about 52 million, 18.8% end-2023; consumption about 3% in 2026) appeared only in WebSearch summaries and are NOT stored: gap. Kontan 2026-05-27 (Teuku Riefky, LPEM FEB UI)."
+      },
+      {
+        "row_id": "P1C1-E03",
+        "file": "data/processed/demand/population-spend.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "Central Jakarta (kota)",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-030"
+        ],
+        "question_or_metric": "monthly per-capita spending on makanan dan minuman jadi, Kota Jakarta Pusat",
+        "value": "513174",
+        "unit": "IDR per capita per month",
+        "ref_period": "2024 (Susenas, annual figure as printed by Databoks)",
+        "notes": "-2.5% vs 2023; rank 3 of DKI cities. 2020 peak Rp521,859. The teaser also prints \"total Rp 599.660\" for an unlabelled total; this does not reconcile with city total spend (Rp2.59m in 2025) and is ignored (rule e). Disconfirming angle: Central Jakarta prepared-food spend fell in 2024 while Selatan rose. Run 2 verification (2026-10-17): Databoks premium teaser only."
+      },
+      {
+        "row_id": "P1C1-E05",
+        "file": "data/processed/demand/population-spend.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "West Jakarta (kota) - comparator",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-030"
+        ],
+        "question_or_metric": "monthly per-capita spending on makanan dan minuman jadi, Kota Jakarta Barat",
+        "value": "454710",
+        "unit": "IDR per capita per month",
+        "ref_period": "2024 (Susenas, annual figure as printed by Databoks)",
+        "notes": "-5.8% vs 2023. Run 2 verification (2026-10-17): Databoks premium teaser only."
+      },
+      {
+        "row_id": "P1C1-F04",
+        "file": "data/processed/demand/population-spend.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "South Jakarta (kota)",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-020"
+        ],
+        "question_or_metric": "food share of total per-capita spending, Kota Jakarta Selatan",
+        "value": "38.08",
+        "unit": "% of total per-capita monthly spending",
+        "ref_period": "2024 (Susenas, annual figure as printed by Databoks)",
+        "notes": "Total Rp3,533,226; food Rp1,345,560; non-food Rp2,187,665 (2024). Food share fell 3.1 pp in one year while total spend rose 15.6%: non-food (housing etc.) is absorbing the gain, an indirect caution that rising income does not automatically mean more eating out."
+      },
+      {
+        "row_id": "UE-N03",
+        "file": "data/processed/demand/consumer-surveys.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "B",
+        "register_ids": [
+          "DEM-001"
+        ],
+        "question_or_metric": "price is the main factor Gen Z considers when buying coffee",
+        "value": "47",
+        "unit": "% of Gen Z coffee consumers",
+        "ref_period": "Fieldwork 6-9 Dec 2024",
+        "notes": "Databoks 2025-01-07, URL as in P1C3-01; base 896 per page (page also prints 1,115 and 1,150 totals). Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (relay)."
+      },
+      {
+        "row_id": "UE-N07",
+        "file": "data/processed/demand/consumer-surveys.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-024"
+        ],
+        "question_or_metric": "workers laid off, Kemnaker (JKP participants), Jan-May 2025 comparison",
+        "value": "46015",
+        "unit": "workers",
+        "ref_period": "Jan-May 2025",
+        "notes": "detik Finance 2026-06-04 https://finance.detik.com/berita-ekonomi-bisnis/d-8517409/23-470-pekerja-kena-phk-sepanjang-januari-mei-2026 ; tier 3 relay of Kemnaker. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (relay)."
+      },
+      {
+        "row_id": "UE-N08",
+        "file": "data/processed/demand/consumer-surveys.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-018"
+        ],
+        "question_or_metric": "households identifying themselves as poor (subjective poverty)",
+        "value": "26.9",
+        "unit": "% of households",
+        "ref_period": "August 2025 (monthly point)",
+        "notes": "Chart is monthly and ends at August; August 2024 = 19.5. Row columns were mis-aligned in the earlier fix-up and are repaired here. Run 1b second verification (W1b-2, 2026-10-16): CORRECTED-OPENED."
+      },
+      {
+        "row_id": "UE-N09",
+        "file": "data/processed/demand/consumer-surveys.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-005"
+        ],
+        "question_or_metric": "BI consumer expectations index (IEK), July 2026",
+        "value": "125.7",
+        "unit": "index (>100 optimistic)",
+        "ref_period": "Jul 2026",
+        "notes": "BI No.28/154/DKom, 10 Agustus 2026, URL as in row 1; tier 1. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (original)."
+      },
+      {
+        "row_id": "P1C3-01",
+        "file": "data/processed/demand/consumer-surveys.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "B",
+        "register_ids": [
+          "DEM-001"
+        ],
+        "question_or_metric": "share of Gen Z coffee consumers spending under Rp10,000 per cup (bought or made)",
+        "value": "48",
+        "unit": "% of Gen Z coffee consumers",
+        "ref_period": "Fieldwork 6-9 Dec 2024",
+        "notes": "Published 2025-01-07 per search summary; tier 3 via Databoks; 'majority' wording is the republisher's, 48% is not a majority; base n=1,155 is the survey total, base for the 48% not confirmed; verifier must open; V-E: 48%, fieldwork and n=1,155 confirmed (Databoks 2025-01-07, Goodstats); base for the 48% still unconfirmed (chart paywalled); 48% is a plurality, not a majority. Audit: single-outlet reliance. Run 1b (2026-10-16): opened https://databoks.katadata.co.id/en/consumer-services/statistics/677cd50372d4a/how-much-do-gen-z-spend-on-coffee-this-survey-reveals (Jakpat original: https://insight.jakpat.net/gen-z-characteristics-and-behaviors/ opened, dated 27 Dec 2024, but it does not show the coffee figures); printed date Databoks datePublished 2025-01-07; Jakpat release_date 27 Dec 2024. The 48% is a share of coffee consumers (n=896), not of all Gen Z respondents. Base is 896, not 1,155 (the same page also prints 1,115 and 1,150 as totals, so the page is internally inconsistent; use 896 for the 48%). Fieldwork 6-9 Dec 2024 and \"<5% margin of error\" confirmed. 48% is a plurality (Databoks says \"majority\"). Other bands: 30% Rp10-25k, 18% Rp25-50k, 4% Rp50-100k, 1% above Rp100k. Region: non-Jabodetabek Java 44%, Jabodetabek 28%, outside Java 28%. Buy or make combined. CORRECTION: the 48% is a share of coffee consumers (n=896), not of all Gen Z respondents (1,155 earlier; the page also prints 1,115 and 1,150 as totals). 48% is a plurality (Databoks says \"majority\"). Other bands: 30% Rp10-25k, 18% Rp25-50k, 4% Rp50-100k, 1% above Rp100k. 77% consume coffee. Fieldwork 6-9 Dec 2024 and MoE <5% confirmed. Regions: non-Jabodetabek Java 44%, Jabodetabek 28%, outside Java 28%. Jakpat original opened (2024-12-27) but does not show the coffee figures; Databoks published 2025-01-07."
+      }
+    ],
+    "operators_and_competitors_downside": [
+      {
+        "row_id": "Q6-001",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-045",
+          "BEH-051",
+          "BEH-020"
+        ],
+        "question_or_metric": "FAST (KFC) net loss 9M 2025 vs 9M 2024",
+        "value": "239.58 vs 557.08",
+        "unit": "IDR billion (net loss attributable to the parent entity, cumulative)",
+        "ref_period": "Jan-Sep 2025 vs Jan-Sep 2024 (CNBC 2025-11-04; Databoks 2025-11-05)",
+        "notes": "PROVISIONAL. V-C: 9M (Jan-Sep) not Q3 alone; loss narrowed about 57%. Figure-carrying article is Bisnis 20251103 (market.bisnis.com/read/20251103/192/1925531/...; slug not captured) plus databoks 690aa3ea (2025-11-05); the earlier cited 20251128 URL (BEH-020) is a different article. Audit: single-outlet reliance. Run 1b (2026-10-16): opened https://www.cnbcindonesia.com/market/20251103181906-17-681892/tutup-20-gerai-pangkas-1041-karyawan-rugi-kfc--fast--turun-57 ; https://databoks.katadata.co.id/en/market/statistics/690aa3eab46ec/cutting-stores-and-employees-kfc-fast-losses-shrink-57-in-q3-2025 (Bisnis 403); printed date CNBC 2025-11-04 07:45 WIB (URL date 20251103); Databoks 2025-11-05. Cumulative Jan-Sep (CNBC \"per September\", Databoks calls it \"third quarter\"). Value, unit and base match. Figure-carrying Bisnis article not opened; replace in register with CNBC/Databoks. Net loss attributable to the parent. Cumulative Jan-Sep (CNBC \"per September\"; Databoks calls it \"third quarter\"). The figure-carrying Bisnis article was not opened; the registered BEH-020 URL is a different article."
+      },
+      {
+        "row_id": "Q6-002",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-045",
+          "BEH-051",
+          "BEH-020"
+        ],
+        "question_or_metric": "FAST revenue change 9M 2025 yoy",
+        "value": "-0.76; level 3.56",
+        "unit": "% yoy; IDR trillion",
+        "ref_period": "Jan-Sep 2025 (CNBC 2025-11-04)",
+        "notes": "PROVISIONAL; publication date taken from URL path/title; needs verifier second search; V-C: confirmed by idnfinancials and databoks; 9M 2024 revenue was IDR 3.59 trn. Run 1b (2026-10-16): opened CNBC (as Q6-001); printed date 2025-11-04. Matches. Also opened in the same article: outlets 695 (30 Sep 2025) vs 715 (31 Dec 2024); employees 12,065 vs 13,106 (see new rows). 9M 2024 revenue Rp3.59tn. Also in the article: outlets 695 (30 Sep 2025) vs 715 (31 Dec 2024); employees 12,065 vs 13,106 (new row UC-N08)."
+      },
+      {
+        "row_id": "Q6-004",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-047",
+          "BEH-021"
+        ],
+        "question_or_metric": "FAST outlets closed / layoffs 2025 YTD",
+        "value": "19 outlets; 400 employees",
+        "unit": "count",
+        "ref_period": "To Sep 2025 (public expose 2 Oct 2025; CNBC 2025-10-03)",
+        "notes": "Only the headline was visible in the result; headline literally contains 19 and 400; V-C: confirmed (detik, wartaekonomi, kontan). Caveat: another source gives 25 stores / 1,400 workers for the full year (different period). Reasons include lease expiry and relocation, not only boycott. Run 1b (2026-10-16): opened https://www.cnbcindonesia.com/market/20251003175848-17-672723/masih-rugi-kfc--fast--tutup-19-gerai-phk-400-karyawan-tahun-ini ; Kompas 2025/10/02/203000826 (Bisnis 403); printed date CNBC 2025-10-03 18:26 WIB; Kompas 2025-10-02. Matches (\"kurang lebih 400\" = about 400). Later FAST filing figures differ (see new rows: 20 outlets closed, 1,041 fewer employees; different measure). \"kurang lebih 400\" = about 400. Later FAST filing figures differ (20 outlets closed, 1,041 fewer employees): different measure (new row UC-N08)."
+      },
+      {
+        "row_id": "Q6-005",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-048",
+          "BEH-049",
+          "DEM-025",
+          "BEH-022"
+        ],
+        "question_or_metric": "MAPB (Starbucks Indonesia licensee) net loss 9M 2025 vs 9M 2024",
+        "value": "108.69 vs 79.13",
+        "unit": "IDR billion (net loss)",
+        "ref_period": "Jan-Sep 2025 vs Jan-Sep 2024 (nine months; CNBC 2025-11-05; Kompas 2025-11-06; filing 2025-10-31)",
+        "notes": "79.13 and sales figure come from the search tool's summary of the same article, not visible in the headline; V-C: cumulative Jan-Sep, not the single quarter (headline says Q3). Prior-year Bisnis 2024-10-31 confirms 79.13bn. FY2025 loss IDR 150.77bn exists (Bisnis 2026-03-31). Run 1b (2026-10-16): opened https://www.cnbcindonesia.com/market/20251105153124-17-682591/rugi-mapb-bengkak-jadi-rp108-m-starbucks-sudah-ditinggal-warga-ri ; https://money.kompas.com/read/2025/11/06/134413026/rugi-pengelola-starbucks-indonesia-bengkak-jadi-rp-108-miliar; printed date CNBC 2025-11-05; Kompas 2025-11-06. Cumulative nine months (CNBC: \"sembilan bulan pertama\"; Kompas labels it \"kuartal III-2025\"). Loss up 37.36%. Two independent outlets now. Cumulative nine months (Kompas labels it \"kuartal III-2025\"). Loss up 37.36%. Net loss Rp108,693m vs Rp79,134m confirmed in the company filing (tier 1, DEM-025). Two independent outlets plus the filing."
+      },
+      {
+        "row_id": "Q6-006",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-048",
+          "BEH-049",
+          "DEM-025",
+          "BEH-022"
+        ],
+        "question_or_metric": "MAPB sales change 9M 2025 yoy",
+        "value": "-2.77; level 2.35 (vs 2.42 in 9M 2024)",
+        "unit": "% yoy (computed from filing); IDR trillion",
+        "ref_period": "Jan-Sep 2025 (filing 2025-10-31; CNBC 2025-11-05)",
+        "notes": "Search-tool summary of the article; losses widen while sales roughly flat; V-C: only Bisnis seen (single publisher). Run 1b (2026-10-16): opened CNBC (as Q6-005); printed date 2025-11-05. Matches. Second outlet (Kompas) gives the same 2.42 to 2.35. Weakness (single publisher) resolved. CNBC also notes MAPB says Starbucks was removed from the boycott list last year and sentiment is improving but recovery is ongoing (qualitative). CORRECTION: the filing shows sales Rp2,354,383m vs Rp2,421,339m = -2.77% (computed); the -2.84% in Bisnis/CNBC text does not match the filing. The filing prints no growth percentage. CNBC and Kompas both give 2.42 to 2.35 trn. CNBC also reports MAPB saying Starbucks was removed from the boycott list last year and sentiment is improving."
+      },
+      {
+        "row_id": "Q6-011",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-050",
+          "BEH-025"
+        ],
+        "question_or_metric": "FAST revenue change H1 2025 yoy",
+        "value": "-3.12; level 2.40",
+        "unit": "% yoy; IDR trillion",
+        "ref_period": "H1 2025",
+        "notes": "V-C correction: -3.12% (IDR 2.48 trn to 2.40 trn), not -3.22%; level 2.40 trn unchanged (detik d-8047534, wartaekonomi). H1 net loss attributable IDR 138.75bn. Run 1b (2026-10-16): opened https://www.cnbcindonesia.com/market/20250805163958-17-655290/pengelola-kfc--fast--bukukan-rugi-rp-138-m-pada-semester-i-2025 ; also CNBC 20251003; printed date CNBC 2025-08-05 19:50 WIB. The corrected value (-3.12%, 2.48 to 2.40) is confirmed; the original snippet's -3.22% is wrong. Net loss H1 Rp138.75bn (down 60.2%; H1 2024 Rp348.83bn). A search summary mentioned Kompas \"3.21%\"; not seen on the opened Kompas page. Corrected value -3.12% confirmed (earlier -3.22% was wrong). Net loss H1 Rp138.75bn (down 60.2% from Rp348.83bn)."
+      },
+      {
+        "row_id": "Q6-012",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "P",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-057",
+          "BEH-058",
+          "BEH-026"
+        ],
+        "question_or_metric": "Starbucks Malaysia (Berjaya Food) revenue change, comparator",
+        "value": "-36.5",
+        "unit": "% yoy",
+        "ref_period": "FY to June 2025 (The Edge and The Star 2025-08-27)",
+        "notes": "The -36% revenue drop comes from the search-tool summary; headline gives RM292m loss; V-C correction: -36.5% (RM476.77m from RM750.7m), not -36; net loss RM291.99m (malaymail, bloomberg, insideretail 2025). Run 1b (2026-10-16): opened https://theedgemalaysia.com/node/768462 ; https://www.thestar.com.my/business/business-news/2025/08/27/berjaya-food-sinks-deeper-into-the-red-in-fy25 ; FMT 2025/08/28 (Malay Mail 403); printed date The Edge 2025-08-27; The Star 2025-08-27; FMT 2025-08-28. Corrected value -36.5% (RM750.7m to RM476.77m) is confirmed. FMT rounds to 36%. Group revenue of Berjaya Food Bhd (Starbucks Malaysia is the main business; subsidiary revenue is lower). The register URL (Malay Mail) is blocked; propose The Edge as the opened source. Malaysia comparator, FY to June 2025. Corrected value -36.5% confirmed (FMT rounds to 36%). Berjaya Food Bhd group revenue (Starbucks Malaysia is the main business). Malaysia comparator."
+      },
+      {
+        "row_id": "UC-N08",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-045"
+        ],
+        "question_or_metric": "FAST outlets and employees to 30 Sep 2025 (company filing)",
+        "value": "outlets 695 (715 at 31 Dec 2024), 20 closed; employees 12,065 (13,106), 1,041 fewer",
+        "unit": "count",
+        "ref_period": "to 30 Sep 2025",
+        "notes": "CNBC 2025-11-04; differs from Q6-004 (19 stores, about 400 laid off), which is a management statement at the 2 Oct expose; the 1,041 is the headcount change, not layoffs only. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (relay)."
+      },
+      {
+        "row_id": "UC-N09",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-052"
+        ],
+        "question_or_metric": "FAST FY2025 net loss and revenue",
+        "value": "loss attributable Rp366.04bn vs Rp796.71bn (FY2024); revenue Rp4.88 trn vs Rp4.87 trn (naik tipis, per Detik)",
+        "unit": "IDR",
+        "ref_period": "FY2025",
+        "notes": "Detik 2026-04-21. Stockwatch 2026-04-19 gives total net loss Rp369.24bn vs Rp798.25bn (including non-controlling interests) and revenue Rp4.88 trn vs 4.87 trn. Run 1b second verification (W1b-2, 2026-10-16): CORRECTED-OPENED. Removed \"+0.12%\": the page gives no growth percentage."
+      },
+      {
+        "row_id": "P3BF-005",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-001"
+        ],
+        "question_or_metric": "FAST net loss for the period H1 2026 vs H1 2025 (consolidated)",
+        "value": "(61.146.624) vs (142.312.383); attributable to owners (56.741.843) vs (138.750.557)",
+        "unit": "IDR thousand",
+        "ref_period": "Jan-Jun 2026 vs Jan-Jun 2025 (six months, unaudited)",
+        "notes": "Total loss Rp61.1 bn vs Rp142.3 bn; loss attributable to owners Rp56.7 bn vs Rp138.75 bn. Loss narrowed by about 57% (DERIVED). H1 2025 attributable loss 138.75 bn agrees with the figure noted in Q6-011. Operating loss H1 2026 (32.422.013) vs (143.175.113)."
+      },
+      {
+        "row_id": "P3BF-007",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-002"
+        ],
+        "question_or_metric": "FAST profit (loss) for the period Q1 2026 vs Q1 2025",
+        "value": "profit 12.664.192 vs loss (40.079.596)",
+        "unit": "IDR thousand",
+        "ref_period": "Jan-Mar 2026 vs Jan-Mar 2025 (quarter, unaudited)",
+        "notes": "Q1 2026 was a profit of Rp12.7 bn (PDF text extraction dropped the opening bracket; operating profit 30.139.412 vs operating loss (35.962.697) confirms the sign). H1 2026 total is a loss of Rp61.1 bn, so Q2 2026 stand-alone was a loss of about Rp73.8 bn (DERIVED), i.e. the Q1 profit did not hold. DISCONFIRMING nuance for 'FAST recovering'."
+      },
+      {
+        "row_id": "P3BF-009",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-001"
+        ],
+        "question_or_metric": "FAST going-concern uncertainty in H1 2026 FS",
+        "value": "Management acknowledges uncertainties on ability to continue as going concern; FS prepared on going-concern basis relying on management plans and continued shareholder support",
+        "unit": "qualitative",
+        "ref_period": "30 Jun 2026 (H1 2026 interim FS)",
+        "notes": "Note on going concern (interim FS, unaudited). Supports H5 (pressure) but note the loss is shrinking and shareholders (Salim, Haji Isam private placement per press) support."
+      },
+      {
+        "row_id": "P3BF-010",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-005"
+        ],
+        "question_or_metric": "FAST auditor material uncertainty on going concern FY2025",
+        "value": "Accumulated losses Rp507.63 bn; current liabilities exceed current assets by Rp1.33 trn",
+        "unit": "IDR; qualitative",
+        "ref_period": "FY2025 (audited, 31 Dec 2025)",
+        "notes": "Stockwatch 2026-04-19. Same article gives total FY2025 net loss Rp369.24 bn vs Rp798.25 bn (incl. non-controlling) versus Rp366.04 bn vs Rp796.71 bn attributable (Kontan, Detik): the Rp366 vs 369 'conflict' flagged in the plan is attributable vs consolidated, not an error. Existing UC-N09 holds the FY2025 loss/revenue."
+      },
+      {
+        "row_id": "P3BF-011",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-004"
+        ],
+        "question_or_metric": "FAST operating loss FY2025",
+        "value": "Rp312 bn, down 60% (rugi operasional)",
+        "unit": "IDR bn; % yoy",
+        "ref_period": "FY2025",
+        "notes": "Okezone 2026-04-20 relaying the IDX filing (not opened). FY2025 revenue Rp4.88 trn (UC-N09). Revenue per outlet FY2025 DERIVED = 4,880 bn / average of 715 and 690 (702.5) = Rp6.9 bn per outlet; this includes all outlets and is not a same-store measure."
+      },
+      {
+        "row_id": "P3BF-012",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-004"
+        ],
+        "question_or_metric": "FAST employees at 31 Dec 2025 vs 31 Dec 2024",
+        "value": "11.664 vs 13.106",
+        "unit": "count",
+        "ref_period": "31 Dec 2025 vs 31 Dec 2024",
+        "notes": "Okezone 2026-04-20. Reconciles with UC-N08 (12,065 at 30 Sep 2025; 13,106 at Dec 2024)."
+      },
+      {
+        "row_id": "P3BF-015",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-006"
+        ],
+        "question_or_metric": "MAPB net loss for the period H1 2026 vs H1 2025",
+        "value": "(121.506) vs (80.206)",
+        "unit": "IDR million",
+        "ref_period": "Jan-Jun 2026 vs Jan-Jun 2025 (six months, unaudited)",
+        "notes": "Loss widened by 51.5% (DERIVED). Filing shows a foreign-exchange loss of 14.531 m (H1 2025: gain 1.613 m): press attributes the widening partly to rupiah depreciation. Selling expenses 1,071,777 m vs 1,005,196 m. Reconciles with Q6-005/006 (9M 2025 loss Rp108.69 bn, sales Rp2.35 trn) and with plan note 'H1 2026 loss ~Rp121.5bn'."
+      },
+      {
+        "row_id": "P3BF-016",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-007"
+        ],
+        "question_or_metric": "MAPB sales FY2025 vs FY2024",
+        "value": "3.236.043 vs 3.228.133",
+        "unit": "IDR million",
+        "ref_period": "FY2025 vs FY2024 (audited)",
+        "notes": "= +0.24% DERIVED, i.e. flat. Plan note said '~Rp3.24tn': matches."
+      },
+      {
+        "row_id": "P3BF-017",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-007"
+        ],
+        "question_or_metric": "MAPB net loss FY2025 vs FY2024",
+        "value": "(150.767) vs (146.148)",
+        "unit": "IDR million",
+        "ref_period": "FY2025 vs FY2024 (audited)",
+        "notes": "Loss attributable to owners; loss widened 3.2% (DERIVED). Press prints Rp150.765 bn (Bisnis, search snippet): a 2 m rounding difference; the audited FS value is used. Statements authorised 26 March 2026."
+      },
+      {
+        "row_id": "P3BF-018",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-048"
+        ],
+        "question_or_metric": "Starbucks Indonesia outlets closed in 2025 and expansion pace",
+        "value": "11 outlets closed (closure period not stated); opening pace reported as 10-15 per year, but the article gives 10-15 both as the slowed pace and as the earlier pace (self-contradictory, pace unreliable)",
+        "unit": "count",
+        "ref_period": "2025 (quarter not stated in the opened CNBC page; other reports say Q1 2025)",
+        "notes": "CNBC Indonesia 2025-11-05 (data from the 9M 2025 FS and public expose). Total Starbucks outlet count is NOT printed in the opened FS or CNBC page; the official Starbucks Indonesia page (P3-B-S12) says '500+ outlets in 59 cities at end 2023' (undated page, historical). Jakarta count: gap. Same article carries the management statement already recorded in UC-N11. Run 2 verification (2026-10-17): both readings of the CNBC 5 Nov 2025 15:43 sentence are stored: 'mengerem ekspansi ... menjadi 10-15 gerai per tahun, padahal sebelumnya pembukaan gerai bisa mencapai 10-15 per tahun' (slowed to 10-15, formerly also 10-15). The earlier 'slowed' wording was one reading only; do not use the opening pace. Closure period not stated. BEH-048 is not in the CMP block; confirm its register entry. Tier 3 relay."
+      },
+      {
+        "row_id": "P3BF-022",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-010"
+        ],
+        "question_or_metric": "PZZA revenue H1 2026 vs H1 2025",
+        "value": "Rp1,47 triliun vs Rp1,54 triliun (-4,54%)",
+        "unit": "IDR trn; % yoy",
+        "ref_period": "Jan-Jun 2026 vs Jan-Jun 2025 (six months)",
+        "notes": "EmitenNews 2026-08-08; Investor.id 2026-09-26 (P3-B-S13) gives the same level: 'Rp 1,47 triliun ... Rp 1,54 triliun', food Rp1.4 trn, beverages Rp76.5 bn. Two relays, both quoting the filing (not opened). Revenue is falling after +9% in FY2025: DISCONFIRMS a clean recovery. Q1 2026 sales were +2.8%, so Q2 2026 was weaker (DERIVED)."
+      },
+      {
+        "row_id": "P3BF-024",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-011"
+        ],
+        "question_or_metric": "PZZA net profit and sales Q1 2026",
+        "value": "net profit Rp6 miliar (same period prior year: Rp0,4 miliar); net sales Rp727 miliar, +2,8% yoy",
+        "unit": "IDR bn; % yoy",
+        "ref_period": "Jan-Mar 2026 (quarter)",
+        "notes": "CNBC Indonesia 2026-05-08, company statement of 7 May 2026. Company says the earlier Ramadan/Eid timing supported Q1. Gross margin 71.6%. Same-store sales growth not given."
+      },
+      {
+        "row_id": "P3BF-025",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-009"
+        ],
+        "question_or_metric": "PZZA permanent employees at 30 Jun 2026 vs 31 Dec 2025",
+        "value": "4.085 vs 4.192",
+        "unit": "count",
+        "ref_period": "30 Jun 2026 vs 31 Dec 2025",
+        "notes": "Investor.id 2026-09-26. FY2024 end 4,467 (Detik 2026-04-20)."
+      },
+      {
+        "row_id": "P3BF-027",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-012"
+        ],
+        "question_or_metric": "ENAK net sales 9M 2025 vs 9M 2024",
+        "value": "1.082.249.545.982 vs 1.165.071.929.910",
+        "unit": "IDR (full rupiah)",
+        "ref_period": "Jan-Sep 2025 vs Jan-Sep 2024 (nine months, unaudited)",
+        "notes": "= Rp1.08 trn vs Rp1.17 trn; -7.1% DERIVED. Revenue per outlet 9M 2025 DERIVED = 1,082.2 bn / average of 331 and 347 (339) = Rp3.19 bn per outlet for nine months (not annualised, not same-store). Same-store sales growth is not disclosed. Run 2 verification (2026-10-17): CMP-012 is a broker mirror (Indopremier PDF) re-saved with iLovePDF (ModDate 31 Oct 2025, 75 pages); every figure matches the mirror, but the match with the IDX original is unproven (idx.co.id returned 403). Keep tier 3 and the relay verdict."
+      },
+      {
+        "row_id": "P3BF-028",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-012"
+        ],
+        "question_or_metric": "ENAK profit (loss) for the period 9M 2025 vs 9M 2024",
+        "value": "(37.038.719.349) vs 19.743.258.088",
+        "unit": "IDR (full rupiah)",
+        "ref_period": "Jan-Sep 2025 vs Jan-Sep 2024 (nine months, unaudited)",
+        "notes": "Swing from profit Rp19.74 bn to loss Rp37.04 bn. Operating income (5.488.401.905) vs 45.709.102.905. Supports H5 (mid-market casual dining under pressure). H1 2025 (Neraca via search result, not opened): sales Rp743.07 bn (-8.61%), loss Rp5.55 bn. Run 2 verification (2026-10-17): CMP-012 is a broker mirror (Indopremier PDF) re-saved with iLovePDF (ModDate 31 Oct 2025, 75 pages); every figure matches the mirror, but the match with the IDX original is unproven (idx.co.id returned 403). Keep tier 3 and the relay verdict."
+      },
+      {
+        "row_id": "P3BF-029",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-012"
+        ],
+        "question_or_metric": "ENAK net sales 9M 2025 in Jabodetabek segment",
+        "value": "636.036.718.113 of total 1.082.249.545.982",
+        "unit": "IDR (full rupiah)",
+        "ref_period": "Jan-Sep 2025 (nine months, unaudited)",
+        "notes": "Segment by geography (Jabodetabek / rest of Java / outside Java). Jabodetabek share 58.8% DERIVED; comparative 9M 2024 Jabodetabek 711.061.290.655 (-10.6% DERIVED), the largest decline of the three regions. Greater Jakarta, not DKI only. Run 2 verification (2026-10-17): CMP-012 is a broker mirror (Indopremier PDF) re-saved with iLovePDF (ModDate 31 Oct 2025, 75 pages); every figure matches the mirror, but the match with the IDX original is unproven (idx.co.id returned 403). Keep tier 3 and the relay verdict."
+      },
+      {
+        "row_id": "P3BF-040",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-003"
+        ],
+        "question_or_metric": "PTSP (CFC chicken QSR) profit and revenue FY2025",
+        "value": "profit attributable Rp19,38 miliar (FY2024: Rp21,03 miliar); revenue Rp703,26 miliar",
+        "unit": "IDR bn",
+        "ref_period": "FY2025 vs FY2024",
+        "notes": "Detik 2026-04-20 relaying the IDX filing. Small profitable local fried-chicken chain; CFC alone Rp653.66 bn. Outlet count not in the Detik article (Investor.id has a related article on 'ratusan gerai CFC', not opened)."
+      },
+      {
+        "row_id": "P3BF-041",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-003"
+        ],
+        "question_or_metric": "CSMI (ex-Texas Chicken) net loss FY2025 after closing all Texas Chicken outlets",
+        "value": "net loss Rp955,25 juta; sales Rp1,8 miliar",
+        "unit": "IDR",
+        "ref_period": "FY2025",
+        "notes": "Detik 2026-04-20. Foreign-franchise exit case (Texas Chicken, all outlets closed; exact closure date not in the article: it is a lead for P3-B-entrants, which owns exits). Company identified only by ticker CSMI in the opened article."
+      },
+      {
+        "row_id": "P3B-05",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-028",
+          "CMP-029",
+          "CMP-051"
+        ],
+        "question_or_metric": "Burger King stores in Indonesia, quarter-end store count",
+        "value": "138 vs 147",
+        "unit": "stores (Q3 FY26 = quarter ended Dec 2025 vs Q3 FY25)",
+        "ref_period": "Q3 FY26 (Oct-Dec 2025) vs Q3 FY25 (Oct-Dec 2024); deck dated 2026-02-03",
+        "notes": "Kompas fact-check 2024-06-11 (pre-window, disconfirming): no credible information that Burger King would close permanently; the brand did not exit. Search lead (not opened): RBA board approved IDR 35bn then up to IDR 100bn preference-share injection into the Indonesian subsidiary in Apr-Sep 2026. Run 2 verification (2026-10-17): Q3 FY26 = Oct-Dec 2025 (RBA fiscal year ends March). 176 to 138 (38 fewer) is derived and stays in notes."
+      },
+      {
+        "row_id": "P3B-06",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-028",
+          "CMP-029"
+        ],
+        "question_or_metric": "Popeyes stores in Indonesia and Popeyes Store EBITDA margin",
+        "value": "25 stores; -20.3% store EBITDA margin",
+        "unit": "stores; % of revenue (Q3 FY26)",
+        "ref_period": "Q3 FY26 (Oct-Dec 2025); deck dated 2026-02-03",
+        "notes": "Cross-check: ADS = average daily sales."
+      },
+      {
+        "row_id": "P3B-07",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-030"
+        ],
+        "question_or_metric": "Starbucks Indonesia stores opened vs closed, H1 2025",
+        "value": "11 opened; 16 closed",
+        "unit": "stores",
+        "ref_period": "H1 2025 (Jan-Jun 2025); statement 2025-06-30",
+        "notes": "Duplicate-check: financial rows for MAPB exist (Q6-005, Q6-006, UC-N11); this row adds the store open/close counts only. Run 2 verification (2026-10-17): statement dated 30 Jun 2025, so \"H1\" is the company wording and may not include June closures. Single outlet, tier 3: weak (lesson d)."
+      },
+      {
+        "row_id": "P3B-08",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-031",
+          "BEH-045",
+          "BEH-046"
+        ],
+        "question_or_metric": "KFC outlets operated by FAST",
+        "value": "690 vs 715",
+        "unit": "outlets (31 Dec 2025 vs 31 Dec 2024)",
+        "ref_period": "year-end 2025 vs year-end 2024; reported 2026-04-19",
+        "notes": "Count conflicts (lesson e): CNBC 2025-11-04 says 695 outlets at 30 Sep 2025 and 20 closed in 9M; management said 19 closed (public expose). Net decline 25 in FY2025 is the difference of two reported year-end counts, not a derived estimate. FY2025 net loss in UC-N09 (plan4-origin-boycott.csv). Run 2 verification (2026-10-17): add the H1-end 2025 count of 698 to the conflict note (698 at end H1, 695 at 30 Sep 2025, 690 at 31 Dec 2025, from 715 at 31 Dec 2024)."
+      },
+      {
+        "row_id": "P3B-10",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-032",
+          "CMP-033",
+          "CMP-034"
+        ],
+        "question_or_metric": "Mixue overseas stores closed in 2025, most in Indonesia and Vietnam",
+        "value": "428 (Detik: closed in 2025; CNBC: net decrease of the overseas store count; scope unresolved)",
+        "unit": "stores (scope unresolved: Detik \"closed 428 in 2025, most in Indonesia and Vietnam\"; CNBC \"overseas store count down by 428\"; Suara \"global closures including Indonesia\"); Indonesia share not disclosed",
+        "ref_period": "FY2025; reported 2026-04-22 (CNBC) and 2026-04-29 (Detik)",
+        "notes": "Group revenue 2025 +35% to RMB 33.56bn and net profit +33% to RMB 5.93bn (Detik/CNBC): closures are optimisation, not distress. 59,823 stores worldwide at end-2025. Run 2 verification (2026-10-17): all three outlets (Detik, CNBC, Suara) relay one VnExpress report, so they are not independent: weak (lesson d). Scope conflict recorded (lesson e): Detik = closures with no scope, CNBC = net decrease overseas, Suara = global. Detik: \"Tidak diungkapkan berapa jumlah gerai yang ditutup di Indonesia dan Vietnam\"."
+      },
+      {
+        "row_id": "S-03",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "P: five Indonesian cities selected for high boycott sensitivity (Yogyakarta, Lombok, Pekanbaru, Aceh, Bandung); not Jakarta, not national",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-033"
+        ],
+        "question_or_metric": "Share agreeing/strongly agreeing that some party benefits from the Israel-affiliated product boycott (PKAEN survey)",
+        "value": "73.1",
+        "unit": "% of respondents who \"setuju atau sangat setuju\" (combined agree + strongly agree)",
+        "ref_period": "Survey published 2025-05-15 (fieldwork dates not stated in the article)",
+        "notes": "Not a measure of boycott prevalence."
+      },
+      {
+        "row_id": "S-04",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "Indonesia (self-selected online)",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-034"
+        ],
+        "question_or_metric": "Approval of boycott of Israel-affiliated products (Median online survey)",
+        "value": "80.2 agree in total (50.5 strongly agree + 29.7 agree); 12.8 disagree",
+        "unit": "% of respondents (strongly agree and agree are additive)",
+        "ref_period": "Fieldwork 2025-09-08 to 2025-09-13; GoodStats article printed 2025-10-05",
+        "notes": "Reported-agreement figure only; S-05 (89%) is a stated preference to replace boycotted products with local Islamic brands; its base is not stated and it is not a boycott-participation measure. Derived, not in the source: 100 - 80.2 - 12.8 = 7.0; note that GoodStats words 12.8% as \"Sisanya\" although 80.2 + 12.8 = 93.0. Run 3 verification (V3-B, 2026-10-17): remainder removed from the unit cell."
+      },
+      {
+        "row_id": "S-05",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "P: not stated in the article",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-035"
+        ],
+        "question_or_metric": "Share of respondents who prefer to replace boycotted global products with local Islamic brands (Inventure, IMMO 2025)",
+        "value": "89",
+        "unit": "% of respondents (base and respondent group not stated in the article)",
+        "ref_period": "Presented 2025-03-06 at Indonesia Muslim Market Outlook 2025; fieldwork dates not stated; article printed 2025-03-06",
+        "notes": "Run 3 verification (V3-B, 2026-10-17): the 89% is a stated preference to substitute boycotted global products with local Islamic brands, not boycott participation; base not defined (the article frames \"konsumen muslim\"); no n, population or fieldwork date. Low weight."
+      },
+      {
+        "row_id": "S-06",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "Jakarta (Central Jakarta, Medan Merdeka Selatan)",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-036"
+        ],
+        "question_or_metric": "Mass pro-Palestine action at the US Embassy, Jakarta, with police deployment",
+        "value": "1,994 joint police personnel deployed for the \"Aksi Bela Palestina\" alliance action at the US Embassy on Jl. Medan Merdeka Selatan on 2025-01-26; the article reports no action at any restaurant or brand outlet.",
+        "unit": "count of police personnel deployed (event: one rally)",
+        "ref_period": "single event 2025-01-26 (Sunday); article printed 2025-01-26 19:54 WIB",
+        "notes": "Pre-2025 outlet-level incidents (Makassar, Samarinda, Surabaya, Nov 2023-Jun 2024) were not in Jakarta and are pre-window."
+      },
+      {
+        "row_id": "S-07",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "Jakarta (Patung Kuda, Gambir)",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-037"
+        ],
+        "question_or_metric": "Mass pro-Palestine action in Central Jakarta",
+        "value": "\"Thousands of residents\" joined a pro-Palestine action at Patung Kuda on 2025-10-12; participants dispersed about 09:45 WIB after speeches; the report mentions support for Palestine and monitoring of the ceasefire, and no brand or outlet target.",
+        "unit": "qualitative (ribuan = thousands, no exact count)",
+        "ref_period": "single event 2025-10-12 (Sunday); Antara article printed 2025-10-12 10:52 WIB",
+        "notes": "Run 3 verification (V3-B): title conflict inside the source: lede/caption \"Indonesia Tolak Genosida\", body \"Indonesia Lawan Genosida\"; value unaffected."
+      },
+      {
+        "row_id": "S-09",
+        "file": "data/processed/2026-10-p2-sentiment-indicators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "D",
+        "register_ids": [
+          "REG-038",
+          "REG-043"
+        ],
+        "question_or_metric": "Realised investment FY2025: total, PMA (foreign) and PMDN (domestic)",
+        "value": "Total IDR 1,931.2 trillion (+12.7% yoy; 101.3% of the IDR 1,905.6tn target); PMA IDR 900.9tn (46.6% of total, +0.1% yoy); PMDN IDR 1,030.3tn (53.4%, +26.6% yoy). 2024 comparator in the same article: total IDR 1,714.2tn, PMA IDR 900.2tn.",
+        "unit": "IDR trillion (realisation, rupiah, not USD)",
+        "ref_period": "full year 2025 (Jan-Dec); announced 2026-01-15; Kontan article printed 2026-01-15 14:41 WIB",
+        "notes": "Relay of a ministerial press conference; Metro TV (printed 2026-07-15, republished) agrees on PMA 900.9 and PMDN 1,030.3. Run 3 verification (V3-B, 2026-10-17): primary source BKPM press release printed Kamis 15 Jan 2026 (REG-043) confirms total Rp1.931,2tn, +12.7%, 101.3% of target, PMA Rp900.9tn (46.6%), PMDN Rp1.030,3tn (53.4%). The PMA +0.1% and PMDN +26.6% growth rates are relay-only (Kontan)."
+      }
+    ],
+    "consumer_behaviour_and_triggers_downside": [
+      {
+        "row_id": "P4W1-R04",
+        "file": "data/processed/plan4-media-by-age.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-004",
+          "BEH-040"
+        ],
+        "question_or_metric": "first learned of new eating place: recommendation from people close (friends/family)",
+        "value": "44",
+        "unit": "% of respondents",
+        "ref_period": "Fieldwork 2-7 Sep 2025 (Jakpat article 2025-10-13; GoodStats chart page 2025-10-23)",
+        "notes": "Publication date not shown in result (fieldwork date used). No age split in result. DISCONFIRMS H1 in this source: friends/WOM ranks above TikTok influencers. Multiple answers possible; do not sum channels.; V-A: only GoodStats resurfaced, no Jakpat original; fieldwork 2-7 Sep 2025, margin of error under 5%. Run 1b (2026-10-16): opened https://data.goodstats.id/statistic/dari-mana-publik-dapat-informasi-soal-tempat-makan-baru-3WlAm ; Jakpat original on the same survey: https://insight.jakpat.net/strong-traditional-tastes-in-the-local-fb-market/; printed date GoodStats: 23 Oktober 2025 pukul 09.00; Jakpat article: 13 October 2025. Value matches. Opened-source details: n = 995, 2-7 Sep 2025, Jakpat app, MoE below 5%. Geography correction: Jakpat names the eight areas as Bogor, Depok, Bandung, Yogyakarta, Surakarta, Semarang, Malang, Surabaya. Jakarta is NOT in the sample, so Jakarta cut = none, geography U not J. Respondents are \"young\" (no band given). The percentages are only on the GoodStats chart page, not in the Jakpat article text; GoodStats is a tier-3 relay of Jakpat. No age split. Geography U (eight Java cities, Jakarta excluded), not J. Percentages exist only on the GoodStats chart page (tier-3 relay of Jakpat). Multiple answers possible. No age split."
+      },
+      {
+        "row_id": "P4W3-04",
+        "file": "data/processed/plan4-novelty.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-010"
+        ],
+        "question_or_metric": "self-identified early adopters",
+        "value": "7",
+        "unit": "% of Indonesians",
+        "ref_period": "September 2024 (published 2024-11-06; the 26-30 Sep dates are not on the page)",
+        "notes": "Disconfirming: small minority; V-B: ref period corrected per verifier (YouGov original article 50874; Marketech APAC 2024-11-19). Sample n not seen. Run 1b (2026-10-16): opened YouGov article 50874; printed date November 6, 2024. Base now seen: \"online in September 2024, with a sample of 2,136 adults in Indonesia (aged 18+ years)\", weighted by gender, age, SES, city tier to the online population. The page gives only \"September 2024\"; the \"26-30 Sep\" dates are not on the page. Suggested ref_period: \"September 2024; published 2024-11-06\". Ref period corrected (fieldwork month only on page)."
+      },
+      {
+        "row_id": "P4W3-05",
+        "file": "data/processed/plan4-novelty.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-010"
+        ],
+        "question_or_metric": "self-identified trend-driven shoppers",
+        "value": "7",
+        "unit": "% of Indonesians",
+        "ref_period": "September 2024 (published 2024-11-06; the 26-30 Sep dates are not on the page)",
+        "notes": "Disconfirming: small minority; V-B: ref period corrected per verifier (YouGov original article 50874; Marketech APAC 2024-11-19). Sample n not seen. Run 1b (2026-10-16): opened same; printed date 6 Nov 2024. Same base and period notes. Ref period corrected."
+      },
+      {
+        "row_id": "P4W3-08",
+        "file": "data/processed/plan4-novelty.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-010"
+        ],
+        "question_or_metric": "need-based shoppers (contrast to novelty seekers)",
+        "value": "52",
+        "unit": "% of Indonesians",
+        "ref_period": "September 2024 (published 2024-11-06; the 26-30 Sep dates are not on the page)",
+        "notes": "Disconfirming; V-B: ref period corrected per verifier (YouGov original article 50874; Marketech APAC 2024-11-19). Sample n not seen. Men 49%, women 54%. 52% appeared with explicit number in one search; headline only in the other: re-check when hosts open. Run 1b (2026-10-16): opened same; printed date 6 Nov 2024. Men 49%, women 54% confirmed. The earlier \"explicit number only in one search\" concern is resolved. Men 49%, women 54% confirmed; the earlier \"number in one search only\" concern is resolved. Ref period corrected."
+      },
+      {
+        "row_id": "UB-07",
+        "file": "data/processed/plan4-novelty.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-010"
+        ],
+        "question_or_metric": "YouGov: pulse chasers who decreased spending / bought fewer items in last 12 months",
+        "value": "39",
+        "unit": "% of pulse chasers",
+        "ref_period": "Sep 2024 (pub. 2024-11-06)",
+        "notes": "Also 38% no change, 23% increased spending. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (original)."
+      },
+      {
+        "row_id": "UB-10",
+        "file": "data/processed/plan4-novelty.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-010"
+        ],
+        "question_or_metric": "YouGov: reason pulse chasers cut spending: more thoughtful / necessity",
+        "value": "44",
+        "unit": "% of pulse chasers who reduced spending",
+        "ref_period": "Sep 2024",
+        "notes": "Others: deal-hunting 21%, fewer items for higher quality 19%, environment 15%. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (original)."
+      },
+      {
+        "row_id": "UA-N65",
+        "file": "data/processed/plan4-media-by-age.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-040"
+        ],
+        "question_or_metric": "choose where to eat: price",
+        "value": "60",
+        "unit": "% of respondents",
+        "ref_period": "Fieldwork 2-7 Sep 2025",
+        "notes": "Published 2025-10-13. URL https://insight.jakpat.net/strong-traditional-tastes-in-the-local-fb-market/. Run 1b second verification (W1b-1, 2026-10-16): VERIFIED-OPENED (original)."
+      },
+      {
+        "row_id": "P4W7b-02",
+        "file": "data/processed/plan4-venue-run2.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-040"
+        ],
+        "question_or_metric": "choose where to eat: taste",
+        "value": "59",
+        "unit": "% of respondents",
+        "ref_period": "Fieldwork 2-7 Sep 2025 (Jakpat article printed 2025-10-13)",
+        "notes": "Price (60%) is already in UA-N65; taste is new. Disconfirming for 'ambience-led' venue choice: price and taste lead."
+      },
+      {
+        "row_id": "P4W7b-05",
+        "file": "data/processed/plan4-venue-run2.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-040"
+        ],
+        "question_or_metric": "facility priorities by occupation: students comfortable seating 75, power outlets 53; workers parking 50",
+        "value": "75 / 53 / 50",
+        "unit": "% within subgroup",
+        "ref_period": "Fieldwork 2-7 Sep 2025 (Jakpat article printed 2025-10-13)",
+        "notes": "Closest opened split for workers: workers did not prioritise seating or outlets in the text. Relevant to 25-39 workers: power outlets are a student priority here (H7 partly disconfirmed for workers)."
+      },
+      {
+        "row_id": "P4W7b-14",
+        "file": "data/processed/plan4-venue-run2.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-066"
+        ],
+        "question_or_metric": "reasons for revisiting the same cafe: tasty menu 83, comfortable room 78, good service 70, clean room 64, good facilities 45, aesthetics 27",
+        "value": "83 / 78 / 70 / 64 / 45 / 27",
+        "unit": "% of respondents (multiple answer; sums above 100)",
+        "ref_period": "Survey 14-19 Oct 2025 (GoodStats article printed 2025-11-04)",
+        "notes": "Disconfirming for design-led revisits: aesthetics ranks last (27%); food and comfort lead. Multiple-answer list."
+      },
+      {
+        "row_id": "P4W7b-15",
+        "file": "data/processed/plan4-venue-run2.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "J",
+        "age_fit_code": "B",
+        "register_ids": [
+          "BEH-067"
+        ],
+        "question_or_metric": "servicescape (cafe environment) effect on satisfaction among Gen Z in Jakarta coffee shops",
+        "value": "not significant (no coefficient in abstract)",
+        "unit": "SEM result, qualitative",
+        "ref_period": "Peer-reviewed article, Vol. 19 No. 1, February 2026 (fieldwork dates not stated in abstract)",
+        "notes": "Disconfirming for atmosphere-led satisfaction in Jakarta Gen Z. Service quality and food and beverage quality did significantly affect satisfaction; satisfaction and brand attitude both drive revisit intention. Authors state the cross-sectional design and geographic focus limit generalisability. Run 2 verification (2026-10-17): licence is CC BY-NC-SA 4.0, not CC BY. Sampling method is not in the abstract (full text not read)."
+      },
+      {
+        "row_id": "P4W9-15",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "C",
+        "register_ids": [
+          "BEH-086"
+        ],
+        "question_or_metric": "frugal strategy: limit social outings such as hanging out with friends (Gen Z)",
+        "value": "54",
+        "unit": "% of Gen Z respondents",
+        "ref_period": "fieldwork Mar-Aug 2024 (profile slide: May 2024); GoodStats upload 27 Aug 2025; PDF CreationDate 2024-10-16 (first release date unknown)",
+        "notes": "IMGR 2025 (IDN Research Institute), opened PDF from GoodStats CDN; GoodStats publication page prints \"Tanggal Terbit 27 Agustus 2025\". Methodology page: survey Mar-Aug 2024, n=1,500 (750 Millennials aged 28-43, 750 Gen Z aged 12-27 as of 2024), 12 cities/regions incl. Jabodetabek (20% of each sample per profile page), random sampling plus interviews. The profile pages print \"17 - 29\" and \"May 2024\" for both generations, which conflicts with the methodology page; age fit C for both. Multiple-response chart. Social outings are a proxy for café and eating-out visits; the report does not say food. Millennial value for this strategy not printed. Run 2 verification (2026-10-17): PDF metadata CreationDate is 2024-10-16 09:08 UTC; the GoodStats page date 27 Aug 2025 is an upload date, not necessarily first publication. All printed dates pass the 2024-10-16 rule."
+      },
+      {
+        "row_id": "P4W9-16",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "C",
+        "register_ids": [
+          "BEH-086"
+        ],
+        "question_or_metric": "frugal strategy: cook food at home (Millennials)",
+        "value": "66",
+        "unit": "% of Millennial respondents",
+        "ref_period": "fieldwork Mar-Aug 2024 (profile slide: May 2024); GoodStats upload 27 Aug 2025; PDF CreationDate 2024-10-16 (first release date unknown)",
+        "notes": "IMGR 2025 (IDN Research Institute), opened PDF from GoodStats CDN; GoodStats publication page prints \"Tanggal Terbit 27 Agustus 2025\". Methodology page: survey Mar-Aug 2024, n=1,500 (750 Millennials aged 28-43, 750 Gen Z aged 12-27 as of 2024), 12 cities/regions incl. Jabodetabek (20% of each sample per profile page), random sampling plus interviews. The profile pages print \"17 - 29\" and \"May 2024\" for both generations, which conflicts with the methodology page; age fit C for both. Multiple-response chart. Value 66 is spelled out as \"Sixty-six percent\" in the text and printed as 66% on the chart. Disconfirming for a premium dine-out thesis: the most common money-saving strategy among Millennials is home cooking. Gen Z value for cooking at home is not printed. Run 2 verification (2026-10-17): PDF metadata CreationDate is 2024-10-16 09:08 UTC; the GoodStats page date 27 Aug 2025 is an upload date, not necessarily first publication. All printed dates pass the 2024-10-16 rule."
+      },
+      {
+        "row_id": "P4W9-18",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "C",
+        "register_ids": [
+          "BEH-086"
+        ],
+        "question_or_metric": "choosing a frugal lifestyle (Millennials)",
+        "value": "49",
+        "unit": "% of Millennial respondents",
+        "ref_period": "fieldwork Mar-Aug 2024 (profile slide: May 2024); GoodStats upload 27 Aug 2025; PDF CreationDate 2024-10-16 (first release date unknown)",
+        "notes": "IMGR 2025 (IDN Research Institute), opened PDF from GoodStats CDN; GoodStats publication page prints \"Tanggal Terbit 27 Agustus 2025\". Methodology page: survey Mar-Aug 2024, n=1,500 (750 Millennials aged 28-43, 750 Gen Z aged 12-27 as of 2024), 12 cities/regions incl. Jabodetabek (20% of each sample per profile page), random sampling plus interviews. The profile pages print \"17 - 29\" and \"May 2024\" for both generations, which conflicts with the methodology page; age fit C for both. Multiple-response chart. Question label in chart: \"Choosing a Frugal Lifestyle\" (Millennials 49 vs Gen Z 56). Multiple response. Run 2 verification (2026-10-17): PDF metadata CreationDate is 2024-10-16 09:08 UTC; the GoodStats page date 27 Aug 2025 is an upload date, not necessarily first publication. All printed dates pass the 2024-10-16 rule."
+      },
+      {
+        "row_id": "P4W9-19",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "U",
+        "age_fit_code": "C",
+        "register_ids": [
+          "BEH-086"
+        ],
+        "question_or_metric": "choosing a frugal lifestyle (Gen Z)",
+        "value": "56",
+        "unit": "% of Gen Z respondents",
+        "ref_period": "fieldwork Mar-Aug 2024 (profile slide: May 2024); GoodStats upload 27 Aug 2025; PDF CreationDate 2024-10-16 (first release date unknown)",
+        "notes": "IMGR 2025 (IDN Research Institute), opened PDF from GoodStats CDN; GoodStats publication page prints \"Tanggal Terbit 27 Agustus 2025\". Methodology page: survey Mar-Aug 2024, n=1,500 (750 Millennials aged 28-43, 750 Gen Z aged 12-27 as of 2024), 12 cities/regions incl. Jabodetabek (20% of each sample per profile page), random sampling plus interviews. The profile pages print \"17 - 29\" and \"May 2024\" for both generations, which conflicts with the methodology page; age fit C for both. Multiple-response chart. See P4W9-18. Run 2 verification (2026-10-17): PDF metadata CreationDate is 2024-10-16 09:08 UTC; the GoodStats page date 27 Aug 2025 is an upload date, not necessarily first publication. All printed dates pass the 2024-10-16 rule."
+      },
+      {
+        "row_id": "P4W9-27",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-089"
+        ],
+        "question_or_metric": "groceries as top spending category (Millennials)",
+        "value": "39",
+        "unit": "% of Millennial respondents",
+        "ref_period": "fieldwork 17-21 Apr 2025; Campaign Indonesia printed 4 Aug 2025 (relay)",
+        "notes": "YouGov Indonesia Personal Finance Outlook 2025: online representative survey of 2,067 adults aged 18+, fieldwork 17-21 Apr 2025, weighted by gender, age, SES class and region (YouGov original, 24 Jun 2025). Generation bands are not printed on any opened page. Disconfirming for the premium dine-out thesis: dining out is not among the three categories printed for Millennials (groceries 39%, electricity 19%, housing 16%); Gen X: groceries 40%, education 36%, electricity 20%. Same label conflict as P4W9-26. Run 2 verification (2026-10-17): YouGov generation tables are in a gated download; only the single-outlet relay (Campaign Indonesia) could be checked. Keep the single-outlet flag."
+      },
+      {
+        "row_id": "P4W9-28",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-088"
+        ],
+        "question_or_metric": "dining out among categories cut back (Gen X+)",
+        "value": "23",
+        "unit": "% of Gen X+ respondents",
+        "ref_period": "fieldwork 17-21 Apr 2025; Marketing-Interactive printed 23 Jun 2025 (relay)",
+        "notes": "YouGov Indonesia Personal Finance Outlook 2025: online representative survey of 2,067 adults aged 18+, fieldwork 17-21 Apr 2025, weighted by gender, age, SES class and region (YouGov original, 24 Jun 2025). Generation bands are not printed on any opened page. Detik (19 Jun 2025, quoting YouGov GM Edward Hutasoit) says Gen X cut eating out and Gen Z cut health care, daily shopping \"atau makan di luar\", so Gen Z dining-out cut is stated in words without a figure (not stored). Run 2 verification (2026-10-17): single trade-press relay (Marketing-Interactive); YouGov generation tables gated."
+      },
+      {
+        "row_id": "P4W9-29",
+        "file": "data/processed/plan4-age-splits.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-088"
+        ],
+        "question_or_metric": "main retrenchment areas for Millennials: takeout and international travel",
+        "value": "takeout and international travel (qualitative, no %)",
+        "unit": "qualitative",
+        "ref_period": "fieldwork 17-21 Apr 2025; Marketing-Interactive printed 23 Jun 2025 (relay)",
+        "notes": "YouGov Indonesia Personal Finance Outlook 2025: online representative survey of 2,067 adults aged 18+, fieldwork 17-21 Apr 2025, weighted by gender, age, SES class and region (YouGov original, 24 Jun 2025). Generation bands are not printed on any opened page. Qualitative; Detik says Millennials cut back saving and holidays (Detik, S9). The two outlets differ on what Millennials cut; neither prints a percentage. Run 2 verification (2026-10-17): single trade-press relay (Marketing-Interactive); YouGov generation tables gated. Audit follow-up (2026-10-17): Label fix: Marketing-Interactive page reopened; it says \"takeout and international travel\" and gives no representativeness claim. Takeout no longer coded under delivery. No figure changed."
+      },
+      {
+        "row_id": "P4W4-02",
+        "file": "data/processed/plan4-health.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-013"
+        ],
+        "question_or_metric": "WTP 20% more for food with enhanced nutrition",
+        "value": "19",
+        "unit": "% of respondents",
+        "ref_period": "2025 survey (release 2025-07-08)",
+        "notes": "stated; drop from 48% to 19% between 10% and 20% premium. Run 1b (2026-10-16): opened same; printed date same. Same notes."
+      },
+      {
+        "row_id": "P4W4-05",
+        "file": "data/processed/plan4-health.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-013"
+        ],
+        "question_or_metric": "Barrier: healthy options hard to find",
+        "value": "48",
+        "unit": "% of respondents",
+        "ref_period": "2025 survey (release 2025-07-08)",
+        "notes": "access barrier. Run 1b (2026-10-16): opened same; printed date same. Matches."
+      },
+      {
+        "row_id": "P4W4-06",
+        "file": "data/processed/plan4-health.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-013"
+        ],
+        "question_or_metric": "Barrier: high cost of healthy products/services",
+        "value": "43",
+        "unit": "% of respondents",
+        "ref_period": "Fieldwork Jan-Feb 2025; release 2025-07-08",
+        "notes": "price barrier. Run 1b (2026-10-16): opened same; printed date same. Matches. Audit follow-up (2026-10-17): Population label fix: NIQ page reopened: \"Nearly 19,000 adult consumers were interviewed online\" in 19 countries, January and February 2025; no Indonesia n printed. No figure changed. (The \"grocery shoppers\" wording follows the audit; the page text opened here does not use it.)"
+      },
+      {
+        "row_id": "P4W2b-06",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "P",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-005"
+        ],
+        "question_or_metric": "Micro and nano influencers vs larger tiers: resilience of trust",
+        "value": "qualitative: micro and nano influencers are weathering the drop in trust better; gap between tiers narrowed",
+        "unit": "n/a (no figure printed)",
+        "ref_period": "impact.com x Cube 2025 edition; trade-press article 2025-07-30",
+        "notes": "Same article also says: in Indonesia 'celebrity and mega influencers dominate the landscape' and 'all other influencer tiers in Indonesia also outperform the regional benchmark'; 59% of SEA respondents are influenced by mega influencers (>1m followers), a 7% drop (unit not stated). Direction: weakly supports micro creators for CORSA, but no conversion data. Disconfirming-ish: celebrities and mega creators still lead in Indonesia."
+      },
+      {
+        "row_id": "P4W2b-07",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "P",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-072"
+        ],
+        "question_or_metric": "Indonesian beauty buyers who trust peer reviews (UGC) more than influencer content",
+        "value": "54",
+        "unit": "% of Indonesian respondents",
+        "ref_period": "YouGov report (makeup category); trade-press article 2025-04-23",
+        "notes": "Relay (Marketing-Interactive); YouGov original ('From Screen to Shelves') not opened. 54% is the highest of the three countries; the other 46% are not split (could trust influencers more or neither). Disconfirms the idea that influencers beat peers on trust, within beauty. Run 2 verification (2026-10-17): geography corrected N to P (beauty proxy category, cross-market base of three countries)."
+      },
+      {
+        "row_id": "P4W2b-11",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "P",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-006"
+        ],
+        "question_or_metric": "Trust ranking of purchase-decision sources: family and friends vs online reviews vs creators (score 0-4)",
+        "value": "2.42 (family and friends); 2.36 (online reviews); 1.98 (creators)",
+        "unit": "score out of 4 (influence)",
+        "ref_period": "impact.com x Cube x Dentsu 2026 edition; Pasardana article 2026-07-27",
+        "notes": "Relay (Pasardana) of a press release; original impact.com report not opened. Direction: against H1 as 'main trigger' (friends/family and online reviews rank above creators), but the gap between friends and reviews is small (difference not stored as a row). Single outlet read."
+      },
+      {
+        "row_id": "P4W2b-14",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-074"
+        ],
+        "question_or_metric": "Affiliate links: opened a link (traffic) vs purchased through one in the last six months",
+        "value": "83 (opened); under 40 (purchased in last half-year)",
+        "unit": "% of consumers",
+        "ref_period": "Jakpat e-commerce trends 2H 2025 follow-up; article 2026-07-13",
+        "notes": "Jakpat original page opened. Run 2 verification (2026-10-17): the earlier base-conflict claim (1,714 vs 2,125) was false; both the article and the linked report page print 1714 and 2,125 appears on neither. Article also says purchase rates are about 40% across genders and generations and drop sharply among low-income consumers. Disconfirming: high reach, modest conversion."
+      },
+      {
+        "row_id": "P4W2b-16",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-075"
+        ],
+        "question_or_metric": "Live shopping: purchase rate (ever bought in a live session), time series",
+        "value": "46 (1H 2024); 44 (2H 2025). Also awareness 80 (2H 2024) and 85 (1H 2025); ever joined a live session 74 (1H 2024) and 79 (2H 2025)",
+        "unit": "% of respondents",
+        "ref_period": "Jakpat semi-annual surveys; article 2026-01-06",
+        "notes": "Period labels are half-years (1H/2H) as printed. Flat purchase rate despite rising awareness and participation: live commerce is not growing in conversion. Wave bases not printed."
+      },
+      {
+        "row_id": "P4W2b-21",
+        "file": "data/processed/plan4-social-proof-run2.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "C",
+        "register_ids": [
+          "BEH-079"
+        ],
+        "question_or_metric": "Consumer perception of food vlogger reviews after the CB vs Clairmont Bakery case",
+        "value": "qualitative: trust in influencer reviews fell because of weak transparency and commercial motives; trust remains for honest, consistent, interactive reviewers",
+        "unit": "n/a",
+        "ref_period": "Published 2025-06-16 (Vol. 3 No. 4, Apr-Jun 2025)",
+        "notes": "Peer-reviewed (Jurnal Pengabdian Masyarakat dan Riset Pendidikan, DOI 10.31004/jerkin.v3i4.1265, SINTA 5). Findings in abstract: 'penurunan kepercayaan terhadap ulasan influencer akibat kurangnya transparansi dan adanya motif komersial'; credibility drivers: sponsor transparency, authentic visuals, social validation from other users. Disconfirming evidence on food-vlogger trust. Closest sample to the CORSA age band (25-34 majority) but n=85. Run 2 verification (2026-10-17): the full text states random sampling with inclusion criteria (127 people accessed the survey, 85 met the criteria); the earlier \"no sampling frame stated\" was wrong."
+      },
+      {
+        "row_id": "SD07",
+        "file": "data/processed/plan4-spend-drivers.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "P",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-060",
+          "BEH-034"
+        ],
+        "question_or_metric": "Direction of delivery average order value, SEA 2025",
+        "value": "trending down slightly",
+        "unit": "qualitative",
+        "ref_period": "2025 (Momentum Works report; QSR Media 2026-01-28)",
+        "notes": "DISCONFIRMING: growth from frequency not basket size; publication date of page not shown (FY2025 report, so 2026) - verifier to confirm date; V-D: page undated; established as 2026 (FY2025 report; Selular 2026/01, Bisnis 2026-01-28). Run 1b (2026-10-16): opened https://qsrmedia.com/in-focus/southeast-asia-food-delivery-market-surges-227b (QSR Media, citing Momentum Works); printed date 2026-01-28 (page metadata). Momentum Works page https://thelowdown.momentum.asia/... is Cloudflare \"Just a moment...\" (403): not bypassed. Date resolved: 2026-01-28 (QSR and DealStreetAsia 2026-01-28; Databoks 2026-02-05). 6 SEA markets confirmed (Databoks). Momentum Works page is behind Cloudflare (not bypassed). Six SEA markets confirmed (Databoks)."
+      },
+      {
+        "row_id": "P4W10-13",
+        "file": "data/processed/plan4-misc-run3.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-095"
+        ],
+        "question_or_metric": "padel court occupancy rate (Liga.Tennis clubs)",
+        "value": "75",
+        "unit": "% occupancy",
+        "ref_period": "2025",
+        "notes": "Kontan 13 Apr 2026: \"tenis masih menjadi cabang dengan tingkat okupansi tertinggi mencapai 80%, diikuti padel 75% dan pickleball 41%\". Disconfirming context: Jakarta Post venue operators claim 87-99% (S6, operator claims). Run 3 fix-up (2026-10-17): geography set to J (Liga.Tennis rows) on the owner's/orchestrator's instruction; V3-A noted that the article does not state the clubs' locations (it suggested P/unspecified instead of N). geography N: club locations not stated (run-3 verification A)"
+      },
+      {
+        "row_id": "CAGE-020",
+        "file": "data/processed/2026-10-cage-geo-culture.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "n/a",
+        "age_fit_code": "na",
+        "register_ids": [
+          "BEH-030"
+        ],
+        "question_or_metric": "Jakpat 2025: health study 601 respondents, 62% still eat rice every day; coffee survey 1,002 respondents.",
+        "value": "62; 601; 1002",
+        "unit": "%; respondents",
+        "ref_period": "2025-07-04",
+        "notes": "The 44%/34%/46%/35% coffee figures are in rows UC-N13, P4W7b-01, UC-N14 (BEH-030)."
+      }
+    ],
+    "supply_legal_and_site_downside": [
+      {
+        "row_id": "P1C4-08",
+        "file": "data/processed/demand/wheat-foodservice.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-051",
+          "DEM-063"
+        ],
+        "question_or_metric": "Indonesia wheat grain imports (HS: biji gandum dan meslin), calendar year 2025 vs 2024, BPS via Databoks",
+        "value": "10.84 (2025) vs 11.72 (2024); -7.5%; value US$3.05 billion (-13.1%)",
+        "unit": "million tonnes (volume); US$ billion (value)",
+        "ref_period": "Calendar year 2025 vs 2024",
+        "notes": "Second publisher: GoodStats (S4, 18 Sep 2026) prints the same series: \"Pada 2025, volume impor kembali turun menjadi 10,84 juta ton\" and 2024 \"yakni 11,72 juta ton\"; both relay BPS, so independent of each other as outlets but a single underlying source. Main origin 2025: Australia 4.6 Mt (about 42%). Disconfirming for a rising-imports reading: calendar 2025 volume fell 7.5%, while USDA trade-year data (row 1) shows a rise for 2025/26; period definitions differ. Run 3 fix-up: second publisher GoodStats registered as DEM-063."
+      },
+      {
+        "row_id": "P1C4-11",
+        "file": "data/processed/demand/wheat-foodservice.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-054"
+        ],
+        "question_or_metric": "Indonesia instant noodle demand (WINA), 2024 and 2025",
+        "value": "14,680 (2024); 14,540 (2025)",
+        "unit": "million servings",
+        "ref_period": "Calendar year 2024 and 2025 (page updated 6 Aug 2026)",
+        "notes": "Columns 2021 to 2025: 13,270; 14,260; 14,540; 14,680; 14,540. 2025 is -0.9% vs 2024 on this table. DISCONFIRMING/CONFLICT: USDA GAIN (S2) says WINA reported 2025 \"increased by 1.0 percent to 14.7 million servings from 14.5 million servings in 2024\" (units evidently billion; and it reflects the earlier May 2025 table, not the August 2026 update). Table rank: second after China/Hong Kong (43,268 in 2025)."
+      },
+      {
+        "row_id": "P1C4-14",
+        "file": "data/processed/demand/wheat-foodservice.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "DEM-057"
+        ],
+        "question_or_metric": "Share of Indonesian households consuming each carbohydrate source: rice, instant noodles, wheat flour (Susenas 2024)",
+        "value": "88 (rice); 71 (instant noodles); 32 (wheat flour)",
+        "unit": "% of households",
+        "ref_period": "Susenas 2024 (fieldwork March-September 2024; consumption pattern \"periode September 2024\")",
+        "notes": "Authors tabulate Susenas 2024 microdata. Rice remains the dominant staple, but instant noodles reach 71% of households. Supports \"rice is the norm\" and \"wheat products are mainstream\" at once; no urban/rural or income split of these percentages in the text read. Journal prints only \"Volume 14 Nomor 1 Tahun 2026\". Run 3 verification (V3-A, 2026-10-17): base conflict 341,802 vs 841,802 recorded in proxy_note; value unchanged."
+      },
+      {
+        "row_id": "E-04",
+        "file": "data/processed/2026-10-p2-entry-requirements.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "na",
+        "register_ids": [
+          "REG-001"
+        ],
+        "question_or_metric": "General rule: PMA total investment must exceed IDR 10bn excluding land and building, per 5-digit KBLI per project location. For food-and-beverage services (KBLI 56) the exception makes it IDR 10bn excluding land and building per 2-digit KBLI per one location point, where a location point means per kabupaten/kota. So the rule applies to restaurants and cafes; it is not a per-outlet rule but a per-city, per-KBLI-56-group rule (analysis: 56101 and 56303 would share one threshold in the same city). No single-outlet relief, phasing or reduced regime found in Art. 26-27.",
+        "value": "lebih besar dari Rp10.000.000.000,00 (planned investment excl. land and building; F&B: per 2 digit KBLI per 1 titik lokasi = per kabupaten/kota)",
+        "unit": "IDR total planned investment, excluding land and building; per 2-digit KBLI per city (F&B); general rule per 5-digit KBLI per project location",
+        "ref_period": "Permen 5/2025 set 2025-10-01; PP 28/2025 set 2025-06-05",
+        "notes": "Disconfirming detail for the plan: the F&B exception is per 2-digit KBLI (broader aggregation than per 5-digit), which favours multi-outlet roll-out within one city but does not lower the first-outlet threshold. Run 2 verification (2026-10-17): added text: Art. 364(3)(h) makes failure to meet the Art. 26 PMA investment limit a ground for administrative sanction in supervision (\"tidak memenuhi batas ketentuan nilai investasi bagi PMA sebagaimana dimaksud dalam Pasal 26\"), so the test is not only an OSS input check (sanction type not stated in the part read; Art. 365 refers to the types). Art. 28(3): in DKI Jakarta the authority of the kabupaten/kota DPMPTSP is exercised by the provincial government, which bears on the \"kabupaten/kota\" location point; the texts do not say whether an administrative city counts as kabupaten/kota (lawyer question Q1). Citation also adds Art. 26(1). The \"per 2-digit KBLI = division 56\" mapping of 56101 and 56303 is an inference (no provision lists the codes). \"H1 refuted on the text\" is the worker hypothesis verdict; see Q1-Q5 in tasks/2026-10-17-run2-verification-f.md for what could still reverse it. No SME, partnership, franchise or single-outlet relief found in Art. 26."
+      },
+      {
+        "row_id": "F-04",
+        "file": "data/processed/2026-10-p2-tax-franchise.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "na",
+        "register_ids": [
+          "REG-029"
+        ],
+        "question_or_metric": "A franchise must be \"already profitable\": proven by (a) the franchised business having run at least 3 consecutive years, and (b) financial statements for the last 2 years showing profit, audited by a public accountant with an unqualified opinion. Micro and small franchisors are exempt from the audit requirement. This replaces the 5-year experience wording of Permendag 71/2019 (F-05).",
+        "value": "3 consecutive years of operation + 2 years of audited profit",
+        "unit": "years",
+        "ref_period": "PP 35/2024 of 2024-09-02",
+        "notes": "Analysis: a young CORSA concept may fail this test at the franchisor level; a trademark/know-how licence outside the franchise definition would avoid it (see F-07), subject to legal advice."
+      },
+      {
+        "row_id": "F-05",
+        "file": "data/processed/2026-10-p2-tax-franchise.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "na",
+        "register_ids": [
+          "REG-030",
+          "REG-901"
+        ],
+        "question_or_metric": "CONFLICT STORED (rule e): Permendag 71/2019 Art. 2(3) says the profit criterion is met when the franchisor has at least 5 years of experience and a business know-how, shown by the business surviving and growing profitably. JDIH Kemendag still lists the Permendag as Berlaku, and none of the later instruments read repeals it, but PP 35/2024 Art. 4(5) now states 3 years plus 2 audited profitable years. Analysis: as a higher regulation prevails, the PP 35/2024 test governs; a lawyer should confirm which test OSS applies in practice.",
+        "value": "5 years (Permendag 71/2019) vs 3 years + 2 audited years (PP 35/2024)",
+        "unit": "years",
+        "ref_period": "Permendag 71/2019 set 2019-09-03, promulgated 2019-09-04",
+        "notes": "Do not apply 5 years without checking."
+      },
+      {
+        "row_id": "H-02",
+        "file": "data/processed/2026-10-p2-entry-requirements.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "na",
+        "register_ids": [
+          "REG-010",
+          "REG-013",
+          "REG-011",
+          "REG-009"
+        ],
+        "question_or_metric": "Medium and large businesses: phase ran 17 Oct 2019 to 17 Oct 2024, obligation enforced from 18 Oct 2024 (simultaneous supervision from that date). Micro and small: phase to 17 Oct 2026, obligation from 18 Oct 2026 together with new product categories. Foreign products: obligation to be set by the Minister at the latest 17 Oct 2026.",
+        "value": "17 Oktober 2024 (menengah dan besar); 17 Oktober 2026 (mikro dan kecil); 18 Oktober 2026 (second phase starts)",
+        "unit": "dates",
+        "ref_period": "PP 42/2024 Art. 160 (2024-10-17); BPJPH pages 2024-10-23/24 and 2026-06-05",
+        "notes": "Publication dates: S10 meta 2024-10-24 (press conference Kamis 24/10/2024); S11 meta 2024-10-23 (statement Senin 21/10/2024); S13 meta 2026-06-05 (event 4 Jun 2026). Run 2 verification (2026-10-17): the regulation gives only the phase end dates (17 Oct 2024, 17 Oct 2026); \"obligation from 18 Oct\" is BPJPH's reading (statement 21/10/2024, conference 24/10/2024). Art. 160(3): for imported products the Minister decides by 17 Oct 2026 at the latest; no decision found on the check date (the deadline day)."
+      },
+      {
+        "row_id": "H-06",
+        "file": "data/processed/2026-10-p2-entry-requirements.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "Indonesia",
+        "age_fit_code": "na",
+        "register_ids": [
+          "REG-009"
+        ],
+        "question_or_metric": "Place and tools (Art. 6(4)) for the halal process must be separated; location separation (Art. 6(3)) applies to slaughter locations only. For the process: from those for non-halal products, including processing, storage, sales and serving. For serving: separate serving facilities and process for halal vs non-halal, serving utensils not used alternately with non-halal, separate cleaning and maintenance facilities, and own storage for halal and non-halal tools. ANALYSIS: the text supports a fully halal kitchen or a clearly separated halal line; a \"halal corner\" inside a mixed kitchen with shared equipment is not supported by the text.",
+        "value": "wajib dipisahkan (place and tools, incl. penyajian; location separation for slaughter only, Art. 6(3))",
+        "unit": "qualitative",
+        "ref_period": "PP 42/2024 2024-10-17",
+        "notes": "Kepkaban 78/2023 (H-07) applies the same separation to every kitchen, branch and outlet. Run 2 verification (2026-10-17): wording adjusted: the worker summary \"location, place and equipment\" is broader than PP 42 Art. 6(3)-(4) for a restaurant; Kepkaban 78/2023 wording \"lokasi, tempat, dan alat\" is wider than PP 42 Art. 6(3), and PP 42 prevails in a conflict. The \"halal corner\" conclusion stays analysis (lawyer question Q7)."
+      },
+      {
+        "row_id": "UC-N07",
+        "file": "data/processed/plan4-community-sport.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-044",
+          "BEH-019"
+        ],
+        "question_or_metric": "Jakarta padel courts without building permit",
+        "value": "185 of 397 (about 46)",
+        "unit": "courts; %",
+        "ref_period": "Mar 2026",
+        "notes": "CNA 2026-03-05, quoting the head of Dinas Citata at a DPRD hearing on 4 Mar 2026. Run 1b second verification (W1b-2, 2026-10-16): VERIFIED-OPENED (relay)."
+      },
+      {
+        "row_id": "P4W5-08",
+        "file": "data/processed/plan4-community-sport.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-043",
+          "BEH-044",
+          "BEH-019"
+        ],
+        "question_or_metric": "padel courts sealed for permit violations (disconfirming/context)",
+        "value": "2",
+        "unit": "courts",
+        "ref_period": "4 Mar 2026 (reports 2026-03-05 and 2026-03-06)",
+        "notes": "PROVISIONAL; regulatory risk, not demand failure; V-C: sealed 4 Mar 2026 at Ancol and Pluit (Penjaringan) for missing PBG (metrotvnews, cna.id, merahputih, rri). Run 1b (2026-10-16): opened https://www.metrotvnews.com/read/ba4CPmyw-dua-lapangan-padel-tak-berizin-di-ancol-dan-penjaringan-disegel (RRI URL returned 403, so not opened); also https://www.cna.id/indonesia/lapangan-padel-jakarta-tak-berizin-disegel-45161; printed date MetroTV 2026-03-06; CNA 2026-03-05. Confirmed 4 Mar 2026, two courts, Ancol (Pademangan) and Penjaringan, missing PBG. Enforcement, not demand. Register BEH-019 (RRI) stays unopened; propose adding MetroTV and CNA. CNA adds context: of 397 courts recorded in Jakarta, about 46% (185) have no permit. Sealed 4 Mar 2026 at Ancol (Pademangan) and Penjaringan for missing PBG. CNA context: of 397 courts recorded in Jakarta about 46% (185) have no permit (new row UC-N07)."
+      }
+    ],
+    "historical_closures_excluded_from_base_rate": [
+      {
+        "row_id": "P3B-26",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-049"
+        ],
+        "question_or_metric": "Hard Rock Cafe Jakarta closure",
+        "value": "2023",
+        "unit": "closure year (last outlet Pacific Place)",
+        "ref_period": "closed 2023; Detik 2026-06-27",
+        "notes": "Month not stated in the opened page."
+      },
+      {
+        "row_id": "P3B-27",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-049",
+          "CMP-050"
+        ],
+        "question_or_metric": "Fish & Co. Indonesia closure",
+        "value": "31 December 2022",
+        "unit": "closure date",
+        "ref_period": "exit 2022-12-31; about 20 outlets",
+        "notes": "Detik 2025-08-22 says opening 'akhir 1998', 20 outlets, 19 years; Detik 2026-06-27 says 2003."
+      },
+      {
+        "row_id": "P3B-28",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-049"
+        ],
+        "question_or_metric": "Marche Movenpick Indonesia closure",
+        "value": "2020",
+        "unit": "closure year, after 11 years",
+        "ref_period": "open 2009 to 2020; Detik 2026-06-27",
+        "notes": "Source text spelled Mövenpick; ASCII used here."
+      },
+      {
+        "row_id": "P3B-29",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "J",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-050"
+        ],
+        "question_or_metric": "Karen's Diner Jakarta closure",
+        "value": "November 2023",
+        "unit": "closure date, after about 1 year",
+        "ref_period": "Dec 2022 to Nov 2023; Detik 2025-08-22",
+        "notes": "Origin country is not stated in the opened page (gap)."
+      }
+    ],
+    "countering_positive_rows_for_balance": [
+      {
+        "row_id": "P3BF-035",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-015"
+        ],
+        "question_or_metric": "Fore net income for the year FY2025 vs FY2024",
+        "value": "90.133.042.112 vs 58.219.108.464",
+        "unit": "IDR (full rupiah)",
+        "ref_period": "FY2025 vs FY2024 (audited)",
+        "notes": "Net margin 6.0% vs 5.6% (DERIVED). Operating income 105.762.093.261 vs 66.414.926.262. Annual report: revenue +44%, net profit +55%, with net profit below target because rent depreciation and staff costs rose faster than planned. DISCONFIRMS 'coffee is saturated/unprofitable' for the low-price chain leader."
+      },
+      {
+        "row_id": "P3BF-019",
+        "file": "data/processed/listed-operators.csv",
+        "verification": "VERIFIED-OPENED (original)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "CMP-008"
+        ],
+        "question_or_metric": "MAPI group H1 2026 net revenue and net profit",
+        "value": "net revenue +23.4% to Rp24.2 trn; net profit +26.9% to Rp1.5 trn",
+        "unit": "% yoy; IDR trn",
+        "ref_period": "H1 2026 (press release dated 29 Jul 2026)",
+        "notes": "Parent group, mostly non-F&B retail. DISCONFIRMING context: middle-class retail spending is growing while the F&B subsidiary MAPB makes losses; the MAPI release does not break out F&B. Not a MAPB figure."
+      },
+      {
+        "row_id": "Q6-007",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-052",
+          "BEH-053",
+          "BEH-054",
+          "BEH-023"
+        ],
+        "question_or_metric": "PZZA (Pizza Hut) net profit FY2025 vs FY2024",
+        "value": "24.75 profit vs 72.83 loss",
+        "unit": "IDR billion",
+        "ref_period": "FY2025 vs FY2024 (Detik 2026-04-21; Kontan 2026-05-05)",
+        "notes": "72.83 loss and +9.06% sales to Rp3.05 trillion come from the search-tool summary; recovery attributed to efficiency, not boycott fade; V-C: Bisnis plus a reprint-style site (receh.in); weak independence. Run 1b (2026-10-16): opened https://finance.detik.com/bursa-dan-valas/d-8453630/beda-nasib-pizza-hut-kfc-satu-untung-satu-buntung ; https://www.emitennews.com/news/putus-tren-negatif-laba-pzza-melambung-13398-persen ; https://stocksetup.kontan.co.id/news/saham-pzza-akan-beri-dividen-rp5-miliar-cek-profil-dan-kinerja-emiten-ini (Bisnis 403); printed date Detik 2026-04-21; Kontan 2026-05-05; Emitennews date not printed in markup. Matches, three independent outlets. Attribution to \"efficiency, not boycott fade\" was not verified in the opened pages (no cause statement checked). Emitennews: EPS Rp8.24 vs minus Rp24.23. Three independent outlets. The attribution \"efficiency, not boycott fade\" was NOT verified in the opened pages (no cause statement checked). Emitennews: EPS Rp8.24 vs -Rp24.23."
+      },
+      {
+        "row_id": "Q6-008",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "CORRECTED-OPENED",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-052",
+          "BEH-053",
+          "BEH-054",
+          "BEH-023"
+        ],
+        "question_or_metric": "PZZA sales growth FY2025",
+        "value": "9.1-9.3 by outlet; level 3.05 (vs 2.79 in FY2024)",
+        "unit": "% yoy; IDR trillion",
+        "ref_period": "FY2025 (Detik 2026-04-21; Kontan 2026-05-05)",
+        "notes": "PROVISIONAL; publication date taken from URL path/title; needs verifier second search; V-C: same weak independence as Q6-007. Run 1b (2026-10-16): opened Detik, Emitennews, Kontan (as Q6-007); printed date 2026-04-21; 2026-05-05. Level 3.05 trn verified. Growth is not uniform across outlets: Kontan about 9.1% (consistent with Bisnis 9.06%), Emitennews 9.32%. Rounded levels allow 8.9-9.7%. Keep 9.06 with note \"9.1-9.3% by outlet\" or use 3.05 vs 2.79 trn. CORRECTION: growth is not uniform across outlets (Kontan about 9.1%, Emitennews 9.32%; the earlier 9.06% was from Bisnis, not opened). Level Rp3.05tn vs Rp2.79tn is solid (Detik)."
+      },
+      {
+        "row_id": "Q6-009",
+        "file": "data/processed/plan4-origin-boycott.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-055",
+          "BEH-056",
+          "BEH-024"
+        ],
+        "question_or_metric": "PZZA net profit 9M 2025",
+        "value": "15.91",
+        "unit": "IDR billion",
+        "ref_period": "Jan-Sep 2025",
+        "notes": "PROVISIONAL; publication date taken from URL path/title; needs verifier second search; V-C: confirmed by Bisnis 20251028, emitennews, pintarsaham, kabarbursa; prior-year 9M loss IDR 96.71bn. Run 1b (2026-10-16): opened https://www.kabarbursa.com/market-hari-ini/pzza-pamer-laba-tapi-mulai-dibuang-broker-besar ; https://wartaekonomi.co.id/read590887/pendapatan-naik-11-pzza-genjot-ekspansi-gerai-di-2026; printed date Kabarbursa 2025-10-28 14:30 WIB; Warta Ekonomi 2025-11-21. Matches. Bloomberg Technoz (2026-01-02) also repeats it. Prior-year 9M loss Rp96.71bn confirmed (Kabarbursa). Bloomberg Technoz (2026-01-02) repeats it."
+      },
+      {
+        "row_id": "P3B-09",
+        "file": "data/processed/foreign-entrants.csv",
+        "verification": "VERIFIED-OPENED (relay)",
+        "geography": "N",
+        "age_fit_code": "D",
+        "register_ids": [
+          "BEH-052"
+        ],
+        "question_or_metric": "Pizza Hut Indonesia net profit FY2025 (FY2024 loss)",
+        "value": "Rp 24,75 miliar laba vs Rp 72,83 miliar rugi",
+        "unit": "IDR (net profit FY2025 vs net loss FY2024)",
+        "ref_period": "FY2025 vs FY2024; Detik 2026-04-21",
+        "notes": "Included as a control against survivorship bias in the case list."
+      }
+    ]
+  },
+  "blocked_disconfirming_table_a": [
+    {
+      "row_id": "DISC-A5",
+      "table_row_num": 5,
+      "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+      "question_or_metric": "Hypothesis H2,H3 (mixed)",
+      "hypothesis": "H2,H3",
+      "direction": "mixed",
+      "value": "n/a (qualitative)",
+      "unit": "headline: middle-class savings fall",
+      "ref_period": "Feb 2026 (MSI)",
+      "source_key": "P1-C6-S4",
+      "access_status": "snippet-only (not opened)",
+      "quote_or_snippet": "Title: \"Laporan MSI: Belanja Masyarakat Naik Jelang Ramadan, Tabungan Kelas Menengah Turun\" [direction changed disconfirms to mixed per V-E: same headline reports spending rising (MSI +6.5% YoY) while middle-class saving index 100.4 was lowest since Oct 2023; confirmed via CNBC Indonesia 2026-03-17, Antara]",
+      "register_id": "DEM-008;DEM-021",
+      "register_ids": [
+        "DEM-008",
+        "DEM-021"
+      ],
+      "primary_tier": 3,
+      "urls": [
+        "https://ekonomi.bisnis.com/read/20260226/9/1955844/laporan-msi-belanja-masyarakat-naik-jelang-ramadan-tabungan-kelas-menengah-turun",
+        "https://www.cnbcindonesia.com/research/20260317113109-128-719750/kelas-menengah-royal-belanja-jelang-lebaran-tapi-tabungannya-menipis"
+      ],
+      "verification": "BLOCKED",
+      "geography": "N",
+      "age_fit_code": "D",
+      "notes": "Disconfirming table A row 5; direction=mixed",
+      "raw_row": {
+        "#": "5",
+        "H": "H2,H3",
+        "direction": "mixed",
+        "value": "n/a (qualitative)",
+        "unit": "headline: middle-class savings fall",
+        "ref_period": "Feb 2026 (MSI)",
+        "source_key": "P1-C6-S4",
+        "access_status": "snippet-only (not opened)",
+        "snippet": "Title: \"Laporan MSI: Belanja Masyarakat Naik Jelang Ramadan, Tabungan Kelas Menengah Turun\" [direction changed disconfirms to mixed per V-E: same headline reports spending rising (MSI +6.5% YoY) while middle-class saving index 100.4 was lowest since Oct 2023; confirmed via CNBC Indonesia 2026-03-17, Antara]",
+        "register_id": "DEM-008;DEM-021",
+        "verification": "BLOCKED"
+      }
+    },
+    {
+      "row_id": "DISC-A8",
+      "table_row_num": 8,
+      "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+      "question_or_metric": "Hypothesis H5 (disconfirms)",
+      "hypothesis": "H5",
+      "direction": "disconfirms",
+      "value": "n/a (qualitative)",
+      "unit": "eating out among most-cut spending items",
+      "ref_period": "late Sep-Oct 2026",
+      "source_key": "P1-C6-S7",
+      "access_status": "snippet-only (not opened)",
+      "quote_or_snippet": "\"makan di luar termasuk pengeluaran yang paling sering dipangkas, bersama hiburan berbayar dan liburan.\" Same summary: \"pertumbuhan ekonomi yang masih positif belum cukup untuk menyimpulkan bahwa daya beli turun secara menyeluruh.\"",
+      "register_id": "DEM-011",
+      "register_ids": [
+        "DEM-011"
+      ],
+      "primary_tier": 3,
+      "urls": [
+        "https://finansial.bisnis.com/read/20261014/55/2012550/downgrade-lifestyle-makin-ramai-benarkah-daya-beli-kelas-menengah-turun"
+      ],
+      "verification": "BLOCKED",
+      "geography": "N",
+      "age_fit_code": "D",
+      "notes": "Disconfirming table A row 8; direction=disconfirms",
+      "raw_row": {
+        "#": "8",
+        "H": "H5",
+        "direction": "disconfirms",
+        "value": "n/a (qualitative)",
+        "unit": "eating out among most-cut spending items",
+        "ref_period": "late Sep-Oct 2026",
+        "source_key": "P1-C6-S7",
+        "access_status": "snippet-only (not opened)",
+        "snippet": "\"makan di luar termasuk pengeluaran yang paling sering dipangkas, bersama hiburan berbayar dan liburan.\" Same summary: \"pertumbuhan ekonomi yang masih positif belum cukup untuk menyimpulkan bahwa daya beli turun secara menyeluruh.\"",
+        "register_id": "DEM-011",
+        "verification": "BLOCKED"
+      }
+    },
+    {
+      "row_id": "DISC-A15",
+      "table_row_num": 15,
+      "file": "data/raw/2026-10-17-disconfirming-evidence.md",
+      "question_or_metric": "Hypothesis H3,H4 (mixed)",
+      "hypothesis": "H3,H4",
+      "direction": "mixed",
+      "value": "20,000 to above 30,000 (Bisnis, not opened); 30,000 to 40,000 (Kompas 2026-08-06, opened)",
+      "unit": "IDR per product, Fore Coffee price band targeting the middle class",
+      "ref_period": "Feb 2026",
+      "source_key": "P1-C6-S14",
+      "access_status": "snippet-only (not opened)",
+      "quote_or_snippet": "\"FORE membidik kelas menengah dengan harga sekitar Rp20.000 hingga lebih dari Rp30.000 per produk, dan pendapatan segmen minumannya naik pada kuartal III/2025.\" [CONFLICT, run 1b: Kompas 2026-08-06 writes \"posisi Fore Coffee yang menyasar segmen menengah dengan rentang harga Rp 30.000-Rp 40.000\"; both values recorded, row stays provisional]",
+      "register_id": "DEM-017;DEM-026",
+      "register_ids": [
+        "DEM-017",
+        "DEM-026"
+      ],
+      "primary_tier": 3,
+      "urls": [
+        "https://market.bisnis.com/read/20260225/192/1955761/fore-ogah-ikut-tren-kopi-keliling-jemput-bola-sebut-beda-kelas",
+        "https://money.kompas.com/read/2026/08/06/100200426/pendapatan-fore-coffee-fore-tembus-rp-1-triliun-per-hari-laku-140.000-gelas-"
+      ],
+      "verification": "BLOCKED",
+      "geography": "N",
+      "age_fit_code": "D",
+      "notes": "Disconfirming table A row 15; direction=mixed",
+      "raw_row": {
+        "#": "15",
+        "H": "H3,H4",
+        "direction": "mixed",
+        "value": "20,000 to above 30,000 (Bisnis, not opened); 30,000 to 40,000 (Kompas 2026-08-06, opened)",
+        "unit": "IDR per product, Fore Coffee price band targeting the middle class",
+        "ref_period": "Feb 2026",
+        "source_key": "P1-C6-S14",
+        "access_status": "snippet-only (not opened)",
+        "snippet": "\"FORE membidik kelas menengah dengan harga sekitar Rp20.000 hingga lebih dari Rp30.000 per produk, dan pendapatan segmen minumannya naik pada kuartal III/2025.\" [CONFLICT, run 1b: Kompas 2026-08-06 writes \"posisi Fore Coffee yang menyasar segmen menengah dengan rentang harga Rp 30.000-Rp 40.000\"; both values recorded, row stays provisional]",
+        "register_id": "DEM-017;DEM-026",
+        "verification": "BLOCKED"
+      }
+    }
+  ]
+}

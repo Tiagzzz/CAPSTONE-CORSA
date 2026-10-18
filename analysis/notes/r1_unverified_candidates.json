@@ -1,0 +1,162 @@
+[
+  {
+    "candidate_id": "R1-C01",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry's first kiosk in Sao Paulo (2016) measured only 6 m2; the company reached nearly 100 stores in Brazil between 2016 and 2018 before expanding internationally, opened its first international unit in Orlando (Florida Mall) in July 2018 via a 50/50 structure with a local operator, concluded after two additional Florida kiosks in 2018 that the 50/50 model was not sustainable for rapid scaling (shifting to a local franchisor office and territorial master franchisees), and entered China (Shanghai) in 2021.",
+    "source_url": "https://hsmmanagement.com.br/empresa-brasileira-se-globaliza-em-apenas-sete-anos/",
+    "publisher_hint": "HSM Management (Brazil business magazine)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C02",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Founder Georgios Frangulis stated that scalability was a priority from day one; in the U.S. market Oakberry's preferred store footprint is approximately 46.5 m2 (~500 sq. ft.), with estimated unit investment of US$100,000 to US$320,000, a staffing model of 1 employee during normal shifts and up to 3 at peak periods, and a customizable bowl built from a standardized organic acai base, cup size, and predefined toppings.",
+    "source_url": "https://www.qsrmagazine.com/story/oakberry-puts-acai-on-the-map-worldwide/",
+    "publisher_hint": "QSR Magazine",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C03",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry's U.S. franchise framework specifies store formats ranging from compact kiosks to shops (500 to 1,500 sq. ft.) and estimated initial investment of US$150,000 to US$320,000, using a bounded cold-assembly workflow (standardized acai base dispensed in 3 cup sizes with layered cold toppings).",
+    "source_url": "https://www.oakberry.com/uploads/Oakberry_Framework_US.pdf",
+    "publisher_hint": "OAKBERRY Official U.S. Franchise Framework PDF (also https://www.oakberryfranchise.com/ and https://www.oakberryfranquicia.com/learn-more-about-oakberry)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C04",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "By year-end 2025, OAK Holding S.A. reported 982 stores globally (373 in Brazil and 609 abroad); consolidated financials (R$ million) show net revenue rising from R$173.2m (2023) to R$264.8m (2024) and R$441.0m (2025), operating result moving from +R$19.4m (2023) and +R$19.3m (2024) to -R$11.1m (2025), net income/(loss) moving from +R$2.1m (2023) to -R$3.1m (2024) and -R$88.4m (2025), operating cash flow negative across all three years (-R$8.8m in 2023, -R$43.2m in 2024, -R$32.1m in 2025), and PPE + intangible investment rising from R$33.5m (2023) and R$44.1m (2024) to R$162.0m (2025).",
+    "source_url": "https://datamercantil.com.br/wp-content/uploads/2026/06/25-06-2026-Data-Mercantil-certificado.pdf",
+    "publisher_hint": "OAK Holding S.A. 2025 Audited Financial Statements published in Data Mercantil (25 June 2026)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C05",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "OAK Holding S.A.'s 2024 audited financial statements report 2023 and 2024 net revenue of R$173.2m and R$264.8m, operating result of R$19.4m and R$19.3m, net income/(loss) of R$2.1m and -R$3.1m, operating cash flow of -R$8.8m and -R$43.2m, and 2024 debenture issuance of R$100m alongside prior R$50m Green CRA debt (2022).",
+    "source_url": "https://www.oakberry.com/pt-BR/uploads/Complete_with_Docusign_OAKHOLDING24DEZ.pdf",
+    "publisher_hint": "OAK Holding S.A. 2024 Financial Statements (oakberry.com)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C06",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry raised R$325 million in a 2023-2024 transaction led by BTG Pactual (following an earlier R$84 million round with Monte Bravo / Kilima in 2021) to accelerate international expansion and verticalized acai production.",
+    "source_url": "https://exame.com/insight/oakberry-capta-r-325-milhoes-com-btg-para-internacionalizar-ainda-mais-o-acai/p",
+    "publisher_hint": "Exame (Brazil financial press)",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C07",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry and Fortitude Capital formed a EUR 14.5 million strategic joint venture (EUR 10.47m from Fortitude Capital and EUR 4.03m from Oakberry) in 2024-2025 to expand Oakberry stores across Southern Europe (Portugal, Spain, and Italy).",
+    "source_url": "https://fortitudecapital.pt/fortitude-capital-and-oakberry-join-forces-in-a-strategic-partnership-for-expansion-in-southern-europe/",
+    "publisher_hint": "Fortitude Capital official release",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C08",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry entered Indonesia in November 2023 via Bali, operating 4 stores in Bali (Canggu, Ubud, Seminyak) with Jakarta and Surabaya listed as upcoming expansion cities, and still has 0 operating stores in Jakarta on its official Indonesian store locator.",
+    "source_url": "https://oakberry.id/locations/",
+    "publisher_hint": "OAKBERRY Indonesia Official Website (also https://oakberry.id/)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C09",
+    "origin": "research/internal/2026-10-14-oakberry-benchmark-corsa-locations.md",
+    "claim": "Oakberry opened its first Indonesian store in Canggu, Bali on 19 November 2023 (Jl. Munduk Catu No. 3, near Batu Bolong Beach) and its second store in Ubud on 26 November 2023 (Jl. Wanawarna, ~700m from Ubud Monkey Forest), targeting Bali's international tourist, surf, and yoga/wellness circuits first with plans to expand later to Jakarta and Surabaya.",
+    "source_url": "https://bali.keizai.biz/headline/598/",
+    "publisher_hint": "Minami Bali Keizai Shimbun",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C10",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry Indonesia's business development representative (Syauqi Al Ibrama) published a call for Jakarta retail spaces seeking premium, brand-aligned sites, reputable landlords/co-tenants, and healthy-lifestyle consumer footfall, and in a separate post highlighted Grand Indonesia, Pondok Indah Mall, and PIK2/Aloha as examples of Jakarta's evolving retail landscape.",
+    "source_url": "https://www.linkedin.com/posts/syauqialibrama_oakberry-acai-healthyliving-activity-7308773959859113985-1Q_x",
+    "publisher_hint": "LinkedIn (Syauqi Al Ibrama, OAKBERRY Indonesia; companion post: https://www.linkedin.com/posts/syauqialibrama_retail-internationalchain-jakarta-activity-7193780456356470784-h0Ks)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C11",
+    "origin": "research/internal/2026-10-14-oakberry-benchmark-corsa-locations.md",
+    "claim": "In Bali, Oakberry localized its supply chain by pairing its standardized Brazilian acai base with locally sourced fresh fruit, granola, and toppings, and expanded to Seminyak (Jl. Kayu Jati) and its first Indonesian shopping-mall location.",
+    "source_url": "https://www.linkedin.com/posts/syauqialibrama_bali-jakarta-indonesia-activity-7201762548323393536-fbHX",
+    "publisher_hint": "LinkedIn (Syauqi Al Ibrama, OAKBERRY Indonesia; companion Seminyak post: https://www.linkedin.com/posts/syauqialibrama_oakberry-oakberryindonesia-oakberrybali-activity-7197068063819616258-Tyal)",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C12",
+    "origin": "research/internal/2026-10-08-customer-behaviour-extended-data.md",
+    "claim": "Oakberry Indonesia's franchise portal lists per-store investment in Indonesia at IDR 1.5 billion to IDR 2.5 billion (~CHF 70,000-116,000) for a 25-60 m2 store footprint, with an estimated payback period of 24 to 36 months.",
+    "source_url": "https://oakberry.id/franchise/",
+    "publisher_hint": "OAKBERRY Indonesia Official Franchise Page",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C13",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry entered South Korea via a temporary pop-up store at The Hyundai Seoul from 7 May to 2 June 2024 featuring product trials, branded merchandise, and multilingual staff to build brand desire before rolling out permanent stores.",
+    "source_url": "https://www.tlcreative.co.kr/en/projects/hyundai-seoul-oakberry-128",
+    "publisher_hint": "TL Creative Korea project portfolio",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C14",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "In South Korea, Oakberry partnered with a local operator, used pop-ups at The Hyundai Seoul and influencer/digital marketing, and opened 36 stores in less than one year.",
+    "source_url": "https://abf.com.br/premio-abf-destaque-internacionalizacao-chilli-beans-doutor-sofa-oakberry/",
+    "publisher_hint": "ABF (Associacao Brasileira de Franchising; see also https://abf.com.br/expansao-acelerada-leva-oakberry-a-final-do-premio-destaque-de-internacionalizacao/)",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C15",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "After entering South Korea via department stores and shopping malls, Oakberry opened its first standalone Korean street store (first non-mall store) on 19 June 2025 at Apro Square near Sinnonhyeon Station in Seoul.",
+    "source_url": "https://www.thebigdata.co.kr/view.php?ud=2025062010493563229aeda69934_23",
+    "publisher_hint": "The Big Data News (South Korea)",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C16",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Oakberry's South Korean franchise disclosure summary lists a representative 50 m2 store startup burden of approximately KRW 200.18 million.",
+    "source_url": "https://jumpo.shop/%EC%98%A4%ED%81%AC%EB%B2%A0%EB%A6%AC-%ED%94%84%EB%9E%9C%EC%B0%A8%EC%9D%B4%EC%A6%88-%EC%A0%95%EB%B3%B4%EA%B3%B5%EA%B0%9C%EC%84%9C-%EC%9A%94%EC%95%BD/",
+    "publisher_hint": "Jumpo Shop (South Korea franchise disclosure summary)",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C17",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "Spoleto (Grupo Trigo, Brazil), a fast-casual personalized Italian pasta chain with 400+ units using a modular 'choose pasta + sauce + add-ons' assembly model, requires an initial investment from R$635,000 and 8 to 12 employees for its traditional format (6% royalty, 2% advertising fee), while its smaller Piccolo format starts at R$375,000 and requires 7 employees.",
+    "source_url": "https://www.grupotrigo.com.br/franquias/spoleto",
+    "publisher_hint": "Grupo Trigo / Spoleto Official Franchise Portal",
+    "priority": "high"
+  },
+  {
+    "candidate_id": "R1-C18",
+    "origin": "research/internal/2026-10-18-oakberry-benchmark.md",
+    "claim": "The Orlando metro area (where Oakberry opened its first international store in 2018) had 33,437 Brazilian-born residents in 2022, the fourth-largest Brazilian community in the United States.",
+    "source_url": "https://business.orlando.org/wp-content/uploads/sites/3/2020/02/Global-Orlando.pdf",
+    "publisher_hint": "Orlando Economic Partnership",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C19",
+    "origin": "research/internal/2026-10-08-customer-behaviour-extended-data.md",
+    "claim": "In May 2025, Jakarta Governor Pramono Anung reopened and extended operating hours (including 24-hour operations) at five major city parks (such as Taman Langsat, Taman Ayodya, and Taman Lapangan Banteng) to support Jakarta's booming urban running and active-lifestyle community.",
+    "source_url": "https://www.thejakartapost.com/opinion/2025/05/12/jakartas-running-boom.html",
+    "publisher_hint": "The Jakarta Post",
+    "priority": "medium"
+  },
+  {
+    "candidate_id": "R1-C20",
+    "origin": "research/internal/2026-10-08-customer-behaviour-extended-data.md",
+    "claim": "Fore Coffee raised IDR 353.4 billion in its oversubscribed April 2025 IPO on the Indonesia Stock Exchange (IDX) to fund store expansion past 217+ outlets in Indonesia.",
+    "source_url": "https://jakartaglobe.id/business/fore-coffee-raises-rp-353-billion-in-oversubscribed-ipo",
+    "publisher_hint": "Jakarta Globe",
+    "priority": "medium"
+  }
+]

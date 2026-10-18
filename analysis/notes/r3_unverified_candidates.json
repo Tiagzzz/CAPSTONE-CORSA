@@ -1,0 +1,646 @@
+{
+  "agent": "R3-Argon-Economics-Model",
+  "generated_at": "2026-10-18",
+  "branch": "insights-2026-10-18",
+  "summary": {
+    "total_model_sources_s01_s104": 104,
+    "model_sources_fully_verified_in_sources_md_under_exact_url": 3,
+    "model_sources_partially_or_topic_covered_in_sources_md": 13,
+    "model_sources_unverified_in_sources_md": 88,
+    "blocked_or_unverified_demand_and_competitor_rows": 21
+  },
+  "section_1_model_v0_6_sources_s01_to_s104": {
+    "description": "Complete audit of 18-sources.csv (S01-S104) backing Section 6 (Location & District Rents) and Section 8 (Financial Model v0.6 Inputs: macro/FX, lease prepayments, BFI/bank rates, minimum wage & BPJS, PLN/PAM/LPG utility tariffs, commercial kitchen & espresso equipment costs, tax rates, and property portal listings) cross-referenced against sources/sources.md.",
+    "cross_reference_already_covered_in_sources_md": [
+      {
+        "source_id": "S08",
+        "category": "Macro",
+        "title": "SNB / BI CHF-IDR Exchange Rate (Oct 2025)",
+        "url_in_18_sources": "https://data.snb.ch",
+        "used_in_sheets": "Inputs!E10:H10 (fx = 18000 / 20000 / 22000)",
+        "sources_md_status": "COVERED_BY_NEWER_PRIMARY",
+        "sources_md_match": "REG-054 (Bank Indonesia Kurs Transaksi BI 16 Oct 2026 verifies CHF/IDR mid-rate = Rp20,903.65) and REG-055 (SIX Swiss Exchange SARON).",
+        "wave_2b_action": "No action needed unless SNB historical series is specifically cited; use REG-054 (Rp20,903.65) for Oct 2026 spot."
+      },
+      {
+        "source_id": "S14",
+        "category": "Staffing",
+        "title": "DKI Jakarta UMP 2025 Decree (Kepgub No. 829/2024)",
+        "url_in_18_sources": "https://jakarta.go.id",
+        "used_in_sheets": "Inputs!F15 (wage_inflation 6.2%), Inputs!F59 (min_wage Rp5,396,761), Staffing!C12:D18",
+        "sources_md_status": "COVERED_VIA_RELAY_PLUS_2026_UPDATE",
+        "sources_md_match": "DEM-041 (Kontan relay verifying 2025 UMP = Rp5,396,761, +6.5%) and DEM-040 (Antara relay verifying 2026 UMP = Rp5,729,876, +6.17%).",
+        "wave_2b_action": "Optional Tier-1 upgrade: fetch primary Kepgub DKI PDF for 2025/2026 UMP from jdih.jakarta.go.id (which worked for REG-131 to REG-134)."
+      },
+      {
+        "source_id": "S15",
+        "category": "Utilities",
+        "title": "PLN Tariff Schedule 2024-2025 (Commercial B-2/TR)",
+        "url_in_18_sources": "https://web.pln.co.id",
+        "used_in_sheets": "OPEX!C17 (Electricity Rp15.0m/mo), OPEX!C18 (Water & gas Rp5.4m/mo)",
+        "sources_md_status": "COVERED_FOR_PLN_AND_PAM_JAYA_UNVERIFIED_FOR_LPG",
+        "sources_md_match": "REG-135 verifies PLN Q3 2026 B-2 tariff at Rp1,444.70/kWh; REG-133 & REG-134 verify PAM Jaya water tariffs (Kepgub 730/2024). Commercial LPG (12kg/50kg non-PSO Pertamina) is NOT in sources.md.",
+        "wave_2b_action": "Verify Q4 2026 PLN tariff adjustment PDF and Pertamina Patra Niaga commercial 12kg/50kg LPG price for restaurant kitchens."
+      },
+      {
+        "source_id": "S16",
+        "category": "Tax",
+        "title": "Indonesia Tax Guide — PPh 22%, PB1/PBJT 10%",
+        "url_in_18_sources": "https://pajak.go.id",
+        "used_in_sheets": "Inputs!F65 (cit_rate 22%), Inputs!F66 (pb1_rate 10%), Inputs!F68 (sme_tax 0.5%)",
+        "sources_md_status": "COVERED_FOR_PBJT_UNVERIFIED_FOR_CIT_AND_PP55",
+        "sources_md_match": "REG-062 (UU 1/2022 HKPD) and REG-063 (Perda DKI 1/2024) verify the 10% PBJT food & beverage tax. However, corporate income tax (22% under UU 7/2021 HPP) and the 0.5% final MSME tax (PP 55/2022, turnover <= Rp4.8B) are NOT in sources.md.",
+        "wave_2b_action": "Pre-verify UU No. 7 Tahun 2021 (UU HPP, Pasal 17 ayat (1) huruf b: 22% CIT rate) and PP No. 55 Tahun 2022 (0.5% final PPh for turnover <= Rp4.8B, plus Pasal 31E 50% discount on first Rp4.8B up to Rp50B) on jdih.kemenkeu.go.id / peraturan.bpk.go.id."
+      },
+      {
+        "source_id": "S20",
+        "category": "Staffing",
+        "title": "BPJS Ketenagakerjaan & Kesehatan Contribution Rates",
+        "url_in_18_sources": "https://bpjsketenagakerjaan.go.id",
+        "used_in_sheets": "Inputs!F60:F64 (JKK 0.54%, JKM 0.30%, JHT 3.70%, JP 2.00%, Kesehatan 4.00% = 11.24% incl. buffer), Staffing!G22",
+        "sources_md_status": "COVERED_IN_REG_081_TO_084_EXCEPT_THR",
+        "sources_md_match": "REG-081 (PP 44/2015 JKK/JKM), REG-082 (PP 46/2015 JHT 3.7%), REG-083 (PP 45/2015 JP 2.0%), and REG-084 (Perpres 64/2020 BPJS Kesehatan 4.0%) are verified Tier-1 statutes in sources.md. However, Permenaker No. 6/2016 (8.33% THR 13th month salary in Staffing!G23) is NOT in sources.md.",
+        "wave_2b_action": "Pre-verify Permenaker No. 6 Tahun 2016 on THR Keagamaan (1 month salary = 8.33%/mo accrual) via jdih.kemnaker.go.id."
+      },
+      {
+        "source_id": "S24",
+        "category": "Legal",
+        "title": "BPJPH Halal Certification Costs & Timeline",
+        "url_in_18_sources": "https://halal.go.id",
+        "used_in_sheets": "CAPEX (Rent)!E93:G93 (Halal certification BPJPH: Rp5m / Rp10m / Rp20m), OPEX!C26",
+        "sources_md_status": "COVERED_FOR_MANDATE_NOT_FEE_TARIFF",
+        "sources_md_match": "REG-068 to REG-072 verify UU 33/2014, PP 42/2024, and the Oct 2024/2026 mandatory halal timeline, but Kepkaban BPJPH No. 141/2021 (or current BLU BPJPH tariff schedule for restaurant halal examination fees) is not in sources.md.",
+        "wave_2b_action": "Pre-verify BPJPH BLU fee regulation (Keputusan Kepala BPJPH on regular halal certification tariff for small/medium restaurants + LPH inspection cost)."
+      },
+      {
+        "source_id": "S32",
+        "category": "Legal",
+        "title": "BKPM Reg No. 4/2021 — PT PMA Minimum Capital Requirements",
+        "url_in_18_sources": "https://oss.go.id",
+        "used_in_sheets": "Inputs!F87 (pma_paidup Rp2.5B), Inputs!F88 (pma_invest Rp10.0B), Funding!B24:B28, CAPEX!E90",
+        "sources_md_status": "VERIFIED_IN_SOURCES_MD",
+        "sources_md_match": "REG-050 (Peraturan BKPM No. 4/2021) and REG-051 (Peraturan Menteri Investasi/BKPM No. 5/2025) are fully verified Tier-1 sources in sources.md.",
+        "wave_2b_action": "Already verified in REG-050 and REG-051."
+      },
+      {
+        "source_id": "S33",
+        "category": "Legal",
+        "title": "KBLI 2020 Classification — 56101 (Restoran) & 56303 (Kedai Minuman)",
+        "url_in_18_sources": "https://oss.go.id/informasi/kbli-berbasis-risiko",
+        "used_in_sheets": "Inputs!Q89, Funding!D25",
+        "sources_md_status": "PARTIALLY_VERIFIED_IN_SOURCES_MD",
+        "sources_md_match": "REG-052 (PP 5/2021) and REG-053 (PP 28/2025) verify risk-based licensing for KBLI 56101 (Restoran) and 56304 (Kedai Kopi). Note that Model v0.6 cites KBLI 56303 (Rumah Minum/Kafe) rather than 56304.",
+        "wave_2b_action": "Already covered by REG-052 and REG-053."
+      }
+    ],
+    "unverified_candidates_by_domain": {
+      "A_section_8_macro_financing_tax_and_regulatory_inputs": [
+        {
+          "source_id": "S07",
+          "category": "Financing",
+          "title": "Bank Indonesia — Policy Rate (BI-Rate) & Commercial Lending Rates",
+          "url": "https://www.bi.go.id",
+          "used_in_sheets": "Inputs!E84:H84 (loan_rate: 13.0% Cons / 11.0% Base / 9.5% Opt), Inputs!E86:H86 (wacc: 15% / 12% / 10%), Funding!B13",
+          "claim_to_verify": "BI-Rate (5.75% cited in model note) and Indonesian commercial bank SME/KUR/working-capital IDR lending rates (10.5%-13.5% p.a.).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Verify latest 2026 BI-Rate press release on bi.go.id or OJK Suku Bunga Dasar Kredit (SBDK) table for commercial/retail loans."
+        },
+        {
+          "source_id": "S09",
+          "category": "Macro",
+          "title": "BPS — Consumer Price Index Indonesia (Sep 2025)",
+          "url": "https://www.bps.go.id/en/pressrelease",
+          "used_in_sheets": "Inputs!E12:H12 (cpi_general: 3.5% Cons / 2.65% Base / 2.0% Opt)",
+          "claim_to_verify": "Headline CPI inflation 2.65% YoY (note: DEM-016 in sources.md is BLOCKED on bps.go.id Cloudflare for Sep 2026 CPI).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Verify Sep 2026 / latest 2026 BPS CPI headline inflation (and Food, Beverage & Tobacco sub-index for S10) via Bank Indonesia Inflation Report or Kontan/Antara/CNBC relay to bypass bps.go.id Cloudflare."
+        },
+        {
+          "source_id": "S10",
+          "category": "Macro",
+          "title": "BPS — Food & Beverage CPI Sub-Index (2024-2025)",
+          "url": "https://www.bps.go.id",
+          "used_in_sheets": "Inputs!E13:H13 (cpi_fb: 5.5% Cons / 4.2% Base / 3.0% Opt)",
+          "claim_to_verify": "F&B CPI sub-index (Makanan, Minuman, dan Tembakau or Penyediaan Makanan dan Minuman/Restoran) running at 4.0%-5.5% YoY.",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Verify alongside S09 via BI / financial press relay of BPS monthly inflation release."
+        },
+        {
+          "source_id": "S17",
+          "category": "Tax",
+          "title": "DDTC News — Indonesian Restaurant Tax & VAT Guide",
+          "url": "https://news.ddtc.co.id",
+          "used_in_sheets": "Inputs!F65:F68, OPEX, Menu!C4 (PBJT 10% vs VAT exemption for restaurant food)",
+          "claim_to_verify": "Confirmation that restaurant F&B subject to 10% regional PBJT is exempt from central 11%/12% PPN (VAT), plus CIT 22% (UU HPP) and 0.5% UMKM final tax (PP 55/2022).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "DDTC News (news.ddtc.co.id) is open and accessible; fetch a specific DDTC guide article confirming PBJT vs PPN non-duplication, 22% CIT, and PP 55/2022."
+        },
+        {
+          "source_id": "S23",
+          "category": "Legal",
+          "title": "Cekindo / Emerhub — PT PMA Registration & Licensing Costs",
+          "url": "https://www.cekindo.com",
+          "used_in_sheets": "CAPEX (Rent)!D90:H97 (PT PMA setup Rp25m, SLHS Rp5m, Environmental Rp4m, Fire Rp3.5m, Signage Rp4m, Notary Rp12m = Rp73.5m Base)",
+          "claim_to_verify": "Market fee benchmarks for PT PMA incorporation, notary akta, NIB/OSS registration, and operational permits in Jakarta.",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Verify Cekindo/InCorp Indonesia or Emerhub public fee schedule page for PT PMA setup."
+        },
+        {
+          "source_id": "S25",
+          "category": "Legal",
+          "title": "DGIP (DJKI) — Trademark Registration Fee Schedule",
+          "url": "https://dgip.go.id",
+          "used_in_sheets": "CAPEX (Rent)!D96:H96 (Brand / trademark registration DJKI: Rp3m Opt / Rp5m Base / Rp10m Cons)",
+          "claim_to_verify": "Official PNBP tariff for trademark application per class at DJKI Kemenkumham (PP No. 28/2019 or PP No. 45/2024).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Verify PP No. 45 Tahun 2024 (PNBP Kemenkumham) or dgip.go.id trademark fee table (Rp1.8m general / Rp500k UMKM per class)."
+        },
+        {
+          "source_id": "S26",
+          "category": "Tax",
+          "title": "PwC Indonesia — Corporate Tax Summary (Depreciation & Amortization)",
+          "url": "https://taxsummaries.pwc.com/indonesia",
+          "used_in_sheets": "Inputs!F89 (dep_years = 5 yrs), Scenarios!D40, PnL_Monthly!C24",
+          "claim_to_verify": "Indonesian fiscal depreciation useful-life groups under PMK 72/2023 / UU PPh Pasal 11 (Group 1 = 4 years at 25% SL / 50% DB; Group 2 = 8 years at 12.5% SL / 25% DB vs. model's 5-year straight-line accounting assumption).",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Open taxsummaries.pwc.com/indonesia/corporate/deductions to verify statutory Group 1 (4 yr) and Group 2 (8 yr) fiscal depreciation rates."
+        },
+        {
+          "source_id": "S99",
+          "category": "Financing",
+          "title": "BFI Finance — Commercial Equipment Leasing Rates Indonesia",
+          "url": "https://www.bfi.co.id",
+          "used_in_sheets": "Inputs!E85:H85 (equip_lease_rate: 16.0% Cons / 14.0% Base / 12.0% Opt)",
+          "claim_to_verify": "Commercial kitchen/machinery leasing effective interest rates in Indonesia (12%-16% p.a.).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Explicitly requested in prompt: verify BFI Finance (bfi.co.id) corporate/machinery leasing rate schedule or published product sheet."
+        },
+        {
+          "source_id": "S100",
+          "category": "Real Estate",
+          "title": "BPHTB & Property Transfer Tax — UU HKPD No. 1/2022",
+          "url": "https://pajak.go.id",
+          "used_in_sheets": "CAPEX (Buy)!D116:D120 (BPHTB 5%, AJB/Notary 1.5%, BPN 0.5%, Due diligence 1.5%, Legal 2.0% = 10.5% buyer closing costs)",
+          "claim_to_verify": "5% BPHTB rate on property acquisition in DKI Jakarta under UU 1/2022 & Perda DKI 1/2024.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Already downloaded in repo as Perda DKI No. 1 Tahun 2024 (REG-063); can verify BPHTB 5% clause directly from that PDF."
+        }
+      ],
+      "B_section_8_demand_menu_channel_and_opex_benchmarks": [
+        {
+          "source_id": "S05",
+          "category": "Industry",
+          "title": "Euromonitor — Consumer Foodservice in Indonesia (2024)",
+          "url": "https://www.euromonitor.com",
+          "used_in_sheets": "Inputs, Revenue, OPEX (Food COGS 28-35%, Bev COGS 18-25%, dine-in/delivery benchmarks)",
+          "claim_to_verify": "Indonesian café/casual dining COGS and channel benchmarks.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Paywalled commercial report; already replaced for market sizing by verified USDA FAS Food Service HRI reports (DEM-049, DEM-054, DEM-055) and public IDX financial statements (FORE CMP-014, ENAK CMP-011, PZZA CMP-009)."
+        },
+        {
+          "source_id": "S06",
+          "category": "Delivery",
+          "title": "GrabFood / GoFood Merchant Commission Structure (2024-2025)",
+          "url": "https://www.grab.com/id/merchant/food/",
+          "used_in_sheets": "Inputs!E37:G37 (deliv_share 15%), Inputs!E40:G40 (deliv_spend Rp140k), Inputs!E48:G48 (delivery_comm 25% Cons / 20% Base / 18% Opt), OPEX!C22",
+          "claim_to_verify": "Standard GrabFood and GoFood merchant commission rate in Indonesia (20% standard commission + merchant promo co-funding).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Verify GrabFood (grab.com/id/merchant/food/) and GoFood (gofood.co.id / gobiz.co.id) official merchant commission terms (typically 20% + Rp1,000 order fee)."
+        },
+        {
+          "source_id": "S18",
+          "category": "Benchmarks",
+          "title": "Toast / Lightspeed Restaurant Industry Benchmarks (Adapted for SEA)",
+          "url": "https://pos.toasttab.com/resources/restaurant-benchmarks",
+          "used_in_sheets": "OPEX!C8:C9 (Packaging 1.5%, Waste/spoilage 2.0%), OPEX!C21 (Marketing 4.0%), OPEX!C25 (Cleaning/maint 1.5%)",
+          "claim_to_verify": "Restaurant operating expense ratios (% of revenue for waste, packaging, maintenance, marketing).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "US/global POS blog benchmark; low priority compared to IDX-listed Indonesian operator financials."
+        },
+        {
+          "source_id": "S19",
+          "category": "Staffing",
+          "title": "Glassdoor / Jobstreet Indonesia — Hospitality & F&B Salaries Jakarta (2024-2025)",
+          "url": "https://id.jobstreet.com",
+          "used_in_sheets": "Staffing!C8:E18 (Store Manager Rp14m, Asst Mgr Rp8.5m, Head Chef Rp11m, Line Cook Rp6.2m, Head Barista Rp7.2m, Barista Rp5.8m, Server Rp5.5m)",
+          "claim_to_verify": "Jakarta F&B salary ranges by role in 2025-2026.",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Optionally check JobStreet Indonesia (id.jobstreet.com) salary guide or Michael Page/Robert Walters Indonesia salary survey for hospitality/retail managers & chefs."
+        },
+        {
+          "source_id": "S27",
+          "category": "Coffee",
+          "title": "Specialty Coffee Association (SCA) — Indonesian Specialty Coffee Market Report",
+          "url": "https://sca.coffee",
+          "used_in_sheets": "Menu!D13:D17 (Specialty arabica green/roasted bean cost IDR 250k-400k/kg; 18g dose = Rp4.5k-7.2k/cup)",
+          "claim_to_verify": "Indonesian specialty arabica wholesale roasted bean pricing (Rp250,000-400,000/kg).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Wholesale roaster price can be verified via Tokopedia/local roaster catalogues (e.g. Anomali, Common Grounds, Tanamera wholesale bean listings) if needed."
+        },
+        {
+          "source_id": "S28",
+          "category": "Pasta",
+          "title": "De Cecco / Barilla Foodservice Indonesia — Imported Pasta Costs",
+          "url": "https://www.barilla.com",
+          "used_in_sheets": "Menu!D7:D12 (Imported semolina/durum pasta cost IDR 45k-75k/kg wholesale)",
+          "claim_to_verify": "Wholesale cost per kg of imported Italian dry pasta / semolina flour in Indonesia.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Note: UN Comtrade HS 190219 in wheat-foodservice.csv (P1C4-21 / DEM-060) already verifies that Italian uncooked pasta imports into Indonesia have a CIF landed value of USD 2.01/kg (~Rp32,700/kg before distributor margin), which aligns well with Rp45k-75k/kg foodservice wholesale."
+        },
+        {
+          "source_id": "S29",
+          "category": "Suppliers",
+          "title": "Indoguna Utama / Sukanda Djaya — Imported Dairy & Charcuterie Wholesale",
+          "url": "https://www.indoguna.co.id",
+          "used_in_sheets": "Menu!D7:D12, D23 (Pecorino, Parmigiano, Grana Padano, Guanciale/Beef Bacon, Burrata, Truffle paste COGS)",
+          "claim_to_verify": "Distributor identity and imported Italian cheese/dairy foodservice availability in Jakarta.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Low priority; Sukanda Djaya (Diamond Cold Storage) and Indoguna Utama are standard Jakarta foodservice importers."
+        },
+        {
+          "source_id": "S30",
+          "category": "Operations",
+          "title": "Moka POS / Majoo — Indonesian Cloud POS Pricing",
+          "url": "https://www.mokapos.com/pricing",
+          "used_in_sheets": "OPEX!C19 (Internet + POS subscription: Rp2,000,000/mo Base), CAPEX (Rent)!E81:E85",
+          "claim_to_verify": "Moka POS subscription fee (Rp300k-800k/mo per outlet) + business fiber internet (Biznet/IndiHome Rp700k-1.2m/mo).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Can quickly verify mokapos.com/pricing if OPEX line-item verification is desired."
+        },
+        {
+          "source_id": "S31",
+          "category": "Competitors",
+          "title": "Jakarta Competitor Menu Benchmark — Common Grounds, Excelso, Burgreens, SaladStop",
+          "url": "Field research / GrabFood menus (Oct 2025)",
+          "used_in_sheets": "Inputs!E36:G41, Menu!C7:Q26, Research_Tracker!G8",
+          "claim_to_verify": "Specific menu prices cited in Menu!Q7:Q26 (e.g., Common Grounds Espresso Rp32k, Latte Rp45k, Croissant Rp38k; SaladStop Rp85k-135k; Italian casual pasta Rp85k-165k).",
+          "priority": "HIGH",
+          "wave_2b_recommendation": "Burgreens (CMP-052) and Pizza Marzano (CMP-054) are already verified in price-ladder.csv, and specialty coffee (Kurasu/Kitsune/Fuglen/Hario Rp40k-80k++) is verified in CMP-036. However, Common Grounds and SaladStop! item prices are NOT in price-ladder.csv (REG-122 and REG-124 only verified store locations). Pre-verifying 3-5 item prices for Common Grounds and SaladStop! would directly validate S31."
+        },
+        {
+          "source_id": "S34",
+          "category": "Insurance",
+          "title": "AXA Mandiri / Allianz Indonesia — Commercial Property & Liability Insurance",
+          "url": "https://www.axa-mandiri.co.id",
+          "used_in_sheets": "OPEX!C23 (Insurance: Rp3.5m Cons / Rp2.5m Base / Rp2.0m Opt per month)",
+          "claim_to_verify": "Commercial restaurant all-risk + public liability insurance cost (~Rp24m-42m/yr).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Minor OPEX line (0.38% of revenue); low priority."
+        },
+        {
+          "source_id": "S35",
+          "category": "Payments",
+          "title": "Bank Indonesia — QRIS Merchant Discount Rate (MDR) Regulation",
+          "url": "https://www.bi.go.id",
+          "used_in_sheets": "OPEX!C27 (Miscellaneous / contingency / payment processing 1.0% of rev = Rp6.6m/mo)",
+          "claim_to_verify": "QRIS Merchant Discount Rate (0.7% regular merchant MDR) and card MDR (1.5%-2.5%).",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Standard BI QRIS regulation (0.7% MDR for regular merchants); low priority."
+        },
+        {
+          "source_id": "S44",
+          "category": "Demand",
+          "title": "Jakarta Specialty Cafe Daily Covers Benchmark (110 / 200 / 270 guests/day)",
+          "url": "Industry benchmark — validate with primary research",
+          "used_in_sheets": "Inputs!E33:H33 (covers_day = 110 / 200 / 270), Research_Tracker!A6:G6 (Status: Placeholder)",
+          "claim_to_verify": "Daily customer count for a 55-seat (150 m2) fast-casual café/pasta venue in SCBD/Senopati.",
+          "priority": "CRITICAL_GAP",
+          "wave_2b_recommendation": "Marked as 'Placeholder' in Research_Tracker!G6 and represents the #1 sensitivity driver in the entire model. Cannot be verified from a single URL; requires either public operator store-level disclosures (e.g. FORE average daily cups/store derived from CMP-013/014, or RBA Burger King ADS Rp18.6m/day in CMP-028) or primary footfall observation."
+        },
+        {
+          "source_id": "S45",
+          "category": "Channels",
+          "title": "Momentum Works — Food Delivery in Southeast Asia (2024)",
+          "url": "https://thelowdown.momentum.asia",
+          "used_in_sheets": "Inputs!E34:G37 (Dine-in 60% / Takeaway 25% / Delivery 15%)",
+          "claim_to_verify": "Indonesia food delivery GMV and restaurant channel split benchmarks.",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Note: BEH-036 in sources.md (DailySocial quoting Momentum Works 'Food Delivery Platforms in Southeast Asia 2025') is already verified for Indonesia GMV ($5.6B, +18% YoY, Grab 50% / GoFood 38% / ShopeeFood 12%). Channel split for full-service/fast-casual can also be cross-checked against ENAK/PZZA/FORE filings."
+        },
+        {
+          "source_id": "S46",
+          "category": "Pricing",
+          "title": "Jakarta Specialty Cafe Pricing Benchmark (Dine-in Rp38k-52k, Mall Rp55k-60k)",
+          "url": "Market observation — GrabFood / GoFood / Google Maps (2025)",
+          "used_in_sheets": "Inputs!E14:H14 (menu_growth 4.0%), Menu!Q13:Q19, Research_Tracker!A7:G7 (Status: Placeholder)",
+          "claim_to_verify": "Specialty coffee pricing tiers in South Jakarta (Rp38k-60k).",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Already substantially addressed by CMP-036 (Manual Jakarta specialty coffee Rp40k-80k++) and price-ladder.csv; see S31 recommendation for Common Grounds."
+        },
+        {
+          "source_id": "S47",
+          "category": "Market",
+          "title": "Target Customer Persona — Jakarta Urban Young Professionals (25-40)",
+          "url": "Primary research required — survey & interviews",
+          "used_in_sheets": "Research_Tracker!A12:G12 (Status: Placeholder)",
+          "claim_to_verify": "Target segment demographics, income, and dining frequency.",
+          "priority": "COVERED_IN_REPO",
+          "wave_2b_recommendation": "Already extensively verified in Section A & Section B of the repo via Susenas/Databoks (DEM-020, DEM-028..031), BI IKK (DEM-034), and consumer surveys (BEH-001..104, DEM-001..015)."
+        },
+        {
+          "source_id": "S48",
+          "category": "Marketing",
+          "title": "Indonesian F&B Social Media & Influencer Marketing Benchmarks",
+          "url": "Market observation — Jakarta F&B agencies (2025)",
+          "used_in_sheets": "OPEX!C21 (Marketing 4.0% of rev = Rp26.39m/mo), CAPEX (Rent)!E100:E103 (Pre-opening marketing Rp87m Base), Research_Tracker!A18:G18 (Status: Placeholder)",
+          "claim_to_verify": "KOL micro/macro rates and restaurant marketing budget % of revenue.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Internal budget choice; low external verification priority."
+        },
+        {
+          "source_id": "S49",
+          "category": "Revenue",
+          "title": "Jakarta Cafe Events, Run Clubs & Corporate Catering Benchmark",
+          "url": "Industry estimate — validate with comparable venues",
+          "used_in_sheets": "Inputs!E49:G50 (Events/catering Rp15m/mo + Retail/merch Rp5m/mo Base), Revenue!C17:C18, Research_Tracker!A11:G11 (Status: Placeholder)",
+          "claim_to_verify": "Monthly ancillary revenue from run-club activations, private bookings, and corporate lunch boxes.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Run-club activation format is qualitatively verified in BEH-025..029 and REG-110..112 (Gudda Coffee, Kopi Api, Kopi Sana); revenue amount (Rp15m/mo = 2.3% of revenue) is a minor management estimate."
+        },
+        {
+          "source_id": "S84",
+          "category": "Location",
+          "title": "District Demand Multipliers — Footfall & Revenue Adjustment by Area",
+          "url": "Composite estimate from S11, S12, S44, S47 — validate with foot traffic counts",
+          "used_in_sheets": "Location!H8:H13 (SCBD 1.00, Senopati main 1.00, PIK 0.95, Senopati side 0.90, Kuningan 0.85, Kemang 0.80)",
+          "claim_to_verify": "Relative demand index across the 6 Jakarta districts.",
+          "priority": "CRITICAL_GAP",
+          "wave_2b_recommendation": "Synthetic analyst composite; no secondary source prints these exact multipliers. Flagged as a core model limitation in Section C & D."
+        },
+        {
+          "source_id": "S101",
+          "category": "Operations",
+          "title": "F&B Ramp-Up Curve — Industry Standard for New Restaurant Openings",
+          "url": "Industry benchmark — Toast / Restaurant Owner / hospitality consulting",
+          "used_in_sheets": "Inputs!E77:H82 (M1 50%, M2 65%, M3 75%, M4 85%, M5 92%, M6 97%, M7+ 100%), PnL_Monthly!C5:I5",
+          "claim_to_verify": "6-month revenue ramp-up curve to steady state.",
+          "priority": "LOW",
+          "wave_2b_recommendation": "Standard financial modelling convention; no external verification required."
+        }
+      ],
+      "C_section_8_capex_fitout_and_equipment_suppliers": [
+        {
+          "source_id": "S102",
+          "category": "Fit-out",
+          "title": "Arcadis / Turner & Townsend — Jakarta Commercial Fit-Out Cost Guide (2024-2025)",
+          "url": "https://www.arcadis.com",
+          "used_in_sheets": "CAPEX (Rent)!D8:F17 (Fit-out IDR 1,037.5m Base for 150 m2 = Rp6.92m/m2 across demolition, MEP, HVAC, grease trap, acoustics, facade)",
+          "claim_to_verify": "Jakarta restaurant/retail interior fit-out cost per m2 (IDR 5M-12M/m2).",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Check Arcadis International Construction Costs or Cushman & Wakefield Asia Pacific Retail Fit-Out Cost Guide for Jakarta restaurant fit-out per m2."
+        },
+        {
+          "source_id": "S103",
+          "category": "Equipment",
+          "title": "Toffin Indonesia — Commercial Espresso Equipment Authorized Distributor (La Marzocco, Victoria Arduino, Mahlkönig, Puqpress)",
+          "url": "https://www.toffin.id",
+          "used_in_sheets": "CAPEX (Rent)!D47:F64 (2-group commercial espresso machine Rp120m-220m, espresso grinders 2x Rp26m, filter grinder Rp14m, under-counter RO water Rp15m, ice machine Rp25m, blender Rp15m = Rp272m Base coffee bar)",
+          "claim_to_verify": "Indonesian commercial prices for 2-group La Marzocco Linea PB / Victoria Arduino Eagle One, Mahlkönig E65S/EK43, and Hoshizaki ice makers.",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Explicitly relevant to Section 8 equipment costs: verify Toffin Indonesia (toffin.id) or official Tokopedia/authorized distributor pricing for La Marzocco Linea Classic S / Linea PB 2-group and Mahlkönig E65S/EK43."
+        },
+        {
+          "source_id": "S104",
+          "category": "Equipment",
+          "title": "PT SeADa / Rotaryana / Restomart — Commercial Kitchen Equipment Jakarta (Arcobaleno/Fimar Pasta Extruder, Desmon Pasta Cooker, Rational Combi Oven)",
+          "url": "https://www.rotaryana.com",
+          "used_in_sheets": "CAPEX (Rent)!D32:F44 (Commercial pasta extruder 30-40kg/h Rp85m Base, 4-6 basket electric pasta cooker Rp35m, 6-burner range+convection oven Rp48m, blast chiller Rp38m, refrigeration/prep/hood/dishwasher = Rp403m Base kitchen)",
+          "claim_to_verify": "Indonesian landed prices for commercial pasta extruders (Fimar/Bottene/Arcobaleno), multi-basket pasta boilers, and commercial refrigeration.",
+          "priority": "MEDIUM",
+          "wave_2b_recommendation": "Explicitly relevant to Section 8 equipment costs: verify Restomart (restomart.com) or Rotaryana (rotaryana.com) published prices for commercial pasta cookers, extruders, and upright chillers."
+        }
+      ],
+      "D_section_6_location_reports_and_property_portal_listings": {
+        "sector_reports_and_aggregators": [
+          {
+            "source_id": "S01",
+            "category": "Real Estate",
+            "title": "Lamudi — Commercial Property Price Index South Jakarta (2025)",
+            "url": "https://www.lamudi.co.id/trends/",
+            "used_in_sheets": "Inputs!E23:H23 (buy_price_sqm: Rp35m Cons / Rp25m Base / Rp20m Opt), CAPEX (Buy)!E115",
+            "claim_to_verify": "Commercial strata/shophouse purchase price per m2 in South Jakarta (Rp18m-45m/m2).",
+            "priority": "MEDIUM",
+            "wave_2b_recommendation": "Check Lamudi or Rumah123 commercial sale listings in Kebayoran Baru / SCBD / Kemang to verify Rp25m/m2 purchase benchmark."
+          },
+          {
+            "source_id": "S02",
+            "category": "Real Estate",
+            "title": "Rumah123 — Ruko & Commercial Space Listings South Jakarta",
+            "url": "https://www.rumah123.com/sewa/jakarta-selatan/ruko/",
+            "used_in_sheets": "Rent_Data, Location",
+            "claim_to_verify": "General portal source for South Jakarta ruko lease rates.",
+            "priority": "LOW",
+            "wave_2b_recommendation": "Category landing page; individual listings are audited in S21-S97 below."
+          },
+          {
+            "source_id": "S03",
+            "category": "Real Estate",
+            "title": "JLL Indonesia — Jakarta Property Market Monitor Q3 2025",
+            "url": "https://www.jll.co.id/en/trends-and-insights/research",
+            "used_in_sheets": "Location, Research_Tracker!A4:G4",
+            "claim_to_verify": "Prime retail rents in SCBD / Sudirman (Rp500k-900k/m2/mo for mall/grade-A ground floor) and occupancy trends.",
+            "priority": "HIGH",
+            "wave_2b_recommendation": "Verify JLL Jakarta Property Market Monitor or Cushman & Wakefield Jakarta Retail MarketBeat (public PDF/summary) for prime retail base rent and service charge in SCBD/South Jakarta."
+          },
+          {
+            "source_id": "S04",
+            "category": "Real Estate",
+            "title": "Knight Frank Indonesia — Jakarta Retail Market Highlights H1 2025",
+            "url": "https://www.knightfrank.co.id/research",
+            "used_in_sheets": "Location",
+            "claim_to_verify": "Jakarta retail average rent and service charge benchmarks, plus F&B tenant demand share.",
+            "priority": "HIGH",
+            "wave_2b_recommendation": "Knight Frank Indonesia (knightfrank.co.id/research) and media relays (Kontan/Kompas/Bisnis) regularly publish H1/H2 Jakarta Retail Highlights; good alternative to Cloudflare-blocked Colliers REG-128."
+          },
+          {
+            "source_id": "S11",
+            "category": "Real Estate",
+            "title": "Colliers Indonesia — Jakarta Retail Market Report Q4 2024 / Q1 2025",
+            "url": "https://www.colliers.com/en-id/research",
+            "used_in_sheets": "Inputs!E16:H16 (rent_escalation 5.0%), Location!D9 (2.27x main-road vs side-street ratio)",
+            "claim_to_verify": "Annual retail rent escalation (5%-8% p.a.) and prime street-front vs secondary street rent ratio.",
+            "priority": "MEDIUM",
+            "wave_2b_recommendation": "Note: Colliers direct site returned HTTP 403 in REG-128; if verifying Colliers figures, use Indonesian business press relays (Kontan, Bisnis, Kompas Properti, Investor.id) quoting Colliers Ferry Salanto."
+          },
+          {
+            "source_id": "S12",
+            "category": "Real Estate",
+            "title": "Savills / Cushman & Wakefield — Asia Pacific Retail Views",
+            "url": "https://www.cushmanwakefield.com/en/indonesia",
+            "used_in_sheets": "Location!H8:H13",
+            "claim_to_verify": "PIK and South Jakarta lifestyle F&B retail trends.",
+            "priority": "MEDIUM",
+            "wave_2b_recommendation": "Cushman & Wakefield Indonesia MarketBeat Retail PDFs or press relays can verify South Jakarta / PIK retail rent and service charge."
+          },
+          {
+            "source_id": "S13",
+            "category": "Real Estate",
+            "title": "Rumah123 / Lamudi — Indonesian Commercial Lease Conventions (1-3 Years Upfront Payment)",
+            "url": "https://www.rumah123.com",
+            "used_in_sheets": "Inputs!E24:H29 (lease_years 3-5 yrs, prepay_m 12-24m upfront, deposit_m 1-3m, fitout_m 1-3m), CAPEX (Rent)!G117:G120",
+            "claim_to_verify": "Standard Jakarta ruko/commercial lease practice requiring 1-2 years rent paid upfront plus 2-3 months security deposit.",
+            "priority": "MEDIUM",
+            "wave_2b_recommendation": "Evident directly from the Rumah123/Lamudi listing pages (which quote annual rent 'Rp X Juta per tahun' with minimum 1-2 year lease terms) or legal guides (Hukumonline/Cekindo)."
+          },
+          {
+            "source_id": "S98",
+            "category": "Real Estate",
+            "title": "Colliers Indonesia — Jakarta Office & Retail Service Charge Benchmark Q4 2025",
+            "url": "https://www.colliers.com/en-id/research/jakarta-office-q4-2025",
+            "used_in_sheets": "Location!G8 (SCBD service charge Rp55,000/m2/mo), Location!G11 (Kuningan service charge Rp55,000/m2/mo)",
+            "claim_to_verify": "CBD office/retail service charge benchmark (model uses Rp55,000/m2/mo = 70% of Rp78,600 CBD office SC).",
+            "priority": "HIGH",
+            "wave_2b_recommendation": "Verify CBD Jakarta office and retail service charge rates via press relays of Colliers / Cushman & Wakefield / Knight Frank 2025-2026 reports."
+          }
+        ],
+        "individual_property_listings_in_rent_data_and_excluded_comparators": {
+          "note": "18-sources.csv contains 63 individual Rumah123 / Lamudi commercial property listing URLs (S21-S22, S36-S43, S50-S83, S85-S97). Of these, 33 are active rows in 04-rent-data.csv (100-200 m2 filter) and 30 are larger/smaller listings excluded by the 100-200 m2 filter. Highest-priority candidates for Wave 2b spot-verification are the listings in the thin-sample districts (SCBD n=2, Senopati main road n=1, Kuningan n=2, PIK n=3):",
+          "high_priority_active_listings_to_spot_verify": [
+            {
+              "source_id": "S96",
+              "rent_data_id": 32,
+              "district": "SCBD (Row 1 of 2 in SCBD)",
+              "title": "Rumah123 — Retail Space SCBD Lot 8 Senayan (150 m2, Rp630M/yr, Rp350,000/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-selatan/hos19320263/",
+              "priority": "HIGH"
+            },
+            {
+              "source_id": "S97",
+              "rent_data_id": 33,
+              "district": "SCBD (Row 2 of 2 in SCBD)",
+              "title": "Rumah123 — Ground Floor Retail SCBD Sudirman (160 m2, Rp735M/yr, Rp382,813/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-selatan/hos19285741/",
+              "priority": "HIGH"
+            },
+            {
+              "source_id": "S61",
+              "rent_data_id": 13,
+              "district": "Senopati (main road) (Sole listing n=1 in Senopati main road)",
+              "title": "Lamudi — Ruko Jl. Senopati Raya Kebayoran Baru (180 m2, Rp960M/yr, Rp444,444/m2/mo)",
+              "url": "https://www.lamudi.co.id/properti/41032-73-381c741a2b61-8242-199e771-90b5-3e19",
+              "priority": "HIGH"
+            },
+            {
+              "source_id": "S75",
+              "rent_data_id": 20,
+              "district": "Kuningan (Row 1 of 2 in Kuningan)",
+              "title": "Rumah123 — Ruang Usaha Epiwalk Rasuna Said Kuningan (190 m2, Rp348M/yr, Rp152,632/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-pusat/ruang-usaha-di-epiwalk-rasuna-said-kuningan-jakarta-selatan-hos17347539/",
+              "priority": "MEDIUM"
+            },
+            {
+              "source_id": "S76",
+              "rent_data_id": 21,
+              "district": "Kuningan (Row 2 of 2 in Kuningan)",
+              "title": "Rumah123 — Ruko Karet Kuningan Setiabudi (150 m2, Rp527.4M/yr, Rp293,000/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-selatan/ruko-3-lantai-siap-pakai-di-karet-kuningan-setiabudi-jakarta-selatan-hos18611756/",
+              "priority": "MEDIUM"
+            },
+            {
+              "source_id": "S93",
+              "rent_data_id": 29,
+              "district": "PIK (Row 1 of 3 in PIK — Marked 'Unverified' in Rent_Data!Q33)",
+              "title": "Rumah123 — Ruko 3lt Elang Laut Boulevard PIK (140 m2, Rp116.25M/yr, Rp69,196/m2/mo)",
+              "url": "https://www.rumah123.com/sewa/jakarta-utara/pantai-indah-kapuk/ruko/",
+              "priority": "MEDIUM"
+            },
+            {
+              "source_id": "S94",
+              "rent_data_id": 30,
+              "district": "PIK (Row 2 of 3 in PIK)",
+              "title": "Rumah123 — Ruko 3.5lt Kamal Muara PIK (140 m2, Rp135M/yr, Rp80,357/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-utara/hos19376926/",
+              "priority": "MEDIUM"
+            },
+            {
+              "source_id": "S95",
+              "rent_data_id": 31,
+              "district": "PIK (Row 3 of 3 in PIK)",
+              "title": "Rumah123 — Ruko 3lt Kapuk Muara PIK (160 m2, Rp158.67M/yr, Rp82,639/m2/mo)",
+              "url": "https://www.rumah123.com/properti/jakarta-utara/hos19163274/",
+              "priority": "MEDIUM"
+            }
+          ],
+          "remaining_active_and_excluded_listing_ids": [
+            "Active Senopati side-street listings (n=12): S50 (Rent_Data #1, Gunawarman 150m2), S51 (#2, Tulodong Bawah 160m2), S52 (#3, Ciranjang 200m2), S53 (#4, Cikajang 200m2), S54 (#5, Cikajang 164m2), S55 (#6, Bakti 200m2), S56 (#7, Senopati area 140m2), S57 (#8, Senopati 198m2), S58 (#9, Senopati 200m2), S59 (#10, Cikajang 105m2), S60 (#11, Gunawarman 150m2), S92 (#12, Cikajang 150m2).",
+            "Active Kemang listings (n=13): S64 (Rent_Data #14, Kemang Timur 128m2), S65 (#15, Bangka 168m2), S66 (#16, Kemang 150m2), S67 (#17, Kemang Selatan 150m2), S68 (#18, Bangka 180m2), S69 (#19, Kemang 200m2), S85 (#22, Kemang Raya 120m2), S86 (#23, Kemang Timur 180m2), S87 (#24, Bangka 165m2), S88 (#25, Kemang Utara 140m2), S89 (#26, Ampera 175m2), S90 (#27, Kemang Dalam 150m2), S91 (#28, Kemang Selatan 135m2).",
+            "Excluded out-of-size-band listings in 18-sources.csv (not in Rent_Data): S21, S22, S36, S37, S38, S39, S40, S41, S42, S43, S62, S63, S70, S71, S72, S73, S74, S77, S78, S79, S80, S81, S82, S83."
+          ]
+        }
+      }
+    }
+  },
+  "section_2_blocked_and_unverified_candidates_from_demand_and_competitor_datasets": {
+    "description": "Audit of BLOCKED or unverified rows across data/processed/demand/*.csv, data/raw/2026-10-17-disconfirming-evidence.md, data/processed/price-ladder.csv, and sources/sources.md (DEM-*, CMP-*, REG-*) recommended for Wave 2b pre-verification.",
+    "high_value_candidates_for_wave_2b": [
+      {
+        "register_id": "DEM-016",
+        "dataset_location": "data/raw/2026-10-17-disconfirming-evidence.md (Row 12) & sources/sources.md",
+        "title": "BPS — September 2026 CPI Headline Inflation (2.65% YoY) & F&B Sub-Index",
+        "blocked_url": "https://www.bps.go.id/en/pressrelease/2026/10/01/2409/...",
+        "status": "BLOCKED (Cloudflare 403 on bps.go.id)",
+        "why_valuable_for_wave_2b": "Directly verifies both the macro disconfirming table (Row 12) AND Model v0.6's exact Base Case CPI input (Inputs!F12 = 2.65%, S09) and F&B inflation input (Inputs!F13 = 4.2%, S10).",
+        "suggested_bypass": "Fetch Bank Indonesia's official September 2026 Inflation page on bi.go.id or open a Tier-3 financial press relay (Antara / Kontan / CNBC Indonesia article dated 1 Oct 2026 reporting BPS Sep 2026 inflation of 2.65% YoY)."
+      },
+      {
+        "register_id": "DEM-019",
+        "dataset_location": "data/raw/2026-10-17-disconfirming-evidence.md (Row 21) & sources/sources.md",
+        "title": "Bisnis.com — Masyarakat Kelas Menengah RI Turun Kelas (BPS Middle-Class Contraction 57.33M to 47.85M & Eating-Out Spend Share)",
+        "blocked_url": "https://ekonomi.bisnis.com/read/20260718/9/1781234/...",
+        "status": "BLOCKED (404 / constructed slug; partially replaced by DEM-035 and DEM-037)",
+        "why_valuable_for_wave_2b": "While DEM-035 (Mandiri 46.7M in 2025) and DEM-037 (Kontan 57.33M to 47.85M, which had a printed '2021'/'2029' typo) cover the headcount, opening a clean post-Oct-2024 article or BPS table that prints the full 2019 (57.33M) -> 2021 (53.83M) -> 2024 (47.85M, 17.13%) series without typos would eliminate the Kontan typo caveat in P1C2-05/06.",
+        "suggested_bypass": "Search Kontan / Kompas / CNBC / Antara (2025-2026) for '57,33 juta' '47,85 juta' '17,13%' to get a typo-free relay."
+      },
+      {
+        "register_id": "DEM-062_and_DEM-063",
+        "dataset_location": "reports/2026-10-17-demand-economics.md (Section 6.5) & sources/sources.md",
+        "title": "APTINDO / Kontan / Media Indonesia — National Wheat Flour Consumption Growth (+6.4% in H1 2025, +3.7% in Q1 2026)",
+        "blocked_url": "https://industri.kontan.co.id/news/konsumsi-tepung-terigu-nasional-tumbuh-64-pada-semester-i-2025 (404) & https://mediaindonesia.com/ekonomi/771234/... (403)",
+        "status": "NOT VERIFIED (404 / Cloudflare 403)",
+        "why_valuable_for_wave_2b": "Provides domestic 2025-2026 Indonesian flour milling association (APTINDO / Franciscus Welirang) consumption growth figures to complement the USDA FAS grain reports (DEM-050..052).",
+        "suggested_bypass": "Search Kontan / Investor.id / Antara for exact APTINDO 2025/2026 press releases quoting Franciscus Welirang on 'konsumsi tepung terigu nasional'."
+      },
+      {
+        "register_id": "CMP-017_and_CMP-033_to_035",
+        "dataset_location": "data/processed/foreign-entrants.csv (Row P3B-001 Blue Bottle) & sources/sources.md",
+        "title": "Blue Bottle Coffee Jakarta Market Entry Status (No Indonesian Stores Open as of Oct 2026)",
+        "blocked_url": "https://www.timeout.com/singapore/... (404), https://www.lifestyleasia.com/sg/... (404), https://bluebottlecoffee.com/us/eng/cafes (JS-rendered)",
+        "status": "PARTIAL / UNVERIFIED NEGATIVE CLAIM",
+        "why_valuable_for_wave_2b": "Confirms that ultra-premium global specialty coffee peer Blue Bottle has entered Singapore/HK/Seoul/Tokyo/Shanghai but has zero outlets in Jakarta, leaving the international specialty café space in SCBD/Senopati to Arabica (%), Kitsune, Fuglen, Hario, and Harlan+Holden.",
+        "suggested_bypass": "Check Nestle / Blue Bottle Asia press releases or Manual Jakarta / Prestige Indonesia coverage."
+      },
+      {
+        "register_id": "REG-128",
+        "dataset_location": "sources/sources.md (line 328) & S11/S98 in 18-sources.csv",
+        "title": "Colliers Indonesia — Jakarta Retail Market Report Q2 2026 (Footfall, Tenant Mix, F&B Dominance, Rents & Service Charges)",
+        "blocked_url": "https://www.colliers.com/en-id/research/jakarta-retail-market-report-q2-2026",
+        "status": "BLOCKED (HTTP 403 bot challenge on colliers.com)",
+        "why_valuable_for_wave_2b": "Supports both CAGE retail claims AND Section 6/8 SCBD/South Jakarta retail rent escalation (S11) and service charge (S98) benchmarks.",
+        "suggested_bypass": "Use Indonesian press relays (Kontan, Kompas Properti, Bisnis.com, DetikProperti, Antara) covering Colliers Indonesia's Q1/Q2/Q3 2026 Jakarta Retail Market briefing (Ferry Salanto)."
+      },
+      {
+        "register_id": "PRICE_LADDER_COMMON_GROUNDS_AND_SALADSTOP",
+        "dataset_location": "data/processed/price-ladder.csv & 06-menu.csv (S31)",
+        "title": "Direct Menu Price Verification for Common Grounds & SaladStop! (Jakarta)",
+        "blocked_url": "https://linktr.ee/common.grounds.coffee (REG-122) & https://saladstop.co.id/locations/ (REG-124)",
+        "status": "LOCATIONS VERIFIED, ITEM PRICES UNVERIFIED IN REPO",
+        "why_valuable_for_wave_2b": "Currently, 83.6% of numeric rows in price-ladder.csv come from just 3 brands (Burgreens, Pizza Marzano, Fore Coffee). Meanwhile, CORSA's Menu sheet (06-menu.csv) explicitly benchmarks its coffee, breakfast, and salad prices against Common Grounds and SaladStop! (S31). Adding 5-8 verified item prices for Common Grounds and SaladStop! (from public menu PDFs linked on their Linktree/websites or media reviews) would close the biggest gap between price-ladder.csv and Model v0.6's Menu sheet.",
+        "suggested_bypass": "Follow the menu links on REG-122 (linktr.ee/common.grounds.coffee) and REG-124 (saladstop.co.id) or open PergiKuliner/media reviews with printed item prices."
+      }
+    ],
+    "lower_priority_blocked_rows_already_replaced_by_verified_alternatives": [
+      {
+        "register_id": "DEM-021_to_DEM-027",
+        "dataset_location": "data/raw/2026-10-17-disconfirming-evidence.md (Rows 1, 2, 5, 7, 15, 19, 20, 22)",
+        "status": "BLOCKED IN ORIGINAL TABLE, ALREADY REPLACED IN WAVE 1",
+        "note": "Row 5 (Bisnis MSI Feb 2026) was successfully replaced by CNBC Indonesia 2026-03-17 (DEM-021, verifying Middle Saving Index = 100.4, lowest since Oct 2023) and Kontan 2026-10-12 (DEM-046, Sep 2026 Saving Index = 100.5). Rows 1, 2, 7 (Jakpat/Populix/YouGov paywalls) were replaced by verified Jakpat/Snapcart/TGM/GoodStats surveys (DEM-001..003, DEM-012, BEH-001..104). Row 15 (EF EPI) was verified via Antara (BEH-070, rank 80 of 116, score 468). Rows 19-20 (Starbucks/KFC closures) were replaced by primary IDX financial statements for MAPB (CMP-006..008) and FAST (CMP-001..005)."
+      },
+      {
+        "register_id": "CMP-042_to_CMP-051_and_CMP-062_to_CMP-065",
+        "dataset_location": "sources/sources.md (lines 180-189, 200-203)",
+        "status": "BLOCKED / DEAD URLS FROM EARLY SEARCH",
+        "note": "Mostly dead or paywalled trade/listicle URLs (USDA API 403, Statista paywall, dead Kompas/Kontan/GrabFood slugs) that were already superseded by verified USDA FAS reports (DEM-049..055) and verified price-ladder sources (CMP-052..061)."
+      }
+    ]
+  }
+}

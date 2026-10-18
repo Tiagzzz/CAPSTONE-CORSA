@@ -1,0 +1,6 @@
+{
+  "report_exists": false,
+  "report_path": "reports/2026-10-18-corsa-jakarta-insights-report.md",
+  "status": "awaiting_deliverable_1",
+  "message": "Deliverable 1 not yet created. Run verify_report.py again after writing reports/2026-10-18-corsa-jakarta-insights-report.md."
+}

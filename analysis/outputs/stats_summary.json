@@ -1,0 +1,1017 @@
+{
+  "price_ladder": {
+    "total_rows": 89,
+    "numeric_rows_count": 67,
+    "exact_numeric_rows_count": 50,
+    "approx_numeric_rows_count": 17,
+    "blank_price_rows_count": 22,
+    "blank_price_row_ids": [
+      "P3PB-19",
+      "P3PB-20",
+      "P3PB-21",
+      "P3PB-22",
+      "P3PB-26",
+      "P3PB-27",
+      "P3PB-28",
+      "P3PB-45",
+      "P3PB-46",
+      "P3PB-47",
+      "P3PB-48",
+      "P3PB-49",
+      "P3PB-50",
+      "P3PB-51",
+      "P3PB-52",
+      "P3PB-53",
+      "P3PB-54",
+      "P3PB-55",
+      "P3PB-56",
+      "P3PB-57",
+      "P3PB-58",
+      "P3PB-59"
+    ],
+    "approx_price_row_ids": [
+      "P3PR-025",
+      "P3PR-026",
+      "P3PR-027",
+      "P3PR-028",
+      "P3PR-029",
+      "P3PR-030",
+      "P3PB-23",
+      "P3PB-24",
+      "P3PB-25",
+      "P3PB-30",
+      "P3PB-31",
+      "P3PB-32",
+      "P3PB-33",
+      "P3PB-34",
+      "P3PB-35",
+      "P3PB-36",
+      "P3PB-37"
+    ],
+    "top_3_brands_share_pct": 83.6,
+    "brand_concentration": [
+      {
+        "brand": "Burgreens",
+        "numeric_count": 24,
+        "share_pct": 35.8,
+        "exact_count": 24,
+        "approx_count": 0,
+        "categories": [
+          "bowl",
+          "coffee",
+          "functional_drink",
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Pizza Marzano",
+        "numeric_count": 18,
+        "share_pct": 26.9,
+        "exact_count": 18,
+        "approx_count": 0,
+        "categories": [
+          "bowl",
+          "coffee",
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Fore Coffee",
+        "numeric_count": 14,
+        "share_pct": 20.9,
+        "exact_count": 7,
+        "approx_count": 7,
+        "categories": [
+          "coffee"
+        ]
+      },
+      {
+        "brand": "Pepper Lunch",
+        "numeric_count": 3,
+        "share_pct": 4.5,
+        "exact_count": 0,
+        "approx_count": 3,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Casa Pasta",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 1,
+        "approx_count": 0,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Sky Pasta",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Halo Pasta",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Fish Streat",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Fish Lab",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "pasta"
+        ]
+      },
+      {
+        "brand": "Kopi Tuku",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "coffee"
+        ]
+      },
+      {
+        "brand": "Tomoro Coffee",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "coffee"
+        ]
+      },
+      {
+        "brand": "Kopi Kenangan",
+        "numeric_count": 1,
+        "share_pct": 1.5,
+        "exact_count": 0,
+        "approx_count": 1,
+        "categories": [
+          "coffee"
+        ]
+      }
+    ],
+    "by_category": {
+      "coffee": {
+        "all_numeric": {
+          "n": 23,
+          "min": 10000,
+          "p25": 24500,
+          "median": 29000,
+          "mean": 27913,
+          "p75": 31000,
+          "iqr": 6500,
+          "max": 38000
+        },
+        "exact_only": {
+          "n": 13,
+          "min": 24000,
+          "p25": 29000,
+          "median": 30000,
+          "mean": 30923,
+          "p75": 33000,
+          "iqr": 4000,
+          "max": 38000
+        },
+        "approx_count": 10,
+        "brands": {
+          "Fore Coffee": 14,
+          "Pizza Marzano": 4,
+          "Burgreens": 2,
+          "Kopi Tuku": 1,
+          "Tomoro Coffee": 1,
+          "Kopi Kenangan": 1
+        }
+      },
+      "pasta": {
+        "all_numeric": {
+          "n": 20,
+          "min": 20000,
+          "p25": 52250,
+          "median": 86500,
+          "mean": 73950,
+          "p75": 96000,
+          "iqr": 43750,
+          "max": 109000
+        },
+        "exact_only": {
+          "n": 13,
+          "min": 20000,
+          "p25": 92000,
+          "median": 95000,
+          "mean": 88154,
+          "p75": 105000,
+          "iqr": 13000,
+          "max": 109000
+        },
+        "approx_count": 7,
+        "brands": {
+          "Pizza Marzano": 11,
+          "Pepper Lunch": 3,
+          "Burgreens": 1,
+          "Casa Pasta": 1,
+          "Sky Pasta": 1,
+          "Halo Pasta": 1,
+          "Fish Streat": 1,
+          "Fish Lab": 1
+        }
+      },
+      "bowl": {
+        "all_numeric": {
+          "n": 15,
+          "min": 50000,
+          "p25": 57000,
+          "median": 60000,
+          "mean": 66133,
+          "p75": 68000,
+          "iqr": 11000,
+          "max": 105000
+        },
+        "exact_only": {
+          "n": 15,
+          "min": 50000,
+          "p25": 57000,
+          "median": 60000,
+          "mean": 66133,
+          "p75": 68000,
+          "iqr": 11000,
+          "max": 105000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 12,
+          "Pizza Marzano": 3
+        }
+      },
+      "functional_drink": {
+        "all_numeric": {
+          "n": 9,
+          "min": 27000,
+          "p25": 35000,
+          "median": 45000,
+          "mean": 42444,
+          "p75": 52000,
+          "iqr": 17000,
+          "max": 52000
+        },
+        "exact_only": {
+          "n": 9,
+          "min": 27000,
+          "p25": 35000,
+          "median": 45000,
+          "mean": 42444,
+          "p75": 52000,
+          "iqr": 17000,
+          "max": 52000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 9
+        }
+      }
+    },
+    "by_item_class": {
+      "bowl::smoothie_bowl": {
+        "category": "bowl",
+        "item_class": "smoothie_bowl",
+        "all_numeric": {
+          "n": 3,
+          "min": 68000,
+          "p25": 68000,
+          "median": 68000,
+          "mean": 68000,
+          "p75": 68000,
+          "iqr": 0,
+          "max": 68000
+        },
+        "exact_only": {
+          "n": 3,
+          "min": 68000,
+          "p25": 68000,
+          "median": 68000,
+          "mean": 68000,
+          "p75": 68000,
+          "iqr": 0,
+          "max": 68000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 3
+        }
+      },
+      "bowl::salad_bowl": {
+        "category": "bowl",
+        "item_class": "salad_bowl",
+        "all_numeric": {
+          "n": 2,
+          "min": 65000,
+          "p25": 65000,
+          "median": 65000,
+          "mean": 65000,
+          "p75": 65000,
+          "iqr": 0,
+          "max": 65000
+        },
+        "exact_only": {
+          "n": 2,
+          "min": 65000,
+          "p25": 65000,
+          "median": 65000,
+          "mean": 65000,
+          "p75": 65000,
+          "iqr": 0,
+          "max": 65000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 2
+        }
+      },
+      "bowl::salad": {
+        "category": "bowl",
+        "item_class": "salad",
+        "all_numeric": {
+          "n": 5,
+          "min": 50000,
+          "p25": 60000,
+          "median": 60000,
+          "mean": 76000,
+          "p75": 105000,
+          "iqr": 45000,
+          "max": 105000
+        },
+        "exact_only": {
+          "n": 5,
+          "min": 50000,
+          "p25": 60000,
+          "median": 60000,
+          "mean": 76000,
+          "p75": 105000,
+          "iqr": 45000,
+          "max": 105000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Pizza Marzano": 3,
+          "Burgreens": 2
+        }
+      },
+      "bowl::rice_bowl": {
+        "category": "bowl",
+        "item_class": "rice_bowl",
+        "all_numeric": {
+          "n": 5,
+          "min": 50000,
+          "p25": 55000,
+          "median": 55000,
+          "mean": 55600,
+          "p75": 59000,
+          "iqr": 4000,
+          "max": 59000
+        },
+        "exact_only": {
+          "n": 5,
+          "min": 50000,
+          "p25": 55000,
+          "median": 55000,
+          "mean": 55600,
+          "p75": 59000,
+          "iqr": 4000,
+          "max": 59000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 5
+        }
+      },
+      "functional_drink::protein_shake": {
+        "category": "functional_drink",
+        "item_class": "protein_shake",
+        "all_numeric": {
+          "n": 3,
+          "min": 52000,
+          "p25": 52000,
+          "median": 52000,
+          "mean": 52000,
+          "p75": 52000,
+          "iqr": 0,
+          "max": 52000
+        },
+        "exact_only": {
+          "n": 3,
+          "min": 52000,
+          "p25": 52000,
+          "median": 52000,
+          "mean": 52000,
+          "p75": 52000,
+          "iqr": 0,
+          "max": 52000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 3
+        }
+      },
+      "functional_drink::smoothie": {
+        "category": "functional_drink",
+        "item_class": "smoothie",
+        "all_numeric": {
+          "n": 3,
+          "min": 45000,
+          "p25": 45000,
+          "median": 45000,
+          "mean": 45667,
+          "p75": 46000,
+          "iqr": 1000,
+          "max": 47000
+        },
+        "exact_only": {
+          "n": 3,
+          "min": 45000,
+          "p25": 45000,
+          "median": 45000,
+          "mean": 45667,
+          "p75": 46000,
+          "iqr": 1000,
+          "max": 47000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 3
+        }
+      },
+      "functional_drink::herbal_elixir": {
+        "category": "functional_drink",
+        "item_class": "herbal_elixir",
+        "all_numeric": {
+          "n": 3,
+          "min": 27000,
+          "p25": 27000,
+          "median": 27000,
+          "mean": 29667,
+          "p75": 31000,
+          "iqr": 4000,
+          "max": 35000
+        },
+        "exact_only": {
+          "n": 3,
+          "min": 27000,
+          "p25": 27000,
+          "median": 27000,
+          "mean": 29667,
+          "p75": 31000,
+          "iqr": 4000,
+          "max": 35000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Burgreens": 3
+        }
+      },
+      "coffee::signature_coffee": {
+        "category": "coffee",
+        "item_class": "signature_coffee",
+        "all_numeric": {
+          "n": 6,
+          "min": 10000,
+          "p25": 19250,
+          "median": 23500,
+          "mean": 22333,
+          "p75": 26250,
+          "iqr": 7000,
+          "max": 32000
+        },
+        "exact_only": {
+          "n": 2,
+          "min": 24000,
+          "p25": 26000,
+          "median": 28000,
+          "mean": 28000,
+          "p75": 30000,
+          "iqr": 4000,
+          "max": 32000
+        },
+        "approx_count": 4,
+        "brands": {
+          "Fore Coffee": 2,
+          "Burgreens": 1,
+          "Kopi Tuku": 1,
+          "Tomoro Coffee": 1,
+          "Kopi Kenangan": 1
+        }
+      },
+      "coffee::espresso": {
+        "category": "coffee",
+        "item_class": "espresso",
+        "all_numeric": {
+          "n": 4,
+          "min": 22000,
+          "p25": 22000,
+          "median": 23500,
+          "mean": 24750,
+          "p75": 26250,
+          "iqr": 4250,
+          "max": 30000
+        },
+        "exact_only": {
+          "n": 2,
+          "min": 25000,
+          "p25": 26250,
+          "median": 27500,
+          "mean": 27500,
+          "p75": 28750,
+          "iqr": 2500,
+          "max": 30000
+        },
+        "approx_count": 2,
+        "brands": {
+          "Fore Coffee": 2,
+          "Burgreens": 1,
+          "Pizza Marzano": 1
+        }
+      },
+      "pasta::pasta_main": {
+        "category": "pasta",
+        "item_class": "pasta_main",
+        "all_numeric": {
+          "n": 12,
+          "min": 60000,
+          "p25": 92000,
+          "median": 95000,
+          "mean": 93833,
+          "p75": 106000,
+          "iqr": 14000,
+          "max": 109000
+        },
+        "exact_only": {
+          "n": 12,
+          "min": 60000,
+          "p25": 92000,
+          "median": 95000,
+          "mean": 93833,
+          "p75": 106000,
+          "iqr": 14000,
+          "max": 109000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Pizza Marzano": 11,
+          "Burgreens": 1
+        }
+      },
+      "coffee::flavoured_americano": {
+        "category": "coffee",
+        "item_class": "flavoured_americano",
+        "all_numeric": {
+          "n": 4,
+          "min": 29000,
+          "p25": 29000,
+          "median": 29000,
+          "mean": 29500,
+          "p75": 29500,
+          "iqr": 500,
+          "max": 31000
+        },
+        "exact_only": {
+          "n": 0,
+          "min": null,
+          "p25": null,
+          "median": null,
+          "mean": null,
+          "p75": null,
+          "iqr": null,
+          "max": null
+        },
+        "approx_count": 4,
+        "brands": {
+          "Fore Coffee": 4
+        }
+      },
+      "coffee::americano": {
+        "category": "coffee",
+        "item_class": "americano",
+        "all_numeric": {
+          "n": 1,
+          "min": 35000,
+          "p25": 35000,
+          "median": 35000,
+          "mean": 35000,
+          "p75": 35000,
+          "iqr": 0,
+          "max": 35000
+        },
+        "exact_only": {
+          "n": 1,
+          "min": 35000,
+          "p25": 35000,
+          "median": 35000,
+          "mean": 35000,
+          "p75": 35000,
+          "iqr": 0,
+          "max": 35000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Pizza Marzano": 1
+        }
+      },
+      "coffee::latte": {
+        "category": "coffee",
+        "item_class": "latte",
+        "all_numeric": {
+          "n": 1,
+          "min": 38000,
+          "p25": 38000,
+          "median": 38000,
+          "mean": 38000,
+          "p75": 38000,
+          "iqr": 0,
+          "max": 38000
+        },
+        "exact_only": {
+          "n": 1,
+          "min": 38000,
+          "p25": 38000,
+          "median": 38000,
+          "mean": 38000,
+          "p75": 38000,
+          "iqr": 0,
+          "max": 38000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Pizza Marzano": 1
+        }
+      },
+      "coffee::cappuccino": {
+        "category": "coffee",
+        "item_class": "cappuccino",
+        "all_numeric": {
+          "n": 1,
+          "min": 38000,
+          "p25": 38000,
+          "median": 38000,
+          "mean": 38000,
+          "p75": 38000,
+          "iqr": 0,
+          "max": 38000
+        },
+        "exact_only": {
+          "n": 1,
+          "min": 38000,
+          "p25": 38000,
+          "median": 38000,
+          "mean": 38000,
+          "p75": 38000,
+          "iqr": 0,
+          "max": 38000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Pizza Marzano": 1
+        }
+      },
+      "pasta::pasta_teppan_japanese_style": {
+        "category": "pasta",
+        "item_class": "pasta_teppan_japanese_style",
+        "all_numeric": {
+          "n": 3,
+          "min": 74000,
+          "p25": 76500,
+          "median": 79000,
+          "mean": 78000,
+          "p75": 80000,
+          "iqr": 3500,
+          "max": 81000
+        },
+        "exact_only": {
+          "n": 0,
+          "min": null,
+          "p25": null,
+          "median": null,
+          "mean": null,
+          "p75": null,
+          "iqr": null,
+          "max": null
+        },
+        "approx_count": 3,
+        "brands": {
+          "Pepper Lunch": 3
+        }
+      },
+      "pasta::pasta_low_end_street": {
+        "category": "pasta",
+        "item_class": "pasta_low_end_street",
+        "all_numeric": {
+          "n": 5,
+          "min": 20000,
+          "p25": 20000,
+          "median": 25000,
+          "mean": 23800,
+          "p75": 25000,
+          "iqr": 5000,
+          "max": 29000
+        },
+        "exact_only": {
+          "n": 1,
+          "min": 20000,
+          "p25": 20000,
+          "median": 20000,
+          "mean": 20000,
+          "p75": 20000,
+          "iqr": 0,
+          "max": 20000
+        },
+        "approx_count": 4,
+        "brands": {
+          "Casa Pasta": 1,
+          "Sky Pasta": 1,
+          "Halo Pasta": 1,
+          "Fish Streat": 1,
+          "Fish Lab": 1
+        }
+      },
+      "coffee::signature_latte": {
+        "category": "coffee",
+        "item_class": "signature_latte",
+        "all_numeric": {
+          "n": 6,
+          "min": 29000,
+          "p25": 29000,
+          "median": 29000,
+          "mean": 30000,
+          "p75": 30500,
+          "iqr": 1500,
+          "max": 33000
+        },
+        "exact_only": {
+          "n": 6,
+          "min": 29000,
+          "p25": 29000,
+          "median": 29000,
+          "mean": 30000,
+          "p75": 30500,
+          "iqr": 1500,
+          "max": 33000
+        },
+        "approx_count": 0,
+        "brands": {
+          "Fore Coffee": 6
+        }
+      }
+    }
+  },
+  "demand_and_affordability": {
+    "target_corridor_population_25_39": {
+      "jakarta_pusat_25_39": {
+        "value": 244600,
+        "row_id": "DEM-012",
+        "breakdown": {
+          "25_29": 82400,
+          "30_34": 80200,
+          "35_39": 82000
+        }
+      },
+      "jakarta_selatan_25_39": {
+        "value": 535920,
+        "row_id": "DEM-013",
+        "breakdown": {
+          "25_29": 171210,
+          "30_34": 179150,
+          "35_39": 185560
+        }
+      },
+      "combined_pusat_selatan_25_39": {
+        "value": 780520,
+        "row_ids": [
+          "DEM-012",
+          "DEM-013"
+        ]
+      },
+      "dki_jakarta_total_pop_2024": {
+        "value": 10684900,
+        "row_id": "DEM-001"
+      }
+    },
+    "monthly_per_capita_expenditure_2024_idr": {
+      "dki_jakarta": {
+        "total": 6809757,
+        "food": 2793654,
+        "prepared_food": 1095041,
+        "prepared_share_of_food_pct": 39.2,
+        "prepared_share_of_total_pct": 16.08,
+        "row_id": "DEM-014"
+      },
+      "jakarta_pusat": {
+        "total": 5471981,
+        "food": 2475617,
+        "prepared_food": 1105632,
+        "prepared_share_of_food_pct": 44.66,
+        "prepared_share_of_total_pct": 20.21,
+        "row_id": "DEM-015"
+      },
+      "jakarta_selatan": {
+        "total": 7205368,
+        "food": 2796815,
+        "prepared_food": 1401532,
+        "prepared_share_of_food_pct": 50.11,
+        "prepared_share_of_total_pct": 19.45,
+        "row_id": "DEM-016"
+      }
+    },
+    "affordability_ratios_corsa_vs_budgets": {
+      "corsa_avg_dine_in_net_idr": 103375,
+      "corsa_avg_dine_in_gross_incl_10pct_pbjt_idr": 113713,
+      "corsa_lunch_cover_net_idr": 120000,
+      "corsa_lunch_cover_gross_idr": 132000,
+      "corsa_dinner_cover_net_idr": 140000,
+      "corsa_dinner_cover_gross_idr": 154000,
+      "single_avg_visit_gross_pct_of_dki_monthly_prep_food": 10.38,
+      "single_avg_visit_gross_pct_of_selatan_monthly_prep_food": 8.11,
+      "single_lunch_gross_pct_of_dki_monthly_prep_food": 12.05,
+      "single_lunch_gross_pct_of_selatan_monthly_prep_food": 9.42,
+      "single_dinner_gross_pct_of_selatan_monthly_prep_food": 10.99,
+      "visits_per_month_to_exhaust_100pct_selatan_prep_food_budget": 12.3,
+      "four_visits_per_month_gross_idr": 454852,
+      "four_visits_pct_of_selatan_monthly_prep_food": 32.5,
+      "single_avg_visit_gross_pct_of_wb_middle_class_upper_total_exp": 3.79
+    },
+    "operator_throughput_benchmarks": {
+      "fore_coffee_fy2024_sales_per_outlet_day_idr": {
+        "low": 12700000,
+        "high": 14800000,
+        "row_ids": [
+          "CMP-001",
+          "CMP-005"
+        ]
+      },
+      "corsa_model_base_fb_daily_revenue_idr": {
+        "value": 23550000,
+        "cell": "Revenue!E14"
+      },
+      "corsa_model_base_total_daily_revenue_idr": {
+        "value": 24521000,
+        "cell": "Scenarios!D13/Inputs!F12"
+      },
+      "corsa_base_fb_vs_fore_daily_multiple": {
+        "vs_fore_high": 1.59,
+        "vs_fore_low": 1.85
+      },
+      "corsa_model_conservative_total_daily_revenue_idr": {
+        "value": 16059000,
+        "cell": "Scenarios!C13/Inputs!E12"
+      }
+    }
+  },
+  "cage_claim_register": {
+    "total_claims": 174,
+    "status_counts": {
+      "verified": 161,
+      "unverified": 8,
+      "corrected": 5
+    },
+    "by_section_prefix": {
+      "A1": 32,
+      "A2": 11,
+      "E1": 26,
+      "E2": 12,
+      "C1": 56,
+      "C2": 12,
+      "G0": 7,
+      "GE": 18
+    },
+    "corrected_claims": [
+      {
+        "claim_id": "E1-15",
+        "section": "Eco-12Oct",
+        "claim": "The survey reflects adult grocery shoppers nationally; stated willingness for food products, not a price ceiling for restaurant meals.",
+        "status": "corrected",
+        "source": "P4W4-06 (label fix W-LBL)",
+        "notes": "Corrected label: online adult consumers (grocery/health shoppers) interviewed Jan-Feb 2025 in 19 countries; Indonesia n not printed. 'Nationally' overstates representativeness."
+      },
+      {
+        "claim_id": "C1-08",
+        "section": "Cul-12Oct",
+        "claim": "BORDER 2025: café study with 20 participants from Jakarta and surrounding cities; 10 stay 1-2 hours, 7 stay 3-4 hours.",
+        "status": "corrected",
+        "source": "CAGE-013, REG-107",
+        "notes": "Numbers verified. Missing context: the venue is a deaf-friendly coffee shop, interviews were written, 17 of 20 are aged 17-25. The finding is not about cafés in general."
+      },
+      {
+        "claim_id": "C1-24",
+        "section": "Cul-12Oct",
+        "claim": "Keep audience broader than Gen Z: Jakarta Post described RPC members as mostly in their 30s-50s.",
+        "status": "corrected",
+        "source": "CAGE-016",
+        "notes": "Correction of attribution: the 30s-50s remark is a quote from RPC cofounder Marko, not a Jakarta Post finding; Gudda's owner also said 'people in their 30s to 70s'."
+      },
+      {
+        "claim_id": "C1-44",
+        "section": "Cul-12Oct",
+        "claim": "Pison Senopati: all-day café dining, coffee, Western/Asian-inspired food including Indonesian dishes; behind SCBD.",
+        "status": "corrected",
+        "source": "CAGE-027, REG-123",
+        "notes": "Corrected: page says 'just behind SCBD' and 'comforting Indonesian dishes' in a brunch menu; 'Western/Asian-inspired' is not on the opened page."
+      },
+      {
+        "claim_id": "C2-03",
+        "section": "Cul-15Oct",
+        "claim": "A separate single-café study found 17 of 20 participants stayed one to four hours.",
+        "status": "corrected",
+        "source": "CAGE-013",
+        "notes": "Arithmetic verified (10 + 7). Same context correction as C1-08 (deaf-friendly venue)."
+      }
+    ],
+    "unverified_claims": [
+      {
+        "claim_id": "A1-26",
+        "section": "Adm-12Oct",
+        "claim": "'No pork' or 'vegetarian' should not be presented as proof of halal certification.",
+        "status": "unverified",
+        "source": "none",
+        "notes": "Why unverified: no opened text says this in terms. It follows from PP 42/2024 Art. 2(1) (only a certificate counts) and from the non-halal declaration rule. Intended as a marketing caution; ask BPJPH what wording is allowed (H-05 gap)."
+      },
+      {
+        "claim_id": "C1-11",
+        "section": "Cul-12Oct",
+        "claim": "UIN Jakarta thesis: cafés as spaces for social interaction and organisational activities; affordability and inclusive environment; 'third place'.",
+        "status": "unverified",
+        "source": "REG-130",
+        "notes": "Why unverified: repository unreachable (connection failed both hosts). Intended: show that Jakarta students use cafés as third places. Retry later or use the BORDER article for the same point."
+      },
+      {
+        "claim_id": "C1-28",
+        "section": "Cul-12Oct",
+        "claim": "Halal study (Fikri, Gusniarti 2025): 100 East Jakarta respondents; significant relationships between halal literacy and purchase intention, and certification and purchase intention.",
+        "status": "unverified",
+        "source": "REG-127 (blocked)",
+        "notes": "Why unverified: journal returned HTTP 403 (bot challenge, not bypassed). Intended: show that halal assurance is part of consumer trust. Indirect support: BPJPH deputy cites 83% (P4W7b-18, relay, survey not named)."
+      },
+      {
+        "claim_id": "C2-08",
+        "section": "Cul-15Oct",
+        "claim": "Keep the Italian lifestyle identity while making taste, fillingness and halal status clear; East Jakarta study (n=100) linked certification with purchase intention; halal assurance does not require religious brand positioning.",
+        "status": "unverified",
+        "source": "REG-127",
+        "notes": "Why unverified: as C1-28 (Syarikat blocked). The last clause is advice, not a fact."
+      },
+      {
+        "claim_id": "G0-04",
+        "section": "GeoCul-12Oct",
+        "claim": "Paul's demographic compilation: DKI residents aged 20-39 about 3.47 million in 2021 and 3.23 million in 2026, a projected fall of about 7.1%.",
+        "status": "unverified",
+        "source": "CAGE-035",
+        "notes": "Why unverified: the figures are in Paul's file (3,470,539 and 3,225,130; -7.1% is Paul's computation, which checks arithmetically) but the BPS series was not opened (BPS blocked by bot challenge; existing demand rows cover Jakarta Pusat only). Intended: caution that the 25-39 pool is shrinking. Needs the BPS projection table."
+      },
+      {
+        "claim_id": "GE-06",
+        "section": "Geo-14/15Oct",
+        "claim": "Colliers Q2 2026 retail report highlights footfall, tenant mix, experiential consumption; its mall findings give context, not a forecast for a street-level store.",
+        "status": "unverified",
+        "source": "REG-128",
+        "notes": "Why unverified: Colliers page returned HTTP 403 (bot challenge, not bypassed). Intended: use the mall market backdrop as context only. Ask Colliers for the PDF or obtain it through the team."
+      },
+      {
+        "claim_id": "GE-11",
+        "section": "Geo-14/15Oct",
+        "claim": "Central Jakarta is the densest.",
+        "status": "unverified",
+        "source": "CAGE-033, REG-129",
+        "notes": "Why unverified: city areas and densities not opened (BPS blocked; Kemenkes table has population only). Population of Jakarta Pusat is the smallest (1,032,236), so density depends on a small area. Intended: warn that residents and density differ. Needs a BPS or Pemprov area table."
+      },
+      {
+        "claim_id": "GE-15",
+        "section": "Geo-14/15Oct",
+        "claim": "West Jakarta is mainly a residential area; Central Jakarta is not (15 Oct version).",
+        "status": "unverified",
+        "source": "none",
+        "notes": "Why unverified: no opened land-use source. Intended: explain why the biggest city by residents may not be the best retail site. Needs a land-use or spatial-plan table (RDTR) or office-stock figures by city."
+      }
+    ]
+  }
+}
