@@ -242,3 +242,15 @@ Owner instruction updated the task and restarted the run. The plan is `tasks/202
 **Framework outline accepted (main agent, 2026-10-17):** `reports/2026-10-17-pillar1-framework-outline.md`, 456 words. V-OUT fixes F1-F8 applied. Both interim dates are named (meeting 5: 21 Oct; scope: 22 Oct 08:00-12:00, to confirm with Heiko). Before it goes to Samuel, re-read it against the final state of the three reports.
 
 **Pillar 1 status:** outline, profiles, CAGE and PESTEL drafted, independently verified and accepted ahead of the 21 Oct 12:00 UTC limit. Next: balance check on the Plan 1-3 reports, lawyer/tax list, date-sensitive re-checks on 19-20 Oct, then wrap-up and PR.
+
+**Balance check and lawyer/tax list accepted (main agent, 2026-10-18):** rule 3 applied to the Plan 1, 2 and 3 reports (Plan 1: 20 to 43 downside rows cited; Plan 2 section 5: 12 to 23; Plan 3: 29 to 35). V-BAL found one medium issue (the Plan 2 "no boycott cause stated" wording, contradicted by P3B-08 and P3B-07), fixed; the H6 verdict stays "Undetermined". No conclusion changed. The consolidated list is `tasks/2026-10-17-lawyer-and-tax-questions.md` (36 items: 20 lawyer, 9 tax, 7 BPJPH/LPH).
+
+## Run 3 complete
+
+Final content commit: `8882305` on `claude/kind-hopper-2nopv7` (this log entry is added in the commit after it). Pillar 1 deliverables (outline, customer profiles, CAGE, PESTEL) are drafted, independently verified and accepted. The 11 open label rows are fixed (`tasks/2026-10-17-run4-label-fixes.md`; three more J* re-codes).
+
+**Not done, for the owner:**
+- Date-sensitive re-checks: H-12 (PP 42/2024 Art. 160(3), 19-20 Oct 2026), BPJPH special provisions for imports and UMK (H-04), any new DKI PBJT reduction decree for Sep-Dec 2026 (T-07). They fall on or after 19 Oct; nothing was re-checked on 18 Oct. If one changes, update the Pillar 1 reports and the lawyer list.
+- The independent verifier for the 11 label fixes (`tasks/2026-10-17-run4-label-fixes.md`) has not run; the PESTEL, CAGE and profiles verifiers re-read the rows they cite but not every fixed cell.
+- Open items per report are listed above (profiles body about 8,500 words; CAGE about 14,000 words; Plan 2 "Art. 197" row; unsourced CHF rate; P1C2-18 table image unconfirmed; ENV-015 tier 3).
+- Before the outline goes to Samuel, re-read it against the final reports and confirm the interim date (21 vs 22 Oct) with Heiko.
