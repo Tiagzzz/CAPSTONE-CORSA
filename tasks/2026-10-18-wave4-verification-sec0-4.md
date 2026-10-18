@@ -1,0 +1,88 @@
+# Wave 4 claim verification: report sections 0-4 (lines 1-137)
+
+- Report: `reports/2026-10-18-corsa-jakarta-insights-report.md` (branch insights-2026-10-18)
+- Verifier: independent Wave 4 claim verifier (did not write the report). No report, ledger or CSV edited; no commit.
+- Method: each claim checked against the full repo row (value, unit, period, base, geography, notes, verification) in `data/processed/**`, then `2026-10-18-preverification.csv`, `sources/sources.md`, the rules in spec section 4. No web fetches were needed (repo rows unambiguous). No source was UNREACHABLE in this scope.
+- Scope: about 225 atomic claims (about 90 citation groups). Result: about 199 OK, 26 with findings (9 major, 17 minor). No BALANCE failures found (see end).
+- Pre-verification status of items touched by sections 0-4: R2-FX-01 CONFIRMED (IDR/CHF rate, report makes no CHF conversion: OK), R2-TIME-02 CONFIRMED (used correctly, line 72), R2-LEG-01 CORRECTED (report does not state the revocation article: OK), R2-LBL-02 CORRECTED (NOT applied, see F-01), R2-TIME-01 NOT-CONFIRMED (not used: OK), R2-TIME-03 CORRECTED (PBJT March 2026 relief, not used: OK), R2-CAGE-UNV-* and R3-* (not used in sections 0-4: OK). No `if_used` model source is stated as fact in lines 1-137 except the CORSA price figures in F-09.
+- Link check against `sources/sources.md` and `sources_register.json`: every URL matches except two (F-08, F-17).
+
+## Findings
+
+| finding_id | report line | claim excerpt | checked against | result | severity | proposed exact fix |
+|---|---|---|---|---|---|---|
+| F-01 | 100 | "casual-chain pasta at IDR 69,000-109,000 ... before tax/service" | P3PB-02, P3PB-09 (tax_service_included = "not stated"; geography note "outlets not stated"); preverification R2-LBL-02 CORRECTED ("geography: not stated; do not infer brand-wide") | WRONG (uncorrected CORRECTED item; tax basis wrong) | major | Replace with: "Comparables list Pizza Marzano pasta at IDR 69,000-109,000 (IDN Times; city, outlet and tax basis not stated) and Burgreens plant-based bowls at IDR 50,000-68,000 before tax/service". Change code for P3PB-02/09 from J-D to ns-D. |
+| F-02 | 136 | "48% of Gen Z spend under IDR10k per cup" | P1C3-01 (CORRECTED-OPENED): 48% of Gen Z coffee consumers (n=896), buy or make combined, a plurality, not of all Gen Z | WRONG (uncorrected CORRECTED value: wrong base) | major | "48% of Gen Z coffee consumers spend under IDR10k to buy or make a cup" |
+| F-03 | 41 | "a separate five-city sample reported 73.1% agreement" | S-03: 73.1% agree that "some party benefits from the boycott" (n=810, five boycott-sensitive cities, low confidence); S-04: self-selected online sample (n=643), not national | MISLABELLED (different question presented as boycott support) | major | "... 80.2% approved boycotting Israel-linked products in one self-selected online sample (n=643), while a separate sample of five boycott-sensitive cities (n=810) found 73.1% agreeing that some party benefits from the boycott (a different question, not boycott support)". Also change "documented nationally and in convenience samples" to "documented in convenience samples". |
+| F-04 | 59 | "QRIS recorded 15.51 billion transactions and 43.06 million merchants by January 2026" | SD11: 15.51bn = full-year 2025; merchants 43.06m = SD16 ("Hingga Januari 2026"), not SD11/SD13 (SD13 is IDR 1,420.66tn value) | WRONG (period; citation) | major | "QRIS recorded 15.51 billion transactions in 2025 and had 43.06 million merchants by January 2026 ([Kontan quoting Bank Indonesia](...), SD11/SD16; N-D)" |
+| F-05 | 20, 61 | "42% of orders are below IDR 50,000" / "42% of online food orders are below IDR 50,000" | SD05: unit "% of respondents by typical spend per order" (Snapcart delivery-app users, Jan 2025); SD06 shows 42% also at IDR 50-100k | MISLABELLED (respondents, not orders) | major | "42% of delivery-app users typically spend under IDR 50,000 per order (another 42% spend IDR 50,000-100,000)" |
+| F-06 | 128 | "reported padel visit is about IDR400k for court rental plus IDR50k consumption" | P4W10-11: "pengeluaran pengguna ... sekitar Rp400.000 per sesi, ditambah Rp50.000 untuk konsumsi"; population Liga.Tennis users, all racquet sports (not padel-only); not "court rental" | MISLABELLED (item and scope) | major | "Liga.Tennis platform users (all racquet sports, not padel-only) report average spend of about IDR400k per session plus IDR50k for consumption" |
+| F-07 | 80 | "In urban coffee behaviour, 44% link coffee with gathering and 34% with work/study ... 62% eat rice every day" | UC-N13, P4W7b-01: geography N (Jakpat national online panel, mid-2025); CAGE-020: national online panel, health study n=601, no age split | EVIDENCE-LEVEL / MISLABELLED (national shown as "urban") | major | "In national online-panel coffee behaviour (Indonesia, no Jakarta or age cut), 44% ... 62% of respondents (n=601, national online panel) report eating rice every day" |
+| F-08 | 118 | third link for P1C1-F03 (`.../pengeluaran-perkapita-sebulan-untuk-makanan-dan-minuman-jadi-kota-jakarta-selatan-2024`) | Register DEM-030 holds this id (303cd526232af5f) as the Jakarta PUSAT prepared-food page; P1C1-F03 (34.96% food share, South Jakarta) is register DEM-020 = the Databoks page 721e41cd0521a99 already linked for UE-N01 | WRONG (citation points to wrong city/page; slug altered) | major | Delete the 303cd526232af5f link and cite F03 with the existing South Jakarta link: "([Databoks/BPS](https://databoks.katadata.co.id/layanan-konsumen-kesehatan/statistik/721e41cd0521a99/pengeluaran-per-kapita-kota-jakarta-selatan), UE-N01/P1C1-F03; ...)". Also change "2024-25" to "2025". |
+| F-09 | 114, 122, 134 | "pasta-plus-drink ticket around IDR110-132k"; "89-105k pasta"; "full IDR120k lunch" | No cell or row cited. Team note (`analysis/notes/r2_pillar1_notes.md` l.287): v0.5 placeholders, lunch ticket IDR 120,000 net / about 132,000 with PBJT; IDR 110,000 is the blended all-day spend with PBJT, not a pasta-plus-drink ticket; pasta 89,000-105,000 is the v0.5 core range (net of PBJT); model is v0.6 (blended net ticket Rp103,375, `Menu!C31`) | UNSUPPORTED (uncited model figures; "110" not traceable) | major | l.114: "a CORSA pasta-plus-drink ticket of about IDR120k net (about IDR132k with PBJT) (v0.5 placeholder, team: `analysis/notes/r2_pillar1_notes.md`; re-confirm against model v0.6)". l.122: "a pasta at IDR89,000-105,000 net (same placeholder)". l.134: "a full IDR120k net lunch". Prices are illustrative model inputs, not market facts. |
+| F-10 | 48 | "upper-group spending grew faster than middle/lower groups" | P1C2-31: upper +5.3% yoy (2026 to 5 May) vs +3.1% in 2025; "lower and middle slowed"; middle and lower values not printed | UNSUPPORTED (comparison of growth levels not in the source) | minor | "while upper-group spending growth rose to 5.3% in 2026 (to early May; 3.1% in 2025) as lower and middle groups slowed" |
+| F-11 | 19 | "only 19% more than 20%" | P4W4-02: "willing to pay 20% more" (not "more than 20%") | MISLABELLED | minor | "but only 19% at 20% more" |
+| F-12 | 126 | "its largest segment 31-40" cited to P4W10-10; "61 preparing" for South Jakarta | 31-40 is P4W10-12 (all racquet sports, not cited); P4W10-06 note: the sentence does not name South Jakarta for the 61 clubs (chart title says "in Jakarta"; area inferred) | UNSUPPORTED (citation; inferred geography) | minor | Add P4W10-12 to the citation and say "(all racquet sports)"; replace "61 preparing" with "61 more clubs not yet operating (area inferred as South Jakarta from sentence order)". |
+| F-13 | 128 | "185 of 397 sites lacking a building permit" | UC-N07 (not cited; P4W5-08 cited): "185 of 397 lapangan padel ... belum mengurus izin" (permit, not specifically PBG); P4W10-01 note: unit of 397 unresolved (courts vs buildings); never compare with 326 | MISLABELLED | minor | "CNA reports 185 of 397 registered padel courts (unit unclear) without a permit (UC-N07), and two North Jakarta courts were sealed on 4 March 2026 for missing building approval (P4W5-08)". |
+| F-14 | 132 | "urban Indonesia/2024/C-D proxy" for 7% early adopters, 52% need-based | P4W3-04/08: geography N, age fit D, Indonesian online adults 18+, Sep 2024 | EVIDENCE-LEVEL | minor | "Indonesia (national online adults)/Sep 2024/D" |
+| F-15 | 136 | "creator trust trails family/friends" | P4W1-R04/R05: first-learned-of-place channel (44% vs 40%); no trust measure | MISLABELLED | minor | "TikTok food accounts reach 40% as a first source, behind friends/family at 44%". |
+| F-16 | 120 | "Peer reviews matter more than creator reach for high-income consumers in a three-country proxy" | P4W2b-08 (CORRECTED-OPENED): beauty/makeup category, geography P (62% vs 33% trust UGC, high vs lower income) | EVIDENCE-LEVEL (proxy category omitted) | minor | "... for high-income Indonesian beauty shoppers (62% vs 33% for lower income) in a three-country proxy" |
+| F-17 | 40 | Katadata link slug `.../realisasi-investasi-semester-i-tembus-rp10106-triliun`; "IDR 173.6 trillion" | Register REG-039 URL slug is `...tembus-rp1010-t-mayoritas-dari-modal-asing`; S-11: IDR 173.6tn is PMA+PMDN combined, press-conference relay (not in official BKPM release) | WRONG (link) + EVIDENCE-LEVEL | minor | Use the REG-039 URL; "with IDR 173.6 trillion (PMA and PMDN combined) in H1 2026". |
+| F-18 | 31 | "losses at several listed F&B operators" | Only Q6-006 cited (MAPB 9M 2025 sales 2.35tn vs 2.42tn, -2.77% computed from filing; CORRECTED-OPENED) | UNSUPPORTED (one operator, sales not losses) | minor | "and a 2.8% sales decline at Starbucks licensee MAP Boga (9M 2025; section 5 covers other operators)" or add the other operator rows. |
+| F-19 | 24 | "CHF 200,000 single-outlet frame" | No citation. Scope doc says "approximately CHF 200,000" investment assumption (`docs/scope/2026-09-22-corsa-jakarta-market-entry-roadmap-scope-v1.md` l.148); "single-outlet" is team interpretation | UNSUPPORTED (uncited) | minor | Append "(team: `docs/scope/2026-09-22-corsa-jakarta-market-entry-roadmap-scope-v1.md`)". |
+| F-20 | 74 | "Confidence: high" for PBJT and treaty rates | T-01: medium that 10% is unchanged on 2026-10-17 (JDIH status page not opened); T-12: a DJP-hosted treaty PDF still shows royalties at 12.5%; Protocol entry-into-force date not seen | BALANCE / over-confidence | minor | "Analysis: Confidence: high for the texts; medium that the 10% PBJT is unchanged at 2026-10-17; a DJP-hosted PDF still shows 12.5% royalties (T-12)." |
+| F-21 | 66 | "mall plastic-bag rule remains in force" | ENV-013: JDIH status "Berlaku", checked 2026-10-17, amendment search not exhaustive; ENV-012: stand-alone street cafes may not be bound; rule 8 needs validity statement | UNSUPPORTED (time-limited rule validity) | minor | "remains in force (JDIH status 'Berlaku', checked 2026-10-17; binds mall managers, stand-alone cafes unclear)". |
+| F-22 | 67, 94 | "26.8-28.0 degC monthly mean, rainfall up to 359.5 mm/month" | CAGE-007: normals period not printed on JMA page (confidence medium) | EVIDENCE-LEVEL | minor | Add "(JMA normals, period not printed)" |
+| F-23 | 65 | "143 neighbourhood units and 16 road segments were flooded" | ENV-003: momentary count at the 12:00 WIB update on 23 Jan 2026; not whole-event total | MISLABELLED | minor | "were reported flooded in the 12:00 WIB update on 23 January 2026" |
+| F-24 | 120 | "dining is the most common mall activity (68%)" | P1C3-02 notes: second Databoks article on same survey gives 64%; base 266 of 800, non-probability, 71% male | BALANCE | minor | Add "(a second Databoks article on the same survey gives 64%; non-probability sample)". |
+| F-25 | 112 | "eight-city urban Indonesia" | P4W1-R04..R07, UA-N58..N64: eight Java cities, Jakarta not in sample | EVIDENCE-LEVEL | minor | "eight Java cities excluding Jakarta" |
+| F-26 | 29 | handoff cited for row geography/age fit | `tasks/2026-10-18-handoff.md` defines the citation format codes but the per-row mapping lives in `data/processed/2026-10-pillar1-mapping.csv` | UNSUPPORTED (citation target) | minor | "(team: `data/processed/2026-10-pillar1-mapping.csv`; codes in `tasks/2026-10-18-handoff.md`)" |
+
+## OK claims (checked, no finding)
+
+| report lines | count | checked against |
+|---|---|---|
+| 10, 45 DKI IDR 2.96m (2025), South Jakarta IDR 4.08m rank 1 of 514, prepared food IDR 524,958 (Mar 2026); middle class 47.9m to 46.7m; real wages -1/-2% 2018-2025 | 9 | P1C1-F01 (DEM-004 notes: total 2,962,412), P1C1-F05, P1C1-E01, P1C2-01, P1C2-11; codes J-D / N-D match rows |
+| 12, 24, 71, 86 PMA IDR 10bn (excl. land/building) and IDR 2.5bn paid-up; E-09 NIB plus Sertifikat Standar; no cap found for cafes | 8 | E-01, E-03, E-04, E-09; R2-FX-01 CONFIRMED (no CHF conversion in report) |
+| 16, 48 DKI highest Gini 0.435 vs 0.368 (Mar 2026) | 3 | P1C2-28 |
+| 17, 46 Central 244,600 and South 535,920 aged 25-39 (June 2024); sums recomputed 81,880+81,020+81,700 and 179,370+178,390+178,160 | 6 | P1C1-P02..P04, S02..S04 (A fit; relay, underlying BPS table not opened, caveat already in report) |
+| 18, 52, 53, 54, 112, 134, 136 survey figures: friends/family 44%, TikTok 40%, 39%, 35%; price 60%, taste 59%; 64/49/48%, 16%; 77% local; revisit 83/78/70/64, aesthetics 27%; 49.1% self-reward; NIQ 48%, 65%; Gen Z 60%, 54% | 34 | P4W1-R04..R07, UA-N58..N66, P4W7b-02/13/14, P4W4-01/02/04, P4W9-14/15 |
+| 21, 55, 126, 128 DKI 326 of 947 padel courts (CORRECTED-OPENED row used as corrected), South Jakarta 34 clubs, DKI hourly rental IDR 423,354, JRF 27,300 runners, 58.3% aged 21-40, Burgreens shakes IDR 52k and smoothies 45-47k | 10 | P4W10-01/02/05/07/10, P4W5-04, P3PR-013..018 |
+| 23, 72 halal scope (food, drink, processing, serving), separation of halal and non-halal places and tools; 18 Oct 2026 phase | 7 | H-01, H-06, CAGE-025 (pre-PP 42/2024 context, regulator rule in H-06), R2-TIME-02 CONFIRMED, R2-LEG-01 not contradicted |
+| 25, 65 500 flood events in 2024 | 2 | ENV-005 |
+| 39, 73, 88 STPW for every franchise party; PP 35/2024 3+2 years vs Permendag 71/2019 5 years; Perpres lists | 6 | E-01, F-02, F-04, F-05 |
+| 41 80.2% approval (S-04), confidence label low | 3 | S-04 (CORRECTED-OPENED row used as corrected) |
+| 40 Switzerland not in top-five PMA origins; Jakarta leading province | 2 | S-11 |
+| 47, 10 national middle class and wages (counter-evidence stated) | 3 | P1C2-01, P1C2-11 |
+| 59 internet 80.66% (2025) | 1 | UA-N02 |
+| 60 GMV GrabFood 2.94bn, GoFood 1.98bn, ShopeeFood 1.47bn (2025, estimates) | 3 | P4W10-23..25 |
+| 61, 20 67% check promotions | 1 | UA-N54 |
+| 66 8,688 t/day generated vs about 5,858 t/day transported (2024); Pergub 142/2019, 102/2021 duties | 4 | ENV-008, ENV-012, ENV-013, ENV-018 |
+| 74 PBJT 10%, CIT 22%, treaty royalties 10% and services 5% | 4 | T-01, T-08 (CORRECTED-OPENED, 22% only used), T-11 (CORRECTED-OPENED), T-13 |
+| 80, 82, 86 Hofstede 78/34 and 5/79; running-group cafes; halal and PMA rules | 8 | CAGE-001, CAGE-002, CAGE-016, CAGE-018, CAGE-025 |
+| 94 11,118 km, 19h10-19h25, UTC+7 vs UTC+1/+2, 5h summer/6h winter | 7 | CAGE-003..006 (tier-4 distance flagged P-na) |
+| 96 population concentrated in East, West, South Jakarta | 1 | CAGE-010 (East 3.08m, West 2.49m, South 2.21m) |
+| 100, 110 Jakarta average wage IDR 5.9m (Aug 2025), South Jakarta IDR 4.08m, Gini | 4 | P1C2-23, P1C1-F05, P1C2-28 |
+| 100 Burgreens bowls IDR 50,000-68,000 before tax/service | 1 | P3PR-001, P3PR-008 (++ excl. tax and service; prices read as thousand IDR, an inference already noted in rows) |
+| 112, 114 Millennial 74% / Gen Z 67% coffee; fast food top lunch; IDR 65,130 / 58,609; Millennials 49% frugal, 66% cook at home | 7 | P4W9-01a/b, P4W9-05/06/08/16/18 |
+| 118 South Jakarta food share 34.96%; mall visits 65% invitations, 68% dining | 4 | UE-N01, P1C3-05, P1C1-F03 (value only; link in F-08), UE-N06, P1C3-02 |
+| 122 Gior IDR 100-250k, Bastian IDR 155-380k, SaladStop IDR 100-200k per person; 77% prefer local | 5 | P3PB-26/27/59 (R2-LBL-03 CONFIRMED), UA-N66 |
+| 132 49.1%, 44%/34% gather/work; 7% early adopters, 52% need-based (values) | 5 | P4W7b-13, UC-N13, P4W7b-01, P4W3-04/08 |
+| 134 Jakarta Gen Z servicescape not significant (B fit) | 2 | P4W7b-15 |
+| 136 Gen Z 48%/60%/54% (60%, 54% only) | 2 | P4W9-14/15 |
+| Analysis:/Assumption: labels and test statements (Analysis paragraphs, lines 11-12, 14, 39-74, 82, 88, 90, 96, 102, 106, 110, 134) | about 60 | Labelled; none presents a number as sourced fact without a cite beyond F-09 |
+| Section 1 (lines 29-33) evidence limits, Phase 2 statement | 6 | Consistent with `analysis/notes/r2_pillar1_notes.md` (no Swiss rows; no Jakarta 25-39 behavioural row) |
+
+## Balance rule check (concluding sections)
+
+- Section 0: counter-evidence paragraph present (line 10) and message 6 flags unproven conversion: OK.
+- Section 1: counter-evidence stated (line 31): OK.
+- Section 2: counter-evidence present in Economic (middle class, wages, Gini), Social (friends/family beat TikTok), Technological (promotion-led, low-ticket delivery), Legal (franchise conflict): OK. Only qualification: F-20, F-24.
+- Section 3: each subsection states "must be tested" and what is unverified (rice, no Swiss rows, no Jakarta row for pasta): OK.
+- Section 4: each ranked group states a contrary signal (group 1 frugality, group 2 77% local preference, group 3 permit risk, group 4 servicescape not significant): OK.
+- No BALANCE failure of major severity.
+
+## Rule 8 (time-limited rules)
+
+- Halal 18 Oct 2026 phase: date stated, "date-sensitive" labelled (BPJPH special provisions still being drafted, H-04): OK.
+- Plastic-bag rule validity: F-21. PBJT March 2026 relief not mentioned: OK (not used).
