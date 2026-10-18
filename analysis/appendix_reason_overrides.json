@@ -1,0 +1,19 @@
+{
+  "_note": "Reasons a script cannot know. Keys are source ids, pre-verification item ids or row ids; values are {code, reason}.",
+  "BEH-096": {
+    "code": "DUPLICATE",
+    "reason": "Same press text as BEH-095, so not an independent second source."
+  },
+  "DEM-063": {
+    "code": "DUPLICATE",
+    "reason": "Same BPS wheat-import series as DEM-051 (second outlet, not independent)."
+  },
+  "REG-117": {
+    "code": "OFF-SCOPE",
+    "reason": "Zurich climate-normals companion to REG-116 (Jakarta); served the CAGE geographic-distance question, not needed in the report."
+  },
+  "BEH-085": {
+    "code": "DUPLICATE",
+    "reason": "Relay of the same Jakpat snack-order survey as BEH-083 and BEH-084."
+  }
+}

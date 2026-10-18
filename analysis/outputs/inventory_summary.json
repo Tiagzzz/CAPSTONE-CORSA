@@ -1,0 +1,242 @@
+{
+  "sources_register": {
+    "total_sources": 325,
+    "by_tier": {
+      "1": 84,
+      "2": 16,
+      "3": 218,
+      "4": 7
+    },
+    "by_prefix": {
+      "BEH": 104,
+      "CMP": 65,
+      "DEM": 63,
+      "REG": 93
+    },
+    "by_access": {
+      "opened": 291,
+      "not_opened": 34
+    }
+  },
+  "csv_inventory": {
+    "total_primary_csv_files": 25,
+    "total_primary_csv_rows": 676,
+    "total_primary_csv_rows_excl_matrix": 655,
+    "disconfirming_table_a_rows": 11,
+    "pillar1_mapping_rows": 574,
+    "pillar1_mapping_excluded_rows": 19,
+    "run1_dropped_rows": 32,
+    "rows_by_file": {
+      "data/processed/2026-10-cage-geo-culture.csv": 40,
+      "data/processed/2026-10-p2-entry-requirements.csv": 25,
+      "data/processed/2026-10-p2-sentiment-indicators.csv": 8,
+      "data/processed/2026-10-p2-tax-franchise.csv": 23,
+      "data/processed/2026-10-pestel-environmental.csv": 22,
+      "data/processed/demand/consumer-surveys.csv": 14,
+      "data/processed/demand/middle-class-income.csv": 30,
+      "data/processed/demand/population-spend.csv": 25,
+      "data/processed/demand/wheat-foodservice.csv": 23,
+      "data/processed/foreign-entrants.csv": 23,
+      "data/processed/listed-operators.csv": 41,
+      "data/processed/plan4-age-splits.csv": 36,
+      "data/processed/plan4-community-sport.csv": 13,
+      "data/processed/plan4-health.csv": 17,
+      "data/processed/plan4-media-by-age.csv": 72,
+      "data/processed/plan4-misc-run3.csv": 28,
+      "data/processed/plan4-novelty.csv": 20,
+      "data/processed/plan4-origin-boycott.csv": 19,
+      "data/processed/plan4-social-proof-run2.csv": 23,
+      "data/processed/plan4-social-proof.csv": 11,
+      "data/processed/plan4-spend-drivers.csv": 36,
+      "data/processed/plan4-trigger-matrix.csv": 21,
+      "data/processed/plan4-venue-run2.csv": 13,
+      "data/processed/plan4-venue.csv": 4,
+      "data/processed/price-ladder.csv": 89
+    },
+    "by_verification": {
+      "VERIFIED-OPENED (relay)": 301,
+      "VERIFIED-OPENED (original)": 275,
+      "CORRECTED-OPENED": 47,
+      "BLOCKED": 23,
+      "MATRIX-CELL": 21,
+      "GAP": 9
+    },
+    "by_geography": {
+      "N": 314,
+      "J": 121,
+      "n/a": 83,
+      "U": 54,
+      "Indonesia": 42,
+      "P": 16,
+      "South Jakarta (kota)": 11,
+      "Jakarta": 8,
+      "Central Jakarta (kota)": 7,
+      "DKI Jakarta (province)": 4,
+      "J*": 3,
+      "P: five Indonesian cities selected for high boycott sensitivity (Yogyakarta, Lombok, Pekanbaru, Aceh, Bandung); not Jakarta, not national": 1,
+      "Indonesia (self-selected online)": 1,
+      "P: not stated in the article": 1,
+      "Jakarta (Central Jakarta, Medan Merdeka Selatan)": 1,
+      "Jakarta (Patung Kuda, Gambir)": 1,
+      "Indonesia; DKI Jakarta": 1,
+      "North Jakarta (kota) - comparator": 1,
+      "West Jakarta (kota) - comparator": 1,
+      "National - benchmark": 1,
+      "J (Central Jakarta only, not SCBD/Senopati/Kuningan)": 1,
+      "J (province level; no kota or kecamatan split)": 1,
+      "Lombok, NTB (single event; neither Jakarta nor national)": 1,
+      "not stated (page names no city or outlet; brand-wide)": 1
+    },
+    "by_age_fit": {
+      "D": 454,
+      "na": 110,
+      "C": 70,
+      "B": 27,
+      "A": 9,
+      "n/a": 5,
+      "D (generation comparison, no ages)": 1
+    },
+    "by_primary_source_tier": {
+      "3": 426,
+      "1": 147,
+      "2": 66,
+      "none": 30,
+      "4": 7
+    }
+  },
+  "downside_summary": {
+    "total_verified_downside_or_mixed": 115,
+    "counts_by_group": {
+      "disconfirming_table_a_verified": 8,
+      "demand_and_macro_downside": 29,
+      "operators_and_competitors_downside": 38,
+      "consumer_behaviour_and_triggers_downside": 30,
+      "supply_legal_and_site_downside": 10,
+      "historical_closures_excluded_from_base_rate": 4,
+      "countering_positive_rows_for_balance": 6
+    }
+  },
+  "label_fixes_11_check": {
+    "P1C4-16": {
+      "file": "data/processed/demand/wheat-foodservice.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "N",
+      "question_or_metric": "Contribution of rice vs instant noodles vs bread to the overall poverty line (garis kemiskinan, not a separate food poverty line), urban vs rural (BPS, Susenas September 2025)",
+      "ref_period": "Susenas September 2025 (BPS release 5 Feb 2026; GoodStats relay page dated 4 Mar 2026)",
+      "base_n": "n/a",
+      "population": "Poverty-line basket, urban and rural",
+      "has_audit_followup_note": true,
+      "notes": "Shares are of the poverty line, a low-income reference basket; they show relative weight, not consumption quantity. Rice is the top commodity in both areas. Audit follow-up (2026-10-17): Label fix: metric text said \"food poverty line\" but the source is the overall poverty line; publication date was GoodStats relay date (4 Mar 2026), BPS released 5 Feb 2026 (per audit; GoodStats page reopened and shows the 4 Mar 2026 byline, BPS release date not on page). No figure changed."
+    },
+    "P3PB-06": {
+      "file": "data/processed/price-ladder.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "not stated (page names no city or outlet; brand-wide)",
+      "question_or_metric": "menu price, pasta_main",
+      "ref_period": "Article printed 17 Nov 2025, 11:20 WIB; price as of article date, period type: point-in-time list price",
+      "base_n": "n/a",
+      "population": "Pizza Marzano (IDN Times (Dining Guide))",
+      "has_audit_followup_note": true,
+      "notes": "Brand-wide menu list as transcribed by IDN Times from the brand menu (photos credited to instagram.com/pizzamarzanoid); outlet not stated. The article gives no tax or service basis (the older official Marzano PDF of April 2021 printed \"subject to 10% PB 1 government tax & 5.5% service charged\", so a \"++\" basis is likely but unconfirmed for 2025). Community-writer article. Audit follow-up (2026-10-17): Geography fix: code J replaced by \"not stated\"; IDN Times page reopened, names no city or outlet. No figure changed."
+    },
+    "P3PB-27": {
+      "file": "data/processed/price-ladder.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "J",
+      "question_or_metric": "menu price, range_european_modern_menu",
+      "ref_period": "Article printed Selasa, 28 Okt 2025 12:00 WIB; price as of article date, period type: point-in-time list price",
+      "base_n": "n/a",
+      "population": "Bastian (detikFood (detik.com))",
+      "has_audit_followup_note": true,
+      "notes": "Range for the whole menu or the main dishes, as stated by detikFood (staff-written list article). Not an item price; price_idr left blank. Venue-level, outlet address is in the article. No tax basis stated. The range spans a salad starter, a handmade pasta and a steak, so the pasta price alone is not isolated. Audit follow-up (2026-10-17): Class label fix: premium_italian_main replaced by european_modern_menu; detikFood (reopened) calls Bastian \"konsep Eropa modern\" and the range runs from burrata salad starter to dry-aged wagyu steak. No figure changed."
+    },
+    "UA-N12": {
+      "file": "data/processed/plan4-media-by-age.csv",
+      "verification": "VERIFIED-OPENED (original)",
+      "geography": "N",
+      "question_or_metric": "social media most often accessed (YouTube) Millennial",
+      "ref_period": "2025",
+      "base_n": "8,700 = whole APJII 2025 sample (MoE +-1.1%); Millennial subgroup n not printed",
+      "population": "Internet users in APJII 2025 sample (by generation); one answer per respondent (rows sum to 100%)",
+      "has_audit_followup_note": true,
+      "notes": "Source URL https://survei.apjii.or.id/uploads/1790827857401-Survei-Penetrasi-Internet-dan-Perilaku-Penggunaan-Internet-2025.pdf (page 92 of 132). Run 1b second verification (W1b-1, 2026-10-16): VERIFIED-OPENED (original). Audit follow-up (2026-10-17): Base label fix: 8,700 is the whole sample; APJII PDF page 92 reopened, shows only the percentages by generation (YouTube Millennial 23,86%) and no subgroup n. No figure changed."
+    },
+    "UA-N67": {
+      "file": "data/processed/plan4-media-by-age.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "U",
+      "question_or_metric": "first learned of new eating place: TikTok restaurant accounts",
+      "ref_period": "Fieldwork 2-7 Sep 2025",
+      "base_n": "995 respondents per the GoodStats page (Jakpat, 2-7 Sep 2025, eight urban areas of Java); base for the 33% itself unconfirmed (a different Databoks page gives 955 narrowed to 769)",
+      "population": "Young urban respondents, eight Java cities: Bogor, Depok, Bandung, Yogyakarta, Surakarta, Semarang, Malang, Surabaya (no Jakarta)",
+      "has_audit_followup_note": true,
+      "notes": "Fifth bar of the same chart as R04-R07. URL https://data.goodstats.id/statistic/dari-mana-publik-dapat-informasi-soal-tempat-makan-baru-3WlAm. Run 1b second verification (W1b-1, 2026-10-16): VERIFIED-OPENED (relay). Audit follow-up (2026-10-17): Base label fix: GoodStats page reopened: \"995 responden di delapan area urban di pulau Jawa\", MoE below 5%, fieldwork 2-7 Sep 2025; the page does not say which base the 33% uses. The Databoks 955/769 page was not reopened in this run (taken from the audit). No figure changed."
+    },
+    "Q8-001": {
+      "file": "data/processed/plan4-origin-boycott.csv",
+      "verification": "VERIFIED-OPENED (original)",
+      "geography": "N",
+      "question_or_metric": "Mandalika MotoGP total spectators: 140,324 per Polri (repeating the organiser count, not an official Polri count); minister statement of about 142,000 noted separately",
+      "ref_period": "3-5 Oct 2025 (Polri 2025-10-07; Antara 2025-10-06)",
+      "base_n": "not stated",
+      "population": "Indonesia: MotoGP Mandalika 2025",
+      "has_audit_followup_note": true,
+      "notes": "MERGED Q8-001 + Q8-002 (same count in two forms): MGPA organiser count 140,324 (kontan, katadata, ekon.go.id, GNFI 2025-10-08, databoks 2025-10-06); minister statement quoted as 142,000 (Antara, Republika 2025-10-05), Detik quotes \"140 ribu\". 2026 edition later reported 157,875, so this is a 2025 value, not the latest. Run 1b (2026-10-16): opened https://inp.polri.go.id/artikel/motogp-mandalika-2025-spectators-reached-140000 ; https://mataram.antaranews.com/berita/494029/indonesia-2025-mandalika-motogp-draws-142000-spectators-thohir ; databoks (BEH-029); printed date Polri \"Selasa, 07 Oktober 2025\"; Antara \"Senin, 6 Oktober 2025 05:17 WIB\"; Databoks 2025-10-06. Both numbers confirmed in the opened pages. Polri repeats the organiser's count; Databoks carries 140,324 as an increase of \"15.73% compared to 2024 and 36.24% compared to ... 2023\". Antara dated 6 Oct (not 5 Oct as in the register; the minister spoke on Sunday 5 Oct). Neither ITDC nor MGPA was opened directly. Polri repeats the organiser count (140,324); Antara quotes the minister at about 142 thousand and is dated 6 Oct, not 5 Oct. Neither ITDC nor MGPA was opened directly. Audit follow-up (2026-10-17): Label fix: Polri repeats the organiser (MGPA) count and does not call it its own; the minister figure (about 142,000, Antara) is a different statement kept only as a note. Polri page reopened: \"attendance of 140,324 spectators\". No figure changed."
+    },
+    "Q8-003": {
+      "file": "data/processed/plan4-origin-boycott.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "Lombok, NTB (single event; neither Jakarta nor national)",
+      "question_or_metric": "Mandalika MotoGP spectators 2024 and 2023",
+      "ref_period": "Sep 2024 (race 27-29 Sep 2024); Oct 2023 (Databoks 2025-10-06)",
+      "base_n": "not stated",
+      "population": "Indonesia: MotoGP Mandalika",
+      "has_audit_followup_note": true,
+      "notes": "2023 value predates cutoff but is quoted inside a post-cutoff source as a series; kept as trend context; V-C: values hold; 2023 and 2024 events predate 2024-10-16 and are kept as trend context inside a post-cutoff series. Run 1b (2026-10-16): opened https://databoks.katadata.co.id/en/transportation-logistics/statistics/68e3153d39cbd/motogp-mandalika-2025-spectators-increase-set-new-record; printed date 2025-10-06 16:01 WIB. Matches. The same page elsewhere rounds 2023 to \"103,000\". Register date \"about 2025-10-05\" can become 2025-10-06. Databoks elsewhere rounds 2023 to 103,000. Register date can read 2025-10-06. Audit follow-up (2026-10-17): Period and geography label fix: the 2024 race was held 27-29 Sep 2024 (per audit; the Databoks page does not print the 2024 race dates); single Lombok event, so code N replaced by a free-text location. Databoks page reopened: 121,252 (2024) and 102,929 (2023) confirmed. No figure changed."
+    },
+    "H-04": {
+      "file": "data/processed/2026-10-p2-entry-requirements.csv",
+      "verification": "VERIFIED-OPENED (original)",
+      "geography": "Indonesia",
+      "question_or_metric": "BPJPH states that mandatory halal starts 18 Oct 2026 with no postponement. Special provisions are being drafted; the page gives two category lists (lead paragraph: usaha mikro dan kecil (UMK) plus raw materials and consumer goods; Kepala BPJPH quote: \"produk UMK dan produk impor\"). No text of these provisions found.",
+      "ref_period": "BPJPH statement Jumat 9 Oktober 2026",
+      "base_n": "",
+      "population": "",
+      "has_audit_followup_note": true,
+      "notes": "Also states there is no sweeping policy and warns of fraudulent payment requests in BPJPH name. Run 2 verification (2026-10-17): both category lists of the page are kept (rule e): lead paragraph = UMK, bahan baku, barang gunaan; Kepala BPJPH quote = UMK and imported products. The statement does not address medium/large businesses and cannot amend PP 42/2024. A BPJPH page of 4 Jun 2026 calls the 18 Oct 2026 phase a continuation of the medium and large phase from Oct 2024. Audit follow-up (2026-10-17): Citation fix: BPJPH page reopened, text names UU Nomor 33 Tahun 2014 and does not mention PP 42/2024. No finding or value changed."
+    },
+    "P4W9-29": {
+      "file": "data/processed/plan4-age-splits.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "N",
+      "question_or_metric": "main retrenchment areas for Millennials: takeout and international travel",
+      "ref_period": "fieldwork 17-21 Apr 2025; Marketing-Interactive printed 23 Jun 2025 (relay)",
+      "base_n": "2,067 adults 18+ (per-generation n not printed)",
+      "population": "Indonesian online adults 18+ (weighting by gender, age, SES class and region is from the YouGov original per notes; representativeness is not stated on the relay page)",
+      "has_audit_followup_note": true,
+      "notes": "YouGov Indonesia Personal Finance Outlook 2025: online representative survey of 2,067 adults aged 18+, fieldwork 17-21 Apr 2025, weighted by gender, age, SES class and region (YouGov original, 24 Jun 2025). Generation bands are not printed on any opened page. Qualitative; Detik says Millennials cut back saving and holidays (Detik, S9). The two outlets differ on what Millennials cut; neither prints a percentage. Run 2 verification (2026-10-17): single trade-press relay (Marketing-Interactive); YouGov generation tables gated. Audit follow-up (2026-10-17): Label fix: Marketing-Interactive page reopened; it says \"takeout and international travel\" and gives no representativeness claim. Takeout no longer coded under delivery. No figure changed."
+    },
+    "P4W4-06": {
+      "file": "data/processed/plan4-health.csv",
+      "verification": "VERIFIED-OPENED (original)",
+      "geography": "N",
+      "question_or_metric": "Barrier: high cost of healthy products/services",
+      "ref_period": "Fieldwork Jan-Feb 2025; release 2025-07-08",
+      "base_n": "not seen",
+      "population": "Online adult consumers who are grocery/health shoppers per NIQ survey (adults interviewed online, Jan-Feb 2025); Indonesia n not printed",
+      "has_audit_followup_note": true,
+      "notes": "price barrier. Run 1b (2026-10-16): opened same; printed date same. Matches. Audit follow-up (2026-10-17): Population label fix: NIQ page reopened: \"Nearly 19,000 adult consumers were interviewed online\" in 19 countries, January and February 2025; no Indonesia n printed. No figure changed. (The \"grocery shoppers\" wording follows the audit; the page text opened here does not use it.)"
+    },
+    "P1C2-03": {
+      "file": "data/processed/demand/middle-class-income.csv",
+      "verification": "VERIFIED-OPENED (relay)",
+      "geography": "N",
+      "question_or_metric": "Upper class (>17x poverty line, Mandiri Institute classification) population",
+      "ref_period": "calendar year 2025 vs 2024",
+      "base_n": "national population (BPS Susenas data as classified by Mandiri Institute; Susenas base not printed on the relay page)",
+      "population": "Indonesia, expenditure class upper",
+      "has_audit_followup_note": true,
+      "notes": "Mixed: upper tier is stable to slightly growing but is only 0.4% of the national population. Scale check for the target segment: the official upper class is about 1.2 million people nationally. Audit follow-up (2026-10-17): Label fix: Kontan page reopened: attributes the figures to Mandiri Institute; the \">17x poverty line\" definition and Susenas base are not on the page (confirmed only by other outlets per audit). No figure changed."
+    }
+  }
+}
