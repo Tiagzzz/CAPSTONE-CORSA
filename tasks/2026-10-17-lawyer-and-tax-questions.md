@@ -1,6 +1,6 @@
 # Open questions for an Indonesian lawyer, a tax adviser and BPJPH / an LPH (CORSA, Jakarta)
 
-Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and small businesses began). Task W-LAW. Status: draft for the Product Owner to send to an adviser.
+Date: 2026-10-17. Nothing was re-checked on 2026-10-18; the halal phase for micro and small businesses starts on 18 Oct 2026. Task W-LAW. Status: draft for the Product Owner to send to an adviser.
 
 **What this is.** One consolidated, de-duplicated list of the questions the research could not settle from the texts. The questions come from research, not legal or tax advice. "Evidence so far" reports what the cited rows say; it is not a conclusion, and "Analysis" marks our reading, which has no authority. "No amendment found" is not "confirmed none": the gazette sites peraturan.go.id and peraturan.bpk.go.id were unreachable.
 
@@ -8,8 +8,8 @@ Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and s
 
 **Time-sensitive statements (re-check before sending).**
 - **SEHATI:** the BPJPH free halal scheme (code SEHATI25) is documented for 2025 only ("Sepanjang tahun 2025 selama kuota masih tersedia"); a 2026 or 2027 round was not checked. [H-03; N-na]
-- **Dates:** statements below describe the state on 2026-10-17; nothing was re-checked on 2026-10-18.
-- **H-04 (BPJPH, 9 Oct 2026):** "no postponement" of 18 Oct 2026 and special provisions for micro/small businesses and imports in drafting. The halal phase for micro and small businesses starts 18 Oct 2026; **re-check BPJPH on 19-20 Oct 2026.** [H-04; N-na]
+- **Dates:** statements below describe the state on 2026-10-17; nothing was re-checked on 2026-10-18 (the date the micro and small phase starts).
+- **H-04 (BPJPH, 9 Oct 2026):** "no postponement" of 18 Oct 2026 and special provisions for micro/small businesses and imports in drafting. The halal phase for micro and small businesses starts 18 Oct 2026 (the statement was written before that date); **re-check BPJPH on 19-20 Oct 2026.** [H-04; N-na]
 - **H-12:** the Minister's decision on foreign products (PP 42/2024 Art. 160(3)) was due by 17 Oct 2026; none found on 2026-10-17; **re-check 19-20 Oct 2026.** [H-12; N-na]
 - **T-07:** the PBJT cut for March 2026 is known only from a DDTC relay of a Bapenda statement (Kepgub 310/2026 not opened); no decree for Sep-Dec 2026 was found. [T-07; J-na]
 - **E-02:** the investment Perpres drafting programme (Keppres 38/2025, from 22 Dec 2025) is known through DDTC only; re-check at 21 Oct 2026 and before incorporation. [E-02; N-na]
@@ -88,7 +88,7 @@ Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and s
 
 **L11. Franchise test (F-05).** Does Permendag 71/2019 Art. 2(3) (5 years of experience) still apply after Permendag 26/2025, or does only PP 35/2024 Art. 4(5) (3 years plus 2 audited profitable years) apply? Which test does OSS apply to a foreign franchisor? Has Permendag 71/2019 been aligned or withdrawn, and is a revision of the franchise regime under way?
 - Why it matters: a young Swiss-Italian concept may pass the 3-year test but fail a 5-year test; this gates route (b), the route to test first.
-- Evidence: PP 35/2024 Art. 4(5) (3 years plus 2 audited profit years) [F-04; N-na]; Permendag 71/2019 Art. 2(3) (5 years) is "Berlaku" on JDIH, not repealed by the instruments read [F-05; N-na]. Kontan (30 Jun 2025, tier 3, REG-901) reports a minister's statement that Permendag 26/2025 revoked four Permendag (36/2007; "22 Tahun 2006" as Kontan prints it, 22/2016 per the F-05 row; 25/2020; 4/2023); Kontan does not mention 71/2019. That absence rests on a minister's oral list, not a revoking article. A Tempo item said to report a revocation could not be opened (403). JDIH lists a 2026 impact assessment on revising the franchise regime. [F-05; N-na]
+- Evidence: PP 35/2024 Art. 4(5) (3 years plus 2 audited profit years) [F-04; N-na]; Permendag 71/2019 Art. 2(3) (5 years) is "Berlaku" on JDIH, not repealed by the instruments read [F-05; N-na]. Kontan (30 Jun 2025, tier 3, REG-901) reports a minister's statement that Permendag 26/2025 revoked four Permendag (36/2007; "22 Tahun 2006" as Kontan prints it, 22/2016 per the F-05 row; 25/2020; 4/2023); Kontan does not mention 71/2019. That absence rests on a minister's oral list, not a revoking article. A Tempo item said to report a revocation could not be opened (403). [F-05; N-na] The clause that JDIH lists a 2026 impact assessment on revising the franchise regime is not supported by any row of this list; it comes from the Plan 2 report, section 6, and carries no row tag.
 - Answer changes: whether route (b) is open to CORSA now or only after 5 years; also H3 verdict ("undetermined").
 - Origin: R6; V3B 1; Audit (F-05).
 
@@ -138,13 +138,13 @@ Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and s
 
 **L19. Expatriate roles and labour.** What do RPTKA and work permits require for Swiss or Italian staff, and what are wage and labour rules for the outlet?
 - Why it matters: labour and expatriate roles were not researched.
-- Evidence: only a tier-3 RPTKA lead; PP 28/2025 Art. 170(e) lists food and beverage services in tourism-sector licensing. [E-11; N-na]
+- Evidence: only a tier-3 RPTKA lead; PP 28/2025 Art. 170(e) lists food and beverage services in tourism-sector licensing. [E-11; N-na] The "wage and labour rules for the outlet" part is a worker addition; no row covers it.
 - Answer changes: staffing plan and cost.
 - Origin: R carried item (expatriate roles and labour); P2v F12.
 
 **L20. Boycott and fatwa risk.** Is there any MUI or state statement after Fatwa 83/2023 relevant to non-Israeli European brands?
 - Why it matters: boycott risk to a European brand (H6) is undetermined.
-- Evidence: no verified row names a Swiss or Italian brand; operator results (KFC, Starbucks, Pizza Hut) do not show a boycott cause; survey rows are low weight. [S-03; N-na] [S-04; N-na] [S-05; N-na]
+- Evidence: no verified row names a Swiss or Italian brand; no filing of KFC, Starbucks or Pizza Hut states a boycott cause, but FAST management names the 2023-24 boycott as one of three causes (CNBC 6 Oct 2025, relay) [P3B-08; N-na] and one tier-3 outlet, paraphrasing the CEO, ties Starbucks closures to falling traffic and boycott sentiment [P3B-07; N-na]; survey rows are low weight. [S-03; N-na] [S-04; N-na] [S-05; N-na]
 - Answer changes: brand and positioning risk rating.
 - Origin: R20 (first part); V3B 10.
 
@@ -208,7 +208,7 @@ Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and s
 
 **X9. VAT versus PBJT.** Confirm in a 2024+ source that restaurant sales that are PBJT objects carry no VAT, and how packaged goods or merchandise sold inside the cafe are taxed.
 - Why it matters: a wrongly assumed VAT-free base would misstate tax on retail items.
-- Evidence: the only source found is a 2022 DJP article (dropped as pre-window); packaged goods and merchandise are not covered by any row. [T-14 dropped as pre-window; DJP article of 19 May 2022 only, see V3B row T-14]
+- Evidence: the only source found is a 2022 DJP article (dropped as pre-window); packaged goods and merchandise are not covered by any row. [T-14 is not a live row: it was moved to `data/processed/2026-10-16-run1-dropped-rows.csv` as pre-window (DATE-FAIL; DJP article of 19 May 2022 only)] Live rows that bear on the question: PBJT object for a restaurant [T-02; J-na]; VAT general rate for non-restaurant supplies [T-15; N-na]; neither confirms the VAT treatment of packaged goods or merchandise.
 - Answer changes: whether merchandise sales need separate VAT treatment.
 - Origin: R19 (last part), R carried item (VAT on packaged goods); V3B 9; P2v F12.
 
@@ -219,7 +219,7 @@ Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and s
 **B1. Halal scale (H-03): is a PMA "large" for halal?** Is a PMA (called a "large business" in Permen 5/2025 Art. 26(1)) treated as medium or large for halal purposes under PP 42/2024 Art. 98(2) and Art. 160, or do the micro/small criteria apply on turnover and capital? Can a PT PMA ever use self-declaration?
 - Why it matters: if a PMA is large, certification is mandatory from day one with the IDR 12.5m tariff; if micro/small criteria apply, the second phase starting 18 Oct 2026 and the self-declare route may apply.
 - Evidence: PMA is "usaha besar" in the investment rules [E-07; N-na]. PP 42/2024 Art. 98(1): the duty for micro and small businesses rests on a halal statement; Art. 98(2) defers the criteria to other laws. No text says a PMA that is large for investment is large for halal: Analysis only, at most medium confidence. The BPJPH free scheme SEHATI is documented for 2025 only (time-sensitive). [H-03; N-na] [H-02; N-na]
-- Answer changes: day-one halal duty, tariff (IDR 12.5m versus 300,000), whether self-declaration or the free scheme is open.
+- Answer changes: day-one halal duty, tariff (IDR 12.5m versus 300,000; the tariff figures are in [H-08; N-na]), whether self-declaration or the free scheme is open.
 - Origin: R12; V2F Q8; P2v F4; CAGE A1-17.
 
 **B2. Halal line in a mixed kitchen (T16).** Can a separated halal line or corner in a kitchen that also serves non-halal products be certified?

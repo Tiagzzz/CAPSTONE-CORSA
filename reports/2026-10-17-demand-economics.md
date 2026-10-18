@@ -71,7 +71,7 @@ Analysis: the "growing middle class" claim fails nationally; the 2025 decline of
 
 ### 2.4 Facts pointing the other way: verified downside and mixed rows (balance check, run 4)
 
-**Selection rule.** A script listed every row of `demand/*.csv`, `plan4-spend-drivers.csv` (spend rows only) and `listed-operators.csv` (operators used for H8) coded VERIFIED-OPENED or CORRECTED-OPENED whose value, notes or direction text matched a decline, loss, slowdown, price-resistance, "disconfirms" or "mixed" marker, plus table A of `data/raw/2026-10-17-disconfirming-evidence.md` rows marked disconfirms or mixed. Each full row (notes, gaps, in-force and amendment columns where present) was then read and kept or dropped. Result: 43 rows (35 CSV rows, 8 disconfirming-table rows). The earlier text cited 20 of them (18 CSV rows, 2 table rows); this section adds the other 23. Excluded as BLOCKED: disconfirming-table rows 5 (middle-class saving headline; the opened replacement is P1C2-33), 8 (eating-out cuts, anecdotal) and 15 (Fore price band, conflicting ranges). Dropped as not downside after reading: UE-N07 (the 2025 layoff base, which makes 2026 layoffs lower), P1C1-C01 (poverty share, no direction), P1C4-10 (a conflict of totals), SD19 and UD-N12 (PayLater arrears falling).
+**Selection rule.** A script listed every row of `demand/*.csv`, `plan4-spend-drivers.csv` (spend rows only) and `listed-operators.csv` (operators used for H8) coded VERIFIED-OPENED or CORRECTED-OPENED whose value, notes or direction text matched a decline, loss, slowdown, price-resistance, "disconfirms" or "mixed" marker, plus table A of `data/raw/2026-10-17-disconfirming-evidence.md` rows marked disconfirms or mixed. Each full row (notes, gaps, in-force and amendment columns where present) was then read and kept or dropped. Result: 43 rows (35 CSV rows, 8 disconfirming-table rows). The earlier text cited 20 of them (18 CSV rows, 2 table rows); this section adds the other 23. Excluded as BLOCKED: disconfirming-table rows 5 (middle-class saving headline; the opened replacement is P1C2-33), 8 (eating-out cuts, anecdotal) and 15 (Fore price band, conflicting ranges). Dropped as a stand-alone row after reading: UE-N07 (the 2025 layoff base, which makes 2026 layoffs lower; it is used only as the base of table row 9 below), and dropped as not downside: P1C1-C01 (poverty share, no direction), P1C4-10 (a conflict of totals), SD19 and UD-N12 (PayLater arrears falling).
 
 Added rows (all Analysis-free facts; geography N unless stated; relays are tier 3):
 
@@ -83,7 +83,7 @@ Added rows (all Analysis-free facts; geography N unless stated; relays are tier 
 | Table row 9 (mixed) | 23,470 workers laid off (JKP participants only; Jan-May 2025: 46,015, so about 49% fewer, computed) [UE-N07] | Jan-May 2026; national | DEM-023; DEM-024; DEM-012 |
 | Table row 16 (disconfirms) | Real wages declined 1.1% a year on average (World Bank Dec 2025 deck, 14 slides); the consumption link is not on the slides; updated by P1C2-11 | 2018-2024; national | DEM-018 |
 | Table row 17 (mixed) | GDP +5.29% yoy; context only, not segment demand | Q2 2026; national | DEM-027; DEM-019 |
-| UE-N08 | 26.9% of households call themselves poor (August 2024: 19.5%) | Aug 2025 monthly point; national | DEM-018 |
+| UE-N08 | 26.9% of households call themselves poor (August 2024: 19.5%); the value is read from a chart label (chart of monthly points ending in August) | Aug 2025 monthly point; national | DEM-018 |
 | P1C2-02 | Aspiring middle class 142.0 million (2025) vs 137.5 million (2024), 50.4% of population: the pool below the middle grows | 2025 vs 2024; Susenas | DEM-035 |
 | P1C2-09 | Middle-class food consumption +0.9% vs non-food +6.4% (2024: food 4.6%, non-food 3.2%); Susenas food group, not restaurants | 2025 vs 2024 | DEM-035 |
 | P1C2-12 | Formal wage employment of tertiary-educated workers 74.1% to 67.8% | 2018 to 2025 | DEM-039 |
@@ -92,7 +92,7 @@ Added rows (all Analysis-free facts; geography N unless stated; relays are tier 
 | P1C2-27 | Purchasing-power index April 2026: high income -0.1, middle -0.9, lower -1.0; deposits over Rp2 billion +15.99% vs Rp100-500 million +3.15% (relay of BRI) | Apr 2026 | DEM-044 |
 | P1C2-29 | Mandiri card data: restaurants +4.7% yoy vs +6.1% the year before; overall MSI growth 5.5% in September, lowest since Nov 2025; period labels inferred from the paragraph | Q3 2026 (to 27 Sep) | DEM-046 |
 | P1C2-30 | Mandiri Saving Index by savings-balance group (not expenditure class): middle 100.5 (-0.1% mom), upper 95.1 vs 94.0; the lower group value is printed two ways and not used | 27 Sep 2026 | DEM-046 |
-| P1C2-33 | Middle-group Mandiri saving index 100.4, lowest since Oct 2023 | Feb 2026 | DEM-021 |
+| P1C2-33 | Middle-group Mandiri saving index 100.4, lowest since Oct 2023; the same page records the opposite direction too: "MSI" +6.5% year on year (level 121.6, as the row words it), and the middle-class IKK rising for the Rp3.1-4 million band (120.7 to 122.6) and the Rp4.1-5 million band (124.2 to 125.5) | Feb 2026 | DEM-021 |
 | P1C2-34 | LPEM FEB UI: the middle class "masih akan tertekan di 2026" (opinion, tier 3) | statement of 27 May 2026 | DEM-038 |
 | SD07 | Delivery average order value "trending down slightly" in Southeast Asia; growth from frequency, not basket size (relay of Momentum Works; region, not Jakarta) | 2025 | BEH-060; BEH-034 |
 | P3BF-015 | MAPB net loss Rp121,506 million vs Rp80,206 million | Jan-Jun 2026 vs 2025; unaudited | CMP-006 |
@@ -236,6 +236,6 @@ Analysis: the evidence moves no guest-volume case. Team B should keep 200 guests
 ## Appendix: balance check of downside and mixed rows (run 4, 2026-10-18)
 
 - Rule: section 2.4. Scripted candidate list from `demand/*.csv`, `plan4-spend-drivers.csv`, `listed-operators.csv` and table A of `data/raw/2026-10-17-disconfirming-evidence.md`; every row read in full before it was kept.
-- Counts: downside or mixed rows in scope 43; cited before 20; added 23; cited after 43. Distinct row ids cited in the report rose from 67 to 87 (5 of them are rows named as excluded).
-- Excluded: BLOCKED table rows 5, 8, 15; not-downside rows UE-N07, P1C1-C01, P1C4-10, SD19, UD-N12.
+- Counts: downside or mixed rows in scope 43; cited before 20; added 23; cited after 43. Distinct row ids in the report text, counted by script after the balance check: 91 (the earlier figure of 87 was not reproducible and the "67 before" count was not re-derived). The 91 include ids that appear only in the excluded or dropped lists (for example P1C1-C01, P1C4-10, SD19, UD-N12).
+- Excluded: BLOCKED table rows 5, 8, 15; not-downside rows P1C1-C01, P1C4-10, SD19, UD-N12.
 - Conclusions changed: none. Details in `tasks/2026-10-17-run4-balance-check.md`.
