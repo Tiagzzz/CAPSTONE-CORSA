@@ -1,5 +1,13 @@
 # Orchestration Plan: Phase 1 CORSA Jakarta Insights Report (2026-10-18)
 
+## Codex continuation (18 Oct 2026)
+
+- Resume at Wave 2b from the empty verdict columns; do not repeat Waves 1 or 2a.
+- Run three independent verification batches in parallel, with exclusive batch-log files and result CSVs; a separate integration worker updates the shared checklist, progress log, and checkpoint commits after each approximately 10-item batch.
+- Continue the remaining Wave 2b items in the same pattern, then use file-owned writers for Wave 3 and writers who did not author a section for Wave 4 verification. Wave 5 fixes only verified findings, runs the repository checks, writes the appendix and Phase 2 plan, and opens (but does not merge) the PR.
+- Acceptance criteria remain those below. Every checklist edit uses `checked_by=codex`; every commit starts `codex:`.
+- Model choice (owner decision): use Terra for research and source verification, Sol for deeper analysis/integration/audit, and Luna for prose; split long report text across multiple Luna calls. Keep prompts and owned files narrow to limit usage.
+
 ## 1. Objective & Acceptance Criteria
 
 Produce the Phase 1 actionable insights report and full source appendix from `Tiagzzz/CAPSTONE-CORSA` for the **21 Oct 2026** interim presentation, working on branch `insights-2026-10-18` and opening an unmerged PR into `main` titled `"Phase 1 insights report (2026-10-18)"`.
