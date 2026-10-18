@@ -20,7 +20,7 @@ Only verified rows, tagged `[row; geo-agefit]`; national or proxy evidence flagg
 
 Date: scope says 22 Oct, 08:00-12:00; meeting 5 settled 21 Oct; slot to be confirmed with Heiko. Target: an investor-readable document, about 10 minutes, 3 to 5 bullets per page.
 
-1. **Strategic fit assessment.** Is Jakarta a sound first flagship; which assumptions are strong or weak. Gap: the scope's brief Singapore, Dubai and Hong Kong comparison is not covered by any report yet. Source: `reports/2026-10-17-pestel-jakarta.md`; competitors in `reports/2026-10-17-competitor-map-and-price-ladder.md`.
+1. **Strategic fit assessment.** Is Jakarta a sound first flagship; which assumptions are strong or weak. The scope's brief Singapore, Dubai and Hong Kong comparison was dropped by the owner on 2026-10-18 and is not part of the interim. Source: `reports/2026-10-17-pestel-jakarta.md`; competitors in `reports/2026-10-17-competitor-map-and-price-ladder.md`.
 2. **Target customer overview.** Who matters most, how strong the fit is, what triggers purchase. Source: `reports/2026-10-17-customer-target-profiles.md`.
 3. **Cultural fit considerations.** What transfers, what needs adapting, what to test locally (for example halal operations). Source: `reports/2026-10-17-cage-switzerland-jakarta.md`.
 4. **Clear implications for CORSA (scope §6).** Customer, location and validation priorities for the 90-day roadmap; keep, adapt, test. Source: synthesis of sections 1 to 3 (the PESTEL, CAGE and profiles reports).
