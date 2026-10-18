@@ -9,6 +9,7 @@ Date: 2026-10-17. Author: P3-E-synth (synthesis writer, no new research). Status
 - **Listed operators.** The mass and mid-market chains are under pressure but not uniformly. Fast Food Indonesia (FAST, KFC) lost Rp61.1 bn in Jan-Jun 2026 (CMP-001; national) and flags going-concern uncertainty (CMP-001); its outlet count fell from 715 (31 Dec 2024) to 682 (30 Jun 2026) (CMP-003, CMP-001; national). MAP Boga (MAPB, Starbucks and others) lost Rp121.5 bn in Jan-Jun 2026, wider than the Rp80.2 bn loss a year earlier (CMP-006; national). Champ Resto (ENAK) swung to a nine-month loss in 2025 (CMP-012; national). Pizza Hut's operator (PZZA) stayed profitable but its H1 2026 sales fell 4.54% (CMP-010; national). Fore Coffee (FORE) is the opposite case: revenue +51.7% in H1 2026 (derived) and 377 outlets (CMP-013; national).
 - **Foreign entrants.** 16 verified in-window cases, none a documented full exit with a stated reason; four are shrinking (two of the four, Starbucks and Mixue, rest on a single tier 3 relay each). No base rate is given (n<10 documented exits, and the set is not a census).
 - **Price ladder.** Item prices are thin and concentrated: 67 numeric prices, three brands hold 83.6%. Latte median 29,000 (n=7, 2 brands), pasta 86,500 (n=20, mixed types), bowl 60,000 (n=15, 2 brands) (price-ladder.csv; Jakarta; 2025 to Oct 2026 captures). No district split exists.
+- **Balance check (run 4).** Section 2.6 lists the 35 verified downside or mixed rows in scope (29 were cited before, 6 added). No verdict changes.
 - **Hypotheses.** H1 inconclusive; H2 inconclusive; H3 and H4 gap; H5 partly confirmed; H6 inconclusive; H7 gap. The saturation test is a gap.
 - **Implication (Analysis).** District price position cannot be set; the latte placeholder is above every sourced latte; pasta is inside the one Italian brand's range. Field sampling is needed first.
 
@@ -79,6 +80,22 @@ Limit: the latest ENAK data are nine months to September 2025; FY2025, Q1 and H1
 Analysis: Fore grows fast and is profitable, but net profit growth in H1 2026 (+34.4%, derived) is below its 70% target (half-year growth vs a full-year target, not like-for-like) and the margin slipped. About half its network is already outside Greater Jakarta (derived 47% inside), so its Jakarta presence is not a district-level density measure.
 
 Revenue per outlet is derived, covers different periods and is not same-store, so it is not compared across operators. None of the five discloses same-store growth or average ticket, and none prints a Jakarta-only outlet count.
+
+### 2.6 Downside and mixed rows not shown above (balance check, run 4)
+
+**Selection rule.** A script listed every row of `listed-operators.csv`, `foreign-entrants.csv` and `price-ladder.csv` coded VERIFIED-OPENED or CORRECTED-OPENED whose value, notes, status or reasons text shows a decline, loss, closure, going-concern or "mixed"/"disconfirms" marker; each full row was read before it was kept. Result: 35 rows (26 operator rows, 9 foreign-entrant rows, no price-ladder row). Sections 2 and 3 already cited 29 of them. The 6 below are added. Excluded as BLOCKED: P3B-17 (Domino's 250 outlets), P3BF-030 (ENAK FY2025 gap) and the disconfirming-table row 15 (Fore price band, conflicting ranges). Not downside, left out: P3BF-035 (Fore FY2025 profit up; the "below target" clause is annual-report wording, not a figure), and price-ladder rows P3PB-45 and P3PB-50 to P3PB-57 (conflicting or unassigned prices, no direction). No price-ladder row shows price resistance. Operator rows from `plan4-origin-boycott.csv` (for example MAPB 9M 2025 sales -2.77%) are outside this report's input and appear in the Plan 2 report.
+
+| Operator | Added fact | (row; register_id; period; geography) |
+| --- | --- | --- |
+| FAST | Auditor's material uncertainty on going concern: accumulated losses Rp507.63 bn, current liabilities exceed current assets by Rp1.33 trn (Stockwatch relay) | (P3BF-010; CMP-005; FY2025 audited, 31 Dec 2025; national) |
+| FAST | Operating loss Rp312 bn, "down 60%" (a smaller loss, not a profit; Okezone relay, filing not opened) | (P3BF-011; CMP-004; FY2025; national) |
+| FAST | Employees 11,664 vs 13,106, a fall of 11.0% (derived) | (P3BF-012; CMP-004; 31 Dec 2025 vs 31 Dec 2024; national) |
+| FAST | Q1 2026 profit of Rp12.7 bn did not hold: with the H1 loss of Rp61.1 bn, Q2 2026 alone was a loss of about Rp73.8 bn (derived in the row notes) | (P3BF-007, P3BF-005; CMP-002, CMP-001; Jan-Jun 2026; national) |
+| PZZA | Q1 2026 net profit Rp6 bn vs Rp0.4 bn, net sales Rp727 bn, +2.8%; the company says the earlier Ramadan and Eid timing helped Q1 (mixed) | (P3BF-024; CMP-011; Jan-Mar 2026; national) |
+| PZZA | Permanent employees 4,085 vs 4,192 (-2.6%, derived); 4,467 at end 2024 | (P3BF-025; CMP-009; 30 Jun 2026 vs 31 Dec 2025; national) |
+| CFC (PTSP, local chain, control) | Profit attributable Rp19.38 bn vs Rp21.03 bn (-7.8%, derived); revenue Rp703.26 bn | (P3BF-040; CMP-003; FY2025 vs FY2024, Detik relay; national) |
+
+Analysis: these rows point the same way as the FAST, MAPB, PZZA and ENAK findings above; none contradicts a verdict. They show that FAST's narrower loss comes with a smaller workforce and an auditor's going-concern note, and that PZZA's recovery in H1 2026 sits beside falling sales and headcount.
 
 ## 3. Foreign entrants and exits
 
@@ -187,3 +204,10 @@ Analysis: these points are interpretation of the data above, not sourced facts.
 - **Dates.** Window cut-off 2024-10-16 per the owner rule; older exits are historical only.
 - **Statistics.** From the DERIVED table in price-points.md, recomputed from price-ladder.csv (median = mean of the two middle values when n is even). Statistics with fewer than 4 brands are not market medians.
 - **Known limits.** Press-only filings (FAST FY2025, PZZA, Fore guidance relays) are secondary; ENAK is a broker mirror; Starbucks closures and Mixue rest on a single relay each; Greater Jakarta and "Jakarta RSC" are not DKI; price sources are mostly dining-guide articles whose capture dates are 2025, not 2026; no district split; no delivery-app data; verifier acceptance thresholds in plan section 8 apply to the later verification step, not this draft.
+
+## Appendix: balance check of downside and mixed rows (run 4, 2026-10-18)
+
+- Rule: section 2.6. Scripted candidate list from `listed-operators.csv`, `foreign-entrants.csv` and `price-ladder.csv`; every row read in full before it was kept.
+- Counts: downside or mixed rows in scope 35; cited before 29; added 6 (P3BF-010, -011, -012, -024, -025, -040) plus the Q2 2026 loss note on P3BF-007; cited after 35.
+- Excluded: BLOCKED P3B-17, P3BF-030, disconfirming-table row 15; not downside P3BF-035, P3PB-45, P3PB-50 to P3PB-57.
+- Conclusions changed: none. Details in `tasks/2026-10-17-run4-balance-check.md`.

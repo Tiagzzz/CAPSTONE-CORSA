@@ -11,7 +11,8 @@ Plan 1 synthesis (Team A). Date: 2026-10-17. Status: DRAFT, awaiting independent
 3. **H3 is undetermined, and the owner's 4-bowl threshold cannot be tested.** The threshold is the owner's flagged assumption, not a sourced figure, and the model menu has no bowl at the plan's Rp85,000-110,000 (that range is a planner assumption). The only prepared-food figure is one city mean, not an upper-class median (section 5, H3).
 4. **H1 and H8 are undetermined.** Residents aged 25-39: 244,600 in Jakarta Pusat and 535,920 in Jakarta Selatan (June 2024, DERIVED) [P1C1-P06, P1C1-S06; DEM-028, DEM-029; J]. The class share and capture rate are GAPs, and no public source gives guests per day for a comparable venue.
 5. **Wheat is not shrinking** (USDA food use 9.4 to 9.8 million tonnes) [P1C4-04; DEM-050; N], but restaurant pasta is not separated and 88% of households still consume rice [P1C4-14; DEM-057; N].
-6. **For Team B:** the UMP input matches its source (Rp5,729,876) and wage growth has a sourced range (6.17-6.5%). Guests per day, visit frequency and dine-in tickets are **GAP**.
+6. **Balance check (run 4):** section 2.4 lists all 43 verified downside or mixed rows in scope (20 were cited before, 23 added). No verdict changes; the added rows are national or regional, none is a DKI series.
+7. **For Team B:** the UMP input matches its source (Rp5,729,876) and wage growth has a sourced range (6.17-6.5%). Guests per day, visit frequency and dine-in tickets are **GAP**.
 
 ## 2. Target pool
 
@@ -67,6 +68,41 @@ Definitions: middle class is 3.5-17 times the poverty line per person per month,
 Counter-evidence: in the 2026 Ramadan to Lebaran window the middle group grew fastest (+4.1% vs upper +2.6%; seasonal) [P1C2-32; DEM-048; N]. Upper-group spending fell 0.6% against the pre-holiday period in the June 2026 school holidays [disconfirming-evidence row 6; DEM-022;DEM-009; N], one outlet.
 
 Analysis: the "growing middle class" claim fails nationally; the 2025 decline of about 2.5% exceeds the rounding of the figures (47.9 vs 46.7). The upper-class change (1.1 to 1.2 million) is within one-decimal rounding and is not growth. Mandiri and BRI both show the upper group outgrowing the middle, but both are relays and national. Wording that survives: "a narrower middle and a concentrated upper tier whose Jakarta size is not measured".
+
+### 2.4 Facts pointing the other way: verified downside and mixed rows (balance check, run 4)
+
+**Selection rule.** A script listed every row of `demand/*.csv`, `plan4-spend-drivers.csv` (spend rows only) and `listed-operators.csv` (operators used for H8) coded VERIFIED-OPENED or CORRECTED-OPENED whose value, notes or direction text matched a decline, loss, slowdown, price-resistance, "disconfirms" or "mixed" marker, plus table A of `data/raw/2026-10-17-disconfirming-evidence.md` rows marked disconfirms or mixed. Each full row (notes, gaps, in-force and amendment columns where present) was then read and kept or dropped. Result: 43 rows (35 CSV rows, 8 disconfirming-table rows). The earlier text cited 20 of them (18 CSV rows, 2 table rows); this section adds the other 23. Excluded as BLOCKED: disconfirming-table rows 5 (middle-class saving headline; the opened replacement is P1C2-33), 8 (eating-out cuts, anecdotal) and 15 (Fore price band, conflicting ranges). Dropped as not downside after reading: UE-N07 (the 2025 layoff base, which makes 2026 layoffs lower), P1C1-C01 (poverty share, no direction), P1C4-10 (a conflict of totals), SD19 and UD-N12 (PayLater arrears falling).
+
+Added rows (all Analysis-free facts; geography N unless stated; relays are tier 3):
+
+| Row | Fact | Period; base | register_id |
+| --- | --- | --- | --- |
+| Table row 1 (mixed) | Consumer Confidence Index 116.8, optimistic but the expectations index (IEK) was 125.7 and the current-conditions index 107.9, both lower than June [UE-N09] | Jul 2026; national | DEM-005 |
+| Table row 2 (mixed) | Index 118.5, up 1.7 points from July (computed) | Aug 2026; national | DEM-006 |
+| Table row 3 (mixed) | Index 117.8; the May value of 120.9 is from a regional paper (Harian Jogja), so the fall of 3.1 points is computed | Jun 2026; national | DEM-007 |
+| Table row 9 (mixed) | 23,470 workers laid off (JKP participants only; Jan-May 2025: 46,015, so about 49% fewer, computed) [UE-N07] | Jan-May 2026; national | DEM-023; DEM-024; DEM-012 |
+| Table row 16 (disconfirms) | Real wages declined 1.1% a year on average (World Bank Dec 2025 deck, 14 slides); the consumption link is not on the slides; updated by P1C2-11 | 2018-2024; national | DEM-018 |
+| Table row 17 (mixed) | GDP +5.29% yoy; context only, not segment demand | Q2 2026; national | DEM-027; DEM-019 |
+| UE-N08 | 26.9% of households call themselves poor (August 2024: 19.5%) | Aug 2025 monthly point; national | DEM-018 |
+| P1C2-02 | Aspiring middle class 142.0 million (2025) vs 137.5 million (2024), 50.4% of population: the pool below the middle grows | 2025 vs 2024; Susenas | DEM-035 |
+| P1C2-09 | Middle-class food consumption +0.9% vs non-food +6.4% (2024: food 4.6%, non-food 3.2%); Susenas food group, not restaurants | 2025 vs 2024 | DEM-035 |
+| P1C2-12 | Formal wage employment of tertiary-educated workers 74.1% to 67.8% | 2018 to 2025 | DEM-039 |
+| P1C2-13 | World Bank: consumption 54% of Q1 growth, but weak job quality and falling real wages "could also constrain household consumption"; Q1 helped by early Eid and stimulus | Q1 2026 | DEM-039 |
+| P1C2-14 | Highest expenditure class (above Rp5 million): confidence 123.5 (Sep 2026) vs 124.8 (Sep 2025), slightly down; household bands, 18 cities (U) | Sep 2026 | DEM-034 |
+| P1C2-27 | Purchasing-power index April 2026: high income -0.1, middle -0.9, lower -1.0; deposits over Rp2 billion +15.99% vs Rp100-500 million +3.15% (relay of BRI) | Apr 2026 | DEM-044 |
+| P1C2-29 | Mandiri card data: restaurants +4.7% yoy vs +6.1% the year before; overall MSI growth 5.5% in September, lowest since Nov 2025; period labels inferred from the paragraph | Q3 2026 (to 27 Sep) | DEM-046 |
+| P1C2-30 | Mandiri Saving Index by savings-balance group (not expenditure class): middle 100.5 (-0.1% mom), upper 95.1 vs 94.0; the lower group value is printed two ways and not used | 27 Sep 2026 | DEM-046 |
+| P1C2-33 | Middle-group Mandiri saving index 100.4, lowest since Oct 2023 | Feb 2026 | DEM-021 |
+| P1C2-34 | LPEM FEB UI: the middle class "masih akan tertekan di 2026" (opinion, tier 3) | statement of 27 May 2026 | DEM-038 |
+| SD07 | Delivery average order value "trending down slightly" in Southeast Asia; growth from frequency, not basket size (relay of Momentum Works; region, not Jakarta) | 2025 | BEH-060; BEH-034 |
+| P3BF-015 | MAPB net loss Rp121,506 million vs Rp80,206 million | Jan-Jun 2026 vs 2025; unaudited | CMP-006 |
+| P3BF-022 | PZZA revenue Rp1.47 trillion vs Rp1.54 trillion (-4.54%), relay | Jan-Jun 2026 vs 2025 | CMP-010 |
+| P3BF-028 | ENAK (Champ Resto) loss Rp37.04 billion vs profit Rp19.74 billion | Jan-Sep 2025 vs 2024 | CMP-012 |
+| P3BF-029 | ENAK Jabodetabek sales Rp636.0 billion of Rp1.082 trillion, 58.8% (J), down 10.6% on 9M 2024 (computed), the largest regional fall | Jan-Sep 2025 | CMP-012 |
+
+Already cited elsewhere in this report (18 CSV rows): UE-N03, P1C3-01, P1C2-01, -03, -08, -10, -11, -18, -26, -31, -32, P1C1-F04, P1C1-E03, P1C1-E05, P1C4-08, P1C4-11, P3BF-016, P3BF-027; and table rows 6 and 13.
+
+Reading of the added rows. Fact: they lean the same way as the existing section 2.3 and the H2 verdict: weaker national confidence in June and July, falling middle-class savings and food spending, real wages and formal employment down, restaurant card spend slowing, three listed chains with falling sales or losses. Two rows are mixed in the other direction (confidence rose in August; layoffs were about half the 2025 level). Analysis: no verdict changes. No added row is a DKI series (ENAK's Jabodetabek cut is Greater Jakarta), so the Jakarta half of the H2 disconfirmation criterion stays unmet. Row P1C2-30 and P1C2-33 define groups by savings balance and must not be read as the BPS middle class.
 
 ## 3. Food away from home and café spend
 
@@ -196,3 +232,10 @@ Analysis: the evidence moves no guest-volume case. Team B should keep 200 guests
 - **Conflicts kept,** not resolved: base sizes (955/995 vs 769), 68% vs 64% mall figure, import series by period, Kontan typos.
 - **Derived values** in this report are labelled Analysis or DERIVED, with the formula in the text. Run-3 lessons applied: no verdict on rounding-sized differences (upper class 1.1 to 1.2 million), none on a single source (USDA food use, -0.6% holiday spend), and no conversion or CAC claims.
 - **Next step:** independent verifier (CLAUDE.md section 7) must re-open each cited row before this report is accepted.
+
+## Appendix: balance check of downside and mixed rows (run 4, 2026-10-18)
+
+- Rule: section 2.4. Scripted candidate list from `demand/*.csv`, `plan4-spend-drivers.csv`, `listed-operators.csv` and table A of `data/raw/2026-10-17-disconfirming-evidence.md`; every row read in full before it was kept.
+- Counts: downside or mixed rows in scope 43; cited before 20; added 23; cited after 43. Distinct row ids cited in the report rose from 67 to 87 (5 of them are rows named as excluded).
+- Excluded: BLOCKED table rows 5, 8, 15; not-downside rows UE-N07, P1C1-C01, P1C4-10, SD19, UD-N12.
+- Conclusions changed: none. Details in `tasks/2026-10-17-run4-balance-check.md`.
