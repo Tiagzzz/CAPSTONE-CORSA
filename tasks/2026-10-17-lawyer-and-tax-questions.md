@@ -1,6 +1,6 @@
 # Open questions for an Indonesian lawyer, a tax adviser and BPJPH / an LPH (CORSA, Jakarta)
 
-Date: 2026-10-17. Task W-LAW. Status: draft for the Product Owner to send to an adviser.
+Date: 2026-10-17 (checked again 2026-10-18, when the halal phase for micro and small businesses began). Task W-LAW. Status: draft for the Product Owner to send to an adviser.
 
 **What this is.** One consolidated, de-duplicated list of the questions the research could not settle from the texts. The questions come from research, not legal or tax advice. "Evidence so far" reports what the cited rows say; it is not a conclusion, and "Analysis" marks our reading, which has no authority. "No amendment found" is not "confirmed none": the gazette sites peraturan.go.id and peraturan.bpk.go.id were unreachable.
 
@@ -8,6 +8,7 @@ Date: 2026-10-17. Task W-LAW. Status: draft for the Product Owner to send to an 
 
 **Time-sensitive statements (re-check before sending).**
 - **SEHATI:** the BPJPH free halal scheme (code SEHATI25) is documented for 2025 only ("Sepanjang tahun 2025 selama kuota masih tersedia"); a 2026 or 2027 round was not checked. [H-03; N-na]
+- **Dates:** statements below describe the state on 2026-10-17; nothing was re-checked on 2026-10-18.
 - **H-04 (BPJPH, 9 Oct 2026):** "no postponement" of 18 Oct 2026 and special provisions for micro/small businesses and imports in drafting. The halal phase for micro and small businesses starts 18 Oct 2026; **re-check BPJPH on 19-20 Oct 2026.** [H-04; N-na]
 - **H-12:** the Minister's decision on foreign products (PP 42/2024 Art. 160(3)) was due by 17 Oct 2026; none found on 2026-10-17; **re-check 19-20 Oct 2026.** [H-12; N-na]
 - **T-07:** the PBJT cut for March 2026 is known only from a DDTC relay of a Bapenda statement (Kepgub 310/2026 not opened); no decree for Sep-Dec 2026 was found. [T-07; J-na]
@@ -207,7 +208,7 @@ Date: 2026-10-17. Task W-LAW. Status: draft for the Product Owner to send to an 
 
 **X9. VAT versus PBJT.** Confirm in a 2024+ source that restaurant sales that are PBJT objects carry no VAT, and how packaged goods or merchandise sold inside the cafe are taxed.
 - Why it matters: a wrongly assumed VAT-free base would misstate tax on retail items.
-- Evidence: the only source found is a 2022 DJP article (dropped as pre-window); packaged goods and merchandise are not covered by any row. [T-14 dropped; see V3B row T-14]
+- Evidence: the only source found is a 2022 DJP article (dropped as pre-window); packaged goods and merchandise are not covered by any row. [T-14 dropped as pre-window; DJP article of 19 May 2022 only, see V3B row T-14]
 - Answer changes: whether merchandise sales need separate VAT treatment.
 - Origin: R19 (last part), R carried item (VAT on packaged goods); V3B 9; P2v F12.
 
@@ -243,7 +244,7 @@ Date: 2026-10-17. Task W-LAW. Status: draft for the Product Owner to send to an 
 - Why it matters: the Italian menu relies on imported ingredients.
 - Evidence: the decision was due by 17 Oct 2026; none found. BPJPH registers foreign halal certificates (Art. 152); registration fee IDR 800,000 (BPJPH FAQ, Kepkaban 22/2024 Lampiran II A.3); mutual-recognition status not seen. **Time-sensitive: re-check 19-20 Oct 2026.** [H-12; N-na]
 - Answer changes: supplier selection and import documents.
-- Origin: R14; V2F Q13; CAGE section 9.
+- Origin: R14; V2F Q13; CAGE report gaps line (Swiss certifier among recognised bodies).
 
 **B6. Special provisions of 9 Oct 2026 (H-04) and supervision approach.** What are the "ketentuan khusus" announced on 9 Oct 2026 (instrument, date, scope)? Do they affect medium or large operators or imported raw materials? Does BPJPH supervision follow a different approach (BPJPH says no sweeping checks) after 18 Oct 2026?
 - Why it matters: the halal rules for micro/small and imports are changing as the budget is made.
