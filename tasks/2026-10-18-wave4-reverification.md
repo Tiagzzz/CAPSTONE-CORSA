@@ -56,3 +56,15 @@ Both fixers' edits appear together (for example l.100 and l.140 Marzano wording,
 - W4-04: `Scenarios!C34` added to the conservative negative-EBITDA citation. FIXED.
 - F-09: v0.5 placeholder framing and IDR120k/132k ticket removed; report cites `Menu!H30` (blended net spend 103,375), `Menu!C7:C9`, `Menu!C7:C12`, `Inputs!F17`. No hand-typed derived total, no script needed. FIXED.
 - Minor `ns` code: replaced by "geography not stated" in l.100. FIXED.
+
+## Round-2 re-check
+
+| Finding | PASS/FAIL | Note |
+|---|---|---|
+| W4-01 | PASS | l.140 now "P3PB-02/09; city and outlet not stated/no age split", as required; consistent with R2-LBL-02 (geography not stated). Pepper Lunch/Fore keep "brand-wide". l.100 also reads correctly. |
+| W4-03 | PASS | l.162 dates match H-01/H-02 (2024 medium/large; 18 Oct 2026 micro/small); classification now bold **Assumption** with counsel confirmation. Sentence reads correctly. |
+| W4-04 | PASS | l.275 cites `Scenarios!D6`, `D45`, `Scenarios!C34`; C34 = -107,897,672 (negative EBITDA), as required. |
+| F-09 | PASS | l.114 `Menu!H30` = 103,375 and `Inputs!F17` = 0.1 (PBJT) match. l.122 `Menu!C7:C9` = 89,000/98,000/105,000, shown as 89,000-105,000. l.134 `Menu!C7:C12` min 82,000, max 135,000, shown as 82-135k. No v0.5, 120k or 132k text remains; no hand-typed derived total. |
+| `ns` code | PASS | l.100 now "geography not stated"; no stray `ns` token found. |
+
+`analysis/verify_report.py`: unsourced=0, forbidden_hits=0.
