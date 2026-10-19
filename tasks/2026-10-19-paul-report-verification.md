@@ -49,3 +49,16 @@
 6. Row 29 (Part B): P2-50 code NOT-CONFIRMED to OFF-SCOPE with the override text above, then regenerate the appendix.
 
 Not a FAIL: the live ICS page returns "Technical Difficulties / forbidden" for curl and WebFetch; ICS items rest on pre-verification evidence quotes (V1c) and the stored copy cited there.
+
+## Recheck (19 Oct 2026)
+
+| # | FAIL item | Result | Evidence |
+|---|---|---|---|
+| 1 | World Bank bullet: "Analysis:" label | PASS | Sentence now starts "Analysis: this agrees with and updates ..." |
+| 2 | Inflation citation | PASS | Now "P2-23/REG-137, pp. 29 and 34" |
+| 3 | ICS bullet: E-01 agreement labelled | PASS | Now "Analysis: this agrees with E-01 ..." |
+| 4 | Halal Update labelling | PASS | "which agrees with the halal duties above" is stated after the citation; "**Analysis:** this makes the certification timeline a launch gate" is labelled |
+| 5 | P2-44 evidence | PASS | CSV evidence_quote is now the USD 1,200/DKPTKA sentence (CONFIRMED); report text unchanged and supported |
+| 6 | P2-50 Part B code | PASS | Override and appendix row now `OFF-SCOPE`, reason matches CORRECTED verdict |
+
+Count note: REG-139 = 16 CONFIRMED / 3 CORRECTED is correct (the brief's 17C/2Cor was wrong). Overall 59 CONFIRMED, 4 CORRECTED, 2 UNREACHABLE stands.
