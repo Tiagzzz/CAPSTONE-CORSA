@@ -221,12 +221,12 @@ Every row has one reason code and a one-line explanation. `OFF-SCOPE` and `CONDE
 | Code | Meaning | Rows |
 |---|---|---:|
 | `BLOCKED` | The source could not be opened (bot challenge, 403, page gone), so it could not be verified | 77 |
-| `NOT-CONFIRMED` | Pre-verification opened the source, but it does not support the claim (value, period, base or wording differ) | 23 |
+| `NOT-CONFIRMED` | Pre-verification opened the source, but it does not support the claim (value, period, base or wording differ) | 22 |
 | `OUT-OF-WINDOW` | Before the 2024-10-16 cutoff, or superseded | 24 |
 | `DUPLICATE` | The same fact comes from a stronger source | 7 |
 | `TIER4-LEAD` | Lead only | 11 |
 | `CONTRADICTED` | A stronger source conflicts | 0 |
-| `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 43 |
+| `OFF-SCOPE` | Not needed for the report's questions (names the question it served) | 44 |
 | `CONDENSED-OUT` | Relevant but cut for length (names the long report that still holds it) | 153 |
 | `UNVERIFIED-NOT-USED` | Pre-verification item (check=if_used) with no verdict and not cited in the report | 47 |
 
@@ -553,7 +553,7 @@ Source: `data/processed/2026-10-18-preverification.csv`. Items with a CONFIRMED 
 | `P2-45` | Paul source | now | CORRECTED | Investors cite corruption as an obstacle; KPK authority restrictions led to a significant decline in investigations and prosecutions (labor-union report). [REG-139; Executive Summary] | `OFF-SCOPE` | KPK enforcement trend (corrected value); corruption covered by P2-46 and CPI 2025 (P2-56). |
 | `P2-48` | Paul source | now | CONFIRMED | Headline inflation fell in 2023 from 5.47% (Feb) to 2.61% (Sep), within Bank Indonesia's 2-4% target range in H2 2023; BI raised its policy rate ... | `OUT-OF-WINDOW` | 2023 inflation and BI rate, superseded by the World Bank Dec 2025 outlook (P2-23/P2-24). |
 | `P2-49` | Paul source | now | CONFIRMED | The rupiah reached a four-year low of about 16,200 per USD in April 2024 and BI intervened to support it. [REG-139; Executive Summary (macro paragraph)] | `OUT-OF-WINDOW` | April 2024 rupiah low, superseded by the Jul-Nov 2025 move (P2-25). |
-| `P2-50` | Paul source | now | CORRECTED | Indonesia: population 276 million, USD 1.2 trillion economy (text also states US$1.5 trillion, largest in ASEAN); private consumption drives the economy; U.S. investors note franchises ... | `NOT-CONFIRMED` | Corrected: the ICS gives two inconsistent GDP figures (USD 1.2 and 1.5 trillion); no single value usable. |
+| `P2-50` | Paul source | now | CORRECTED | Indonesia: population 276 million, USD 1.2 trillion economy (text also states US$1.5 trillion, largest in ASEAN); private consumption drives the economy; U.S. investors note franchises ... | `OFF-SCOPE` | Corrected: the ICS gives two GDP figures (USD 1.2 and 1.5 trillion), so no single value is usable; macro context comes from the World Bank. |
 | `P2-51` | Paul source | now | CONFIRMED | Jakarta minimum monthly wage 2023: IDR 4,901,798 (USD 322.05); unions staged frequent largely peaceful protests in 2022 over wages; political demonstrations have not been a ... | `OUT-OF-WINDOW` | 2023 Jakarta minimum wage and 2022 protests; stale for this report. |
 | `P2-57` | Paul source | now | CONFIRMED | CPI 2025 global context: global average fell to a new low of 42; more than two-thirds of countries score below 50; scale 0 (highly corrupt) ... | `OFF-SCOPE` | Global CPI context; Indonesia score and rank are cited via P2-56. |
 | `P2-58` | Paul source | now | CONFIRMED | TI Asia Pacific CPI 2025 headline: 'Stalling anti-corruption progress in Asia Pacific while public anger surges' (press release 10.02.2026); the cpi/2025 page itself does not ... | `OFF-SCOPE` | Regional press-release headline; no Indonesia figure. |

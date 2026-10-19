@@ -109,8 +109,8 @@
     "reason": "April 2024 rupiah low, superseded by the Jul-Nov 2025 move (P2-25)."
   },
   "P2-50": {
-    "code": "NOT-CONFIRMED",
-    "reason": "Corrected: the ICS gives two inconsistent GDP figures (USD 1.2 and 1.5 trillion); no single value usable."
+    "code": "OFF-SCOPE",
+    "reason": "Corrected: the ICS gives two GDP figures (USD 1.2 and 1.5 trillion), so no single value is usable; macro context comes from the World Bank."
   },
   "P2-51": {
     "code": "OUT-OF-WINDOW",

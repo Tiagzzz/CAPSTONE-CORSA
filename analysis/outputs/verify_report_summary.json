@@ -4,8 +4,8 @@
   "appendix_path": "reports/2026-10-18-corsa-jakarta-insights-sources-appendix.md",
   "claim_ledger_path": "data/processed/2026-10-18-claim-ledger.csv",
   "word_counts": {
-    "raw_words": 9578,
-    "prose_words": 8987,
+    "raw_words": 9583,
+    "prose_words": 8992,
     "ceiling": 10000,
     "raw_under_ceiling": true,
     "prose_under_ceiling": true
