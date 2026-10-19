@@ -11,7 +11,7 @@ import argparse
 import csv
 import json
 import re
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -805,13 +805,27 @@ def generate_sources_appendix(
         "",
         "---",
         "",
-        "## Part C — Pending: Paul's Phase 2 Sources",
+        "## Part C — Paul's Phase 2 Sources (19 Oct 2026)",
         "",
-        "Paul's sources arrive on 19 Oct 2026 and will pass the wave-2b pre-verification before they are used in the report.",
+        "Sources REG-136 to REG-143 were pre-verified on 19 Oct 2026 (`analysis/outputs/preverification-batch-4.csv`). Verdict counts are from rows whose claim carries the source id; cited items and sections come from the report.",
         "",
-        "| ID | Title | Publisher | Tier | URL | Pre-verification verdict | Sections |",
-        "|---|---|---|---:|---|---|---|",
+        "| ID | Title | Publisher | Tier | URL | Pre-verification verdicts | Items cited in report | Report sections fed |",
+        "|---|---|---|---:|---|---|---|---|",
     ])
+    for n in range(136, 144):
+        sid = f"REG-{n}"
+        s = sources_reg.get(sid)
+        if not s:
+            continue
+        items = [r for r in preverify if f"[{sid};" in r.get("claim", "")]
+        verdicts = Counter(r.get("verdict") or "none" for r in items)
+        cited = sorted(r["item_id"] for r in items if r["item_id"] in cited_pv)
+        secs = sorted({sec for i in cited for sec in pv_sections[i]})
+        lines.append(
+            f"| `{sid}` | {_esc(s['title'])} | {_esc(s['publisher'])} | {s.get('tier')} | {_esc((s.get('all_urls') or [s.get('primary_url', '')])[0])} | "
+            + _esc(", ".join(f"{v} {k}" for k, v in sorted(verdicts.items())))
+            + f" | {_esc(', '.join(cited) or 'none')} | {_esc('; '.join(secs) or 'none')} |"
+        )
 
     with open(APPENDIX_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
