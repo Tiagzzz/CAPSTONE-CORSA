@@ -13,3 +13,4 @@ Plan: `tasks/2026-10-19-paul-sources-plan.md`. One line per step: time (UTC) | s
 - 19 Oct 2026 | 4 dispatched | V1a (4a), V1b (4b–4c), V1c (4d–4e), V1d (4f), all Sonnet, none an extractor | brief: scratchpad/paul/verifier-brief.md (PDFs verified via pdftotext of the cited page, not the md). Outputs tasks/2026-10-19-preverification-batch-4{a,b,d,f}.md.
 - 19 Oct 2026 | 4f done | V1d | 11 CONFIRMED, 2 UNREACHABLE (P2-64 IMF 403, P2-65 Reuters 401).
 - 19 Oct 2026 | 4b–4c done | V1b | 18 CONFIRMED; anchor fixes needed at merge: P2-23 → p.34, P2-24 → p.27, P2-26 → p.29/p.34, P2-28 → p.34; P2-32 wording 'local and building tax increase'. PDF prints www.worldbank.org/iep as document link.
+- 19 Oct 2026 | 4d–4e done | V1c | 19 CONFIRMED. Orchestrator flags for second verifier: P2-45 (omits KPK rebound 2022–23 → maybe CORRECTED), P2-52 (Prabowo inference), P2-50 (source gives two GDP figures).
