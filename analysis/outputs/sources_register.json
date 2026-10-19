@@ -5201,5 +5201,134 @@
     "tier_raw": "1",
     "used_for": "ENV-020: B-2 Rp1,444.70 per kWh, valid Jul-Sep 2026, expired 30 Sep 2026. Tier 1: state utility tariff document.",
     "is_opened": true
+  },
+  "REG-136": {
+    "id": "REG-136",
+    "title": "OECD FDI Regulatory Restrictiveness Index 2025: Key findings and trends (OECD Business and Finance Policy Papers, No. 105)",
+    "publisher": "OECD (authors F. Mistura, C. Rojas Giacobbe)",
+    "url_field": "https://doi.org/10.1787/a7751054-en (paper DOI, from PDF metadata; series DOI 10.1787/bf84ff64-en printed on p. 3); data: https://data-explorer.oecd.org/s/5bl; local copy data/raw/2026-10-19-oecd-fdi-regulatory-restrictiveness-index-2025.pdf",
+    "primary_url": "https://doi.org/10.1787/a7751054-en",
+    "all_urls": [
+      "https://doi.org/10.1787/a7751054-en",
+      "https://data-explorer.oecd.org/s/5bl"
+    ],
+    "published": "2026 (© OECD 2026; exact day not printed; measures in force 2025-12-31)",
+    "accessed": "2026-10-19",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-01–P2-15 (see data/processed/2026-10-18-preverification.csv); topics fdi, investment_climate; Indonesia rank in Figure 1 (10th most restrictive of 106, per figure ordering; no numeric score or F&B sector value printed). Local copy data/raw/2026-10-19-oecd-fdi-regulatory-restrictiveness-index-2025.pdf (+ .md). Tier 1: international organisation.",
+    "is_opened": false
+  },
+  "REG-137": {
+    "id": "REG-137",
+    "title": "Indonesia Economic Prospects, December 2025: Digital Foundations for Growth",
+    "publisher": "The World Bank (Jakarta office, Economic Policy Global Practice)",
+    "url_field": "local copy data/raw/2026-10-19-world-bank-indonesia-economic-prospects-dec-2025.pdf; publisher link printed as www.worldbank.org/iep",
+    "primary_url": "local copy data/raw/2026-10-19-world-bank-indonesia-economic-prospects-dec-2025.pdf; publisher link printed as www.worldbank.org/iep",
+    "all_urls": [],
+    "published": "2025-12 (December 2025)",
+    "accessed": "2026-10-19",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-16–P2-33 (see data/processed/2026-10-18-preverification.csv); topics macro, fdi, investment_climate, protest, political_stability; GDP/inflation/policy rate/rupiah/fiscal/FDI figures. Local copy data/raw/2026-10-19-world-bank-indonesia-economic-prospects-dec-2025.pdf (+ .md). Tier 1: international organisation.",
+    "is_opened": false
+  },
+  "REG-138": {
+    "id": "REG-138",
+    "title": "IMF Executive Board Concludes 2025 Article IV Consultation for Indonesia (Press Release No. 26/010; title taken from URL slug, page not read)",
+    "publisher": "International Monetary Fund",
+    "url_field": "https://www.imf.org/en/news/articles/2026/01/21/pr-26010-indnonesia-imf-executive-board-concludes-2025-article-iv-consultation",
+    "primary_url": "https://www.imf.org/en/news/articles/2026/01/21/pr-26010-indnonesia-imf-executive-board-concludes-2025-article-iv-consultation",
+    "all_urls": [
+      "https://www.imf.org/en/news/articles/2026/01/21/pr-26010-indnonesia-imf-executive-board-concludes-2025-article-iv-consultation"
+    ],
+    "published": "2026-01-21 (from URL)",
+    "accessed": "2026-10-19; blocked (Akamai 403, no bypass)",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-64 (see data/processed/2026-10-18-preverification.csv); topics macro, governance; content not read (page blocked), so not usable as evidence until accessed. Tier 1: international organisation.",
+    "is_opened": false
+  },
+  "REG-139": {
+    "id": "REG-139",
+    "title": "2024 Investment Climate Statements: Indonesia (archived page)",
+    "publisher": "U.S. Department of State",
+    "url_field": "https://2021-2025.state.gov/reports/2024-investment-climate-statements/indonesia/",
+    "primary_url": "https://2021-2025.state.gov/reports/2024-investment-climate-statements/indonesia/",
+    "all_urls": [
+      "https://2021-2025.state.gov/reports/2024-investment-climate-statements/indonesia/"
+    ],
+    "published": "2024 edition (no date shown on archived page)",
+    "accessed": "2026-10-19; opened",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-34–P2-52 (see data/processed/2026-10-18-preverification.csv); topics fdi, investment_climate, corruption, governance; foreign-ownership and investment-climate statements. Tier 1: government report.",
+    "is_opened": true
+  },
+  "REG-140": {
+    "id": "REG-140",
+    "title": "Worldwide Governance Indicators: Political Stability and Absence of Violence/Terrorism, governance score (0-100), Indonesia",
+    "publisher": "World Bank",
+    "url_field": "https://data.worldbank.org/indicator/GOV_WGI_PV_SC?locations=ID ; data via https://api.worldbank.org/v2/country/ID/indicator/GOV_WGI_PV.SC?format=json&per_page=60",
+    "primary_url": "https://data.worldbank.org/indicator/GOV_WGI_PV_SC?locations=ID",
+    "all_urls": [
+      "https://data.worldbank.org/indicator/GOV_WGI_PV_SC?locations=ID",
+      "https://api.worldbank.org/v2/country/ID/indicator/GOV_WGI_PV.SC?format=json&per_page=60"
+    ],
+    "published": "Database last updated 2026-09-25",
+    "accessed": "2026-10-19; opened via API",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-53–P2-55 (see data/processed/2026-10-18-preverification.csv); topics political_stability, governance; time series of Indonesia score. Tier 1: international organisation statistics.",
+    "is_opened": true
+  },
+  "REG-141": {
+    "id": "REG-141",
+    "title": "Corruption Perceptions Index 2025 (global page and Indonesia country page)",
+    "publisher": "Transparency International",
+    "url_field": "https://www.transparency.org/en/cpi/2025 ; https://www.transparency.org/en/countries/indonesia",
+    "primary_url": "https://www.transparency.org/en/cpi/2025",
+    "all_urls": [
+      "https://www.transparency.org/en/cpi/2025",
+      "https://www.transparency.org/en/countries/indonesia"
+    ],
+    "published": "2026-02-10",
+    "accessed": "2026-10-19; opened",
+    "tier": 2,
+    "tier_raw": "2",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-56–P2-58 (see data/processed/2026-10-18-preverification.csv); topics corruption, governance. Tier 2: established research institute/NGO; index is a perception-based composite of expert and business surveys, not an official measure.",
+    "is_opened": true
+  },
+  "REG-142": {
+    "id": "REG-142",
+    "title": "Tak hanya makanan minuman, ini jenis produk yang wajib bersertifikat halal mulai 18 Oktober 2026",
+    "publisher": "BPJPH (Badan Penyelenggara Jaminan Produk Halal)",
+    "url_field": "https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026",
+    "primary_url": "https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026",
+    "all_urls": [
+      "https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026"
+    ],
+    "published": "Event 2026-06-04 (page shows only relative date '5 bulan yang lalu')",
+    "accessed": "2026-10-19; opened",
+    "tier": 1,
+    "tier_raw": "1",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-59–P2-63 (see data/processed/2026-10-18-preverification.csv); topics halal; products subject to mandatory halal certification from 2026-10-18. Tier 1: government halal authority.",
+    "is_opened": true
+  },
+  "REG-143": {
+    "id": "REG-143",
+    "title": "Reuters article, title not read (page blocked); URL slug: students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies",
+    "publisher": "Reuters",
+    "url_field": "https://www.reuters.com/world/asia-pacific/students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies-2026-06-12/",
+    "primary_url": "https://www.reuters.com/world/asia-pacific/students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies-2026-06-12/",
+    "all_urls": [
+      "https://www.reuters.com/world/asia-pacific/students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies-2026-06-12/"
+    ],
+    "published": "2026-06-12 (from URL)",
+    "accessed": "2026-10-19; blocked (HTTP 401 challenge, no bypass)",
+    "tier": 3,
+    "tier_raw": "3",
+    "used_for": "Paul (Phase 2) source; pre-verification items P2-65 (see data/processed/2026-10-18-preverification.csv); topics protest, political_stability; content not read (page blocked), so not usable as evidence until accessed. Tier 3: major news outlet.",
+    "is_opened": false
   }
 }

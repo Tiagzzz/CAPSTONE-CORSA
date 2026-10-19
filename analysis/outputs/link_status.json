@@ -1,20 +1,25 @@
 {
-  "total_source_entries": 325,
-  "unique_urls_checked": 325,
+  "total_source_entries": 333,
+  "unique_urls_checked": 331,
   "skip_network": false,
   "status_counts_by_source_entry": {
-    "200_ok": 266,
-    "403_429_503_restricted_or_challenge": 28,
-    "timeout_or_connection_error": 23,
+    "200_ok": 283,
+    "403_429_503_restricted_or_challenge": 36,
     "http_500": 4,
-    "404_410_not_found": 4
+    "404_410_not_found": 4,
+    "http_405": 1,
+    "timeout_or_connection_error": 3,
+    "no_http_url": 1,
+    "http_401": 1
   },
   "status_counts_by_unique_url": {
-    "200_ok": 266,
-    "403_429_503_restricted_or_challenge": 28,
+    "200_ok": 282,
+    "403_429_503_restricted_or_challenge": 36,
+    "http_405": 1,
     "http_500": 4,
-    "timeout_or_connection_error": 23,
-    "404_410_not_found": 4
+    "404_410_not_found": 4,
+    "http_401": 1,
+    "timeout_or_connection_error": 3
   },
   "entries": [
     {
@@ -84,8 +89,8 @@
       "tier": 3,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Cloudflare 403 on tirto.id, no bypass)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "BEH-008",
@@ -204,8 +209,8 @@
       "tier": 3,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; rri.co.id 403); Cloudflare 403 on 2026-10-16",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "BEH-020",
@@ -234,8 +239,8 @@
       "tier": 3,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; Bisnis Cloudflare 403)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "BEH-023",
@@ -324,8 +329,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-16; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "BEH-032",
@@ -354,8 +359,8 @@
       "tier": 3,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-16; snippet-only (not opened; thelowdown.momentum.asia Cloudflare 403)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "BEH-035",
@@ -554,8 +559,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-16; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "BEH-055",
@@ -904,7 +909,7 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-16; opened",
-      "http_code": 206,
+      "http_code": 200,
       "live_check_status": "200_ok"
     },
     {
@@ -954,7 +959,7 @@
       "tier": 2,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 206,
+      "http_code": 200,
       "live_check_status": "200_ok"
     },
     {
@@ -1264,8 +1269,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-036",
@@ -1284,8 +1289,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-038",
@@ -1294,8 +1299,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-039",
@@ -1324,8 +1329,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-042",
@@ -1374,8 +1379,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-047",
@@ -1384,8 +1389,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-048",
@@ -1454,7 +1459,7 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 206,
+      "http_code": 200,
       "live_check_status": "200_ok"
     },
     {
@@ -1624,8 +1629,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-024",
@@ -1654,8 +1659,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-027",
@@ -1774,8 +1779,8 @@
       "tier": 3,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-17; snippet-only (blocked host)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "CMP-039",
@@ -1784,8 +1789,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-040",
@@ -1864,8 +1869,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-048",
@@ -2134,8 +2139,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "BEH-096",
@@ -2174,8 +2179,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "BEH-100",
@@ -2244,8 +2249,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened (USDA original at apps.fas.usda.gov, opened by verifier V3-A 2026-10-17; earlier opened via APEDA mirror)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 405,
+      "live_check_status": "http_405"
     },
     {
       "id": "DEM-051",
@@ -2314,8 +2319,8 @@
       "tier": 2,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "DEM-058",
@@ -2444,7 +2449,7 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 200,
+      "http_code": 206,
       "live_check_status": "200_ok"
     },
     {
@@ -2464,8 +2469,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
     },
     {
       "id": "REG-028",
@@ -2484,8 +2489,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "REG-030",
@@ -2494,8 +2499,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "REG-031",
@@ -2504,8 +2509,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "REG-032",
@@ -2574,8 +2579,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "REG-039",
@@ -2604,8 +2609,8 @@
       "tier": 1,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened (verifier V3-B)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 0,
+      "live_check_status": "timeout_or_connection_error"
     },
     {
       "id": "REG-042",
@@ -2644,8 +2649,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened (main-session audit; numbered from 901 so it cannot clash with the cloud session's REG sequence)",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-052",
@@ -2744,8 +2749,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-062",
@@ -2754,8 +2759,8 @@
       "tier": 3,
       "is_opened_in_repo": true,
       "accessed_in_sources_md": "2026-10-17; opened",
-      "http_code": 0,
-      "live_check_status": "timeout_or_connection_error"
+      "http_code": 200,
+      "live_check_status": "200_ok"
     },
     {
       "id": "CMP-063",
@@ -3184,8 +3189,8 @@
       "tier": 2,
       "is_opened_in_repo": false,
       "accessed_in_sources_md": "2026-10-17; not opened (HTTP 403 bot challenge on article and PDF, not bypassed)",
-      "http_code": 200,
-      "live_check_status": "200_ok"
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
     },
     {
       "id": "REG-128",
@@ -3266,6 +3271,86 @@
       "accessed_in_sources_md": "2026-10-17",
       "http_code": 200,
       "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-136",
+      "title": "OECD FDI Regulatory Restrictiveness Index 2025: Key findings and trends (OECD Business and Finance Policy Papers, No. 105)",
+      "url": "https://doi.org/10.1787/a7751054-en",
+      "tier": 1,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-19",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-137",
+      "title": "Indonesia Economic Prospects, December 2025: Digital Foundations for Growth",
+      "url": "local copy data/raw/2026-10-19-world-bank-indonesia-economic-prospects-dec-2025.pdf; publisher link printed as www.worldbank.org/iep",
+      "tier": 1,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-19",
+      "http_code": 0,
+      "live_check_status": "no_http_url"
+    },
+    {
+      "id": "REG-138",
+      "title": "IMF Executive Board Concludes 2025 Article IV Consultation for Indonesia (Press Release No. 26/010; title taken from URL slug, page not read)",
+      "url": "https://www.imf.org/en/news/articles/2026/01/21/pr-26010-indnonesia-imf-executive-board-concludes-2025-article-iv-consultation",
+      "tier": 1,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-19; blocked (Akamai 403, no bypass)",
+      "http_code": 403,
+      "live_check_status": "403_429_503_restricted_or_challenge"
+    },
+    {
+      "id": "REG-139",
+      "title": "2024 Investment Climate Statements: Indonesia (archived page)",
+      "url": "https://2021-2025.state.gov/reports/2024-investment-climate-statements/indonesia/",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-19; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-140",
+      "title": "Worldwide Governance Indicators: Political Stability and Absence of Violence/Terrorism, governance score (0-100), Indonesia",
+      "url": "https://data.worldbank.org/indicator/GOV_WGI_PV_SC?locations=ID",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-19; opened via API",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-141",
+      "title": "Corruption Perceptions Index 2025 (global page and Indonesia country page)",
+      "url": "https://www.transparency.org/en/cpi/2025",
+      "tier": 2,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-19; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-142",
+      "title": "Tak hanya makanan minuman, ini jenis produk yang wajib bersertifikat halal mulai 18 Oktober 2026",
+      "url": "https://bpjph.halal.go.id/read/tak-hanya-makanan-minuman-ini-jenis-produk-yang-wajib-bersertifikat-halal-mulai-18-oktober-2026",
+      "tier": 1,
+      "is_opened_in_repo": true,
+      "accessed_in_sources_md": "2026-10-19; opened",
+      "http_code": 200,
+      "live_check_status": "200_ok"
+    },
+    {
+      "id": "REG-143",
+      "title": "Reuters article, title not read (page blocked); URL slug: students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies",
+      "url": "https://www.reuters.com/world/asia-pacific/students-hold-heading-bankrupt-indonesia-protests-against-prabowos-policies-2026-06-12/",
+      "tier": 3,
+      "is_opened_in_repo": false,
+      "accessed_in_sources_md": "2026-10-19; blocked (HTTP 401 challenge, no bypass)",
+      "http_code": 401,
+      "live_check_status": "http_401"
     }
   ]
 }

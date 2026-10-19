@@ -1,21 +1,21 @@
 {
   "sources_register": {
-    "total_sources": 325,
+    "total_sources": 333,
     "by_tier": {
-      "1": 84,
-      "2": 16,
-      "3": 218,
+      "1": 90,
+      "2": 17,
+      "3": 219,
       "4": 7
     },
     "by_prefix": {
       "BEH": 104,
       "CMP": 65,
       "DEM": 63,
-      "REG": 93
+      "REG": 101
     },
     "by_access": {
-      "opened": 291,
-      "not_opened": 34
+      "opened": 295,
+      "not_opened": 38
     }
   },
   "csv_inventory": {
